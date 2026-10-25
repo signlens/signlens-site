@@ -1,0 +1,785 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "500169061"
+          },
+          "from": {
+            "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+            "is_self": true,
+            "label": "Your SOL account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "So11111111111111111111111111111111111111112",
+              "symbol": "SOL",
+              "trust": "verified"
+            },
+            "bound": "at_most",
+            "note": null,
+            "units": "500169061"
+          },
+          "from": {
+            "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+            "is_self": false,
+            "label": "Meteora DLMM",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "other",
+        "value": {
+          "description": "credits the liquidity to the position named, spread over its bins as the instruction says; the signer cannot read who owns that position"
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "41899840"
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+            "is_self": false,
+            "label": "Meteora DLMM",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+            "is_self": true,
+            "label": "Your SOL account",
+            "label_trust": "verified"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1488440"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": "Token program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "close",
+        "value": {
+          "account": {
+            "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+            "is_self": true,
+            "label": "Your token account",
+            "label_trust": "verified"
+          },
+          "destination": {
+            "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "21003"
+          },
+          "payer": {
+            "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "57c581c98741f1b680679e6f62d96aee07f2e01c6545ed8352f900579cc40367",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Amount",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "500169061"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "From",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "To",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 4
+          }
+        },
+        "subtitle": "System program (verified)",
+        "title": "Transfer"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "What you put in for liquidity, at most. The pool takes the amounts its current price allows.",
+            "label": "Deposit",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "So11111111111111111111111111111111111111112",
+                  "symbol": "SOL",
+                  "trust": "verified"
+                },
+                "bound": "at_most",
+                "note": null,
+                "units": "500169061"
+              }
+            }
+          },
+          {
+            "help": "Your liquidity position: which price bins you provide in, and what it has earned.",
+            "label": "Position",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them.",
+            "label": "Pool",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "How the deposit is spread across the bins: spot, curve or bid-ask.",
+            "label": "Shape",
+            "trust": "verified",
+            "value": {
+              "type": "text",
+              "value": "Spot"
+            }
+          },
+          {
+            "help": "The bottom of the position's price range, as a bin index.",
+            "label": "Lowest bin",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "-623"
+            }
+          },
+          {
+            "help": "The top of the position's price range, as a bin index.",
+            "label": "Highest bin",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "-554"
+            }
+          },
+          {
+            "help": "The price bin the site thinks is current. The add fails if the pool has moved further than allowed.",
+            "label": "Active bin expected",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "-554"
+            }
+          },
+          {
+            "help": "How many bins the current price may have moved since the quote before the add fails.",
+            "label": "Active bin may differ by",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "8"
+            }
+          },
+          {
+            "help": "Your account for the pool's X token.",
+            "label": "From account X",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6JyBEAKJ6vwZoaLmveqRTgubT5xfQYQWYovM4ofjk8RV",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "Your account for the pool's Y token.",
+            "label": "From account Y",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The pool's reserve of its X token.",
+            "label": "Reserve X",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "DtJWUppt7abikiLQscqDx8h32bYuMQMcYk3D7vFAZhKV",
+                "is_self": false,
+                "label": "Meteora DLMM reserve for token X",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The pool's reserve of its Y token.",
+            "label": "Reserve Y",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AhKd3Sfxmg6FMQjdXPXsuzQfM7rA6WQ6NR7BkoqbioD9",
+                "is_self": false,
+                "label": "Meteora DLMM reserve for token Y",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Additional accounts",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "2, not named by this descriptor"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 6
+          }
+        },
+        "subtitle": "Meteora DLMM (descriptor reviewed 2026-09-28, upgradeable by JADa…CVLd)",
+        "title": "Add liquidity"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "34725 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "316836"
+            }
+          },
+          {
+            "help": "Your liquidity position: which price bins you provide in, and what it has earned.",
+            "label": "Open position: Position",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them.",
+            "label": "Open position: Pool",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The wallet that controls the account.",
+            "label": "Open position: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The bottom of the position's price range, as a bin index.",
+            "label": "Open position: Lowest bin",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "-623"
+            }
+          },
+          {
+            "help": "How many price bins the position spans.",
+            "label": "Open position: Bins",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "70"
+            }
+          },
+          {
+            "help": "Who pays the small deposit that keeps a new account alive on chain. It comes back when the account is closed.",
+            "label": "Open position: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "So11111111111111111111111111111111111111112",
+                "is_self": false,
+                "label": "SOL mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "is_self": false,
+                "label": "Token program",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Sync wrapped SOL: Account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Close token account: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                "is_self": true,
+                "label": "Your token account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Close token account: SOL goes to",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Close token account: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Signer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "21003"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "10000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "11003"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "34725 micro-lamports per unit × 316836 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "0.04189984 SOL, up to 0.04338828 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "2 actions: Send 0.500169061 SOL to E88m…YFXA; Add ≤ 0.500169061 SOL (verified) to a Meteora DLMM position",
+    "text": "2 actions: Send 0.500169061 SOL to E88m…YFXA; Add ≤ 0.500169061 SOL (verified) to a Meteora DLMM position\nOK\n\n== Transfer | System program (verified)\n  Amount: 0.500169061 SOL\n  From: Your wallet (4VY2…5etD) (verified)\n  To: Your SOL account (E88m…YFXA) (verified)\n\n== Add liquidity | Meteora DLMM (descriptor reviewed 2026-09-28, upgradeable by JADa…CVLd)\n  Deposit: ≤ 0.500169061 SOL (verified)\n  Position: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n  Pool: HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7\n  Shape: Spot (verified)\n  Lowest bin: -623\n  Highest bin: -554\n  Active bin expected: -554\n  Active bin may differ by: 8\n  From account X: 6JyBEAKJ6vwZoaLmveqRTgubT5xfQYQWYovM4ofjk8RV\n  From account Y: Your SOL account (E88m…YFXA) (verified)\n  Reserve X: Meteora DLMM reserve for token X (DtJW…ZhKV) (verified)\n  Reserve Y: Meteora DLMM reserve for token Y (AhKd…ioD9) (verified)\n  Additional accounts: 2, not named by this descriptor\n\n== Also [collapsed]\n  Compute unit price: 34725 micro-lamports per unit\n  Compute unit limit: 316836\n  Open position: Position: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n  Open position: Pool: HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7\n  Open position: Owner: Your wallet (4VY2…5etD) (verified)\n  Open position: Lowest bin: -623\n  Open position: Bins: 70\n  Open position: Rent paid by: Your wallet (4VY2…5etD) (verified)\n  Create token account if missing: Token account: Your SOL account (E88m…YFXA) (verified)\n  Create token account if missing: Owner: Your wallet (4VY2…5etD) (verified)\n  Create token account if missing: Mint: SOL mint (So11…1112) (verified)\n  Create token account if missing: Rent paid by: Your wallet (4VY2…5etD) (verified)\n  Create token account if missing: Token program: Token program (Toke…Q5DA) (verified)\n  Sync wrapped SOL: Account: Your SOL account (E88m…YFXA) (verified)\n  Close token account: Token account: Your token account (E88m…YFXA) (verified)\n  Close token account: SOL goes to: Your wallet (4VY2…5etD) (verified)\n  Close token account: Owner: Your wallet (4VY2…5etD) (verified)\n\n== Signers\n  Fee payer: Your wallet (4VY2…5etD) (verified)\n  Signer: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n\n== Fee\n  Total: 0.000021003 SOL\n  Base: 0.00001 SOL\n  Priority: 0.000011003 SOL\n  Priority basis: 34725 micro-lamports per unit × 316836 units requested\n  Rent deposits: 0.04189984 SOL, up to 0.04338828 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - transfer 0.500169061 SOL from Your wallet (4VY2…5etD) (verified) to Your SOL account (E88m…YFXA) (verified)\n  - send ≤ 0.500169061 SOL (verified) from Your wallet (4VY2…5etD) (verified) to Meteora DLMM (LBUZ…Pwxo) (verified)\n  - credits the liquidity to the position named, spread over its bins as the instruction says; the signer cannot read who owns that position\n  - create ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My owned by Meteora DLMM (LBUZ…Pwxo) (verified), depositing 0.04189984 SOL\n  - create Your SOL account (E88m…YFXA) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL unless it already exists\n  - close Your token account (E88m…YFXA) (verified) and send its balance to Your wallet (4VY2…5etD) (verified)\n  - Your wallet (4VY2…5etD) (verified) pays a fee of 0.000021003 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (863 bytes)\n  digest: 57c581c98741f1b680679e6f62d96aee07f2e01c6545ed8352f900579cc40367\n",
+    "verdict": "ok"
+  }
+}

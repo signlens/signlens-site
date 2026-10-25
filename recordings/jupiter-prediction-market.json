@@ -1,0 +1,353 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+              "symbol": "JupUSD",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "5000000"
+          },
+          "from": {
+            "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+            "is_self": false,
+            "label": "Jupiter prediction market",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "other",
+        "value": {
+          "description": "the order and, if new, the position account are created at the payer's cost; a keeper fills the order against the book and closes it, returning any unspent deposit (the deposit moved from the owner's account to the order's in all 217 buys in a harvest of the program's 1,000 latest transactions on 2026-10-18)"
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "27500"
+          },
+          "payer": {
+            "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "acd3baf90c625ead58e15bf729fd452c71349793a454713fb0fbcc75b727e09a",
+      "format": "solana v0"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "How many outcome contracts the order is for, in millionths: a contract pays one USD if its outcome wins and nothing otherwise, so 5,000,000 is five contracts.",
+            "label": "Contracts (millionths)",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "5330000"
+            }
+          },
+          {
+            "help": "The most the order pays per contract, in millionths of a USD: 890,000 is 0.89 USD. A market order fills at the book's price up to this.",
+            "label": "Max price per contract (millionths of a USD)",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "890000"
+            }
+          },
+          {
+            "help": "What leaves your account to back the order; the unspent part comes back when the order fills or is cancelled.",
+            "label": "Deposit",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+                  "symbol": "JupUSD",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000000"
+              }
+            }
+          },
+          {
+            "help": "A market order fills at once against the book; a limit order rests until matched at its price.",
+            "label": "Order type",
+            "trust": "verified",
+            "value": {
+              "type": "text",
+              "value": "market order"
+            }
+          },
+          {
+            "help": "The market's identifier, as the interface names it.",
+            "label": "Market",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "3913199afd6342fa3b590f0adb079c3c"
+            }
+          },
+          {
+            "help": "The order account, holding the order and its deposit until it fills or is cancelled.",
+            "label": "Order",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "Your position in this market: the contracts you hold on each outcome.",
+            "label": "Position",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The token account the deposit leaves. It should be one of yours.",
+            "label": "From account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "8R13DsTsJnZGgcs99SJXjYPnnzJggHwqXZPwDxPKHhnW",
+                "is_self": true,
+                "label": "Your JupUSD account",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 2
+          }
+        },
+        "subtitle": "Jupiter prediction market (descriptor reviewed 2026-10-18, upgradeable by 5myN…uAKx)",
+        "title": "Buy prediction contracts"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "50000 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "350000"
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Signer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AJooF3xRkSx1PUC5Y9dNZHy9LMHcx5xKhPxj4iW4jepf",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "27500"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "10000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "17500"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "50000 micro-lamports per unit × 350000 units requested"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Buy 5330000 millionths of a YES contract in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at up to 890000 millionths of a USD each, depositing 5 JupUSD (verified)",
+    "text": "Buy 5330000 millionths of a YES contract in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at up to 890000 millionths of a USD each, depositing 5 JupUSD (verified)\nOK\n\n== Buy prediction contracts | Jupiter prediction market (descriptor reviewed 2026-10-18, upgradeable by 5myN…uAKx)\n  Contracts (millionths): 5330000\n  Max price per contract (millionths of a USD): 890000\n  Deposit: 5 JupUSD (verified)\n  Order type: market order (verified)\n  Market: 3913199afd6342fa3b590f0adb079c3c\n  Order: GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb\n  Position: AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC\n  From account: Your JupUSD account (8R13…HhnW) (verified)\n\n== Also [collapsed]\n  Compute unit price: 50000 micro-lamports per unit\n  Compute unit limit: 350000\n\n== Signers\n  Fee payer: Your wallet (Cowb…moNB) (verified)\n  Signer: AJooF3xRkSx1PUC5Y9dNZHy9LMHcx5xKhPxj4iW4jepf\n\n== Fee\n  Total: 0.0000275 SOL\n  Base: 0.00001 SOL\n  Priority: 0.0000175 SOL\n  Priority basis: 50000 micro-lamports per unit × 350000 units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 5 JupUSD (verified) from Your wallet (Cowb…moNB) (verified) to Jupiter prediction market (3ZZu…jvUp) (verified)\n  - the order and, if new, the position account are created at the payer's cost; a keeper fills the order against the book and closes it, returning any unspent deposit (the deposit moved from the owner's account to the order's in all 217 buys in a harvest of the program's 1,000 latest transactions on 2026-10-18)\n  - Your wallet (Cowb…moNB) (verified) pays a fee of 0.0000275 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (571 bytes)\n  digest: acd3baf90c625ead58e15bf729fd452c71349793a454713fb0fbcc75b727e09a\n",
+    "verdict": "ok"
+  }
+}

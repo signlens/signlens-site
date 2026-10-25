@@ -1,0 +1,379 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "other",
+        "value": {
+          "description": "records the vote through the govern program with the staking account's voting power; nothing moves. Side 2 votes for a yes/no proposal, and for the second option of an option proposal. The signed bytes do not say which kind this proposal is, nor name its options."
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1234440"
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY",
+            "is_self": false,
+            "label": "Jupiter DAO governance",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "other",
+        "value": {
+          "description": "the record starts empty; the vote cast through the staking program in the same transaction fills it (every one of the 940 records created in a harvest of the program's 1,000 latest transactions on 2026-10-18 was followed by a castVote)"
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "5100"
+          },
+          "payer": {
+            "address": "64n57PG6jVbrxeWcjsiuuvXoPX59peym545qtYBXgjai",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "647785e8079fc5f939106256bcfe328572188af9a4927254cb41e76093e05697",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "The choice the vote records, as a number. On a yes/no proposal 0 is abstain, 1 against and 2 for; on an option proposal 1, 2, 3 and on are its options in the order the proposal lists them. Which kind of proposal it is, and its options' names, are stored on chain, not in what you sign.",
+            "label": "Side",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "2"
+            }
+          },
+          {
+            "help": "The Jupiter DAO proposal the vote is cast on.",
+            "label": "Proposal",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The record of this staking account's vote on the proposal; its weight is the account's voting power.",
+            "label": "Vote",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker.",
+            "label": "Staking account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 1
+          }
+        },
+        "subtitle": "Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)",
+        "title": "Vote"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": "The Jupiter DAO proposal the vote record is for.",
+            "label": "Create vote record: Proposal",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The wallet whose vote the record will hold; the staking program casts the vote into it.",
+            "label": "Create vote record: Voter",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "64n57PG6jVbrxeWcjsiuuvXoPX59peym545qtYBXgjai",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The account that holds one wallet's vote on one proposal, created once and then set by the vote itself.",
+            "label": "Create vote record: Vote record",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "Who pays the small deposit that keeps the new account alive on chain.",
+            "label": "Create vote record: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "64n57PG6jVbrxeWcjsiuuvXoPX59peym545qtYBXgjai",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "150000"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "666 micro-lamports per unit"
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "64n57PG6jVbrxeWcjsiuuvXoPX59peym545qtYBXgjai",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5100"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "100"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "666 micro-lamports per unit × 150000 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "0.00123444 SOL; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Vote side 2 on Jupiter DAO proposal HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99 with the stake in 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G",
+    "text": "Vote side 2 on Jupiter DAO proposal HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99 with the stake in 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G\nOK\n\n== Vote | Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)\n  Side: 2\n  Proposal: HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99\n  Vote: BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd\n  Staking account: 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G\n\n== Also [collapsed]\n  Create vote record: Proposal: HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99\n  Create vote record: Voter: Your wallet (64n5…gjai) (verified)\n  Create vote record: Vote record: BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd\n  Create vote record: Rent paid by: Your wallet (64n5…gjai) (verified)\n  Compute unit limit: 150000\n  Compute unit price: 666 micro-lamports per unit\n\n== Signers\n  Fee payer: Your wallet (64n5…gjai) (verified)\n\n== Fee\n  Total: 0.0000051 SOL\n  Base: 0.000005 SOL\n  Priority: 0.0000001 SOL\n  Priority basis: 666 micro-lamports per unit × 150000 units requested\n  Rent deposits: 0.00123444 SOL; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - records the vote through the govern program with the staking account's voting power; nothing moves. Side 2 votes for a yes/no proposal, and for the second option of an option proposal. The signed bytes do not say which kind this proposal is, nor name its options.\n  - create BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd owned by Jupiter DAO governance (Gova…N7rY) (verified), depositing 0.00123444 SOL\n  - the record starts empty; the vote cast through the staking program in the same transaction fills it (every one of the 940 records created in a harvest of the program's 1,000 latest transactions on 2026-10-18 was followed by a castVote)\n  - Your wallet (64n5…gjai) (verified) pays a fee of 0.0000051 SOL\n  - valid for about a minute (recent blockhash)\n\nWould read, to explain more:\n  - HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99: the proposal, whose kind says what the side means\n  - DgNJ2yTRxe2QgWxUnMZRnJywxvCGLisxmyYdmzJjYB7Q: the proposal's title\n  - 4i99PrnywSMGPM6rguXd3AufUq2tGDFTyJBABMjMJTEP: the names of the proposal's options\n\nRaw: solana legacy (443 bytes)\n  digest: 647785e8079fc5f939106256bcfe328572188af9a4927254cb41e76093e05697\n",
+    "verdict": "ok",
+    "wanted_accounts": [
+      {
+        "address": "HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99",
+        "reason": "the proposal, whose kind says what the side means"
+      },
+      {
+        "address": "DgNJ2yTRxe2QgWxUnMZRnJywxvCGLisxmyYdmzJjYB7Q",
+        "reason": "the proposal's title"
+      },
+      {
+        "address": "4i99PrnywSMGPM6rguXd3AufUq2tGDFTyJBABMjMJTEP",
+        "reason": "the names of the proposal's options"
+      }
+    ]
+  }
+}

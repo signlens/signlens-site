@@ -1,0 +1,452 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "other",
+        "value": {
+          "description": "delegate 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 to validator 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF"
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "25000000000"
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "Stake11111111111111111111111111111111111111",
+            "is_self": false,
+            "label": "Stake program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "83006"
+          },
+          "payer": {
+            "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "5283facd916b5f27459c38ac9053b0241da1f756ddcb402515ee824890b0fd41",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Stake account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Validator vote account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Authorized by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 4
+          }
+        },
+        "subtitle": "Stake program (verified)",
+        "title": "Delegate stake"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "26002"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "3000000 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Create derived account: Account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create derived account: Derived from",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create derived account: Seed",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "exodus:1790374749187"
+            }
+          },
+          {
+            "help": null,
+            "label": "Create derived account: Owner program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Stake11111111111111111111111111111111111111",
+                "is_self": false,
+                "label": "Stake program",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create derived account: Deposit",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "25000000000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create derived account: Space",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "200 bytes"
+            }
+          },
+          {
+            "help": null,
+            "label": "Create derived account: Paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Initialize stake account: Stake account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Initialize stake account: Staker",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Initialize stake account: Withdrawer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Initialize stake account: Lockup",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "none"
+            }
+          },
+          {
+            "help": null,
+            "label": "Initialize stake account: Lockup custodian",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "83006"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "78006"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "3000000 micro-lamports per unit × 26002 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "25 SOL; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Delegate stake account 7JXU…YwU4 to validator 9QU2…29mF",
+    "text": "Delegate stake account 7JXU…YwU4 to validator 9QU2…29mF\nOK\n\n== Delegate stake | Stake program (verified)\n  Stake account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Validator vote account: 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF\n  Authorized by: Your wallet (Ekbe…s9fx) (verified)\n\n== Also [collapsed]\n  Compute unit limit: 26002\n  Compute unit price: 3000000 micro-lamports per unit\n  Create derived account: Account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Create derived account: Derived from: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Create derived account: Seed: exodus:1790374749187\n  Create derived account: Owner program: Stake program (Stak…1111) (verified)\n  Create derived account: Deposit: 25 SOL\n  Create derived account: Space: 200 bytes\n  Create derived account: Paid by: Your wallet (Ekbe…s9fx) (verified)\n  Initialize stake account: Stake account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Initialize stake account: Staker: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Initialize stake account: Withdrawer: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Initialize stake account: Lockup: none\n  Initialize stake account: Lockup custodian: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n\n== Signers\n  Fee payer: Your wallet (Ekbe…s9fx) (verified)\n\n== Fee\n  Total: 0.000083006 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000078006 SOL\n  Priority basis: 3000000 micro-lamports per unit × 26002 units requested\n  Rent deposits: 25 SOL; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - delegate 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 to validator 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF\n  - create 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 owned by Stake program (Stak…1111) (verified), depositing 25 SOL\n  - Your wallet (Ekbe…s9fx) (verified) pays a fee of 0.000083006 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (628 bytes)\n  digest: 5283facd916b5f27459c38ac9053b0241da1f756ddcb402515ee824890b0fd41\n",
+    "verdict": "ok"
+  }
+}

@@ -1,0 +1,859 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+              "symbol": "USDT",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "83838802"
+          },
+          "from": {
+            "address": "5XwccWFyzuFMZcqHSCeo4pM3JRQpZ4SrD3ZPsGmxYDxc",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "to": {
+            "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+            "is_self": true,
+            "label": "Your USDT account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+              "symbol": "USDT",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "83838802"
+          },
+          "from": {
+            "address": "pay6tTbGkT9LiJTTw3BUNL7tWj1wppKApQrz3Dtg1d2",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT",
+            "is_self": false,
+            "label": "Titan swap aggregator",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+              "symbol": "USDG",
+              "trust": "verified"
+            },
+            "bound": "at_least",
+            "note": null,
+            "units": "83290054"
+          },
+          "from": {
+            "address": "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT",
+            "is_self": false,
+            "label": "Titan swap aggregator",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "HeLhJeWqkBcngp2uK1xcAnim6bEHMEi5oKxbZDC6sg94",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+            "is_self": true,
+            "label": "Your USDT account",
+            "label_trust": "verified"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1488440"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": "Token program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "6DvM4BhQYWS16cvpy3HWeRW2BbmJS8XXRnpfsdUe2JgD",
+            "is_self": false,
+            "label": "2U5Z…JTkW's USDT account",
+            "label_trust": "verified"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1488440"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": "Token program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "E6fRsa6bB8xnVST8DE3SdTjgdJzB1offEkJGDatKYgJd",
+            "is_self": false,
+            "label": "BS31…1SRE's USDT account",
+            "label_trust": "verified"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1488440"
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": "Token program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "17000"
+          },
+          "payer": {
+            "address": "pay6tTbGkT9LiJTTw3BUNL7tWj1wppKApQrz3Dtg1d2",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "RECIPIENT_NOT_YOU",
+        "instruction": 6,
+        "message": "The swap's output goes to an account that is not yours",
+        "severity": "high"
+      }
+    ],
+    "raw": {
+      "digest": "05babedb7513cf0b2b4e9ca6ff2bed7999f64873df5f23958c9f6fefbab2e576",
+      "format": "solana v0"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Amount",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "symbol": "USDT",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "83838802"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "From",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "5XwccWFyzuFMZcqHSCeo4pM3JRQpZ4SrD3ZPsGmxYDxc",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "To",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+                "is_self": true,
+                "label": "Your USDT account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Authorized by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "CLtnbMrwAAKLKujmh8aQcsQz5SKHVyvHCG8PLL1PmJkN",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                "is_self": false,
+                "label": "USDT mint",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 5
+          }
+        },
+        "subtitle": "Token program (verified)",
+        "title": "Transfer tokens"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "What leaves your account. Exact, unless the swap reads its amount from a token ledger.",
+            "label": "Send",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "symbol": "USDT",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "83838802"
+              }
+            }
+          },
+          {
+            "help": "The least you get, or the swap fails: the quote less the slippage you allowed.",
+            "label": "Receive",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+                  "symbol": "USDG",
+                  "trust": "verified"
+                },
+                "bound": "at_least",
+                "note": null,
+                "units": "83290054"
+              }
+            }
+          },
+          {
+            "help": "What the route expected to pay out when the transaction was built.",
+            "label": "Quoted",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+                  "symbol": "USDG",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "83708597"
+              }
+            }
+          },
+          {
+            "help": "How far below the quote the swap may still go through.",
+            "label": "Max slippage",
+            "trust": "fact",
+            "value": {
+              "type": "basis_points",
+              "value": 50
+            }
+          },
+          {
+            "help": "A share the integrator takes, from what is sent or from what is received; the fee accounts show whose it is.",
+            "label": "Fee",
+            "trust": "fact",
+            "value": {
+              "type": "basis_points",
+              "value": 3
+            }
+          },
+          {
+            "help": "The integrator's account that takes the fee when it is taken from what is sent.",
+            "label": "Fee account (sent token)",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6DvM4BhQYWS16cvpy3HWeRW2BbmJS8XXRnpfsdUe2JgD",
+                "is_self": false,
+                "label": "2U5Z…JTkW's USDT account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The pools the swap goes through, in order, with each leg's share of what is left at that point.",
+            "label": "Route",
+            "trust": "fact",
+            "value": {
+              "type": "list",
+              "value": [
+                {
+                  "type": "text",
+                  "value": "Deriverse: USDT → USDC (86.04% of what remains)"
+                },
+                {
+                  "type": "text",
+                  "value": "program HpNf…jxFq: USDT → SOL"
+                },
+                {
+                  "type": "text",
+                  "value": "Tessera V: SOL → USDC"
+                },
+                {
+                  "type": "text",
+                  "value": "Riptide: USDC → USDG"
+                }
+              ]
+            }
+          },
+          {
+            "help": "The token account the tokens leave. It should be one of yours.",
+            "label": "From account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+                "is_self": true,
+                "label": "Your token account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The token account that receives the tokens. Check it is yours, unless you mean to pay someone else.",
+            "label": "To account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "HeLhJeWqkBcngp2uK1xcAnim6bEHMEi5oKxbZDC6sg94",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The program's name for what this step does.",
+            "label": "Instruction",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "swap_route"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 6
+          }
+        },
+        "subtitle": "Titan swap aggregator (layout read from mainnet transactions, descriptor reviewed 2026-10-15, upgradeable by H92m…4SbB)",
+        "title": "Swap"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "1400000"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "5000 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+                "is_self": true,
+                "label": "Your USDT account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "pay6tTbGkT9LiJTTw3BUNL7tWj1wppKApQrz3Dtg1d2",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                "is_self": false,
+                "label": "USDT mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "pay6tTbGkT9LiJTTw3BUNL7tWj1wppKApQrz3Dtg1d2",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "is_self": false,
+                "label": "Token program",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6DvM4BhQYWS16cvpy3HWeRW2BbmJS8XXRnpfsdUe2JgD",
+                "is_self": false,
+                "label": "2U5Z…JTkW's USDT account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "2U5ZmdtVLSkAiceviwBnvE2vD2MLvqAMekSjqYuKJTkW",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                "is_self": false,
+                "label": "USDT mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "pay6tTbGkT9LiJTTw3BUNL7tWj1wppKApQrz3Dtg1d2",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "is_self": false,
+                "label": "Token program",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "E6fRsa6bB8xnVST8DE3SdTjgdJzB1offEkJGDatKYgJd",
+                "is_self": false,
+                "label": "BS31…1SRE's USDT account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BS31gingTECkXEj3E16axqeQAbin4r4sZhgkJovz1SRE",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account: Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                "is_self": false,
+                "label": "USDT mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "pay6tTbGkT9LiJTTw3BUNL7tWj1wppKApQrz3Dtg1d2",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account: Token program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "is_self": false,
+                "label": "Token program",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "pay6tTbGkT9LiJTTw3BUNL7tWj1wppKApQrz3Dtg1d2",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Signer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "CLtnbMrwAAKLKujmh8aQcsQz5SKHVyvHCG8PLL1PmJkN",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "17000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "10000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "7000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "5000 micro-lamports per unit × 1400000 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "0.00148844 SOL, up to 0.00446532 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "2 actions: Transfer 83.838802 USDT (verified) from 5Xwc…YDxc to Ha2P…zHKY; Swap 83.838802 USDT (verified) for ≥ 83.290054 USDG (verified) via Titan",
+    "text": "2 actions: Transfer 83.838802 USDT (verified) from 5Xwc…YDxc to Ha2P…zHKY; Swap 83.838802 USDT (verified) for ≥ 83.290054 USDG (verified) via Titan\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] The swap's output goes to an account that is not yours (instruction 6)\n\n== Transfer tokens | Token program (verified)\n  Amount: 83.838802 USDT (verified)\n  From: 5XwccWFyzuFMZcqHSCeo4pM3JRQpZ4SrD3ZPsGmxYDxc\n  To: Your USDT account (Ha2P…zHKY) (verified)\n  Authorized by: CLtnbMrwAAKLKujmh8aQcsQz5SKHVyvHCG8PLL1PmJkN\n  Mint: USDT mint (Es9v…wNYB) (verified)\n\n== Swap | Titan swap aggregator (layout read from mainnet transactions, descriptor reviewed 2026-10-15, upgradeable by H92m…4SbB)\n  Send: 83.838802 USDT (verified)\n  Receive: ≥ 83.290054 USDG (verified)\n  Quoted: 83.708597 USDG (verified)\n  Max slippage: 0.50%\n  Fee: 0.03%\n  Fee account (sent token): 2U5Z…JTkW's USDT account (6DvM…2JgD) (verified)\n  Route:\n    - Deriverse: USDT → USDC (86.04% of what remains)\n    - program HpNf…jxFq: USDT → SOL\n    - Tessera V: SOL → USDC\n    - Riptide: USDC → USDG\n  From account: Your token account (Ha2P…zHKY) (verified)\n  To account: HeLhJeWqkBcngp2uK1xcAnim6bEHMEi5oKxbZDC6sg94\n  Instruction: swap_route\n\n== Also [collapsed]\n  Compute unit limit: 1400000\n  Compute unit price: 5000 micro-lamports per unit\n  Create token account if missing: Token account: Your USDT account (Ha2P…zHKY) (verified)\n  Create token account if missing: Owner: Your wallet (pay6…g1d2) (verified)\n  Create token account if missing: Mint: USDT mint (Es9v…wNYB) (verified)\n  Create token account if missing: Rent paid by: Your wallet (pay6…g1d2) (verified)\n  Create token account if missing: Token program: Token program (Toke…Q5DA) (verified)\n  Create token account if missing: Token account: 2U5Z…JTkW's USDT account (6DvM…2JgD) (verified)\n  Create token account if missing: Owner: 2U5ZmdtVLSkAiceviwBnvE2vD2MLvqAMekSjqYuKJTkW\n  Create token account if missing: Mint: USDT mint (Es9v…wNYB) (verified)\n  Create token account if missing: Rent paid by: Your wallet (pay6…g1d2) (verified)\n  Create token account if missing: Token program: Token program (Toke…Q5DA) (verified)\n  Create token account: Token account: BS31…1SRE's USDT account (E6fR…YgJd) (verified)\n  Create token account: Owner: BS31gingTECkXEj3E16axqeQAbin4r4sZhgkJovz1SRE\n  Create token account: Mint: USDT mint (Es9v…wNYB) (verified)\n  Create token account: Rent paid by: Your wallet (pay6…g1d2) (verified)\n  Create token account: Token program: Token program (Toke…Q5DA) (verified)\n\n== Signers\n  Fee payer: Your wallet (pay6…g1d2) (verified)\n  Signer: CLtnbMrwAAKLKujmh8aQcsQz5SKHVyvHCG8PLL1PmJkN\n\n== Fee\n  Total: 0.000017 SOL\n  Base: 0.00001 SOL\n  Priority: 0.000007 SOL\n  Priority basis: 5000 micro-lamports per unit × 1400000 units requested\n  Rent deposits: 0.00148844 SOL, up to 0.00446532 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - receive 83.838802 USDT (verified) into Your USDT account (Ha2P…zHKY) (verified) from 5XwccWFyzuFMZcqHSCeo4pM3JRQpZ4SrD3ZPsGmxYDxc\n  - send 83.838802 USDT (verified) from Your wallet (pay6…g1d2) (verified) to Titan swap aggregator (T1TA…XvGT) (verified)\n  - transfer ≥ 83.290054 USDG (verified) from Titan swap aggregator (T1TA…XvGT) (verified) to HeLhJeWqkBcngp2uK1xcAnim6bEHMEi5oKxbZDC6sg94\n  - create Your USDT account (Ha2P…zHKY) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL unless it already exists\n  - create 2U5Z…JTkW's USDT account (6DvM…2JgD) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL unless it already exists\n  - create BS31…1SRE's USDT account (E6fR…YgJd) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL\n  - Your wallet (pay6…g1d2) (verified) pays a fee of 0.000017 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (1016 bytes)\n  digest: 05babedb7513cf0b2b4e9ca6ff2bed7999f64873df5f23958c9f6fefbab2e576\n",
+    "verdict": "warn"
+  }
+}

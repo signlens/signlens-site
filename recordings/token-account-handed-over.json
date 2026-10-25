@@ -1,0 +1,228 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "authority_change",
+        "value": {
+          "authority": "owner",
+          "new_authority": {
+            "address": "DbRKJvepcS1YEmpBNX3Kc67kjQmyMm3RYovaAVk9ERgS",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "subject": {
+            "address": "ARX9DwKDtPj249MzYgZK8dW5a291sRkr1HXDPeaEvfz",
+            "is_self": true,
+            "label": "Your token account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "5000"
+          },
+          "payer": {
+            "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "TOKEN_ACCOUNT_GIVEN_AWAY",
+        "instruction": 0,
+        "message": "Gives YOUR token account to DbRK…ERgS; the new owner controls every token in it and you cannot get it back",
+        "severity": "critical"
+      }
+    ],
+    "raw": {
+      "digest": "45eea612c30cc4b034df107bd6b105f795bcc6c90073de130df72cd30f4518d4",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Account or mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "ARX9DwKDtPj249MzYgZK8dW5a291sRkr1HXDPeaEvfz",
+                "is_self": true,
+                "label": "Your token account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Authority",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "owner"
+            }
+          },
+          {
+            "help": null,
+            "label": "Current holder",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "New holder",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "DbRKJvepcS1YEmpBNX3Kc67kjQmyMm3RYovaAVk9ERgS",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 0
+          }
+        },
+        "subtitle": "Token program (verified)",
+        "title": "Give away token account"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Give the owner authority over ARX9…Evfz to DbRK…ERgS",
+    "text": "Give the owner authority over ARX9…Evfz to DbRK…ERgS\nBLOCKED BY DEFAULT (1 critical finding(s))\n\nFindings:\n  [CRITICAL] Gives YOUR token account to DbRK…ERgS; the new owner controls every token in it and you cannot get it back (instruction 0)\n\n== Give away token account | Token program (verified)\n  Account or mint: Your token account (ARX9…Evfz) (verified)\n  Authority: owner\n  Current holder: Your wallet (BqHR…Tx9A) (verified)\n  New holder: DbRKJvepcS1YEmpBNX3Kc67kjQmyMm3RYovaAVk9ERgS\n\n== Signers\n  Fee payer: Your wallet (BqHR…Tx9A) (verified)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - give the owner authority over Your token account (ARX9…Evfz) (verified) to DbRKJvepcS1YEmpBNX3Kc67kjQmyMm3RYovaAVk9ERgS\n  - Your wallet (BqHR…Tx9A) (verified) pays a fee of 0.000005 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (173 bytes)\n  digest: 45eea612c30cc4b034df107bd6b105f795bcc6c90073de130df72cd30f4518d4\n",
+    "verdict": "block"
+  }
+}

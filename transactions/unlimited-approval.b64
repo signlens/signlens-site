@@ -1,0 +1,9 @@
+# Constructed transaction, hand-built (no network): Token Approve on the fee payer's USDC
+# associated token account (ARX9DwKDtPj249MzYgZK8dW5a291sRkr1HXDPeaEvfz), letting DbRKJvepcS1YEmpBNX3Kc67kjQmyMm3RYovaAVk9ERgS
+# spend u64::MAX, the "unlimited" approval drainers ask for. One signature (zero bytes).
+# version: legacy
+AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAIEoPNSg/gB3f2Qk4kW/vfGYT2/sMTPySWftlVhtuDXJcUCafOnxoRGYS85Jbwr
+RgtqlC8ZZZeNgwYvV3CJxFQiAbsdfASJ0/PH4JIjnxjgBb6qj2pi8C2Xsp4ymvNjjKM3Bt324ddl
+oZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0e
+HwEDAwECAAkE//////////8=

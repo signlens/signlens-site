@@ -1,0 +1,605 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "proposed",
+        "value": {
+          "by": {
+            "address": "AiLGdNitMjv8n5HMS7HAdV2kaeJZZFd4jdfn5xp1PKrW",
+            "is_self": false,
+            "label": "Vault 0 of multisig 2LW6…hx88",
+            "label_trust": "verified"
+          },
+          "effect": {
+            "type": "authority_change",
+            "value": {
+              "authority": "admin",
+              "new_authority": {
+                "address": "H7PiGqqUaanBovwKgEtreJbKmQe6dbq6VTrw6guy7ZgL",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              },
+              "subject": {
+                "address": "5zpq7DvB6UdFFvpmBPspGPNfUGoBRRCE2HHg5u3gxcsN",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "2QmMUBZYv2Ssm6ED73Gapt8cgn9u1HQbPaJtfYdDDAwc",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": null,
+          "if_missing": false,
+          "owner": {
+            "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+            "is_self": false,
+            "label": "Squads multisig v4",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": null,
+          "if_missing": false,
+          "owner": {
+            "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+            "is_self": false,
+            "label": "Squads multisig v4",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "5000"
+          },
+          "payer": {
+            "address": "39JyWrdbVdRqjzw9yyEjxNtTbTKcTPLdtdCgbz7C7Aq8",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "durable_nonce",
+          "value": {
+            "nonce_account": {
+              "address": "7s7s6saC5LHZoLyBXLM3pCjpWaA7meyQdP8NiH9ktAeC",
+              "is_self": false,
+              "label": null,
+              "label_trust": "fact"
+            }
+          }
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "DRIFT_ADMIN_CHANGE",
+        "instruction": 1,
+        "message": "Proposal step 1: Hands the admin of the whole Drift protocol to an account that is not yours: the admin can add markets, set their oracles and collateral weights, and raise withdrawal limits, over every user's deposits",
+        "severity": "high"
+      },
+      {
+        "code": "DURABLE_NONCE",
+        "instruction": null,
+        "message": "This signature never expires; anyone holding the signed transaction can submit it at any later time until the nonce is advanced",
+        "severity": "high"
+      }
+    ],
+    "raw": {
+      "digest": "040ee7c2d4ddf57174105c4c6624082947df4b57cfccf98abe1bbc958c3076cf",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Multisig",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Vault",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AiLGdNitMjv8n5HMS7HAdV2kaeJZZFd4jdfn5xp1PKrW",
+                "is_self": false,
+                "label": "Vault 0 of multisig 2LW6…hx88",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Transaction account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "2QmMUBZYv2Ssm6ED73Gapt8cgn9u1HQbPaJtfYdDDAwc",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Proposed by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "39JyWrdbVdRqjzw9yyEjxNtTbTKcTPLdtdCgbz7C7Aq8",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "39JyWrdbVdRqjzw9yyEjxNtTbTKcTPLdtdCgbz7C7Aq8",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Executes",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "only once the multisig's approval threshold is met and someone executes it; nothing moves now"
+            }
+          },
+          {
+            "help": null,
+            "label": "Steps",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "1"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 1
+          }
+        },
+        "subtitle": "Squads multisig v4 (verified)",
+        "title": "Propose multisig transaction"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "The account that becomes Drift's admin. The admin can add markets, set their oracles and collateral weights, and raise the limits on withdrawals, over every user's deposits.",
+            "label": "New admin",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "H7PiGqqUaanBovwKgEtreJbKmQe6dbq6VTrw6guy7ZgL",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The account that is Drift's admin until this hands it over; for Drift, a multisig vault.",
+            "label": "Current admin",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AiLGdNitMjv8n5HMS7HAdV2kaeJZZFd4jdfn5xp1PKrW",
+                "is_self": false,
+                "label": "Vault 0 of multisig 2LW6…hx88",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The account that holds Drift's protocol-wide settings, the admin among them.",
+            "label": "Drift state",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "5zpq7DvB6UdFFvpmBPspGPNfUGoBRRCE2HHg5u3gxcsN",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "nested",
+          "value": {
+            "index": 0,
+            "parent": 1
+          }
+        },
+        "subtitle": "Drift Protocol v2 (descriptor reviewed 2026-10-25, upgradeable by 8jj7…BMai)",
+        "title": "Change the protocol admin"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Multisig",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Proposal",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Transaction index",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "7"
+            }
+          },
+          {
+            "help": null,
+            "label": "Content",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "the vault transaction created in instruction 2 of this transaction"
+            }
+          },
+          {
+            "help": null,
+            "label": "Proposed by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "39JyWrdbVdRqjzw9yyEjxNtTbTKcTPLdtdCgbz7C7Aq8",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "39JyWrdbVdRqjzw9yyEjxNtTbTKcTPLdtdCgbz7C7Aq8",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Starts as draft",
+            "trust": "fact",
+            "value": {
+              "type": "bool",
+              "value": false
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 2
+          }
+        },
+        "subtitle": "Squads multisig v4 (verified)",
+        "title": "Create proposal"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Multisig",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Proposal",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Content",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "proposal created in instruction 3 for the vault transaction created in instruction 2, both in this transaction"
+            }
+          },
+          {
+            "help": null,
+            "label": "Member",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "39JyWrdbVdRqjzw9yyEjxNtTbTKcTPLdtdCgbz7C7Aq8",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 3
+          }
+        },
+        "subtitle": "Squads multisig v4 (verified)",
+        "title": "Approve proposal"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Advance durable nonce: Nonce account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "7s7s6saC5LHZoLyBXLM3pCjpWaA7meyQdP8NiH9ktAeC",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Advance durable nonce: Authority",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "39JyWrdbVdRqjzw9yyEjxNtTbTKcTPLdtdCgbz7C7Aq8",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "39JyWrdbVdRqjzw9yyEjxNtTbTKcTPLdtdCgbz7C7Aq8",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "for 2 accounts whose size the descriptor does not give; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "never, until the nonce account is advanced"
+            }
+          },
+          {
+            "help": null,
+            "label": "Nonce account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "7s7s6saC5LHZoLyBXLM3pCjpWaA7meyQdP8NiH9ktAeC",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "3 actions: Propose for AiLG…PKrW: Hand the admin of Drift to H7PiGqqUaanBovwKgEtreJbKmQe6dbq6VTrw6guy7ZgL; Create proposal #7 for the transaction proposed in instruction 2; Approve proposal #7 (the transaction proposed in instruction 2)",
+    "text": "3 actions: Propose for AiLG…PKrW: Hand the admin of Drift to H7PiGqqUaanBovwKgEtreJbKmQe6dbq6VTrw6guy7ZgL; Create proposal #7 for the transaction proposed in instruction 2; Approve proposal #7 (the transaction proposed in instruction 2)\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] Proposal step 1: Hands the admin of the whole Drift protocol to an account that is not yours: the admin can add markets, set their oracles and collateral weights, and raise withdrawal limits, over every user's deposits (instruction 1)\n  [HIGH] This signature never expires; anyone holding the signed transaction can submit it at any later time until the nonce is advanced\n\n== Propose multisig transaction | Squads multisig v4 (verified)\n  Multisig: 2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88\n  Vault: Vault 0 of multisig 2LW6…hx88 (AiLG…PKrW) (verified)\n  Transaction account: 2QmMUBZYv2Ssm6ED73Gapt8cgn9u1HQbPaJtfYdDDAwc\n  Proposed by: Your wallet (39Jy…7Aq8) (verified)\n  Rent paid by: Your wallet (39Jy…7Aq8) (verified)\n  Executes: only once the multisig's approval threshold is met and someone executes it; nothing moves now\n  Steps: 1\n\n==== Step 1: Change the protocol admin | Drift Protocol v2 (descriptor reviewed 2026-10-25, upgradeable by 8jj7…BMai)\n  New admin: H7PiGqqUaanBovwKgEtreJbKmQe6dbq6VTrw6guy7ZgL\n  Current admin: Vault 0 of multisig 2LW6…hx88 (AiLG…PKrW) (verified)\n  Drift state: 5zpq7DvB6UdFFvpmBPspGPNfUGoBRRCE2HHg5u3gxcsN\n\n== Create proposal | Squads multisig v4 (verified)\n  Multisig: 2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88\n  Proposal: J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8\n  Transaction index: 7\n  Content: the vault transaction created in instruction 2 of this transaction\n  Proposed by: Your wallet (39Jy…7Aq8) (verified)\n  Rent paid by: Your wallet (39Jy…7Aq8) (verified)\n  Starts as draft: no\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88\n  Proposal: J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8\n  Content: proposal created in instruction 3 for the vault transaction created in instruction 2, both in this transaction\n  Member: Your wallet (39Jy…7Aq8) (verified)\n\n== Also [collapsed]\n  Advance durable nonce: Nonce account: 7s7s6saC5LHZoLyBXLM3pCjpWaA7meyQdP8NiH9ktAeC\n  Advance durable nonce: Authority: Your wallet (39Jy…7Aq8) (verified)\n\n== Signers\n  Fee payer: Your wallet (39Jy…7Aq8) (verified)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n  Rent deposits: for 2 accounts whose size the descriptor does not give; returned when the accounts are closed\n\n== Validity\n  Expires: never, until the nonce account is advanced\n  Nonce account: 7s7s6saC5LHZoLyBXLM3pCjpWaA7meyQdP8NiH9ktAeC\n\nEffects:\n  - once approved, Vault 0 of multisig 2LW6…hx88 (AiLG…PKrW) (verified) would give the admin authority over 5zpq7DvB6UdFFvpmBPspGPNfUGoBRRCE2HHg5u3gxcsN to H7PiGqqUaanBovwKgEtreJbKmQe6dbq6VTrw6guy7ZgL\n  - create 2QmMUBZYv2Ssm6ED73Gapt8cgn9u1HQbPaJtfYdDDAwc owned by Squads multisig v4 (SQDS…2pCf) (verified)\n  - create J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8 owned by Squads multisig v4 (SQDS…2pCf) (verified)\n  - Your wallet (39Jy…7Aq8) (verified) pays a fee of 0.000005 SOL\n  - valid FOREVER until nonce account 7s7s6saC5LHZoLyBXLM3pCjpWaA7meyQdP8NiH9ktAeC is advanced (durable nonce)\n\nRaw: solana legacy (515 bytes)\n  digest: 040ee7c2d4ddf57174105c4c6624082947df4b57cfccf98abe1bbc958c3076cf\n",
+    "verdict": "warn"
+  }
+}

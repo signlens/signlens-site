@@ -1,0 +1,582 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 8,
+              "id": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+              "symbol": "GOOGLx",
+              "trust": "verified"
+            },
+            "bound": "at_most",
+            "note": null,
+            "units": "985543"
+          },
+          "from": {
+            "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+            "is_self": false,
+            "label": "Raydium CLMM",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "symbol": "USDC",
+              "trust": "verified"
+            },
+            "bound": "at_most",
+            "note": null,
+            "units": "33874114"
+          },
+          "from": {
+            "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+            "is_self": false,
+            "label": "Raydium CLMM",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": null,
+          "if_missing": false,
+          "owner": {
+            "address": "lookup table AcL1…zJkU[2]",
+            "is_self": false,
+            "label": "not read",
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1513840"
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "lookup table AcL1…zJkU[2]",
+            "is_self": false,
+            "label": "not read",
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "2077720"
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+            "is_self": false,
+            "label": "Raydium CLMM",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "52669440"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+            "is_self": false,
+            "label": "Raydium CLMM",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "52669440"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+            "is_self": false,
+            "label": "Raydium CLMM",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "other",
+        "value": {
+          "description": "mints a position NFT, the claim on the deposited liquidity, to the position NFT owner"
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "10180"
+          },
+          "payer": {
+            "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "f26bd6948c7dd5065e270fe8e06a918d374ac18c430e02450689b810924b90af",
+      "format": "solana v0"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "What you put in for liquidity, at most. The pool takes the amounts its current price allows.",
+            "label": "Deposit",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 8,
+                  "id": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+                  "symbol": "GOOGLx",
+                  "trust": "verified"
+                },
+                "bound": "at_most",
+                "note": null,
+                "units": "985543"
+              }
+            }
+          },
+          {
+            "help": "What you put in for liquidity, at most. The pool takes the amounts its current price allows.",
+            "label": "Deposit",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "symbol": "USDC",
+                  "trust": "verified"
+                },
+                "bound": "at_most",
+                "note": null,
+                "units": "33874114"
+              }
+            }
+          },
+          {
+            "help": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them.",
+            "label": "Pool",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "lookup table E3xN…KDe5[197]",
+                "is_self": false,
+                "label": "not read",
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The bottom of the price range the position provides liquidity in, as the pool's tick index rather than a price.",
+            "label": "Lower tick",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "12300"
+            }
+          },
+          {
+            "help": "The top of the price range the position provides liquidity in, as the pool's tick index rather than a price.",
+            "label": "Upper tick",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "12360"
+            }
+          },
+          {
+            "help": "The wallet that will hold the position NFT, and so control the position.",
+            "label": "Position NFT goes to",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The token that proves ownership of the position. Whoever holds it controls the position.",
+            "label": "Position NFT",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "Your account for the pool's first token.",
+            "label": "From account 0",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "3q66dpAzE9aL5KuBXw3YtNbYWHCxHvSbNKGxwzo1Cmdb",
+                "is_self": true,
+                "label": "Your GOOGLx account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "Your account for the pool's second token.",
+            "label": "From account 1",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6GqwZ24evbE2nBr9quXkv3SxeUSvUsUjwzs2nS5WfNtf",
+                "is_self": true,
+                "label": "Your USDC account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The pool's reserve of its first token.",
+            "label": "Pool vault 0",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "lookup table E3xN…KDe5[200]",
+                "is_self": false,
+                "label": "not read",
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The pool's reserve of its second token.",
+            "label": "Pool vault 1",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "lookup table E3xN…KDe5[201]",
+                "is_self": false,
+                "label": "not read",
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 2
+          }
+        },
+        "subtitle": "Raydium CLMM (descriptor reviewed 2026-09-29, upgradeable by FytD…eZQK)",
+        "title": "Add liquidity"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "1000 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "180000"
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Signer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "10180"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "10000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "180"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "1000 micro-lamports per unit × 180000 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "0.00359156 SOL, up to 0.10893044 SOL if the accounts it creates only when missing do not exist yet, plus 1 account whose size the descriptor does not give; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx (verified) and ≤ 33.874114 USDC (verified)",
+    "text": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx (verified) and ≤ 33.874114 USDC (verified)\nOK\n\n== Add liquidity | Raydium CLMM (descriptor reviewed 2026-09-29, upgradeable by FytD…eZQK)\n  Deposit: ≤ 0.00985543 GOOGLx (verified)\n  Deposit: ≤ 33.874114 USDC (verified)\n  Pool: not read (lookup table E3xN…KDe5[197])\n  Lower tick: 12300\n  Upper tick: 12360\n  Position NFT goes to: Your wallet (B1Q4…mxGP) (verified)\n  Position NFT: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n  From account 0: Your GOOGLx account (3q66…Cmdb) (verified)\n  From account 1: Your USDC account (6Gqw…fNtf) (verified)\n  Pool vault 0: not read (lookup table E3xN…KDe5[200])\n  Pool vault 1: not read (lookup table E3xN…KDe5[201])\n\n== Also [collapsed]\n  Compute unit price: 1000 micro-lamports per unit\n  Compute unit limit: 180000\n\n== Signers\n  Fee payer: Your wallet (B1Q4…mxGP) (verified)\n  Signer: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n\n== Fee\n  Total: 0.00001018 SOL\n  Base: 0.00001 SOL\n  Priority: 0.00000018 SOL\n  Priority basis: 1000 micro-lamports per unit × 180000 units requested\n  Rent deposits: 0.00359156 SOL, up to 0.10893044 SOL if the accounts it creates only when missing do not exist yet, plus 1 account whose size the descriptor does not give; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send ≤ 0.00985543 GOOGLx (verified) from Your wallet (B1Q4…mxGP) (verified) to Raydium CLMM (CAMM…rWqK) (verified)\n  - send ≤ 33.874114 USDC (verified) from Your wallet (B1Q4…mxGP) (verified) to Raydium CLMM (CAMM…rWqK) (verified)\n  - create DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk owned by not read (lookup table AcL1…zJkU[2])\n  - create 4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au owned by not read (lookup table AcL1…zJkU[2]), depositing 0.00151384 SOL\n  - create 9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ owned by Raydium CLMM (CAMM…rWqK) (verified), depositing 0.00207772 SOL\n  - create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg owned by Raydium CLMM (CAMM…rWqK) (verified), depositing 0.05266944 SOL unless it already exists\n  - create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg owned by Raydium CLMM (CAMM…rWqK) (verified), depositing 0.05266944 SOL unless it already exists\n  - mints a position NFT, the claim on the deposited liquidity, to the position NFT owner\n  - Your wallet (B1Q4…mxGP) (verified) pays a fee of 0.00001018 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (539 bytes)\n  digest: f26bd6948c7dd5065e270fe8e06a918d374ac18c430e02450689b810924b90af\n",
+    "verdict": "ok"
+  }
+}

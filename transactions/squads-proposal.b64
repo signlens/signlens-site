@@ -1,0 +1,17 @@
+# Solana mainnet transaction, fetched 2026-10-06 via getTransaction(encoding=base64).
+# signature: 4vc91fWzxMeyb6B4ksSsDm1BNtFYz1ce3i6Wj7p8Cw5N3JSyNNzyNxufUX3iFbYcC7B2FjMpPKhVkq3dBHRQkdSX
+# slot: 453953792
+# version: 0
+# size: 596 bytes
+# Squads v4 app flow in one transaction: vault_transaction_create (inner: an SPL token transfer signed by vault 0), proposal_create for it, proposal_approve by the creator.
+AcRHVClZKxJJGOTgq1XwvxvPkwmNFy8264PHX+r8JzlH2m7Ba0SX/oOqVI8gp29o9qeNgStZYWT+
+12fJ0RYG1ACAAQADB9rnhcna/26wvIxvZtyxFfvQdD+PumLB2XEXAJDHajiSHk5mAD6Oanq7XMML
+Vr5Ck4+x6GAOsO6YWWPmAHvnPpjkiaBsh6kTqlJeXGeCeyfpwAu3M1bTcOxtcVkkILsrii5FIN3v
+8QUcfrksuOO+JscEWuf275vkz0Pil1UhY12MAwZGb+UhFzL/7K26csOb57yM5bvF9xJrLEObOkAA
+AAAGgcTOR+IjaLixVV7Ih68JLvx++7Zso/Uvv2jUrJy3qAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAwT1O1Bb9uHFibpR5GFKXzHb+vbdn7cBBV2LyeEQBwiYFBAAFAotxBwAEAAkDAHEC
+AAAAAAAFBQECAAAGxwEw+k6o0OLa0wAAuAAAAAEBAgURGj+7AAoMuZRK2CrML7mUzyO6bn6/J2hH
+EcNEHhFAy7vOh280qGl2nvhrCGPZ5F2UrlmDXKM95SjUGcndOZhFogJDtIsT6eMgnt2ri9MEEP8o
+3xjDQio58Q3da6u9UnIG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqXJdbS/duN2FVD3o
+sg7Y5K2+nSeq8Qio7i4gTYinx5s1AQMEAQQCAAoADAAg0vs7dgAACQAABQUBAwAABhHcPEngHmxP
+nx4AAAAAAAAAAAUDAQADCZAlpIi82Cr4AAA=

@@ -1,0 +1,234 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "100000000"
+          },
+          "from": {
+            "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "5000"
+          },
+          "payer": {
+            "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "LOOKALIKE_ADDRESS",
+        "instruction": null,
+        "message": "The recipient 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j looks like Bob (6Q6w…ni4j) but is a different address: only its first and last characters match",
+        "severity": "high"
+      }
+    ],
+    "raw": {
+      "digest": "e156c38f1c1e3a4e65155ab6927dc8775f06295d13bcf0f20e2190d4b1498d68",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Amount",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "100000000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "From",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "To",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 0
+          }
+        },
+        "subtitle": "System program (verified)",
+        "title": "Transfer"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Send 0.1 SOL to 6Q6w…ni4j",
+    "text": "Send 0.1 SOL to 6Q6w…ni4j\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] The recipient 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j looks like Bob (6Q6w…ni4j) but is a different address: only its first and last characters match\n\n== Transfer | System program (verified)\n  Amount: 0.1 SOL\n  From: Your wallet (BqHR…Tx9A) (verified)\n  To: 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j\n\n== Signers\n  Fee payer: Your wallet (BqHR…Tx9A) (verified)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 0.1 SOL from Your wallet (BqHR…Tx9A) (verified) to 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j\n  - Your wallet (BqHR…Tx9A) (verified) pays a fee of 0.000005 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (150 bytes)\n  digest: e156c38f1c1e3a4e65155ab6927dc8775f06295d13bcf0f20e2190d4b1498d68\n",
+    "verdict": "warn"
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "USDSwr9ApdHk5bvJKMjzff41FfuX8bSxdKcR81vTwcA",
+              "symbol": "USDS",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "30000000"
+          },
+          "from": {
+            "address": "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "to": {
+            "address": "AxZk6RboztNxgYn63HcUCkZ6zoAU84pkAxNu8Tu9cQEp",
+            "is_self": true,
+            "label": "Your USDS account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "AxZk6RboztNxgYn63HcUCkZ6zoAU84pkAxNu8Tu9cQEp",
+            "is_self": true,
+            "label": "Your USDS account",
+            "label_trust": "verified"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1488440"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": "Token program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "23712"
+          },
+          "payer": {
+            "address": "4c7657P5pWszgLFYFFq8dDYPoRg4mJTqXmND9hiMKBc6",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "3e3d548b965f0ecec807729b0339aada69384442d88ed016de4efe0ecac43eee",
+      "format": "solana v0"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "What is borrowed against your deposits.",
+            "label": "Borrow",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "USDSwr9ApdHk5bvJKMjzff41FfuX8bSxdKcR81vTwcA",
+                  "symbol": "USDS",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "30000000"
+              }
+            }
+          },
+          {
+            "help": "The token account that receives the tokens. Check it is yours, unless you mean to pay someone else.",
+            "label": "To account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AxZk6RboztNxgYn63HcUCkZ6zoAU84pkAxNu8Tu9cQEp",
+                "is_self": true,
+                "label": "Your USDS account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "Your account with marginfi: what you have deposited and what you owe.",
+            "label": "marginfi account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BpaF2P4GahAXQ1TPVWJgW5Bx4j8mk8ENQTtjE6S13NX9",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The pool for one token in the group. Deposits go in, loans come out.",
+            "label": "Bank",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "FDsf8sj6SoV313qrA91yms3u5b3P4hBxEPvanVs8LtJV",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The marginfi market the account belongs to.",
+            "label": "Group",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Additional accounts",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "19, not named by this descriptor"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 3
+          }
+        },
+        "subtitle": "marginfi (Project 0) (descriptor reviewed 2026-10-07, upgradeable by J3oB…FD47)",
+        "title": "Borrow"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "351345"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "53258 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AxZk6RboztNxgYn63HcUCkZ6zoAU84pkAxNu8Tu9cQEp",
+                "is_self": true,
+                "label": "Your USDS account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4c7657P5pWszgLFYFFq8dDYPoRg4mJTqXmND9hiMKBc6",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "USDSwr9ApdHk5bvJKMjzff41FfuX8bSxdKcR81vTwcA",
+                "is_self": false,
+                "label": "USDS mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4c7657P5pWszgLFYFFq8dDYPoRg4mJTqXmND9hiMKBc6",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "is_self": false,
+                "label": "Token program",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The account whose state is checked.",
+            "label": "Guard: Checked account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4c7657P5pWszgLFYFFq8dDYPoRg4mJTqXmND9hiMKBc6",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "What must hold, as the program encodes it. The transaction fails otherwise. A guard the site added, not a transfer.",
+            "label": "Guard: Conditions",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "[Lamports(value: 49181434, operator: GreaterThanOrEqual), KnownOwner(value: System, operator: Equal), DataLength(value: 0, operator: Equal)]"
+            }
+          },
+          {
+            "help": "How much the check logs. It changes nothing else.",
+            "label": "Guard: Logging",
+            "trust": "verified",
+            "value": {
+              "type": "text",
+              "value": "plain-text message on failure only"
+            }
+          },
+          {
+            "help": "The account whose state is checked.",
+            "label": "Guard: Checked account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AxZk6RboztNxgYn63HcUCkZ6zoAU84pkAxNu8Tu9cQEp",
+                "is_self": true,
+                "label": "Your USDS account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "What must hold, as the program encodes it. The transaction fails otherwise. A guard the site added, not a transfer.",
+            "label": "Guard: Conditions",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "[Amount(value: 27000000, operator: GreaterThanOrEqual), Delegate(value: none, operator: Equal), DelegatedAmount(value: 0, operator: LessThanOrEqual), TokenAccountOwnerIsDerived]"
+            }
+          },
+          {
+            "help": "How much the check logs. It changes nothing else.",
+            "label": "Guard: Logging",
+            "trust": "verified",
+            "value": {
+              "type": "text",
+              "value": "plain-text message on failure only"
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4c7657P5pWszgLFYFFq8dDYPoRg4mJTqXmND9hiMKBc6",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "23712"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "18712"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "53258 micro-lamports per unit × 351345 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "up to 0.00148844 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Borrow 30 USDS (verified) from a marginfi bank to Your USDS account (AxZk…cQEp) (verified)",
+    "text": "Borrow 30 USDS (verified) from a marginfi bank to Your USDS account (AxZk…cQEp) (verified)\nOK\n\n== Borrow | marginfi (Project 0) (descriptor reviewed 2026-10-07, upgradeable by J3oB…FD47)\n  Borrow: 30 USDS (verified)\n  To account: Your USDS account (AxZk…cQEp) (verified)\n  marginfi account: BpaF2P4GahAXQ1TPVWJgW5Bx4j8mk8ENQTtjE6S13NX9\n  Bank: FDsf8sj6SoV313qrA91yms3u5b3P4hBxEPvanVs8LtJV\n  Group: 4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8\n  Additional accounts: 19, not named by this descriptor\n\n== Also [collapsed]\n  Compute unit limit: 351345\n  Compute unit price: 53258 micro-lamports per unit\n  Create token account if missing: Token account: Your USDS account (AxZk…cQEp) (verified)\n  Create token account if missing: Owner: Your wallet (4c76…KBc6) (verified)\n  Create token account if missing: Mint: USDS mint (USDS…TwcA) (verified)\n  Create token account if missing: Rent paid by: Your wallet (4c76…KBc6) (verified)\n  Create token account if missing: Token program: Token program (Toke…Q5DA) (verified)\n  Guard: Checked account: Your wallet (4c76…KBc6) (verified)\n  Guard: Conditions: [Lamports(value: 49181434, operator: GreaterThanOrEqual), KnownOwner(value: System, operator: Equal), DataLength(value: 0, operator: Equal)]\n  Guard: Logging: plain-text message on failure only (verified)\n  Guard: Checked account: Your USDS account (AxZk…cQEp) (verified)\n  Guard: Conditions: [Amount(value: 27000000, operator: GreaterThanOrEqual), Delegate(value: none, operator: Equal), DelegatedAmount(value: 0, operator: LessThanOrEqual), TokenAccountOwnerIsDerived]\n  Guard: Logging: plain-text message on failure only (verified)\n\n== Signers\n  Fee payer: Your wallet (4c76…KBc6) (verified)\n\n== Fee\n  Total: 0.000023712 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000018712 SOL\n  Priority basis: 53258 micro-lamports per unit × 351345 units requested\n  Rent deposits: up to 0.00148844 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - receive 30 USDS (verified) into Your USDS account (AxZk…cQEp) (verified) from 3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki\n  - create Your USDS account (AxZk…cQEp) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL unless it already exists\n  - Your wallet (4c76…KBc6) (verified) pays a fee of 0.000023712 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (557 bytes)\n  digest: 3e3d548b965f0ecec807729b0339aada69384442d88ed016de4efe0ecac43eee\n",
+    "verdict": "ok"
+  }
+}

@@ -1,0 +1,806 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1922511449"
+          },
+          "from": {
+            "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+            "is_self": true,
+            "label": "Your SOL account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "So11111111111111111111111111111111111111112",
+              "symbol": "SOL",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1922511449"
+          },
+          "from": {
+            "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+            "is_self": true,
+            "label": "Your SOL account",
+            "label_trust": "verified"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1488440"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": "Token program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "other",
+        "value": {
+          "description": "the Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts"
+        }
+      },
+      {
+        "type": "close",
+        "value": {
+          "account": {
+            "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+            "is_self": true,
+            "label": "Your token account",
+            "label_trust": "verified"
+          },
+          "destination": {
+            "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "15183"
+          },
+          "payer": {
+            "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "1d71890cbff9e383175ee39fa6f67accb1221ca8821fc2f7f4342fba76f33888",
+      "format": "solana v0"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Amount",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "1922511449"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "From",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "To",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 3
+          }
+        },
+        "subtitle": "System program (verified)",
+        "title": "Transfer"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "Long bets the price rises, short that it falls.",
+            "label": "Side",
+            "trust": "verified",
+            "value": {
+              "type": "text",
+              "value": "long"
+            }
+          },
+          {
+            "help": "The order's notional value in USD, leverage included.",
+            "label": "Size",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "10457.567852 USD"
+            }
+          },
+          {
+            "help": "What you put up to back the trade.",
+            "label": "Collateral",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "So11111111111111111111111111111111111111112",
+                  "symbol": "SOL",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "1922511449"
+              }
+            }
+          },
+          {
+            "help": "The price at which the order executes, in USD.",
+            "label": "Trigger price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "117.5 USD"
+            }
+          },
+          {
+            "help": "When yes, the order fires once the price is above the trigger. Otherwise once it is below.",
+            "label": "Triggers when price is above",
+            "trust": "fact",
+            "value": {
+              "type": "bool",
+              "value": false
+            }
+          },
+          {
+            "help": "Your leveraged trade: the market, the side and the size.",
+            "label": "Position",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6Q4C9SGTpXfvrx61avYbsDaHhoX19RUrJKb9szZDKQLo",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The pool's holding of the token being traded.",
+            "label": "Market custody",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The token account the tokens leave. It should be one of yours.",
+            "label": "From account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "When the request was made. It expires if the keeper is late.",
+            "label": "Request time",
+            "trust": "fact",
+            "value": {
+              "type": "timestamp",
+              "value": 1791359787
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 8
+          }
+        },
+        "subtitle": "Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)",
+        "title": "Place limit order"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "181158"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "1008 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "So11111111111111111111111111111111111111112",
+                "is_self": false,
+                "label": "SOL mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "is_self": false,
+                "label": "Token program",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Sync wrapped SOL: Account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Ed25519 signature check: Signer 1",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in instruction 6's data"
+            }
+          },
+          {
+            "help": null,
+            "label": "Ed25519 signature check: Message 1",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "50 bytes in instruction 6"
+            }
+          },
+          {
+            "help": "The price data as the oracle signed it, in bytes.",
+            "label": "Oracle price update: Signed message",
+            "trust": "fact",
+            "value": {
+              "type": "bytes",
+              "value": "b9011a82ec22315597a85cb2c85ed563d75777a86e107caee54d0e2cf7e3542c9ef320bac88e1f02c2e1137b2eafe8e77bab48b3f77d42452fa5a9a57c9cfd7b9bd3b70280efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c320075d3c793c0e901743b5d060003010600000004002d1a93c20200000004f8ff05ea6e2800000000000c01c0e901743b5d0600"
+            }
+          },
+          {
+            "help": "Which instruction of this transaction carries the signature proving the price data is genuine.",
+            "label": "Oracle price update: Ed25519 instruction",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "5"
+            }
+          },
+          {
+            "help": "Which signature in the oracle's message is checked.",
+            "label": "Oracle price update: Signature index",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "0"
+            }
+          },
+          {
+            "help": "When yes, the whole transaction fails if the posted price is too old.",
+            "label": "Oracle price update: Fails the transaction on a stale price",
+            "trust": "fact",
+            "value": {
+              "type": "bool",
+              "value": false
+            }
+          },
+          {
+            "help": "The account submitting the price update, usually the site's own keeper rather than you.",
+            "label": "Oracle price update: Posted by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "Where the oracle's update fee goes.",
+            "label": "Oracle price update: Pyth Lazer treasury",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Oracle price update: Additional accounts",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "1, not named by this descriptor"
+            }
+          },
+          {
+            "help": "The oracle account that combines several price sources into one price.",
+            "label": "Oracle price update: Aggregated feed",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "One of the price sources feeding the aggregate.",
+            "label": "Oracle price update: Pyth Lazer feed",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "One of the price sources feeding the aggregate.",
+            "label": "Oracle price update: Chainlink feed",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "One of the price sources feeding the aggregate.",
+            "label": "Oracle price update: RedStone feed",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The account submitting the price refresh, usually the site's own keeper rather than you.",
+            "label": "Oracle price update: Refreshed by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Close token account: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+                "is_self": true,
+                "label": "Your token account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Close token account: SOL goes to",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Close token account: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AoLtF39MuvBN51nYsatNyXQmub3sHzEGpV1JffyByfvM",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Signer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Signer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "15183"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "15000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "183"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "1008 micro-lamports per unit × 181158 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "up to 0.00148844 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "2 actions: Send 1.922511449 SOL to 4apM…SU6K; Place a long Jupiter Perps limit order of 10457.567852 USD with 1.922511449 SOL (verified) collateral, triggered below 117.5 USD",
+    "text": "2 actions: Send 1.922511449 SOL to 4apM…SU6K; Place a long Jupiter Perps limit order of 10457.567852 USD with 1.922511449 SOL (verified) collateral, triggered below 117.5 USD\nOK\n\n== Transfer | System program (verified)\n  Amount: 1.922511449 SOL\n  From: Your wallet (AoLt…yfvM) (verified)\n  To: Your SOL account (4apM…SU6K) (verified)\n\n== Place limit order | Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)\n  Side: long (verified)\n  Size: 10457.567852 USD\n  Collateral: 1.922511449 SOL (verified)\n  Trigger price: 117.5 USD\n  Triggers when price is above: no\n  Position: 6Q4C9SGTpXfvrx61avYbsDaHhoX19RUrJKb9szZDKQLo\n  Market custody: 7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz\n  From account: Your SOL account (4apM…SU6K) (verified)\n  Request time: unix time 1791359787\n\n== Also [collapsed]\n  Compute unit limit: 181158\n  Compute unit price: 1008 micro-lamports per unit\n  Create token account if missing: Token account: Your SOL account (4apM…SU6K) (verified)\n  Create token account if missing: Owner: Your wallet (AoLt…yfvM) (verified)\n  Create token account if missing: Mint: SOL mint (So11…1112) (verified)\n  Create token account if missing: Rent paid by: Your wallet (AoLt…yfvM) (verified)\n  Create token account if missing: Token program: Token program (Toke…Q5DA) (verified)\n  Sync wrapped SOL: Account: Your SOL account (4apM…SU6K) (verified)\n  Ed25519 signature check: Signer 1: in instruction 6's data\n  Ed25519 signature check: Message 1: 50 bytes in instruction 6\n  Oracle price update: Signed message: 0xb9011a82ec22315597a85cb2c85ed563d75777a86e107caee54d0e2cf7e3542c9ef320bac88e1f02c2e1137b2eafe8e77bab48b3f77d42452fa5a9a57c9cfd7b9bd3b70280efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c320075d3c793c0e901743b5d060003010600000004002d1a93c20200000004f8ff05ea6e2800000000000c01c0e901743b5d0600\n  Oracle price update: Ed25519 instruction: 5\n  Oracle price update: Signature index: 0\n  Oracle price update: Fails the transaction on a stale price: no\n  Oracle price update: Posted by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Oracle price update: Pyth Lazer treasury: Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak\n  Oracle price update: Additional accounts: 1, not named by this descriptor\n  Oracle price update: Aggregated feed: FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh\n  Oracle price update: Pyth Lazer feed: A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe\n  Oracle price update: Chainlink feed: FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78\n  Oracle price update: RedStone feed: 9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3\n  Oracle price update: Refreshed by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Close token account: Token account: Your token account (4apM…SU6K) (verified)\n  Close token account: SOL goes to: Your wallet (AoLt…yfvM) (verified)\n  Close token account: Owner: Your wallet (AoLt…yfvM) (verified)\n\n== Signers\n  Fee payer: Your wallet (AoLt…yfvM) (verified)\n  Signer: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Signer: perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx\n\n== Fee\n  Total: 0.000015183 SOL\n  Base: 0.000015 SOL\n  Priority: 0.000000183 SOL\n  Priority basis: 1008 micro-lamports per unit × 181158 units requested\n  Rent deposits: up to 0.00148844 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - transfer 1.922511449 SOL from Your wallet (AoLt…yfvM) (verified) to Your SOL account (4apM…SU6K) (verified)\n  - send 1.922511449 SOL (verified) from Your wallet (AoLt…yfvM) (verified) to GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH\n  - create Your SOL account (4apM…SU6K) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL unless it already exists\n  - the Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts\n  - close Your token account (4apM…SU6K) (verified) and send its balance to Your wallet (AoLt…yfvM) (verified)\n  - Your wallet (AoLt…yfvM) (verified) pays a fee of 0.000015183 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (880 bytes)\n  digest: 1d71890cbff9e383175ee39fa6f67accb1221ca8821fc2f7f4342fba76f33888\n",
+    "verdict": "ok"
+  }
+}

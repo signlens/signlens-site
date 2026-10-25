@@ -1,0 +1,506 @@
+/* signlens.dev: the extension's colours, one column, no script. */
+:root {
+    color-scheme: light dark;
+    --ground: #ffffff;
+    --raised: #f3f4f6;
+    --line: #d6d9df;
+    --text: #14213d;
+    --muted: #5b6475;
+    --accent: #0e7490;
+    --fill: #0e7490;
+    --on-fill: #ffffff;
+    --ok: #1a7f4b;
+    --warning: #a15c00;
+    --blocked: #b3261e;
+    --measure: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ground: #14181f;
+        --raised: #1e242e;
+        --line: #343c4a;
+        --text: #e8eaee;
+        --muted: #9aa3b2;
+        --accent: #00d4ff;
+        --fill: #00d4ff;
+        --on-fill: #14181f;
+        --ok: #5fd39a;
+        --warning: #fcb94a;
+        --blocked: #ff8a80;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--text);
+    font:
+        1.0625rem / 1.6 system-ui,
+        -apple-system,
+        'Segoe UI',
+        Roboto,
+        'Helvetica Neue',
+        Arial,
+        sans-serif;
+}
+
+a {
+    color: var(--accent);
+    text-underline-offset: 0.15em;
+}
+
+a:focus-visible,
+summary:focus-visible,
+pre:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+code,
+pre {
+    font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+    font-size: 0.9em;
+}
+
+/* Addresses and signatures are one long word. */
+code {
+    overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: clamp(1.9rem, 4vw + 1rem, 2.75rem);
+    margin: 0.4em 0 0.4em;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 2.2em 0 0.6em;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin: 1.6em 0 0.4em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    left: 1rem;
+    top: 1rem;
+    background: var(--ground);
+    padding: 0.5rem;
+}
+
+header.site {
+    border-bottom: 1px solid var(--line);
+}
+
+header.site .bar {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text);
+    text-decoration: none;
+}
+
+header.site nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    margin-left: auto;
+}
+
+header.site nav a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.25rem 0;
+}
+
+header.site nav a:hover,
+header.site nav a[aria-current='page'] {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+/* On a phone the menu sits under the name, in two short rows. */
+@media (max-width: 40rem) {
+    header.site .bar {
+        padding: 0.6rem 1rem 0.5rem;
+        row-gap: 0.25rem;
+    }
+
+    header.site nav {
+        margin-left: 0;
+        gap: 0 1rem;
+        font-size: 0.95rem;
+    }
+
+    header.site nav a {
+        padding: 0.15rem 0;
+    }
+}
+
+main {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 0 1rem 4rem;
+}
+
+main.wide {
+    max-width: 64rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.muted,
+.crumbs,
+.dated {
+    color: var(--muted);
+}
+
+.dated {
+    font-size: 0.9rem;
+    margin-top: 0;
+}
+
+.next {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+}
+
+.crumbs {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--fill);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button.primary {
+    background: var(--fill);
+    color: var(--on-fill);
+}
+
+.hero {
+    display: grid;
+    gap: 1rem 3rem;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.prose {
+    max-width: var(--measure);
+    margin: 0 auto;
+}
+
+@media (min-width: 52rem) {
+    .hero {
+        grid-template-columns: 1.1fr 1fr;
+    }
+}
+
+.hero figure {
+    margin: 0;
+    text-align: center;
+}
+
+.hero img,
+.shot img {
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+}
+
+.note {
+    border-left: 4px solid var(--accent);
+    background: var(--raised);
+    padding: 0.75rem 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+/* On a phone a table of long cells reads row by row: each cell under its
+   column's name, the header row kept for screen readers only. */
+@media (max-width: 40rem) {
+    .table.stack table,
+    .table.stack tbody,
+    .table.stack tr,
+    .table.stack td {
+        display: block;
+    }
+
+    .table.stack thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+    }
+
+    .table.stack tr {
+        padding: 0.6rem 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .table.stack td {
+        padding: 0.15rem 0;
+        border: 0;
+    }
+
+    .table.stack td:first-child {
+        font-weight: 700;
+    }
+
+    .table.stack td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--muted);
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.95rem;
+}
+
+th,
+td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--line);
+}
+
+th {
+    background: var(--raised);
+}
+
+ul.cards {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+ul.cards li {
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+}
+
+ul.cards li h3 {
+    margin-top: 0;
+}
+
+/* An explanation, as the window shows it. */
+figure.explanation {
+    margin: 1.25rem 0 2rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+figure.explanation .head {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    padding: 0.85rem 1rem;
+    border-top: 4px solid var(--verdict);
+    background: var(--raised);
+}
+
+figure.explanation.verdict-ok {
+    --verdict: var(--ok);
+}
+
+figure.explanation.verdict-warn {
+    --verdict: var(--warning);
+}
+
+figure.explanation.verdict-block {
+    --verdict: var(--blocked);
+}
+
+.badge {
+    flex: none;
+    font-weight: 800;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--verdict);
+}
+
+figure.explanation .summary {
+    margin: 0;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+figure.explanation ul {
+    margin: 0;
+    padding: 0.5rem 1rem 0.5rem 2.25rem;
+    overflow-wrap: anywhere;
+}
+
+ul.findings li {
+    margin: 0.25rem 0;
+}
+
+.severity {
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+/* As in the extension's window: a high finding is red like a critical one. */
+.finding.critical .severity,
+.finding.high .severity {
+    color: var(--blocked);
+}
+
+.finding.warning .severity {
+    color: var(--warning);
+}
+
+/* A marker or a short address with its meaning on hover. */
+abbr.term {
+    text-decoration: underline dotted;
+    text-underline-offset: 0.2em;
+    cursor: help;
+}
+
+.finding.info .severity {
+    color: var(--muted);
+}
+
+figure.explanation .label {
+    margin: 0.5rem 1rem 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.address.self b {
+    color: var(--ok);
+}
+
+details.full {
+    margin: 0.5rem 1rem;
+}
+
+details.full summary {
+    cursor: pointer;
+    color: var(--accent);
+}
+
+details.full pre {
+    overflow-x: auto;
+    background: var(--raised);
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
+}
+
+figure.explanation figcaption {
+    border-top: 1px solid var(--line);
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.sources {
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+dl.facts dt {
+    font-weight: 700;
+    margin-top: 0.75rem;
+}
+
+dl.facts dd {
+    margin: 0;
+}
+
+footer.site {
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+footer.site .bar {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 2.5rem;
+}
+
+footer.site nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.25rem;
+    margin-bottom: 0.75rem;
+}

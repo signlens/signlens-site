@@ -1,0 +1,21 @@
+# Solana mainnet transaction, fetched 2026-10-07 via getTransaction(encoding=base64).
+# signature: 23j7veWUcnjAUP1CPC6easZk4kaL5ead7256G7edffLnDowFJ2qpDu3SbSaNLPjuQPnBr5Jfma3mFi4fuDKSQVxv
+# slot: 454139501
+# Read for the fee payer, whose wallet the stake is for: Jito's staking page sends its SOL to a
+# one-time key that deposits it, and the JitoSOL comes back to the fee payer (checked 2026-10-25).
+# optional accounts: sol_deposit_authority absent
+AjReMxF81BJWVqV1eouCkPy5u3tgMQS++LtB8OnAA0XdRaIR0M/UW4XNNQ2k48tM
+RxREpj88Pmmeo69qEW0eFwPnu6mehh99fKkIKrcclM8lWMHGaQ+Jna59+IaxKjGk
+wDT0Cl2WZ4yt+zw0V7MFjJCAoSuP27ee7K+Ia/o0X/UDAgAGDp/uS3brae7eUfuy
+ttFXQxlO9zqi78PogsqqsP/ZnQrRsQTegECeINb3tCnwTpQgb+UodQgnkM8lKfFx
+2LD9PUJHPs9udf65PwOthjOfT2TNnY+IL4Nt4sQ6qjVZ+HYGVHaPKKOjsvtS81pY
+p+WLWVxEx3jtASz3Gqb5wjZwDGQniPH/o6Lf5he9xONXMlGjIuP8roHlpFc5DmR1
+HACkZeKep2j+32RMiq6bjiGIrdBrxVD79xbIIrnOY8d4PZUuH/zRQemDLK8QrZF0
+lcoPJxtbKTzUcCfqc3AH7UDrOaC9BIo+CMO0lb4X9FQn2JvsW4DH4mlcGGTXZ0Pb
+Ob7TRtYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFTlniTAUaihSnse
+l5fw4Szfp0kCFmUxlaalEqbxZmArjJclj04kifG7PRApFI4NgwtaE5na/xCEBI57
+2Nvp+FkDBkZv5SEXMv/srbpyw5vnvIzlu8X3EmssQ5s6QAAAAAaBTtTK9ooXRnL9
+rIYDGmPoTqFe+h1EtyKT9tvbABZQBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1
+hX7/AKleMeUhyk3mjpoF3bGaEol7Zgp08OsSjz5I/fy5OUOogwYIAgABDAIAAACA
+lpgAAAAAAAoGAAIABggNAQEMCgcJBQECAwIGCA0JDoCWmAAAAAAACwAFAoAaBgAL
+AAkDoIYBAAAAAAAIAgAEDAIAAACNDwAAAAAAAA==

@@ -1,0 +1,325 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "So11111111111111111111111111111111111111112",
+              "symbol": "SOL",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "4221430000"
+          },
+          "from": {
+            "address": "4DioqMR2GAwvaVkkvVvqkVdzTcV8rHQiSXLjoXgtmUpL",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "is_self": false,
+            "label": "Jupiter Aggregator v6",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+              "symbol": "JUP",
+              "trust": "verified"
+            },
+            "bound": "at_least",
+            "note": null,
+            "units": "1455299686"
+          },
+          "from": {
+            "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "is_self": false,
+            "label": "Jupiter Aggregator v6",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "4DioqMR2GAwvaVkkvVvqkVdzTcV8rHQiSXLjoXgtmUpL",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "5000"
+          },
+          "payer": {
+            "address": "4DioqMR2GAwvaVkkvVvqkVdzTcV8rHQiSXLjoXgtmUpL",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "07994c833082be704b110cd51819fa3cd790da34efe93f3c7bcabae7f83507ae",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "What leaves your account.",
+            "label": "Send",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "So11111111111111111111111111111111111111112",
+                  "symbol": "SOL",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "4221430000"
+              }
+            }
+          },
+          {
+            "help": "What comes back to you. Shown as at least when the program only guarantees a floor and fails below it.",
+            "label": "Receive",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "symbol": "JUP",
+                  "trust": "verified"
+                },
+                "bound": "at_least",
+                "note": null,
+                "units": "1455299686"
+              }
+            }
+          },
+          {
+            "help": "What the site expected when it built the transaction. The Receive floor is this less the slippage allowance.",
+            "label": "Quoted",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "symbol": "JUP",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "1462612750"
+              }
+            }
+          },
+          {
+            "help": "How far the executed price may move against you before the swap fails, as a percentage of the quote.",
+            "label": "Max slippage",
+            "trust": "fact",
+            "value": {
+              "type": "basis_points",
+              "value": 50
+            }
+          },
+          {
+            "help": "The path the swap takes: which markets, and what share of the amount goes through each.",
+            "label": "Route",
+            "trust": "fact",
+            "value": {
+              "type": "list",
+              "value": [
+                {
+                  "type": "text",
+                  "value": "100% via Scorch (leg 0 to 1)"
+                }
+              ]
+            }
+          },
+          {
+            "help": "The token account the tokens leave. It should be one of yours.",
+            "label": "From account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AP3Kmbd6aFsZy7o9bXDF6c4s4eT4YPsx8pJbQr4gB9n3",
+                "is_self": true,
+                "label": "Your SOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The token account that receives the tokens. Check it is yours, unless you mean to pay someone else.",
+            "label": "To account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "31BnVCExjq81DemcyZteyHGzSg5jBChZ6568yPQxKNG6",
+                "is_self": true,
+                "label": "Your JUP account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Additional accounts",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "18, not named by this descriptor"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 0
+          }
+        },
+        "subtitle": "Jupiter Aggregator v6 (descriptor reviewed 2026-10-18, upgradeable by CvQZ…tipQ)",
+        "title": "Swap"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4DioqMR2GAwvaVkkvVvqkVdzTcV8rHQiSXLjoXgtmUpL",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Swap 4.22143 SOL (verified) for ≥ 1,455.299686 JUP (verified) via Jupiter",
+    "text": "Swap 4.22143 SOL (verified) for ≥ 1,455.299686 JUP (verified) via Jupiter\nOK\n\n== Swap | Jupiter Aggregator v6 (descriptor reviewed 2026-10-18, upgradeable by CvQZ…tipQ)\n  Send: 4.22143 SOL (verified)\n  Receive: ≥ 1,455.299686 JUP (verified)\n  Quoted: 1,462.61275 JUP (verified)\n  Max slippage: 0.50%\n  Route:\n    - 100% via Scorch (leg 0 to 1)\n  From account: Your SOL account (AP3K…B9n3) (verified)\n  To account: Your JUP account (31Bn…KNG6) (verified)\n  Additional accounts: 18, not named by this descriptor\n\n== Signers\n  Fee payer: Your wallet (4Dio…mUpL) (verified)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 4.22143 SOL (verified) from Your wallet (4Dio…mUpL) (verified) to Jupiter Aggregator v6 (JUP6…TaV4) (verified)\n  - receive ≥ 1,455.299686 JUP (verified) into Your wallet (4Dio…mUpL) (verified) from Jupiter Aggregator v6 (JUP6…TaV4) (verified)\n  - Your wallet (4Dio…mUpL) (verified) pays a fee of 0.000005 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (726 bytes)\n  digest: 07994c833082be704b110cd51819fa3cd790da34efe93f3c7bcabae7f83507ae\n",
+    "verdict": "ok"
+  }
+}

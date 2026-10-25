@@ -1,0 +1,420 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "12000"
+          },
+          "payer": {
+            "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "PROPOSAL_CONTENT_NOT_SHOWN",
+        "instruction": 2,
+        "message": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does",
+        "severity": "high"
+      },
+      {
+        "code": "PROPOSAL_CONTENT_NOT_SHOWN",
+        "instruction": 3,
+        "message": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does",
+        "severity": "high"
+      },
+      {
+        "code": "PROPOSAL_CONTENT_NOT_SHOWN",
+        "instruction": 4,
+        "message": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does",
+        "severity": "high"
+      }
+    ],
+    "raw": {
+      "digest": "3b6740be3740ec2b03ef6d6463058ebcf11855ad0b55da435ba5f194c5c3e711",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Multisig",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Proposal",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Content",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "on chain, not in these bytes"
+            }
+          },
+          {
+            "help": null,
+            "label": "Member",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 2
+          }
+        },
+        "subtitle": "Squads multisig v4 (verified)",
+        "title": "Approve proposal"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Multisig",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Proposal",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Content",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "on chain, not in these bytes"
+            }
+          },
+          {
+            "help": null,
+            "label": "Member",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 3
+          }
+        },
+        "subtitle": "Squads multisig v4 (verified)",
+        "title": "Approve proposal"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Multisig",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Proposal",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Content",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "on chain, not in these bytes"
+            }
+          },
+          {
+            "help": null,
+            "label": "Member",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 4
+          }
+        },
+        "subtitle": "Squads multisig v4 (verified)",
+        "title": "Approve proposal"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "100000 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "70000"
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "12000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "7000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "100000 micro-lamports per unit × 70000 units requested"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "3 actions: Approve proposal AZEy…gXM7; Approve proposal 6yju…U9d9; Approve proposal Gyks…hWap",
+    "text": "3 actions: Approve proposal AZEy…gXM7; Approve proposal 6yju…U9d9; Approve proposal Gyks…hWap\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does (instruction 2)\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does (instruction 3)\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does (instruction 4)\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY) (verified)\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: 6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY) (verified)\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY) (verified)\n\n== Also [collapsed]\n  Compute unit price: 100000 micro-lamports per unit\n  Compute unit limit: 70000\n\n== Signers\n  Fee payer: Your wallet (By8Z…h5wY) (verified)\n\n== Fee\n  Total: 0.000012 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000007 SOL\n  Priority basis: 100000 micro-lamports per unit × 70000 units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Your wallet (By8Z…h5wY) (verified) pays a fee of 0.000012 SOL\n  - valid for about a minute (recent blockhash)\n\nWould read, to explain more:\n  - AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7: the proposal: its index names the transaction it runs\n  - 6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9: the proposal: its index names the transaction it runs\n  - Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap: the proposal: its index names the transaction it runs\n\nRaw: solana legacy (326 bytes)\n  digest: 3b6740be3740ec2b03ef6d6463058ebcf11855ad0b55da435ba5f194c5c3e711\n",
+    "verdict": "warn",
+    "wanted_accounts": [
+      {
+        "address": "AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7",
+        "reason": "the proposal: its index names the transaction it runs"
+      },
+      {
+        "address": "6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9",
+        "reason": "the proposal: its index names the transaction it runs"
+      },
+      {
+        "address": "Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap",
+        "reason": "the proposal: its index names the transaction it runs"
+      }
+    ]
+  }
+}

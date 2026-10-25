@@ -1,0 +1,645 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "10000000"
+          },
+          "from": {
+            "address": "BmJaEmaEURBDpj91GUTvJcpKy2MAu8ZtRFRPaMpEuuax",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "10000000"
+          },
+          "from": {
+            "address": "Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "to": {
+            "address": "BgKUXdS29YcHCFrPm5M8oLHiTzZaMDjsebggjoaQ6KFL",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+              "symbol": "JitoSOL",
+              "trust": "verified"
+            },
+            "bound": "unknown",
+            "note": "the pool's SOL-to-token ratio at execution, less its deposit fee",
+            "units": "0"
+          },
+          "from": {
+            "address": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+            "is_self": false,
+            "label": "SPL Stake Pool",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "5o7VnTKJ6cRMg5GsfMVXACX2KYF5b2K7ojyaefTA2GKm",
+            "is_self": true,
+            "label": "Your JitoSOL account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "5o7VnTKJ6cRMg5GsfMVXACX2KYF5b2K7ojyaefTA2GKm",
+            "is_self": true,
+            "label": "Your JitoSOL account",
+            "label_trust": "verified"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1488440"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": "Token program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "3981"
+          },
+          "from": {
+            "address": "BmJaEmaEURBDpj91GUTvJcpKy2MAu8ZtRFRPaMpEuuax",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "ADaUMid9yfUytqMBgopwjb2DTLSokTSzL1zt6iGPaS49",
+            "is_self": false,
+            "label": "Jito tip account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "50000"
+          },
+          "payer": {
+            "address": "BmJaEmaEURBDpj91GUTvJcpKy2MAu8ZtRFRPaMpEuuax",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "DEPOSIT_PAYER_NOT_YOU",
+        "instruction": 2,
+        "message": "The SOL is deposited by another signer of this transaction, not by your wallet",
+        "severity": "info"
+      }
+    ],
+    "raw": {
+      "digest": "7550d052706b6b87c1645d8e680d9187db1258a43bf86f5b4b22d01119ee1b2e",
+      "format": "solana legacy"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Amount",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "10000000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "From",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BmJaEmaEURBDpj91GUTvJcpKy2MAu8ZtRFRPaMpEuuax",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "To",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 0
+          }
+        },
+        "subtitle": "System program (verified)",
+        "title": "Transfer"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "SOL put into the pool. You get pool tokens in return.",
+            "label": "Deposit",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "10000000"
+              }
+            }
+          },
+          {
+            "help": "The pool that stakes the SOL with validators on your behalf.",
+            "label": "Stake pool",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Jito4APyf642JPZPx3hGc6WWJ8zPKtRbRs4P815Awbb",
+                "is_self": false,
+                "label": "JitoSOL stake pool",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The token that represents your share of the staked SOL.",
+            "label": "Pool token",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+                "is_self": false,
+                "label": "JitoSOL mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The token account that receives the tokens. Check it is yours, unless you mean to pay someone else.",
+            "label": "To account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "5o7VnTKJ6cRMg5GsfMVXACX2KYF5b2K7ojyaefTA2GKm",
+                "is_self": true,
+                "label": "Your JitoSOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "Where the pool manager's fee goes, in pool tokens.",
+            "label": "Fee account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "8yoigZfzZ1nNaadumY9uPVD118225UYHTDpmjpr2nrSa",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "Where the referrer's share of the fee goes.",
+            "label": "Referrer fee account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "5o7VnTKJ6cRMg5GsfMVXACX2KYF5b2K7ojyaefTA2GKm",
+                "is_self": true,
+                "label": "Your JitoSOL account",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 2
+          }
+        },
+        "subtitle": "SPL Stake Pool (descriptor reviewed 2026-10-25, upgradeable by dPpF…guDH)",
+        "title": "Stake"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Create token account if missing: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "5o7VnTKJ6cRMg5GsfMVXACX2KYF5b2K7ojyaefTA2GKm",
+                "is_self": true,
+                "label": "Your JitoSOL account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BmJaEmaEURBDpj91GUTvJcpKy2MAu8ZtRFRPaMpEuuax",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+                "is_self": false,
+                "label": "JitoSOL mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BmJaEmaEURBDpj91GUTvJcpKy2MAu8ZtRFRPaMpEuuax",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "is_self": false,
+                "label": "Token program",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "400000"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "100000 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Jito tip: Amount",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "3981"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Jito tip: From",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BmJaEmaEURBDpj91GUTvJcpKy2MAu8ZtRFRPaMpEuuax",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Jito tip: To",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "ADaUMid9yfUytqMBgopwjb2DTLSokTSzL1zt6iGPaS49",
+                "is_self": false,
+                "label": "Jito tip account",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BmJaEmaEURBDpj91GUTvJcpKy2MAu8ZtRFRPaMpEuuax",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Signer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "50000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "10000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "40000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "100000 micro-lamports per unit × 400000 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "up to 0.00148844 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "2 actions: Send 0.01 SOL to Cv1U…Qxsj; Stake 0.01 SOL in a stake pool for its pool token, at the pool's ratio at execution",
+    "text": "2 actions: Send 0.01 SOL to Cv1U…Qxsj; Stake 0.01 SOL in a stake pool for its pool token, at the pool's ratio at execution\nOK\n\nFindings:\n  [INFO] The SOL is deposited by another signer of this transaction, not by your wallet (instruction 2)\n\n== Transfer | System program (verified)\n  Amount: 0.01 SOL\n  From: Your wallet (BmJa…uuax) (verified)\n  To: Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n\n== Stake | SPL Stake Pool (descriptor reviewed 2026-10-25, upgradeable by dPpF…guDH)\n  Deposit: 0.01 SOL\n  Stake pool: JitoSOL stake pool (Jito…Awbb) (verified)\n  Pool token: JitoSOL mint (J1to…GCPn) (verified)\n  To account: Your JitoSOL account (5o7V…2GKm) (verified)\n  Fee account: 8yoigZfzZ1nNaadumY9uPVD118225UYHTDpmjpr2nrSa\n  Referrer fee account: Your JitoSOL account (5o7V…2GKm) (verified)\n\n== Also [collapsed]\n  Create token account if missing: Token account: Your JitoSOL account (5o7V…2GKm) (verified)\n  Create token account if missing: Owner: Your wallet (BmJa…uuax) (verified)\n  Create token account if missing: Mint: JitoSOL mint (J1to…GCPn) (verified)\n  Create token account if missing: Rent paid by: Your wallet (BmJa…uuax) (verified)\n  Create token account if missing: Token program: Token program (Toke…Q5DA) (verified)\n  Compute unit limit: 400000\n  Compute unit price: 100000 micro-lamports per unit\n  Jito tip: Amount: 0.000003981 SOL\n  Jito tip: From: Your wallet (BmJa…uuax) (verified)\n  Jito tip: To: Jito tip account (ADaU…aS49) (verified)\n\n== Signers\n  Fee payer: Your wallet (BmJa…uuax) (verified)\n  Signer: Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n\n== Fee\n  Total: 0.00005 SOL\n  Base: 0.00001 SOL\n  Priority: 0.00004 SOL\n  Priority basis: 100000 micro-lamports per unit × 400000 units requested\n  Rent deposits: up to 0.00148844 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 0.01 SOL from Your wallet (BmJa…uuax) (verified) to Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n  - transfer 0.01 SOL from Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj to BgKUXdS29YcHCFrPm5M8oLHiTzZaMDjsebggjoaQ6KFL\n  - receive unknown amount of JitoSOL (verified) (the pool's SOL-to-token ratio at execution, less its deposit fee) into Your JitoSOL account (5o7V…2GKm) (verified) from SPL Stake Pool (SPoo…kuHy) (verified)\n  - create Your JitoSOL account (5o7V…2GKm) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL unless it already exists\n  - send 0.000003981 SOL from Your wallet (BmJa…uuax) (verified) to Jito tip account (ADaU…aS49) (verified)\n  - Your wallet (BmJa…uuax) (verified) pays a fee of 0.00005 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (571 bytes)\n  digest: 7550d052706b6b87c1645d8e680d9187db1258a43bf86f5b4b22d01119ee1b2e\n",
+    "verdict": "ok"
+  }
+}

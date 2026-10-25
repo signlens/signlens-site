@@ -1,0 +1,796 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "symbol": "USDC",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "594305139"
+          },
+          "from": {
+            "address": "jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS",
+            "is_self": false,
+            "label": "Jupiter Lend Flashloan",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "88J9RizAW81UReGy9F8t19pJn5UuLdTd3syszX4mRTAZ",
+            "is_self": true,
+            "label": "Your USDC account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "other",
+        "value": {
+          "description": "the program checks through the instructions sysvar that a payback follows in the same transaction; the transaction fails otherwise"
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "symbol": "USDC",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "594305139"
+          },
+          "from": {
+            "address": "FefcRMBBtggrDBLjZNkGY2V4aHgEFfA9CDBNVzhhKWtL",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "is_self": false,
+            "label": "Jupiter Aggregator v6",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+              "symbol": "sUSDai",
+              "trust": "verified"
+            },
+            "bound": "at_least",
+            "note": null,
+            "units": "531300593"
+          },
+          "from": {
+            "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "is_self": false,
+            "label": "Jupiter Aggregator v6",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "FefcRMBBtggrDBLjZNkGY2V4aHgEFfA9CDBNVzhhKWtL",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+              "symbol": "sUSDai",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "531302808"
+          },
+          "from": {
+            "address": "FefcRMBBtggrDBLjZNkGY2V4aHgEFfA9CDBNVzhhKWtL",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "GzjLtjeaaFBerWrpJx8VXwpXcdzkUFm9zsXgaedsbXsW",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "symbol": "USDC",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "594305139"
+          },
+          "from": {
+            "address": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "to": {
+            "address": "88J9RizAW81UReGy9F8t19pJn5UuLdTd3syszX4mRTAZ",
+            "is_self": true,
+            "label": "Your USDC account",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 6,
+              "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "symbol": "USDC",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "594305139"
+          },
+          "from": {
+            "address": "FefcRMBBtggrDBLjZNkGY2V4aHgEFfA9CDBNVzhhKWtL",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS",
+            "is_self": false,
+            "label": "Jupiter Lend Flashloan",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "8V9d7MaoWHjwGMTMCgpJABdgjEdN5k4c4duGSiqtx8Wz",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "939800"
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+            "is_self": false,
+            "label": "Jupiter Lend Borrow",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "47755"
+          },
+          "payer": {
+            "address": "FefcRMBBtggrDBLjZNkGY2V4aHgEFfA9CDBNVzhhKWtL",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [],
+    "raw": {
+      "digest": "8180645656414f4b2e1eac1c9ca0d8398879759c89485c5dd52bf15b1003331c",
+      "format": "solana v0"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "Borrowed for the length of this transaction only. It must be repaid before the transaction ends.",
+            "label": "Borrow",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "symbol": "USDC",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "594305139"
+              }
+            }
+          },
+          {
+            "help": "The token account that receives the tokens. Check it is yours, unless you mean to pay someone else.",
+            "label": "To account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "88J9RizAW81UReGy9F8t19pJn5UuLdTd3syszX4mRTAZ",
+                "is_self": true,
+                "label": "Your USDC account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The lending vault the loan comes from.",
+            "label": "Vault",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 2
+          }
+        },
+        "subtitle": "Jupiter Lend Flashloan (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)",
+        "title": "Flash loan"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "What leaves your account.",
+            "label": "Send",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "symbol": "USDC",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "594305139"
+              }
+            }
+          },
+          {
+            "help": "What comes back to you. Shown as at least when the program only guarantees a floor and fails below it.",
+            "label": "Receive",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+                  "symbol": "sUSDai",
+                  "trust": "verified"
+                },
+                "bound": "at_least",
+                "note": null,
+                "units": "531300593"
+              }
+            }
+          },
+          {
+            "help": "What the site expected when it built the transaction. The Receive floor is this less the slippage allowance.",
+            "label": "Quoted",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+                  "symbol": "sUSDai",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "531832426"
+              }
+            }
+          },
+          {
+            "help": "How far the executed price may move against you before the swap fails, as a percentage of the quote.",
+            "label": "Max slippage",
+            "trust": "fact",
+            "value": {
+              "type": "basis_points",
+              "value": 10
+            }
+          },
+          {
+            "help": "The path the swap takes: which markets, and what share of the amount goes through each.",
+            "label": "Route",
+            "trust": "fact",
+            "value": {
+              "type": "list",
+              "value": [
+                {
+                  "type": "text",
+                  "value": "100% via JupiterLendDexSwap (leg 0 to 1)"
+                }
+              ]
+            }
+          },
+          {
+            "help": "The token account the tokens leave. It should be one of yours.",
+            "label": "From account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "88J9RizAW81UReGy9F8t19pJn5UuLdTd3syszX4mRTAZ",
+                "is_self": true,
+                "label": "Your USDC account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The token account that receives the tokens. Check it is yours, unless you mean to pay someone else.",
+            "label": "To account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "DYYqd1vPKpok9uCphc2ex2t8GYYmo6RzVDZ6y7pKW6EX",
+                "is_self": true,
+                "label": "Your sUSDai account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Additional accounts",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "28, not named by this descriptor"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 3
+          }
+        },
+        "subtitle": "Jupiter Aggregator v6 (descriptor reviewed 2026-10-18, upgradeable by CvQZ…tipQ)",
+        "title": "Swap"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "What is added to the collateral backing the loan.",
+            "label": "Collateral deposited",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+                  "symbol": "sUSDai",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "531302808"
+              }
+            }
+          },
+          {
+            "help": "What is borrowed against the collateral.",
+            "label": "Borrowed",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "symbol": "USDC",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "594305139"
+              }
+            }
+          },
+          {
+            "help": "Your borrowing position: the collateral held and the debt owed.",
+            "label": "Position",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "H5Q8Rsd6t1c3xdVQT8HJBp2cikymNvbBNCRAUKDPfvZA",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The lending vault: one collateral token, one debt token.",
+            "label": "Vault",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "FtbFRbo78cfH1bRXQQtEuj2GFFQjnwyYhvgQyyRzSvD7",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The token held as collateral.",
+            "label": "Collateral token",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+                "is_self": false,
+                "label": "sUSDai mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The token the loan is in.",
+            "label": "Debt token",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "is_self": false,
+                "label": "USDC mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Additional accounts",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "4, not named by this descriptor"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 5
+          }
+        },
+        "subtitle": "Jupiter Lend Borrow (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)",
+        "title": "Borrow"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "The flash loan and its fee, returned.",
+            "label": "Repay",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                  "symbol": "USDC",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "594305139"
+              }
+            }
+          },
+          {
+            "help": "The token account the tokens leave. It should be one of yours.",
+            "label": "From account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "88J9RizAW81UReGy9F8t19pJn5UuLdTd3syszX4mRTAZ",
+                "is_self": true,
+                "label": "Your USDC account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The lending vault the loan comes from.",
+            "label": "Vault",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 6
+          }
+        },
+        "subtitle": "Jupiter Lend Flashloan (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)",
+        "title": "Repay flash loan"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "427548"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "100000 micro-lamports per unit"
+            }
+          },
+          {
+            "help": "A record the vault keeps for liquidations at a price level. Created once.",
+            "label": "Open bin array: Tick record",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "8V9d7MaoWHjwGMTMCgpJABdgjEdN5k4c4duGSiqtx8Wz",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "A price level the vault uses to group positions by how borrowed they are. Created once.",
+            "label": "Open bin array: Tick",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "-198"
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "FefcRMBBtggrDBLjZNkGY2V4aHgEFfA9CDBNVzhhKWtL",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "47755"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "42755"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "100000 micro-lamports per unit × 427548 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "0.0009398 SOL; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "4 actions: Flash-borrow 594.305139 USDC (verified) from Jupiter Lend, to be repaid in this transaction; Swap 594.305139 USDC (verified) for ≥ 531.300593 sUSDai (verified) via Jupiter; Deposit 531.302808 sUSDai (verified) of collateral and borrow 594.305139 USDC (verified) in a Jupiter Lend Borrow position; and 1 more",
+    "text": "4 actions: Flash-borrow 594.305139 USDC (verified) from Jupiter Lend, to be repaid in this transaction; Swap 594.305139 USDC (verified) for ≥ 531.300593 sUSDai (verified) via Jupiter; Deposit 531.302808 sUSDai (verified) of collateral and borrow 594.305139 USDC (verified) in a Jupiter Lend Borrow position; and 1 more\nOK\n\n== Flash loan | Jupiter Lend Flashloan (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Borrow: 594.305139 USDC (verified)\n  To account: Your USDC account (88J9…RTAZ) (verified)\n  Vault: BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n\n== Swap | Jupiter Aggregator v6 (descriptor reviewed 2026-10-18, upgradeable by CvQZ…tipQ)\n  Send: 594.305139 USDC (verified)\n  Receive: ≥ 531.300593 sUSDai (verified)\n  Quoted: 531.832426 sUSDai (verified)\n  Max slippage: 0.10%\n  Route:\n    - 100% via JupiterLendDexSwap (leg 0 to 1)\n  From account: Your USDC account (88J9…RTAZ) (verified)\n  To account: Your sUSDai account (DYYq…W6EX) (verified)\n  Additional accounts: 28, not named by this descriptor\n\n== Borrow | Jupiter Lend Borrow (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Collateral deposited: 531.302808 sUSDai (verified)\n  Borrowed: 594.305139 USDC (verified)\n  Position: H5Q8Rsd6t1c3xdVQT8HJBp2cikymNvbBNCRAUKDPfvZA\n  Vault: FtbFRbo78cfH1bRXQQtEuj2GFFQjnwyYhvgQyyRzSvD7\n  Collateral token: sUSDai mint (sUSD…AKYE) (verified)\n  Debt token: USDC mint (EPjF…Dt1v) (verified)\n  Additional accounts: 4, not named by this descriptor\n\n== Repay flash loan | Jupiter Lend Flashloan (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Repay: 594.305139 USDC (verified)\n  From account: Your USDC account (88J9…RTAZ) (verified)\n  Vault: BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n\n== Also [collapsed]\n  Compute unit limit: 427548\n  Compute unit price: 100000 micro-lamports per unit\n  Open bin array: Tick record: 8V9d7MaoWHjwGMTMCgpJABdgjEdN5k4c4duGSiqtx8Wz\n  Open bin array: Tick: -198\n\n== Signers\n  Fee payer: Your wallet (Fefc…KWtL) (verified)\n\n== Fee\n  Total: 0.000047755 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000042755 SOL\n  Priority basis: 100000 micro-lamports per unit × 427548 units requested\n  Rent deposits: 0.0009398 SOL; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - receive 594.305139 USDC (verified) into Your USDC account (88J9…RTAZ) (verified) from Jupiter Lend Flashloan (jupg…N6XS) (verified)\n  - the program checks through the instructions sysvar that a payback follows in the same transaction; the transaction fails otherwise\n  - send 594.305139 USDC (verified) from Your wallet (Fefc…KWtL) (verified) to Jupiter Aggregator v6 (JUP6…TaV4) (verified)\n  - receive ≥ 531.300593 sUSDai (verified) into Your wallet (Fefc…KWtL) (verified) from Jupiter Aggregator v6 (JUP6…TaV4) (verified)\n  - send 531.302808 sUSDai (verified) from Your wallet (Fefc…KWtL) (verified) to GzjLtjeaaFBerWrpJx8VXwpXcdzkUFm9zsXgaedsbXsW\n  - receive 594.305139 USDC (verified) into Your USDC account (88J9…RTAZ) (verified) from BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n  - send 594.305139 USDC (verified) from Your wallet (Fefc…KWtL) (verified) to Jupiter Lend Flashloan (jupg…N6XS) (verified)\n  - create 8V9d7MaoWHjwGMTMCgpJABdgjEdN5k4c4duGSiqtx8Wz owned by Jupiter Lend Borrow (jupr…Bdzi) (verified), depositing 0.0009398 SOL\n  - Your wallet (Fefc…KWtL) (verified) pays a fee of 0.000047755 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (865 bytes)\n  digest: 8180645656414f4b2e1eac1c9ca0d8398879759c89485c5dd52bf15b1003331c\n",
+    "verdict": "ok"
+  }
+}

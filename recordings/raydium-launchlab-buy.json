@@ -1,0 +1,558 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+              "symbol": "BP",
+              "trust": "verified"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "739178712"
+          },
+          "from": {
+            "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+            "is_self": false,
+            "label": "Raydium LaunchLab",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "transfer",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": null,
+              "id": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+              "symbol": null,
+              "trust": "fact"
+            },
+            "bound": "unknown",
+            "note": "at least 1 raw units before a transfer fee the signer cannot know",
+            "units": "0"
+          },
+          "from": {
+            "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+            "is_self": false,
+            "label": "Raydium LaunchLab",
+            "label_trust": "verified"
+          },
+          "to": {
+            "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          }
+        }
+      },
+      {
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact"
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "1513840"
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "is_self": false,
+            "label": "Token-2022 program",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "155000"
+          },
+          "payer": {
+            "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "NO_MINIMUM_OUTPUT",
+        "instruction": 3,
+        "message": "The trade accepts almost any output: the minimum is one base unit or nothing",
+        "severity": "warning"
+      },
+      {
+        "code": "DESTINATION_NOT_VERIFIED",
+        "instruction": 3,
+        "message": "The destination token account is not one of your accounts for a verified token; the signer cannot prove who owns it",
+        "severity": "info"
+      }
+    ],
+    "raw": {
+      "digest": "2509e8eea4687f80b70634b563ddb0dfe09aea87419abc75a5082b1348782b1f",
+      "format": "solana v0"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": "What you pay, in the quote token.",
+            "label": "Pay",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+                  "symbol": "BP",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "739178712"
+              }
+            }
+          },
+          {
+            "help": "What comes back to you. Shown as at least when the program only guarantees a floor and fails below it.",
+            "label": "Receive",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": null,
+                  "id": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                  "symbol": null,
+                  "trust": "fact"
+                },
+                "bound": "at_least",
+                "note": "before any transfer fee",
+                "units": "1"
+              }
+            }
+          },
+          {
+            "help": "The launch pool the token trades on before it graduates.",
+            "label": "Pool",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "DnoJNeKrVJY42tEep66VL77EqmE19QNkC5ownGV4fhtC",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The token being launched.",
+            "label": "Token",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "The token the launched token is priced in, usually SOL.",
+            "label": "Quote token",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+                "is_self": false,
+                "label": "BP mint",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "Your account for the launched token.",
+            "label": "Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": "Your account for the quote token, usually SOL.",
+            "label": "Quote account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BYzPgXCRCy6w2jFMn4Ly5w4S1UXxPadA74kyVLwpvjTu",
+                "is_self": true,
+                "label": "Your BP account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The pool's reserve of the launched token.",
+            "label": "Pool token vault",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "A6C4Lt2mKB3B5mMjT54xZNMT8kcwtKdeAwsNhnD9K88d",
+                "is_self": false,
+                "label": "Raydium LaunchLab pool vault for the launched token",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The pool's reserve of the quote token.",
+            "label": "Pool quote vault",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "JAFM2G8GcqMD8opArWthg8yWkm3sbVgZaD4DgwWyhhQD",
+                "is_self": false,
+                "label": "Raydium LaunchLab pool vault for the quote token",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The program's own account that signs for the pool's vaults. Not a person.",
+            "label": "Vault authority",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh",
+                "is_self": false,
+                "label": "Raydium LaunchLab vault authority",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": "The launch platform's configuration account. It sets the fees.",
+            "label": "Platform",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Additional accounts",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "3, not named by this descriptor"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 3
+          }
+        },
+        "subtitle": "Raydium LaunchLab (descriptor reviewed 2026-10-02, upgradeable by FytD…eZQK)",
+        "title": "Buy"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "150000"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "1000000 micro-lamports per unit"
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token account",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Owner",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Rent paid by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Create token account if missing: Token program",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                "is_self": false,
+                "label": "Token-2022 program",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "155000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "150000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "1000000 micro-lamports per unit × 150000 units requested"
+            }
+          },
+          {
+            "help": null,
+            "label": "Rent deposits",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "up to 0.00151384 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Buy ≥ 1 raw units of an unverified token (before any transfer fee) (BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf) for 0.739178712 BP (verified) via Raydium LaunchLab",
+    "text": "Buy ≥ 1 raw units of an unverified token (before any transfer fee) (BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf) for 0.739178712 BP (verified) via Raydium LaunchLab\nWARNING: review the findings before approving\n\nFindings:\n  [WARNING] The trade accepts almost any output: the minimum is one base unit or nothing (instruction 3)\n  [INFO] The destination token account is not one of your accounts for a verified token; the signer cannot prove who owns it (instruction 3)\n\n== Buy | Raydium LaunchLab (descriptor reviewed 2026-10-02, upgradeable by FytD…eZQK)\n  Pay: 0.739178712 BP (verified)\n  Receive: ≥ 1 raw units of an unverified token (before any transfer fee) (BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf)\n  Pool: DnoJNeKrVJY42tEep66VL77EqmE19QNkC5ownGV4fhtC\n  Token: BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf\n  Quote token: BP mint (BPxx…jPCy) (verified)\n  Token account: 137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H\n  Quote account: Your BP account (BYzP…vjTu) (verified)\n  Pool token vault: Raydium LaunchLab pool vault for the launched token (A6C4…K88d) (verified)\n  Pool quote vault: Raydium LaunchLab pool vault for the quote token (JAFM…hhQD) (verified)\n  Vault authority: Raydium LaunchLab vault authority (WLHv…JVVh) (verified)\n  Platform: 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt\n  Additional accounts: 3, not named by this descriptor\n\n== Also [collapsed]\n  Compute unit limit: 150000\n  Compute unit price: 1000000 micro-lamports per unit\n  Create token account if missing: Token account: 137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H\n  Create token account if missing: Owner: Your wallet (8FPT…1Eg6) (verified)\n  Create token account if missing: Mint: BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf\n  Create token account if missing: Rent paid by: Your wallet (8FPT…1Eg6) (verified)\n  Create token account if missing: Token program: Token-2022 program (Toke…xuEb) (verified)\n\n== Signers\n  Fee payer: Your wallet (8FPT…1Eg6) (verified)\n\n== Fee\n  Total: 0.000155 SOL\n  Base: 0.000005 SOL\n  Priority: 0.00015 SOL\n  Priority basis: 1000000 micro-lamports per unit × 150000 units requested\n  Rent deposits: up to 0.00151384 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 0.739178712 BP (verified) from Your wallet (8FPT…1Eg6) (verified) to Raydium LaunchLab (LanM…J3uj) (verified)\n  - transfer unknown amount of an unverified token (at least 1 raw units before a transfer fee the signer cannot know) (BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf) from Raydium LaunchLab (LanM…J3uj) (verified) to 137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H\n  - create 137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H owned by Token-2022 program (Toke…xuEb) (verified), depositing 0.00151384 SOL unless it already exists\n  - Your wallet (8FPT…1Eg6) (verified) pays a fee of 0.000155 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (762 bytes)\n  digest: 2509e8eea4687f80b70634b563ddb0dfe09aea87419abc75a5082b1348782b1f\n",
+    "verdict": "warn"
+  }
+}

@@ -1,0 +1,10 @@
+# Synthetic transaction, hand-built (no network): 0.1 SOL from the fee payer to
+# 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j, which shares its first and last four
+# characters with "Bob" (6Q6wVYukhaZ3wAFzZjNWmuY3zeoykvuQRbs1X2Bvni4j) and is a
+# different address: an address-poisoning lookalike. One signature (zero bytes).
+# version: legacy
+# contact: Bob <6Q6wVYukhaZ3wAFzZjNWmuY3zeoykvuQRbs1X2Bvni4j>
+AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAEDoPNSg/gB3f2Qk4kW/vfGYT2/sMTPySWftlVhtuDXJcVQNYBATQIHPZDYwJH8
+LsHJL4zE5VC9osc6dVKZB1jxZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAgIAAQwCAAAAAOH1BQAAAAA=
