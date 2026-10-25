@@ -91,8 +91,10 @@ cloudflareinsights` shows whether the beacon is being added.
 The window and popup images in `static/images/` are the extension's own
 screenshots (`npm run screenshots` in its checkout, `docs/images/`), taken
 at twice the pixel density so that they stay sharp on high-density
-screens: `deviceScaleFactor: 2` in its test harness's browser context for
-that run.
+screens (`deviceScaleFactor: 2` in its test harness's browser context for
+that run), and kept as lossless WebP: the same pixels in about a third of
+the PNG's size (sharp's `webp({ lossless: true })`; `cwebp -lossless`
+does the same).
 
 The icons are the extension's drawing: `static/icon.svg` as it is;
 `static/favicon.ico`, for whatever asks for `/favicon.ico` instead of

@@ -55,7 +55,7 @@ export function homePage(): Page {
 <div class="actions"><a class="button primary" href="/install">Install for Chrome or Firefox</a><a class="button" href="/examples/">See real examples</a></div>
 <p class="muted">Beta, version ${VERSION}. The extension is open source. <a href="/privacy">The explanation is computed on SignLens's server</a> for now.</p>
 </div>
-<figure><picture><source media="(prefers-color-scheme: dark)" srcset="/images/deposit-dark.png"><img src="/images/deposit-light.png" width="440" height="575" alt="The SignLens window on a deposit: OK, Deposit 4,635.28675 USDC (verified) into Kamino Lend as collateral; what it does, from your wallet to Kamino Lend, the fee and how long it is valid; and Reject and Continue to Phantom"></picture></figure>
+<figure><picture><source media="(prefers-color-scheme: dark)" srcset="/images/deposit-dark.webp"><img src="/images/deposit-light.webp" width="440" height="575" alt="The SignLens window on a deposit: OK, Deposit 4,635.28675 USDC (verified) into Kamino Lend as collateral; what it does, from your wallet to Kamino Lend, the fee and how long it is valid; and Reject and Continue to Phantom"></picture></figure>
 </section>
 <div class="prose">
 <h2>More than a balance preview</h2>

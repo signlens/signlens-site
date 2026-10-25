@@ -79,7 +79,7 @@ ${sources([['SlowMist: wallet owner permissions altered (2025)', 'https://slowmi
 <h2>What SignLens shows</h2>
 <p>A high finding, "This signature never expires", and "Valid FOREVER" in what the transaction does, with the nonce account. A real transfer on a durable nonce:</p>
 ${shown('durable-nonce-transfer')}
-<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/window-dark.png"><img src="/images/window-light.png" width="440" height="575" alt="The SignLens window on a USDC transfer on a durable nonce: a warning that the signature never expires, what the transaction does, the simulated outcome, and Reject and Continue to Phantom"></picture></p>
+<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/window-dark.webp"><img src="/images/window-light.webp" width="440" height="575" alt="The SignLens window on a USDC transfer on a durable nonce: a warning that the signature never expires, what the transaction does, the simulated outcome, and Reject and Continue to Phantom"></picture></p>
 <h2>What to do</h2>
 <p>Sign a durable-nonce transaction only when you meant to sign something to be sent later, and know who will hold it.</p>
 ${sources([

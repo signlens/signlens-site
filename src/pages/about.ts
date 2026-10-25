@@ -13,7 +13,7 @@ export function howItWorksPage(): Page {
 <li><b>The window opens before your wallet does.</b> The verdict and a one-line summary at the top, the findings, what the transaction does to you as a list, each instruction with its fields, and the engine's full text.</li>
 <li><b>You decide.</b> Reject, and the dapp is told you refused. Continue, and the exact bytes SignLens explained go to your wallet, which asks you as usual. A page that changes its transaction afterwards changes nothing.</li>
 </ol>
-<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/popup-dark.png"><img src="/images/popup-light.png" width="360" height="392" alt="The SignLens popup: the API ready, and three requests, a warning passed on, an OK swap passed on, and a blocked swap rejected"></picture></p>
+<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/popup-dark.webp"><img src="/images/popup-light.webp" width="360" height="392" alt="The SignLens popup: the API ready, and three requests, a warning passed on, an OK swap passed on, and a blocked swap rejected"></picture></p>
 <h2 id="verdict">The verdict</h2>
 <ul>
 <li><b>OK</b>: nothing beyond notes.</li>

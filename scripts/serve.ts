@@ -10,6 +10,8 @@ const TYPES: Record<string, string> = {
     '.html': 'text/html; charset=utf-8',
     '.css': 'text/css',
     '.png': 'image/png',
+    '.webp': 'image/webp',
+    '.ico': 'image/x-icon',
     '.svg': 'image/svg+xml',
     '.txt': 'text/plain; charset=utf-8',
     '.xml': 'application/xml',
