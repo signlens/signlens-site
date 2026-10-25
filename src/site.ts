@@ -7,7 +7,7 @@ export const REPOSITORY = 'https://github.com/signlens/signlens-extension';
 export const RELEASES = `${REPOSITORY}/releases`;
 export const SITE_REPOSITORY = 'https://github.com/signlens/signlens-site';
 /** The extension's current release. */
-export const VERSION = '0.1.0';
+export const VERSION = '0.2.0';
 export const SECURITY_EMAIL = 'security@signlens.dev';
 /** Explorer link for a transaction signature. */
 export function explorer(signature: string): string {
