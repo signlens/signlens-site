@@ -75,7 +75,7 @@ export function homePage(): Page {
 <ul>
 <li><b>Not a wallet.</b> It holds no keys and signs nothing. Your wallet still asks you for every signature, as it did before.</li>
 <li><b>Not a guarantee.</b> OK means SignLens read every instruction and found nothing to warn about, not that a trade is a good one or a token worth holding. It can be wrong, and the strip under each explanation is where to say so.</li>
-<li><b>Not a guess.</b> What it cannot read, it says it cannot read, and a program it does not know blocks the request. A simulation is shown as the claim of the Solana node that ran it, not as fact.</li>
+<li><b>Not a guess.</b> What it cannot read, it says it cannot read, and a program it does not know blocks the request. A simulation, or an account it reads, is shown as the claim of the Solana node that gave it, not as fact.</li>
 <li><b>Not offline, in this beta.</b> The explanation is computed on SignLens's server, which sees the transaction; <a href="/privacy">the privacy page</a> says what it keeps.</li>
 <li><b>Not on every chain yet.</b> SignLens explains Solana mainnet today and is built to take on other chains; Ethereum is next. It runs in Chrome, Brave, Edge and Firefox on a computer.</li>
 </ul>
