@@ -190,7 +190,11 @@ function caption(tx: TransactionFile, recording: Recording): Html {
     const origin = tx.signature
         ? html`Mainnet transaction <a href="${explorer(tx.signature)}"><code>${short(tx.signature)}</code></a>${tx.slot === null ? '' : html`, slot ${group(String(tx.slot))}`}`
         : html`A constructed transaction, built to show this case; it was never sent`;
-    return html`${origin}. Explained for <code>${short(tx.signer)}</code> as the signer, by ${recording.engine}, on ${recording.recorded}.`;
+    const read =
+        tx.accounts.length === 0
+            ? ''
+            : html`, with the ${tx.accounts.length === 1 ? 'account' : `${tx.accounts.length} accounts`} the explanation asked for, as an RPC returned them on ${tx.accountsRead}`;
+    return html`${origin}. Explained for <code>${short(tx.signer)}</code> as the signer, by ${recording.engine}, on ${recording.recorded}${read}.`;
 }
 
 /** The card for one transaction, as the window shows it. */

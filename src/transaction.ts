@@ -1,12 +1,21 @@
 // A transaction file: `#` header lines (the signature, the slot, the signer
-// SignLens explains it for, the addresses its lookup tables load, contacts),
-// then the wire bytes in base64.
+// SignLens explains it for, the addresses its lookup tables load, contacts,
+// accounts an RPC returned), then the wire bytes in base64.
 import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 
 export interface Contact {
     name: string;
     key: string;
+}
+
+/** An account as an RPC returned it, for an explanation that names it. */
+export interface AccountData {
+    address: string;
+    owner: string;
+    slot: number;
+    /** Base64. */
+    data: string;
 }
 
 export interface TransactionFile {
@@ -21,6 +30,10 @@ export interface TransactionFile {
     loadedWritable: string[];
     loadedReadonly: string[];
     contacts: Contact[];
+    /** Accounts the explanation names, as an RPC returned them (`# account:` lines), as the extension sends them. */
+    accounts: AccountData[];
+    /** When they were read (`# accounts read: YYYY-MM-DD`); required with any account. */
+    accountsRead: string | null;
     /** The wire bytes, base64. */
     base64: string;
     /** SHA-256 of the message bytes, as an explanation's `raw.digest` gives it. */
@@ -86,6 +99,19 @@ export function readTransaction(path: string, slug: string): TransactionFile {
             if (!match?.[1] || !match[2]) throw new Error(`${path}: a contact line is "# contact: Name <key>"`);
             return { name: match[1], key: match[2] };
         });
+    const accounts = lines
+        .filter((l) => l.startsWith('# account:'))
+        .map((l) => {
+            const [address, owner, slot, data] = l.slice('# account:'.length).trim().split(/\s+/);
+            if (!address || !owner || !slot || !data || !/^\d+$/.test(slot)) {
+                throw new Error(`${path}: an account line is "# account: <address> <owner> <slot> <base64 data>"`);
+            }
+            return { address, owner, slot: Number(slot), data };
+        });
+    const accountsRead = header(lines, 'accounts read');
+    if (accounts.length > 0 && !/^\d{4}-\d{2}-\d{2}$/.test(accountsRead ?? '')) {
+        throw new Error(`${path}: accounts need "# accounts read: YYYY-MM-DD"`);
+    }
     return {
         slug,
         signature,
@@ -95,6 +121,8 @@ export function readTransaction(path: string, slug: string): TransactionFile {
         loadedWritable: list('loaded-writable'),
         loadedReadonly: list('loaded-readonly'),
         contacts,
+        accounts,
+        accountsRead,
         base64,
         digest: createHash('sha256').update(message).digest('hex'),
     };

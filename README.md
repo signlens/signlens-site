@@ -44,8 +44,12 @@ Every explanation on the site is what the SignLens engine answered for
 that transaction, recorded and committed. A transaction file's header
 says whose transaction it is to SignLens: `# signer: <key>` when the user
 is not the fee payer, `# contact: Name <key>` for each address-book entry,
-and the addresses its lookup tables load (`# loaded-writable:`,
-`# loaded-readonly:`).
+the addresses its lookup tables load (`# loaded-writable:`,
+`# loaded-readonly:`), and, for an explanation that names accounts to
+read, those accounts as an RPC returned them, one `# account: <address>
+<owner> <slot> <base64 data>` line each with a `# accounts read:
+YYYY-MM-DD` line, which the recording sends as the extension does and
+the card's caption mentions.
 
 To add one: put the transaction under `transactions/<slug>.b64`, show it
 on a page with `shown('<slug>')`, and record it. Record against an API

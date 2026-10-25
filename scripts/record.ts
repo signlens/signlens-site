@@ -29,6 +29,8 @@ for (const slug of slugs) {
         loaded_writable: tx.loadedWritable,
         loaded_readonly: tx.loadedReadonly,
         contacts: tx.contacts.map((c) => ({ name: c.name, address: c.key })),
+        // As the extension asks the second time, with the accounts it read.
+        ...(tx.accounts.length > 0 ? { accounts: tx.accounts } : {}),
         render: true,
     };
     const response = await fetch(`${api}/v1/explain`, {
