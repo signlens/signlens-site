@@ -6,6 +6,7 @@ import { REPOSITORY, SECURITY_EMAIL } from '../site.ts';
 export function howItWorksPage(): Page {
     const body = html`<h1>How SignLens works</h1>
 <p class="lead">SignLens sits between a dapp and your wallet. Dapps see it as one more wallet to connect, through <a href="https://github.com/anza-xyz/wallet-standard">the standard</a> they use to find wallets in the browser, but it holds no keys: a dapp sends it what it wants signed, SignLens explains it in its own window, and once you say so the request goes unchanged to the wallet you actually sign with.</p>
+<p>That is clear signing, for whichever Solana wallet you use: you read what a transaction does, in words, before your wallet signs it, rather than a hash or a site's description of it.</p>
 <ol>
 <li><b>You connect "SignLens" in the dapp.</b> SignLens connects, in turn, to your own wallet in the same page: Phantom, Backpack, Solflare or another Solana wallet.</li>
 <li><b>The dapp asks for a signature.</b> SignLens keeps its own copy of the transaction, fetches the extra addresses it refers to from a Solana node (the RPC in the settings), simulates it there, and asks SignLens's server to explain it. When the explanation names accounts that would explain more, such as the proposal a multisig approval or a DAO vote refers to, SignLens reads them from the same node and asks again.</li>

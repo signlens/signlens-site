@@ -191,7 +191,7 @@ ${w.body}
 
 function indexPage(): Page {
     const body = html`<h1>What a balance preview cannot show</h1>
-<p class="lead">Some of the worst transactions take nothing when you sign them: they hand over the right to take it later. A wallet's preview of balance changes shows nothing for those. SignLens reads the instructions themselves and names them, right under the verdict.</p>
+<p class="lead">Some of the worst Solana transactions take nothing when you sign them: they hand over the right to take it later. A wallet's preview of balance changes shows nothing for those. SignLens reads the instructions themselves and names them, right under the verdict.</p>
 <ul class="cards">${WARNINGS.map((w) => html`<li><h2><a href="/warnings/${w.slug}">${w.name}</a></h2><p>${w.gist}</p></li>`)}</ul>`;
     return {
         path: '/warnings/',

@@ -50,7 +50,7 @@ export function homePage(): Page {
     const body = html`<section class="hero">
 <div>
 <h1>Know what you're signing on Solana</h1>
-<p class="lead">${NAME} is a free browser extension that explains, in plain words, each Solana transaction a dapp asks you to sign, before your wallet signs it, and says so when it cannot. Your wallet's preview shows what leaves your wallet; SignLens says where it goes and what it is for.</p>
+<p class="lead">${NAME} is a Solana transaction explainer: a free browser extension that explains, in plain words, each transaction a dapp asks you to sign, before your wallet signs it, and says so when it cannot. Your wallet's preview shows what leaves your wallet; SignLens says where it goes and what it is for.</p>
 <p>It works beside the wallet you already use, Phantom, Backpack, Solflare and other Solana wallets. It holds no keys: it explains each request in its own window, and once you say so passes it on, unchanged, to your wallet, where you approve or reject as usual.</p>
 <div class="actions"><a class="button primary" href="/install">Install for Chrome or Firefox</a><a class="button" href="/examples/">See real examples</a></div>
 <p class="muted">Beta, version ${VERSION}. The extension is open source. <a href="/privacy">The explanation is computed on SignLens's server</a> for now.</p>
