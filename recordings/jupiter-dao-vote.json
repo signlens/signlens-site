@@ -94,6 +94,15 @@
             }
           },
           {
+            "help": "The option the side picks on an option proposal, by the name the proposal's options account gives it, as your RPC returned the account. What you sign carries only the side's number.",
+            "label": "Option",
+            "trust": "claimed",
+            "value": {
+              "type": "text",
+              "value": "Don't burn the $Jup in the Litterbox"
+            }
+          },
+          {
             "help": "The Jupiter DAO proposal the vote is cast on.",
             "label": "Proposal",
             "trust": "fact",
@@ -105,6 +114,15 @@
                 "label": null,
                 "label_trust": "fact"
               }
+            }
+          },
+          {
+            "help": "The title the proposal's metadata account gives, as your RPC returned the account. What you sign does not carry it.",
+            "label": "Proposal title",
+            "trust": "claimed",
+            "value": {
+              "type": "text",
+              "value": "Proposal: Burning the Litterbox"
             }
           },
           {
@@ -358,22 +376,8 @@
         "title": "Validity"
       }
     ],
-    "summary": "Vote side 2 on Jupiter DAO proposal HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99 with the stake in 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G",
-    "text": "Vote side 2 on Jupiter DAO proposal HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99 with the stake in 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G\nOK\n\n== Vote | Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)\n  Side: 2\n  Proposal: HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99\n  Vote: BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd\n  Staking account: 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G\n\n== Also [collapsed]\n  Create vote record: Proposal: HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99\n  Create vote record: Voter: Your wallet (64n5…gjai) (verified)\n  Create vote record: Vote record: BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd\n  Create vote record: Rent paid by: Your wallet (64n5…gjai) (verified)\n  Compute unit limit: 150000\n  Compute unit price: 666 micro-lamports per unit\n\n== Signers\n  Fee payer: Your wallet (64n5…gjai) (verified)\n\n== Fee\n  Total: 0.0000051 SOL\n  Base: 0.000005 SOL\n  Priority: 0.0000001 SOL\n  Priority basis: 666 micro-lamports per unit × 150000 units requested\n  Rent deposits: 0.00123444 SOL; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - records the vote through the govern program with the staking account's voting power; nothing moves. Side 2 votes for a yes/no proposal, and for the second option of an option proposal. The signed bytes do not say which kind this proposal is, nor name its options.\n  - create BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd owned by Jupiter DAO governance (Gova…N7rY) (verified), depositing 0.00123444 SOL\n  - the record starts empty; the vote cast through the staking program in the same transaction fills it (every one of the 940 records created in a harvest of the program's 1,000 latest transactions on 2026-10-18 was followed by a castVote)\n  - Your wallet (64n5…gjai) (verified) pays a fee of 0.0000051 SOL\n  - valid for about a minute (recent blockhash)\n\nWould read, to explain more:\n  - HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99: the proposal, whose kind says what the side means\n  - DgNJ2yTRxe2QgWxUnMZRnJywxvCGLisxmyYdmzJjYB7Q: the proposal's title\n  - 4i99PrnywSMGPM6rguXd3AufUq2tGDFTyJBABMjMJTEP: the names of the proposal's options\n\nRaw: solana legacy (443 bytes)\n  digest: 647785e8079fc5f939106256bcfe328572188af9a4927254cb41e76093e05697\n",
-    "verdict": "ok",
-    "wanted_accounts": [
-      {
-        "address": "HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99",
-        "reason": "the proposal, whose kind says what the side means"
-      },
-      {
-        "address": "DgNJ2yTRxe2QgWxUnMZRnJywxvCGLisxmyYdmzJjYB7Q",
-        "reason": "the proposal's title"
-      },
-      {
-        "address": "4i99PrnywSMGPM6rguXd3AufUq2tGDFTyJBABMjMJTEP",
-        "reason": "the names of the proposal's options"
-      }
-    ]
+    "summary": "Vote for option 2, “Don't burn the $Jup in the Litterbox”, on Jupiter DAO proposal HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99, per your RPC, with the stake in 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G",
+    "text": "Vote for option 2, “Don't burn the $Jup in the Litterbox”, on Jupiter DAO proposal HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99, per your RPC, with the stake in 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G\nOK\n\n== Vote | Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)\n  Side: 2\n  Option: Don't burn the $Jup in the Litterbox (claimed, unverified)\n  Proposal: HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99\n  Proposal title: Proposal: Burning the Litterbox (claimed, unverified)\n  Vote: BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd\n  Staking account: 4s8S3dsjxfM3hvoQA7J6PXPCacnh43TEdbGJQk7e3s8G\n\n== Also [collapsed]\n  Create vote record: Proposal: HpYmjb9VWSZUYsWbZMJg2UshbQA8E5xwEzeGyRKSBa99\n  Create vote record: Voter: Your wallet (64n5…gjai) (verified)\n  Create vote record: Vote record: BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd\n  Create vote record: Rent paid by: Your wallet (64n5…gjai) (verified)\n  Compute unit limit: 150000\n  Compute unit price: 666 micro-lamports per unit\n\n== Signers\n  Fee payer: Your wallet (64n5…gjai) (verified)\n\n== Fee\n  Total: 0.0000051 SOL\n  Base: 0.000005 SOL\n  Priority: 0.0000001 SOL\n  Priority basis: 666 micro-lamports per unit × 150000 units requested\n  Rent deposits: 0.00123444 SOL; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - records the vote through the govern program with the staking account's voting power; nothing moves. Side 2 votes for a yes/no proposal, and for the second option of an option proposal. The signed bytes do not say which kind this proposal is, nor name its options.\n  - create BKyRZVwXQaGASD6WStSgQAVaFA3KMexjSKXfQ7AtQrHd owned by Jupiter DAO governance (Gova…N7rY) (verified), depositing 0.00123444 SOL\n  - the record starts empty; the vote cast through the staking program in the same transaction fills it (every one of the 940 records created in a harvest of the program's 1,000 latest transactions on 2026-10-18 was followed by a castVote)\n  - Your wallet (64n5…gjai) (verified) pays a fee of 0.0000051 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (443 bytes)\n  digest: 647785e8079fc5f939106256bcfe328572188af9a4927254cb41e76093e05697\n",
+    "verdict": "ok"
   }
 }

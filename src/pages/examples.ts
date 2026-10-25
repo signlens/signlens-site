@@ -160,7 +160,7 @@ export const CATEGORIES: Category[] = [
             {
                 slug: 'jupiter-dao-vote',
                 title: 'Vote in the Jupiter DAO',
-                lead: 'Which proposal, which side, and with which stake. A side is a number whose meaning depends on the proposal: this vote was on an option proposal, "Burning the Litterbox", whose second option is "Don\'t burn the $Jup in the Litterbox"; on a yes/no proposal, side 2 would mean for. The transaction you sign says neither which kind the proposal is nor what its options are, so SignLens gives both meanings.',
+                lead: 'Which proposal, which option, and with which stake. A vote signs a side\'s number, whose meaning depends on the proposal: on a yes/no proposal side 2 is "for", on an option proposal it is the second option. The transaction you sign says neither which kind the proposal is nor what its options are, so SignLens reads the proposal, its title and its options from your RPC and names the option, as your RPC\'s word. Without them it says what the side means on each kind.',
             },
             {
                 slug: 'squads-proposal',

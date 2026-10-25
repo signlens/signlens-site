@@ -83,4 +83,12 @@ test('a transaction file is read for its signer line, else its fee payer', () =>
     assert.equal(lookalike.constructed, true);
     assert.equal(lookalike.signature, null);
     assert.deepEqual(lookalike.contacts, [{ name: 'Bob', key: '6Q6wVYukhaZ3wAFzZjNWmuY3zeoykvuQRbs1X2Bvni4j' }]);
+    assert.deepEqual(lookalike.accounts, []);
+    const vote = readTransaction(new URL('../transactions/jupiter-dao-vote.b64', import.meta.url).pathname, 'jupiter-dao-vote');
+    assert.deepEqual(
+        vote.accounts.map((a) => a.address.slice(0, 4)),
+        ['HpYm', 'DgNJ', '4i99'],
+    );
+    assert.equal(vote.accounts[0]?.owner, 'GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY');
+    assert.equal(vote.accountsRead, '2026-10-25');
 });
