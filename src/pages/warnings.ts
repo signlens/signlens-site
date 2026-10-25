@@ -134,17 +134,20 @@ ${sources([
         name: 'Multisig approvals you cannot see',
         title: 'Squads multisig approvals: what you are approving | SignLens',
         description:
-            "Approving a Squads proposal signs only a reference to it. SignLens decodes a proposal's transaction when it is in the bytes, and says when it is not.",
+            "Approving a Squads proposal signs only a reference to it. SignLens shows the proposal's transaction from the bytes, or from its account as your RPC's word.",
         h1: 'Multisig approvals: when the bytes do not say what you approve',
-        gist: "A multisig approval names a proposal, not what it does. SignLens decodes the proposal's transaction when it is in the bytes, and says when it is not.",
+        gist: "A multisig approval names a proposal, not what it does. SignLens reads the proposal's transaction from the bytes or from your RPC, and says when it cannot.",
         body: html`<p class="lead">A Squads multisig runs a transaction once enough members approve it. The member who proposes it signs the whole transaction into the proposal; the members who approve later sign only a reference to a proposal stored on chain. Their wallets cannot show what they approve from the bytes they sign.</p>
 <p>The Security Alliance's guide to verifying Squads transactions puts it plainly: "Limited tooling is available for Solana verification compared to EVM."</p>
 <h2>What SignLens shows</h2>
-<p>When the proposal is created in the transaction you sign, SignLens decodes its transaction step by step, as if you were signing it (see <a href="/examples/governance">a proposal of a token transfer</a>). When you only approve, it says it cannot show what you approve, with a high finding:</p>
+<p>When the proposal is created in the transaction you sign, SignLens decodes its transaction step by step, as if you were signing it (see <a href="/examples/governance">a proposal of a token transfer</a>).</p>
+<p>When you only approve, what you sign names the proposal and nothing more. SignLens then reads the proposal and the transaction it stores from your RPC, checks that they are the accounts the approval names and decode as Squads writes them, and shows the steps as your RPC's word. The high finding stays: the steps come from your RPC, not from what you sign. A member's approval of a 3,000 USDT transfer, with the two accounts as an RPC returned them:</p>
+${shown('squads-approval-read')}
+<p>When the RPC has nothing to give, because the proposal has been closed or does not exist yet, SignLens says it cannot show what you approve. Three approvals whose proposals have since been closed:</p>
 ${shown('squads-approvals')}
-<p>Both kinds of signature handed Drift's admin to an attacker in April 2026: <a href="/incidents/drift-2026">the two signatures, read by SignLens</a>.</p>
+<p>Both kinds of signature handed Drift's admin to an attacker in April 2026. The second member approved a proposal that did not exist yet when they signed, so nothing could have read it for them: <a href="/incidents/drift-2026">the two signatures, read by SignLens</a>.</p>
 <h2>What to do</h2>
-<p>Before approving, read the proposal's transaction itself, from the proposer's signature or the proposal account, not from the interface that asks you to approve.</p>
+<p>Read the steps before approving, and remember where they come from: a dishonest RPC could show a harmless transaction. For a large transfer, check them against the proposer's signature or the proposal account on an explorer you trust, not against the interface that asks you to approve.</p>
 ${sources([
     [
         'SEAL Frameworks: Squads multisig verification',

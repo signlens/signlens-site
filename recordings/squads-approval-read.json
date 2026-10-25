@@ -1,0 +1,417 @@
+{
+  "recorded": "2026-10-25",
+  "engine": "the SignLens engine 0.1.0",
+  "explanation": {
+    "chain": "solana",
+    "effects": [
+      {
+        "type": "proposed",
+        "value": {
+          "by": {
+            "address": "4D2x2HY1uTXkr6rbmckhJ7bQuzPgKv5LgB5KXpYTcCJs",
+            "is_self": false,
+            "label": "Vault 0 of multisig 85yq…iXJn",
+            "label_trust": "verified"
+          },
+          "effect": {
+            "type": "transfer",
+            "value": {
+              "amount": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "symbol": "USDT",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "3000000000"
+              },
+              "from": {
+                "address": "DykMv6JsTKhQpEGJFNtcswu2TbxN1A5nBb41omGtLxRp",
+                "is_self": false,
+                "label": "Vault 0 of multisig 85yq…iXJn's USDT account",
+                "label_trust": "verified"
+              },
+              "to": {
+                "address": "6PgMZUFGmEFxAqccaHaL94aVV4JDnShKE44E2DaLLYdc",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          }
+        }
+      },
+      {
+        "type": "fee",
+        "value": {
+          "amount": {
+            "asset": {
+              "decimals": 9,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "units": "23272"
+          },
+          "payer": {
+            "address": "3xvJ6n54prgbRePh9Xs61cvuKQrKCPsrjh1CQte9L5Zf",
+            "is_self": true,
+            "label": "Your wallet",
+            "label_trust": "verified"
+          }
+        }
+      },
+      {
+        "type": "lifetime",
+        "value": {
+          "type": "recent_blockhash"
+        }
+      }
+    ],
+    "findings": [
+      {
+        "code": "PROPOSAL_CONTENT_FROM_RPC",
+        "instruction": 2,
+        "message": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; its steps are shown from the transaction account as your RPC returned it, which the signed bytes cannot confirm",
+        "severity": "high"
+      }
+    ],
+    "raw": {
+      "digest": "1a6535608c36e5befb87e314cd8508237f32a8a6de2d8bba3cc183d5f79ed683",
+      "format": "solana v0"
+    },
+    "schema": "signlens-explanation/1",
+    "sections": [
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Multisig",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "85yqfP7w9PoEuwgUrjp4yQovLmfS6g6C7LZs2MPpiXJn",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Proposal",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "94JcnrNxmorKtquUUh8hvEPPMrBC1X8FUen5zSA6XuEV",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Content",
+            "trust": "claimed",
+            "value": {
+              "type": "text",
+              "value": "transaction #69 of this multisig, from its account as your RPC returned it at slot 461298601; the signed bytes do not hold it"
+            }
+          },
+          {
+            "help": null,
+            "label": "Vault",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4D2x2HY1uTXkr6rbmckhJ7bQuzPgKv5LgB5KXpYTcCJs",
+                "is_self": false,
+                "label": "Vault 0 of multisig 85yq…iXJn",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Member",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "3xvJ6n54prgbRePh9Xs61cvuKQrKCPsrjh1CQte9L5Zf",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Steps",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "1"
+            }
+          }
+        ],
+        "kind": {
+          "type": "instruction",
+          "value": {
+            "index": 2
+          }
+        },
+        "subtitle": "Squads multisig v4 (verified)",
+        "title": "Approve proposal"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Amount",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 6,
+                  "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "symbol": "USDT",
+                  "trust": "verified"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "3000000000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "From",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "DykMv6JsTKhQpEGJFNtcswu2TbxN1A5nBb41omGtLxRp",
+                "is_self": false,
+                "label": "Vault 0 of multisig 85yq…iXJn's USDT account",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "To",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "6PgMZUFGmEFxAqccaHaL94aVV4JDnShKE44E2DaLLYdc",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Authorized by",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "4D2x2HY1uTXkr6rbmckhJ7bQuzPgKv5LgB5KXpYTcCJs",
+                "is_self": false,
+                "label": "Vault 0 of multisig 85yq…iXJn",
+                "label_trust": "verified"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Mint",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                "is_self": false,
+                "label": "USDT mint",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "nested",
+          "value": {
+            "index": 0,
+            "parent": 2
+          }
+        },
+        "subtitle": "Token program (verified)",
+        "title": "Transfer tokens"
+      },
+      {
+        "collapsed": true,
+        "fields": [
+          {
+            "help": null,
+            "label": "Compute unit limit",
+            "trust": "fact",
+            "value": {
+              "type": "integer",
+              "value": "100001"
+            }
+          },
+          {
+            "help": null,
+            "label": "Compute unit price",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "182710 micro-lamports per unit"
+            }
+          }
+        ],
+        "kind": {
+          "type": "housekeeping"
+        },
+        "subtitle": null,
+        "title": "Also"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Fee payer",
+            "trust": "fact",
+            "value": {
+              "type": "address",
+              "value": {
+                "address": "3xvJ6n54prgbRePh9Xs61cvuKQrKCPsrjh1CQte9L5Zf",
+                "is_self": true,
+                "label": "Your wallet",
+                "label_trust": "verified"
+              }
+            }
+          }
+        ],
+        "kind": {
+          "type": "signers"
+        },
+        "subtitle": null,
+        "title": "Signers"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Total",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "23272"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Base",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "5000"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority",
+            "trust": "fact",
+            "value": {
+              "type": "amount",
+              "value": {
+                "asset": {
+                  "decimals": 9,
+                  "id": "native",
+                  "symbol": "SOL",
+                  "trust": "fact"
+                },
+                "bound": "exact",
+                "note": null,
+                "units": "18272"
+              }
+            }
+          },
+          {
+            "help": null,
+            "label": "Priority basis",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "182710 micro-lamports per unit × 100001 units requested"
+            }
+          }
+        ],
+        "kind": {
+          "type": "fees"
+        },
+        "subtitle": null,
+        "title": "Fee"
+      },
+      {
+        "collapsed": false,
+        "fields": [
+          {
+            "help": null,
+            "label": "Expires",
+            "trust": "fact",
+            "value": {
+              "type": "text",
+              "value": "in about a minute (recent blockhash)"
+            }
+          }
+        ],
+        "kind": {
+          "type": "lifetime"
+        },
+        "subtitle": null,
+        "title": "Validity"
+      }
+    ],
+    "summary": "Approve proposal #69 (Transfer 3,000 USDT (verified) from DykM…LxRp to 6PgM…LYdc, per your RPC)",
+    "text": "Approve proposal #69 (Transfer 3,000 USDT (verified) from DykM…LxRp to 6PgM…LYdc, per your RPC)\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; its steps are shown from the transaction account as your RPC returned it, which the signed bytes cannot confirm (instruction 2)\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 85yqfP7w9PoEuwgUrjp4yQovLmfS6g6C7LZs2MPpiXJn\n  Proposal: 94JcnrNxmorKtquUUh8hvEPPMrBC1X8FUen5zSA6XuEV\n  Content: transaction #69 of this multisig, from its account as your RPC returned it at slot 461298601; the signed bytes do not hold it (claimed, unverified)\n  Vault: Vault 0 of multisig 85yq…iXJn (4D2x…cCJs) (verified)\n  Member: Your wallet (3xvJ…L5Zf) (verified)\n  Steps: 1\n\n==== Step 1: Transfer tokens | Token program (verified)\n  Amount: 3,000 USDT (verified)\n  From: Vault 0 of multisig 85yq…iXJn's USDT account (DykM…LxRp) (verified)\n  To: 6PgMZUFGmEFxAqccaHaL94aVV4JDnShKE44E2DaLLYdc\n  Authorized by: Vault 0 of multisig 85yq…iXJn (4D2x…cCJs) (verified)\n  Mint: USDT mint (Es9v…wNYB) (verified)\n\n== Also [collapsed]\n  Compute unit limit: 100001\n  Compute unit price: 182710 micro-lamports per unit\n\n== Signers\n  Fee payer: Your wallet (3xvJ…L5Zf) (verified)\n\n== Fee\n  Total: 0.000023272 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000018272 SOL\n  Priority basis: 182710 micro-lamports per unit × 100001 units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - once approved, Vault 0 of multisig 85yq…iXJn (4D2x…cCJs) (verified) would transfer 3,000 USDT (verified) from Vault 0 of multisig 85yq…iXJn's USDT account (DykM…LxRp) (verified) to 6PgMZUFGmEFxAqccaHaL94aVV4JDnShKE44E2DaLLYdc\n  - Your wallet (3xvJ…L5Zf) (verified) pays a fee of 0.000023272 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (234 bytes)\n  digest: 1a6535608c36e5befb87e314cd8508237f32a8a6de2d8bba3cc183d5f79ed683\n",
+    "verdict": "warn"
+  }
+}
