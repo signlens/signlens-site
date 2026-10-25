@@ -1,7 +1,7 @@
 // Install, privacy, security, and the page for a path that does not exist.
 import { html } from '../html.ts';
 import type { Page } from '../page.ts';
-import { RELEASES, REPOSITORY, SECURITY_EMAIL, SITE_REPOSITORY, VERSION } from '../site.ts';
+import { RELEASES, REPOSITORY, SECURITY_EMAIL, SITE_REPOSITORY, SUPPORT_EMAIL, VERSION } from '../site.ts';
 
 export function installPage(): Page {
     const body = html`<h1>Install SignLens</h1>
@@ -38,7 +38,7 @@ export function privacyPage(): Page {
 <h3>Your RPC and the token list</h3>
 <p>The RPC in the settings, by default the public <code>solana-rpc.publicnode.com</code>, is asked for the lookup tables of every transaction that uses any, sees the whole transaction when simulation is on, is asked for the accounts an explanation names when account lookup is on, and for the mints of unlisted tokens when token lookup is on. Those mints also go to the token list, by default Jupiter's <code>lite-api.jup.ag</code>. Simulation, account lookup and token lookup are on by default; the settings turn them off, and the RPC and the token list can be your own.</p>
 <h3>Feedback</h3>
-<p>The feedback strip under an explanation sends nothing until you rate it, and says what a rating sends before you give one. A rating sends, for each transaction explained: the rating, your comment, a hash of the transaction, the site's host and the extension's version (in Firefox only once you allow them), the wallet method the site called, and what the window showed you: the verdict, the summary, the findings by code and severity, and the program each instruction calls. The transaction itself goes only if you tick "Send this transaction to SignLens so it can be looked into", which is offered unticked. Feedback is kept to improve the explanations; to have yours deleted, write to <a href="mailto:${SECURITY_EMAIL}">${SECURITY_EMAIL}</a> with the time you sent it.</p>
+<p>The feedback strip under an explanation sends nothing until you rate it, and says what a rating sends before you give one. A rating sends, for each transaction explained: the rating, your comment, a hash of the transaction, the site's host and the extension's version (in Firefox only once you allow them), the wallet method the site called, and what the window showed you: the verdict, the summary, the findings by code and severity, and the program each instruction calls. The transaction itself goes only if you tick "Send this transaction to SignLens so it can be looked into", which is offered unticked. Feedback is kept to improve the explanations; to have yours deleted, write to <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a> with the time you sent it.</p>
 <h3>What the dapp learns</h3>
 <p>The dapp is told whether the request was passed on, rejected by you, or refused by SignLens and why, never the verdict or the explanation. In watch-only mode it learns the watched address only once you allow it.</p>
 <h2>This site</h2>
@@ -46,7 +46,7 @@ export function privacyPage(): Page {
 <h2>What SignLens does not do</h2>
 <p>No accounts, no advertising, no selling or sharing of data, no tracking across sites. The extension's source is public (<a href="${REPOSITORY}">${REPOSITORY.replace('https://', '')}</a>), and so is this site's (<a href="${SITE_REPOSITORY}">${SITE_REPOSITORY.replace('https://', '')}</a>).</p>
 <h2>Questions</h2>
-<p>Write to <a href="mailto:${SECURITY_EMAIL}">${SECURITY_EMAIL}</a>.</p>`;
+<p>Write to <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a>.</p>`;
     return {
         path: '/privacy',
         title: 'Privacy | SignLens',
