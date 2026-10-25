@@ -17,6 +17,7 @@
     "check": "biome check --error-on-warnings . && tsc -p tsconfig.json",
     "format": "biome check --write .",
     "test": "node --test --test-randomize \"test/**/*.test.ts\"",
+    "favicon": "node scripts/favicon.ts",
     "record": "node scripts/record.ts",
     "serve": "node scripts/serve.ts"
   },

@@ -52,6 +52,17 @@ test('the sitemap lists every page but the hidden ones', () => {
     for (const { page } of built) assert.equal(sitemap.includes(`<loc>https://signlens.dev${page.path}</loc>`), !page.hidden, page.path);
 });
 
+test('the favicon is an icon of the three sizes, and the home-screen icon is 180 pixels square', () => {
+    const ico = readFileSync(dist('favicon.ico'));
+    assert.deepEqual([ico.readUInt16LE(0), ico.readUInt16LE(2), ico.readUInt16LE(4)], [0, 1, 3]);
+    assert.deepEqual(
+        [0, 1, 2].map((i) => ico.readUInt8(6 + 16 * i)),
+        [16, 32, 48],
+    );
+    const touch = readFileSync(dist('apple-touch-icon.png'));
+    assert.deepEqual([touch.readUInt32BE(16), touch.readUInt32BE(20)], [180, 180]);
+});
+
 test('robots.txt allows every crawler and names the sitemap', () => {
     assert.equal(readFileSync(dist('robots.txt'), 'utf8'), 'User-agent: *\nAllow: /\n\nSitemap: https://signlens.dev/sitemap.xml\n');
 });

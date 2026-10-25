@@ -81,9 +81,9 @@ ${page.hidden ? html`<meta name="robots" content="noindex">` : html`<link rel="c
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="icon" href="/icon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="/icon-128.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="stylesheet" href="/style.css">
 ${page.jsonLd ? raw(`<script type="application/ld+json">${JSON.stringify(page.jsonLd).replace(/</g, '\\u003c')}</script>`) : ''}
 </head>

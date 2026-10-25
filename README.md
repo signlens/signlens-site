@@ -94,6 +94,14 @@ at twice the pixel density so that they stay sharp on high-density
 screens: `deviceScaleFactor: 2` in its test harness's browser context for
 that run.
 
+The icons are the extension's drawing: `static/icon.svg` as it is;
+`static/favicon.ico`, for whatever asks for `/favicon.ico` instead of
+reading the page's links, holds the extension's 16, 32 and 48 pixel PNGs
+(`npm run favicon -- ../signlens-extension/static/icons`); and
+`static/apple-touch-icon.png`, the icon a phone puts on its home screen,
+is rendered from `design/apple-touch-icon.html` at 180×180 like the social
+preview below.
+
 The social preview is rendered from `design/og.html` with Playwright, for
 example from the extension's checkout:
 
