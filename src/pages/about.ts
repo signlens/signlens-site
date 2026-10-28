@@ -71,28 +71,28 @@ export function clearSigningPage(): Page {
     const h1 = 'Clear signing and blind signing on Solana';
     const body = html`<h1>${h1}</h1>
 ${published('2026-10-28')}
-<p class="lead">Clear signing means seeing what a transaction will actually do, in plain words decoded from the bytes you are about to sign, before you approve it. You read the action itself: deposit 4,635 USDC into Kamino Lend as collateral, let this key spend your USDC, make that key the owner of this account. Blind signing is approving a transaction you cannot read: you see a hash on a hardware wallet's screen, or you trust the dapp to tell the truth about what its bytes do. Most Solana wallets show something in between: the balance changes a transaction would cause. The costliest attacks change no balance when you sign them.</p>
+<p class="lead">Clear signing means seeing what a transaction will actually do, in plain words decoded from the bytes you are about to sign, before you approve it. You read the action itself: deposit 4,635 USDC into Kamino Lend as collateral, let this key spend your USDC, or make that key the owner of this account. Blind signing is approving a transaction you cannot read: you see a hash on a hardware wallet's screen, or you trust the dapp to tell the truth about what its bytes do. Most Solana wallets show something in between: the balance changes a transaction would cause. The costliest attacks change no balance when you sign them.</p>
 <h2 id="today">What signing looks like on Solana today</h2>
 <dl class="facts">
 <dt>On a hardware wallet</dt>
-<dd>Ledger's Solana app shows in words only "simple instructions like a single transfer" and a few pairs, such as creating an account and funding it. Anything else needs its blind-signing setting turned on: "Blind signing must be on for the Ledger to sign SPL token transfers and smart contract transactions on Solana", says Solflare's guide, and firmware and app updates turn it off again. A swap, a deposit or a vote is then approved on a screen that cannot display it.</dd>
+<dd>Ledger's Solana app shows in words only "simple instructions like a single transfer" and a few pairs, such as creating an account and funding it. Anything else needs its blind-signing setting turned on: "Blind signing must be on for the Ledger to sign SPL token transfers and smart contract transactions on Solana", says Solflare's guide, and every firmware or app update turns it off again. With it on, a swap, a deposit or a vote is approved on a screen that cannot display it.</dd>
 <dt>In a software wallet</dt>
-<dd>Phantom, Backpack, Solflare and other wallets simulate the transaction and show the balance changes it would cause, with warnings for some known dangers. That says how much, not what for: a deposit, a liquidity position and a drain can show the same line. When the simulation fails, the wallets' own help pages say the transaction may succeed anyway.</dd>
+<dd>Phantom, Backpack, Solflare and other wallets simulate the transaction and show the balance changes it would cause, with warnings for some known dangers. That shows how much leaves your wallet, not why: a lending deposit, a liquidity position and a wallet drain can all produce the same balance preview. When the simulation fails, the wallets' own help pages say the transaction may succeed anyway.</dd>
 <dt>In the dapp</dt>
 <dd>The dapp builds the bytes and describes them: a button that says Claim, Swap or Sign in. That description is what an attacker who controls the page gets to write. In February 2025, on Ethereum, Bybit's signers saw a routine transfer from cold storage in an interface attackers had altered, and signed a change to their multisig's own logic: about $1.5 billion (<a href="/incidents/blind-signing">what they saw, and what they signed</a>).</dd>
 </dl>
 <h2 id="why">Why it matters on Solana</h2>
 <p>The transactions that cost the most move nothing when you sign them: they hand over the right to take it later. A balance preview shows no change, and a hardware wallet in blind-signing mode shows nothing it can read.</p>
 <ul>
-<li><a href="/warnings/token-account-owner-change">Owner changes</a> hand a token account, or the wallet itself, to someone else. In one academic study of Solana phishing (SolPhishHunter, 2025), owner transfers were 2,171 of 8,058 phishing transactions but 73.85% of the $1.1 million in losses it measured. In November 2025 a victim lost over $3 million after a preview that "showed no fund changes" (<a href="/incidents/owner-change-phishing-2025">the case</a>).</li>
+<li><a href="/warnings/token-account-owner-change">Owner changes</a> hand a token account to a new owner (the token program's SetAuthority), or the whole wallet to a program (the system program's Assign). In one academic study of Solana phishing (SolPhishHunter, 2025), owner transfers were 2,171 of 8,058 phishing transactions but 73.85% of the $1.1 million in losses it measured. In November 2025 a victim lost over $3 million after a preview that "showed no fund changes" (<a href="/incidents/owner-change-phishing-2025">the case</a>).</li>
 <li><a href="/warnings/unlimited-token-approval">Unlimited approvals</a> let another key spend from one of your token accounts at any time, up to the largest amount there is. The same victim's transactions approved it on eight token accounts.</li>
 <li><a href="/warnings/durable-nonce">Durable nonces</a> make a signature that never expires. Two members of Drift's multisig each signed one, and on 1 April 2026 the attacker who held them took control of the protocol; between $270 and $286 million left it (<a href="/incidents/drift-2026">the two signatures</a>).</li>
 <li><a href="/warnings/multisig-approval">Multisig approvals</a> sign a reference to a proposal stored on chain, not what it does, so no wallet can show it from the bytes alone.</li>
 </ul>
 <h2 id="example">What clear signing shows</h2>
-<p>A real deposit into Kamino Lend. A balance preview shows 4,635.28675 USDC leaving the wallet. Decoded from its instructions, the transaction deposits it into Kamino Lend as collateral, as SignLens shows it:</p>
+<p>Take a real deposit into Kamino Lend. A balance preview shows only 4,635.28675 USDC leaving the wallet. SignLens decodes its instructions and shows that it deposits the USDC into Kamino Lend as collateral:</p>
 ${shown('kamino-lend-deposit')}
-<p>Three things make that possible: a description of each program's instructions, from a source you can trust, to decode the bytes into what they do; names checked by address, so that a token called USDC is the USDC (<a href="/how-it-works#reading">"(verified)"</a>); and decoding the bytes that will be signed, not what the dapp says they are. It is not a defence against everything: a compromised computer can show anything, and a stolen key needs no signature.</p>
+<p>Three things make that possible: a description of each program's instructions, from a source you can trust, to decode the bytes into what they do; names checked by address, so that a token called USDC is Circle's USDC, not a token that copied its name (<a href="/how-it-works#reading">"(verified)"</a>); and decoding the bytes that will be signed, not what the dapp says they are. It is not a defence against everything: a compromised computer can show anything, and a stolen key needs no signature.</p>
 <h2 id="srfc-39">sRFC 39: a standard for clear signing on Solana</h2>
 <p>On 27 October 2025 a draft, sRFC 39 "Solana Clear Sign", was opened in the Solana Foundation's repository of standards proposals. Its starting point: the interface descriptions programs publish, their IDLs, "provide no guidance on how to present transaction data to users", so users "must blindly sign transactions, a process prone to error and misunderstanding, which often leads to loss of funds."</p>
 <p>It proposes that each program's IDL carry display rules: an intent for each instruction, such as "Transfer 10 wSOL to toly.sol.", labels for its accounts and arguments, and how to format amounts, dates and durations. Wallets would fetch them with the IDL; hardware wallets would carry them in their firmware or be given them while signing, and must be able to show the intent from the IDL and the instruction data alone.</p>
@@ -106,20 +106,6 @@ ${shown('kamino-lend-deposit')}
 <li>Sign a transaction that never expires only when you meant to sign something to be sent later, and you know who will hold it.</li>
 <li>On a Ledger, turn blind signing on only for the dapp that needs it, and off again afterwards, as Solflare's guide advises.</li>
 <li>For a large transaction, check what it does somewhere other than the page asking you to sign it.</li>
-</ul>
-<h2>Sources</h2>
-<ul class="sources">
-<li><a href="https://github.com/solana-foundation/SRFCs/discussions/4">sRFC 39: Solana Clear Sign (draft, Solana Foundation)</a></li>
-<li><a href="https://github.com/LedgerHQ/solana-srfc39-meta-intent-extension">Ledger: an extension of sRFC 39 to whole transactions</a></li>
-<li><a href="https://developers.ledger.com/docs/device-interaction/references/signers/solana">Ledger: the Solana signer ("only supports simple instructions like a single transfer")</a></li>
-<li><a href="https://docs.solflare.com/solflare/onboarding/web-app-and-extension/import-your-ledger-device">Solflare: import your Ledger device (blind signing)</a></li>
-<li><a href="https://developers.ledger.com/docs/clear-signing/overview">Ledger: Clear Signing and ERC-7730</a></li>
-<li><a href="https://jup.ag/wallet/security">Jupiter Wallet: security ("Approval previews estimate balance changes")</a></li>
-<li><a href="https://help.solflare.com/en/articles/9263757-why-did-my-transaction-fail">Solflare: why did my transaction fail</a></li>
-<li><a href="https://arxiv.org/html/2505.04094v1">SolPhishHunter: phishing on Solana (arXiv, 2025)</a></li>
-<li><a href="https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e">SlowMist: wallet owner permissions altered (2025)</a></li>
-<li><a href="https://www.chainalysis.com/blog/lessons-from-the-drift-hack/">Chainalysis: lessons from the Drift hack</a></li>
-<li><a href="https://www.nccgroup.com/research/in-depth-technical-analysis-of-the-bybit-hack/">NCC Group: technical analysis of the Bybit hack</a></li>
 </ul>`;
     return {
         path: '/clear-signing',
@@ -128,6 +114,31 @@ ${shown('kamino-lend-deposit')}
             'Clear signing shows what a Solana transaction does, in words, before you sign it. What blind signing looks like on Solana today, why it matters, and sRFC 39.',
         updated: '2026-10-28',
         body,
+        sources: [
+            ['sRFC 39: Solana Clear Sign (draft, Solana Foundation)', 'https://github.com/solana-foundation/SRFCs/discussions/4'],
+            ['Ledger: an extension of sRFC 39 to whole transactions', 'https://github.com/LedgerHQ/solana-srfc39-meta-intent-extension'],
+            [
+                'Ledger: the Solana signer ("only supports simple instructions like a single transfer")',
+                'https://developers.ledger.com/docs/device-interaction/references/signers/solana',
+            ],
+            [
+                'Solflare: import your Ledger device (blind signing)',
+                'https://docs.solflare.com/solflare/onboarding/web-app-and-extension/import-your-ledger-device',
+            ],
+            ['Ledger: Clear Signing and ERC-7730', 'https://developers.ledger.com/docs/clear-signing/overview'],
+            ['Jupiter Wallet: security ("Approval previews estimate balance changes")', 'https://jup.ag/wallet/security'],
+            ['Solflare: why did my transaction fail', 'https://help.solflare.com/en/articles/9263757-why-did-my-transaction-fail'],
+            ['SolPhishHunter: phishing on Solana (arXiv, 2025)', 'https://arxiv.org/html/2505.04094v1'],
+            [
+                'SlowMist: wallet owner permissions altered (2025)',
+                'https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e',
+            ],
+            ['Chainalysis: lessons from the Drift hack', 'https://www.chainalysis.com/blog/lessons-from-the-drift-hack/'],
+            [
+                'NCC Group: technical analysis of the Bybit hack',
+                'https://www.nccgroup.com/research/in-depth-technical-analysis-of-the-bybit-hack/',
+            ],
+        ],
         jsonLd: article(h1, '2026-10-28', '2026-10-28'),
     };
 }
@@ -147,14 +158,7 @@ export function comparePage(): Page {
 <h2>Why a balance preview is not enough</h2>
 <p>A preview simulates the transaction and shows how your balances would change. That says how much, not what for: a deposit, a liquidity position and a drain can show the same line. And the transactions that hand over control (an <a href="/warnings/token-account-owner-change">owner change</a>, an <a href="/warnings/unlimited-token-approval">unlimited approval</a>, a <a href="/warnings/durable-nonce">signature that never expires</a>) move nothing when you sign them. Wallets add warnings for some of these, and when the simulation fails their own help pages say the transaction may succeed anyway.</p>
 <h2>Why a scam list is not enough</h2>
-<p>A list catches what someone has already reported. A drainer site launched an hour ago is on no list, and a legitimate new dapp can be on one by mistake. SignLens does not judge the site: it reads what the transaction would do.</p>
-<h2>Sources</h2>
-<ul class="sources">
-<li><a href="https://phantom.com/learn/blog/security-at-phantom">Phantom: security at Phantom</a></li>
-<li><a href="https://jup.ag/wallet/security">Jupiter Wallet: security ("Approval previews estimate balance changes")</a></li>
-<li><a href="https://help.solflare.com/en/articles/9263757-why-did-my-transaction-fail">Solflare: why did my transaction fail</a></li>
-<li><a href="https://developers.ledger.com/docs/device-interaction/references/signers/solana">Ledger: the Solana signer ("only supports simple instructions like a single transfer or combos like createAccount + fundAccount")</a></li>
-</ul>`;
+<p>A list catches what someone has already reported. A drainer site launched an hour ago is on no list, and a legitimate new dapp can be on one by mistake. SignLens does not judge the site: it reads what the transaction would do.</p>`;
     return {
         path: '/compare',
         title: 'SignLens vs wallet previews, scam lists and explorers',
@@ -162,6 +166,15 @@ export function comparePage(): Page {
             'How SignLens compares with Solana wallet balance previews, scam blocklists, explorers and hardware clear signing, and why it works alongside them.',
         updated: '2026-10-25',
         body,
+        sources: [
+            ['Phantom: security at Phantom', 'https://phantom.com/learn/blog/security-at-phantom'],
+            ['Jupiter Wallet: security ("Approval previews estimate balance changes")', 'https://jup.ag/wallet/security'],
+            ['Solflare: why did my transaction fail', 'https://help.solflare.com/en/articles/9263757-why-did-my-transaction-fail'],
+            [
+                'Ledger: the Solana signer ("only supports simple instructions like a single transfer or combos like createAccount + fundAccount")',
+                'https://developers.ledger.com/docs/device-interaction/references/signers/solana',
+            ],
+        ],
     };
 }
 

@@ -12,6 +12,8 @@ export interface Page {
     /** When the page's content last changed (YYYY-MM-DD), for the sitemap. */
     updated: string;
     body: Html;
+    /** What the page cites, as label and URL, listed after the call to install. */
+    sources?: [string, string][];
     /** Structured data for search engines, on the home page. */
     jsonLd?: object;
     /** A wider column, for the home page. */
@@ -96,6 +98,7 @@ ${page.jsonLd ? raw(`<script type="application/ld+json">${JSON.stringify(page.js
 <main id="main"${page.wide ? raw(' class="wide"') : ''}>
 ${page.body}
 ${page.hidden || page.path === '/' || page.path === '/install' ? '' : html`<p class="next">Try it: <a href="/install">install SignLens</a> for Chrome or Firefox.</p>`}
+${page.sources ? html`<h2>Sources</h2><ul class="sources">${page.sources.map(([label, url]) => html`<li><a href="${url}">${label}</a></li>`)}</ul>` : ''}
 </main>
 <footer class="site"><div class="bar">
 <nav aria-label="More">

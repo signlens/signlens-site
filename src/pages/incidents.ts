@@ -14,10 +14,8 @@ interface Incident {
     h1: string;
     gist: string;
     body: Html;
+    sources: [string, string][];
 }
-
-const sources = (items: [string, string][]): Html =>
-    html`<h2>Sources</h2><ul class="sources">${items.map(([label, url]) => html`<li><a href="${url}">${label}</a></li>`)}</ul>`;
 
 export const INCIDENTS: Incident[] = [
     {
@@ -50,33 +48,33 @@ ${shown('drift-signer-1')}
 <p>The second member approved and executed the proposal the first signature creates. Its content is not in the bytes they signed, so SignLens cannot say what it does, and says that, beside the durable nonce. Nor was it anywhere on chain to be read when they signed: the proposal and the transaction it stores were created by the first signature, submitted at 16:05:18, and the second, like the first, had been signed in advance on a durable nonce.</p>
 ${shown('drift-signer-2')}
 <h2>What this does and does not show</h2>
-<p>The handover was in the bytes, in plain words: anyone reading the first transaction could see that it gave Drift away, and that both signatures stayed valid forever. That is the claim, and the only one. Whether SignLens would have stopped the attack, nobody can say: if the signers' devices or the app they signed with were compromised, as Drift's account suggests, a browser extension may never have been in the path.</p>
-${sources([
-    ['Drift Protocol, update of 5 April 2026', 'https://x.com/DriftProtocol/status/2040611161121370409'],
-    ['The Block: Drift attributes the attack (5 April 2026)', 'https://www.theblock.co/post/396361'],
-    [
-        'BlockSec: multisig governance compromise via durable nonce',
-        'https://blocksec.com/blog/drift-protocol-incident-multisig-governance-compromise-via-durable-nonce-exploitation',
-    ],
-    [
-        'Elliptic: Drift Protocol exploited for $286 million',
-        'https://www.elliptic.co/blog/drift-protocol-exploited-for-286-million-in-suspected-dprk-linked-attack',
-    ],
-    [
-        'CoinDesk: how a Solana feature let an attacker drain Drift (2 April 2026)',
-        'https://www.coindesk.com/tech/2026/04/02/how-a-solana-feature-designed-for-convenience-let-an-attacker-drain-usd270-million-from-drift',
-    ],
-    ['Chainalysis: lessons from the Drift hack', 'https://www.chainalysis.com/blog/lessons-from-the-drift-hack/'],
-    ['Solana: durable nonce deprecation', 'https://solana.com/upgrades/durable-nonce-deprecation'],
-    [
-        'The first signature on the Solana Explorer',
-        'https://explorer.solana.com/tx/2HvMSgDEfKhNryYZKhjowrBY55rUx5MWtcWkG9hqxZCFBaTiahPwfynP1dxBSRk9s5UTVc8LFeS4Btvkm9pc2C4H',
-    ],
-    [
-        'The second signature on the Solana Explorer',
-        'https://explorer.solana.com/tx/4BKBmAJn6TdsENij7CsVbyMVLJU1tX27nfrMM1zgKv1bs2KJy6Am2NqdA3nJm4g9C6eC64UAf5sNs974ygB9RsN1',
-    ],
-])}`,
+<p>The handover was in the bytes, in plain words: anyone reading the first transaction could see that it gave Drift away, and that both signatures stayed valid forever. That is the claim, and the only one. Whether SignLens would have stopped the attack, nobody can say: if the signers' devices or the app they signed with were compromised, as Drift's account suggests, a browser extension may never have been in the path.</p>`,
+        sources: [
+            ['Drift Protocol, update of 5 April 2026', 'https://x.com/DriftProtocol/status/2040611161121370409'],
+            ['The Block: Drift attributes the attack (5 April 2026)', 'https://www.theblock.co/post/396361'],
+            [
+                'BlockSec: multisig governance compromise via durable nonce',
+                'https://blocksec.com/blog/drift-protocol-incident-multisig-governance-compromise-via-durable-nonce-exploitation',
+            ],
+            [
+                'Elliptic: Drift Protocol exploited for $286 million',
+                'https://www.elliptic.co/blog/drift-protocol-exploited-for-286-million-in-suspected-dprk-linked-attack',
+            ],
+            [
+                'CoinDesk: how a Solana feature let an attacker drain Drift (2 April 2026)',
+                'https://www.coindesk.com/tech/2026/04/02/how-a-solana-feature-designed-for-convenience-let-an-attacker-drain-usd270-million-from-drift',
+            ],
+            ['Chainalysis: lessons from the Drift hack', 'https://www.chainalysis.com/blog/lessons-from-the-drift-hack/'],
+            ['Solana: durable nonce deprecation', 'https://solana.com/upgrades/durable-nonce-deprecation'],
+            [
+                'The first signature on the Solana Explorer',
+                'https://explorer.solana.com/tx/2HvMSgDEfKhNryYZKhjowrBY55rUx5MWtcWkG9hqxZCFBaTiahPwfynP1dxBSRk9s5UTVc8LFeS4Btvkm9pc2C4H',
+            ],
+            [
+                'The second signature on the Solana Explorer',
+                'https://explorer.solana.com/tx/4BKBmAJn6TdsENij7CsVbyMVLJU1tX27nfrMM1zgKv1bs2KJy6Am2NqdA3nJm4g9C6eC64UAf5sNs974ygB9RsN1',
+            ],
+        ],
     },
     {
         slug: 'owner-change-phishing-2025',
@@ -92,18 +90,18 @@ ${sources([
 <p>The attacker paid the fees. At the top level the transactions held only compute-budget settings and calls to a program of the attacker's own. Inside it, that program approved the attacker to spend an <a href="/warnings/unlimited-token-approval">unlimited amount</a> from eight of the victim's token accounts, then used the system program's Assign to hand the victim's wallet account itself to a drainer program: an <a href="/warnings/token-account-owner-change">owner change</a>. Nothing left the wallet at signing, so the preview showed nothing.</p>
 <h2>As SignLens reads it</h2>
 ${shown('owner-change-phishing')}
-<p>SignLens does not name the approvals and the Assign: they run inside the attacker's program, which it has no description of. It blocks the transaction for that reason, with three critical findings, and notes that the fee is paid by someone else, an unusual thing for a transaction you start yourself.</p>
-${sources([
-    [
-        'SlowMist: wallet owner permissions may be altered',
-        'https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e',
-    ],
-    ['PANews on the SlowMist case', 'https://panews.io/articles/397198c5-b7fe-4262-b79b-a87c8109ca8e'],
-    [
-        'The transaction on the Solana Explorer',
-        'https://explorer.solana.com/tx/524t8LW1PFWd4DLYDgvtKxCX6HmxLFy2Ho9YSGzuo9mX4iiGDhtBTejx7z7bK4C9RocL8hfeuKF1QaYMnK3itMVJ',
-    ],
-])}`,
+<p>SignLens does not name the approvals and the Assign: they run inside the attacker's program, which it has no description of. It blocks the transaction for that reason, with three critical findings, and notes that the fee is paid by someone else, an unusual thing for a transaction you start yourself.</p>`,
+        sources: [
+            [
+                'SlowMist: wallet owner permissions may be altered',
+                'https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e',
+            ],
+            ['PANews on the SlowMist case', 'https://panews.io/articles/397198c5-b7fe-4262-b79b-a87c8109ca8e'],
+            [
+                'The transaction on the Solana Explorer',
+                'https://explorer.solana.com/tx/524t8LW1PFWd4DLYDgvtKxCX6HmxLFy2Ho9YSGzuo9mX4iiGDhtBTejx7z7bK4C9RocL8hfeuKF1QaYMnK3itMVJ',
+            ],
+        ],
     },
     {
         slug: 'blind-signing',
@@ -123,21 +121,24 @@ ${sources([
 <p>According to WazirX, the signers saw the expected tokens and a whitelisted destination in their custody provider's interface, and got email confirmations; the payload upgraded the multisig to a contract the attacker controlled. Liminal, the custody provider, disputes WazirX's account.</p>
 <h2>What clear signing changes, and what it cannot</h2>
 <p>In each case the screen described one transaction and the signers signed another. Decoding the bytes being signed, rather than trusting a description of them, is the defence, which is what SignLens does: for Solana today, and for Ethereum next. It is not a defence against everything: a computer whose browser is compromised can show anything, SignLens's window included, and nothing a transaction explainer does helps when keys are stolen outright.</p>
-<p>On Solana, the Slope wallet's leak of seed phrases in 2022, the DEXX key leak in 2024 and the backdoored <code>@solana/web3.js</code> versions of December 2024 stole keys; Mango Markets (2022) and Loopscale (2025) exploited how prices were set; Wormhole, Cashio and Crema (2022) were bugs in programs. None of them asked a victim to sign anything.</p>
-${sources([
-    ['NCC Group: technical analysis of the Bybit hack', 'https://www.nccgroup.com/research/in-depth-technical-analysis-of-the-bybit-hack/'],
-    ['Radiant Capital post-mortem', 'https://medium.com/@RadiantCapital/radiant-post-mortem-fecd6cd38081'],
-    ['WazirX: preliminary report', 'https://wazirx.com/blog/preliminary-report-cyber-attack-on-wazirx-multisig-wallet/'],
-    [
-        'Cointelegraph: WazirX finds no evidence of compromised devices',
-        'https://cointelegraph.com/news/wazir-x-finds-no-evidence-compromised-devices-preliminary-investigation',
-    ],
-    [
-        'The Block: Slope saved seed phrases in plain text',
-        'https://www.theblock.co/news/business/2022-08-04-slope-wallet-provider-saved-user-seed-phrases-in-plain-text-solana-security-researchers-find-161425',
-    ],
-    ['@solana/web3.js advisory', 'https://github.com/solana-labs/solana-web3.js/security/advisories/GHSA-jcxm-7wvp-g6p5'],
-])}`,
+<p>On Solana, the Slope wallet's leak of seed phrases in 2022, the DEXX key leak in 2024 and the backdoored <code>@solana/web3.js</code> versions of December 2024 stole keys; Mango Markets (2022) and Loopscale (2025) exploited how prices were set; Wormhole, Cashio and Crema (2022) were bugs in programs. None of them asked a victim to sign anything.</p>`,
+        sources: [
+            [
+                'NCC Group: technical analysis of the Bybit hack',
+                'https://www.nccgroup.com/research/in-depth-technical-analysis-of-the-bybit-hack/',
+            ],
+            ['Radiant Capital post-mortem', 'https://medium.com/@RadiantCapital/radiant-post-mortem-fecd6cd38081'],
+            ['WazirX: preliminary report', 'https://wazirx.com/blog/preliminary-report-cyber-attack-on-wazirx-multisig-wallet/'],
+            [
+                'Cointelegraph: WazirX finds no evidence of compromised devices',
+                'https://cointelegraph.com/news/wazir-x-finds-no-evidence-compromised-devices-preliminary-investigation',
+            ],
+            [
+                'The Block: Slope saved seed phrases in plain text',
+                'https://www.theblock.co/news/business/2022-08-04-slope-wallet-provider-saved-user-seed-phrases-in-plain-text-solana-security-researchers-find-161425',
+            ],
+            ['@solana/web3.js advisory', 'https://github.com/solana-labs/solana-web3.js/security/advisories/GHSA-jcxm-7wvp-g6p5'],
+        ],
     },
 ];
 
@@ -153,6 +154,7 @@ ${i.body}`;
         description: i.description,
         updated,
         body,
+        sources: i.sources,
         jsonLd: article(i.h1, i.published, updated),
     };
 }

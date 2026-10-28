@@ -14,10 +14,8 @@ interface Warning {
     /** One sentence for the index and the home page. */
     gist: string;
     body: Html;
+    sources?: [string, string][];
 }
-
-const sources = (items: [string, string][]): Html =>
-    html`<h2>Sources</h2><ul class="sources">${items.map(([label, url]) => html`<li><a href="${url}">${label}</a></li>`)}</ul>`;
 
 export const WARNINGS: Warning[] = [
     {
@@ -37,14 +35,14 @@ export const WARNINGS: Warning[] = [
 ${shown('token-account-handed-over')}
 <p>Drainers often hide the owner change inside a program of their own, as in the November 2025 case. SignLens cannot name what such a program does, but it blocks any program it has no reviewed description of, which is what happened there: <a href="/incidents/owner-change-phishing-2025">the case, read by SignLens</a>, is blocked with a critical finding for each call to that program.</p>
 <h2>What to do</h2>
-<p>Reject it. No dapp needs to own your token account or your wallet to trade, lend, stake or claim.</p>
-${sources([
-    ['SolPhishHunter: phishing on Solana (arXiv, 2025)', 'https://arxiv.org/html/2505.04094v1'],
-    [
-        'SlowMist: wallet owner permissions altered (2025)',
-        'https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e',
-    ],
-])}`,
+<p>Reject it. No dapp needs to own your token account or your wallet to trade, lend, stake or claim.</p>`,
+        sources: [
+            ['SolPhishHunter: phishing on Solana (arXiv, 2025)', 'https://arxiv.org/html/2505.04094v1'],
+            [
+                'SlowMist: wallet owner permissions altered (2025)',
+                'https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e',
+            ],
+        ],
     },
     {
         slug: 'unlimited-token-approval',
@@ -62,8 +60,13 @@ ${sources([
 ${shown('unlimited-approval')}
 <p>The plain Approve instruction does not name the token, only the account; SignLens says so rather than guess. Where a dapp uses ApproveChecked, the token is named too.</p>
 <h2>What to do</h2>
-<p>Approve only what an order needs, to a program you recognise, and revoke approvals you no longer use.</p>
-${sources([['SlowMist: wallet owner permissions altered (2025)', 'https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e']])}`,
+<p>Approve only what an order needs, to a program you recognise, and revoke approvals you no longer use.</p>`,
+        sources: [
+            [
+                'SlowMist: wallet owner permissions altered (2025)',
+                'https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e',
+            ],
+        ],
     },
     {
         slug: 'durable-nonce',
@@ -81,14 +84,14 @@ ${sources([['SlowMist: wallet owner permissions altered (2025)', 'https://slowmi
 ${shown('durable-nonce-transfer')}
 <p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/window-dark.webp"><img src="/images/window-light.webp" width="440" height="575" alt="The SignLens window on a USDC transfer on a durable nonce: a warning that the signature never expires, what the transaction does, the simulated outcome, and Reject and Continue to Phantom"></picture></p>
 <h2>What to do</h2>
-<p>Sign a durable-nonce transaction only when you meant to sign something to be sent later, and know who will hold it.</p>
-${sources([
-    ['Solana: durable nonce deprecation', 'https://solana.com/upgrades/durable-nonce-deprecation'],
-    [
-        'CoinDesk: how a Solana feature let an attacker drain Drift (2026-04-02)',
-        'https://www.coindesk.com/tech/2026/04/02/how-a-solana-feature-designed-for-convenience-let-an-attacker-drain-usd270-million-from-drift',
-    ],
-])}`,
+<p>Sign a durable-nonce transaction only when you meant to sign something to be sent later, and know who will hold it.</p>`,
+        sources: [
+            ['Solana: durable nonce deprecation', 'https://solana.com/upgrades/durable-nonce-deprecation'],
+            [
+                'CoinDesk: how a Solana feature let an attacker drain Drift (2026-04-02)',
+                'https://www.coindesk.com/tech/2026/04/02/how-a-solana-feature-designed-for-convenience-let-an-attacker-drain-usd270-million-from-drift',
+            ],
+        ],
     },
     {
         slug: 'address-poisoning',
@@ -106,14 +109,14 @@ ${sources([
 ${shown('lookalike-recipient')}
 <p>An address in your book is named in the window; a recipient nobody has named says so.</p>
 <h2>What to do</h2>
-<p>Keep the addresses you pay in SignLens's address book, and never copy a recipient from your transaction history.</p>
-${sources([
-    [
-        'CryptoSlate: fake payment addresses targeted 4.5 million Solana wallets (Bitquery, 2026)',
-        'https://cryptoslate.com/fake-payment-addresses-targeted-4-5-million-solana-wallets-study-finds/',
-    ],
-    ['Scam Sniffer: 272 SOL lost to address poisoning (2024)', 'https://www.bitget.com/news/detail/12560604422090'],
-])}`,
+<p>Keep the addresses you pay in SignLens's address book, and never copy a recipient from your transaction history.</p>`,
+        sources: [
+            [
+                'CryptoSlate: fake payment addresses targeted 4.5 million Solana wallets (Bitquery, 2026)',
+                'https://cryptoslate.com/fake-payment-addresses-targeted-4-5-million-solana-wallets-study-finds/',
+            ],
+            ['Scam Sniffer: 272 SOL lost to address poisoning (2024)', 'https://www.bitget.com/news/detail/12560604422090'],
+        ],
     },
     {
         slug: 'unknown-program',
@@ -147,13 +150,13 @@ ${shown('squads-approval-read')}
 ${shown('squads-approvals')}
 <p>Both kinds of signature handed Drift's admin to an attacker in April 2026. The second member approved a proposal that did not exist yet when they signed, so nothing could have read it for them: <a href="/incidents/drift-2026">the two signatures, read by SignLens</a>.</p>
 <h2>What to do</h2>
-<p>Read the steps before approving, and remember where they come from: a dishonest RPC could show a harmless transaction. For a large transfer, check them against the proposer's signature or the proposal account on an explorer you trust, not against the interface that asks you to approve.</p>
-${sources([
-    [
-        'SEAL Frameworks: Squads multisig verification',
-        'https://frameworks.securityalliance.org/wallet-security/signing-and-verification/secure-multisig-squads-verification',
-    ],
-])}`,
+<p>Read the steps before approving, and remember where they come from: a dishonest RPC could show a harmless transaction. For a large transfer, check them against the proposer's signature or the proposal account on an explorer you trust, not against the interface that asks you to approve.</p>`,
+        sources: [
+            [
+                'SEAL Frameworks: Squads multisig verification',
+                'https://frameworks.securityalliance.org/wallet-security/signing-and-verification/secure-multisig-squads-verification',
+            ],
+        ],
     },
     {
         slug: 'swap-output-elsewhere',
@@ -185,6 +188,7 @@ ${w.body}
         description: w.description,
         updated,
         body,
+        ...(w.sources ? { sources: w.sources } : {}),
         jsonLd: article(w.h1, w.published, updated),
     };
 }
