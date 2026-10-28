@@ -7,7 +7,7 @@
 import { cpSync, mkdirSync, readdirSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 import { fileFor, type Page, render } from './page.ts';
-import { comparePage, faqPage, howItWorksPage } from './pages/about.ts';
+import { clearSigningPage, comparePage, faqPage, howItWorksPage } from './pages/about.ts';
 import { examplePages } from './pages/examples.ts';
 import { homePage } from './pages/home.ts';
 import { incidentPages } from './pages/incidents.ts';
@@ -25,6 +25,7 @@ export function pages(): Page[] {
         ...warningPages(),
         ...incidentPages(),
         howItWorksPage(),
+        clearSigningPage(),
         comparePage(),
         faqPage(),
         installPage(),

@@ -28,7 +28,7 @@ npm test         # builds, then checks every link, page head, the sitemap and th
 |---|---|
 | `src/build.ts` | the build: every page into `dist/`, and the checks that refuse a recording that explains other bytes or that no page shows |
 | `src/page.ts` | a page, and the shell every page is rendered in |
-| `src/pages/` | the pages: home, examples, warnings, incidents, how it works, the comparison, the FAQ, install, privacy, security, 404 |
+| `src/pages/` | the pages: home, examples, warnings, incidents, how it works, clear signing, the comparison, the FAQ, install, privacy, security, 404 |
 | `src/explanation.ts` | an explanation as the SignLens window shows it, in HTML: the sentences follow the extension's `src/ui/render.ts` |
 | `src/transaction.ts` | a transaction file: its header lines and its bytes |
 | `src/html.ts` | HTML from template literals, escaping what is interpolated |

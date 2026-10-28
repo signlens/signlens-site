@@ -1,12 +1,14 @@
-// How SignLens works, how it compares, and the questions people ask.
+// How SignLens works, what clear signing is, how SignLens compares, and the
+// questions people ask.
 import { type Html, html } from '../html.ts';
-import type { Page } from '../page.ts';
+import { article, type Page, published } from '../page.ts';
+import { shown } from '../shown.ts';
 import { REPOSITORY, SECURITY_EMAIL } from '../site.ts';
 
 export function howItWorksPage(): Page {
     const body = html`<h1>How SignLens works</h1>
 <p class="lead">SignLens sits between a dapp and your wallet. Dapps see it as one more wallet to connect, through <a href="https://github.com/anza-xyz/wallet-standard">the standard</a> they use to find wallets in the browser, but it holds no keys: a dapp sends it what it wants signed, SignLens explains it in its own window, and once you say so the request goes unchanged to the wallet you actually sign with.</p>
-<p>That is clear signing, for whichever Solana wallet you use: you read what a transaction does, in words, before your wallet signs it, rather than a hash or a site's description of it.</p>
+<p>That is <a href="/clear-signing">clear signing</a>, for whichever Solana wallet you use: you read what a transaction does, in words, before your wallet signs it, rather than a hash or a site's description of it.</p>
 <ol>
 <li><b>You connect "SignLens" in the dapp.</b> SignLens connects, in turn, to your own wallet in the same page: Phantom, Backpack, Solflare or another Solana wallet.</li>
 <li><b>The dapp asks for a signature.</b> SignLens keeps its own copy of the transaction, fetches the extra addresses it refers to from a Solana node (the RPC in the settings), simulates it there, and asks SignLens's server to explain it. When the explanation names accounts that would explain more, such as the proposal a multisig approval or a DAO vote refers to, SignLens reads them from the same node and asks again.</li>
@@ -65,6 +67,70 @@ export function howItWorksPage(): Page {
     };
 }
 
+export function clearSigningPage(): Page {
+    const h1 = 'Clear signing and blind signing on Solana';
+    const body = html`<h1>${h1}</h1>
+${published('2026-10-28')}
+<p class="lead">Clear signing is reading what a transaction will do, in words decoded from the bytes you sign, before you approve it: deposit 4,635 USDC into Kamino Lend as collateral, let this key spend your USDC, hand this account to that program. Blind signing is approving a transaction you cannot read: a hash on a hardware wallet's screen, or a dapp's own account of what its bytes do. Most Solana transactions today are signed with something in between, and the costliest attacks live in the gap.</p>
+<h2 id="today">What signing looks like on Solana today</h2>
+<dl class="facts">
+<dt>On a hardware wallet</dt>
+<dd>Ledger's Solana app shows in words only "simple instructions like a single transfer" and a few pairs, such as creating an account and funding it. Anything else needs its blind-signing setting turned on: "Blind signing must be on for the Ledger to sign SPL token transfers and smart contract transactions on Solana", says Solflare's guide, and firmware and app updates turn it off again. A swap, a deposit or a vote is then approved on a screen that cannot display it.</dd>
+<dt>In a software wallet</dt>
+<dd>Phantom, Backpack, Solflare and other wallets simulate the transaction and show the balance changes it would cause, with warnings for some known dangers. That says how much, not what for: a deposit, a liquidity position and a drain can show the same line. When the simulation fails, the wallets' own help pages say the transaction may succeed anyway.</dd>
+<dt>In the dapp</dt>
+<dd>The dapp builds the bytes and describes them: a button that says Claim, Swap or Sign in. That description is what an attacker who controls the page gets to write. In February 2025, on Ethereum, Bybit's signers saw a routine transfer from cold storage in an interface attackers had altered, and signed a change to their multisig's own logic: about $1.5 billion (<a href="/incidents/blind-signing">what they saw, and what they signed</a>).</dd>
+</dl>
+<h2 id="why">Why it matters on Solana</h2>
+<p>The transactions that cost the most move nothing when you sign them: they hand over the right to take it later. A balance preview shows no change, and a hardware wallet in blind-signing mode shows nothing it can read.</p>
+<ul>
+<li><a href="/warnings/token-account-owner-change">Owner changes</a> hand a token account, or the wallet itself, to someone else. In one academic study of Solana phishing (SolPhishHunter, 2025), owner transfers were 2,171 of 8,058 phishing transactions but 73.85% of the $1.1 million in losses it measured. In November 2025 a victim lost over $3 million after a preview that "showed no fund changes" (<a href="/incidents/owner-change-phishing-2025">the case</a>).</li>
+<li><a href="/warnings/unlimited-token-approval">Unlimited approvals</a> let another key spend from one of your token accounts at any time, up to the largest amount there is. The same victim's transactions approved it on eight token accounts.</li>
+<li><a href="/warnings/durable-nonce">Durable nonces</a> make a signature that never expires. Two members of Drift's multisig each signed one, and on 1 April 2026 the attacker who held them took control of the protocol; between $270 and $286 million left it (<a href="/incidents/drift-2026">the two signatures</a>).</li>
+<li><a href="/warnings/multisig-approval">Multisig approvals</a> sign a reference to a proposal stored on chain, not what it does, so no wallet can show it from the bytes alone.</li>
+</ul>
+<h2 id="example">What clear signing shows</h2>
+<p>A real deposit into Kamino Lend. A balance preview shows 4,635.28675 USDC leaving the wallet. Decoded from its instructions, the transaction deposits it into Kamino Lend as collateral, as SignLens shows it:</p>
+${shown('kamino-lend-deposit')}
+<p>Three things make that possible: a description of each program's instructions, from a source you can trust, to decode the bytes into what they do; names checked by address, so that a token called USDC is the USDC (<a href="/how-it-works#reading">"(verified)"</a>); and decoding the bytes that will be signed, not what the dapp says they are. It is not a defence against everything: a compromised computer can show anything, and a stolen key needs no signature.</p>
+<h2 id="srfc-39">sRFC 39: a standard for clear signing on Solana</h2>
+<p>On 27 October 2025 a draft, sRFC 39 "Solana Clear Sign", was opened in the Solana Foundation's repository of standards proposals. Its starting point: the interface descriptions programs publish, their IDLs, "provide no guidance on how to present transaction data to users", so users "must blindly sign transactions, a process prone to error and misunderstanding, which often leads to loss of funds."</p>
+<p>It proposes that each program's IDL carry display rules: an intent for each instruction, such as "Transfer 10 wSOL to toly.sol.", labels for its accounts and arguments, and how to format amounts, dates and durations. Wallets would fetch them with the IDL; hardware wallets would carry them in their firmware or be given them while signing, and must be able to show the intent from the IDL and the instruction data alone.</p>
+<p>The open question is trust. An IDL is written by the program's own authors, and a drainer can describe its program as harmless: replies in the discussion propose curated lists of trusted programs, and verified builds to establish where an IDL comes from. Ledger has proposed additions, and published an extension that follows value across instructions to state what a whole transaction does. As of October 2026 sRFC 39 is still a draft. On Ethereum the equivalent is ERC-7730, the clear-signing standard Ledger started and handed to the Ethereum Foundation on 12 May 2026.</p>
+<h2 id="now">Clear signing on Solana now</h2>
+<p>Until wallets and hardware wallets read display rules like sRFC 39's, clear signing on Solana means decoding a transaction before your wallet asks you to sign it. That is what SignLens does: dapps connect it like a wallet, and it explains each transaction in its own window, from a reviewed description of each program it knows, then passes it on unchanged to your wallet (<a href="/how-it-works">how it works</a>). A program it has no description of is not guessed at: the request is <a href="/warnings/unknown-program">blocked</a>. It is free, works in front of Phantom, Backpack, Solflare and other Solana wallets, and runs in Chrome, Brave, Edge and Firefox on a computer. <a href="/compare">How it compares</a> with wallet previews, scam lists, explorers and hardware wallets.</p>
+<h2 id="meanwhile">Whatever you sign with</h2>
+<ul>
+<li>Reject a transaction that hands over an account or approves an unlimited amount, unless you know why it must.</li>
+<li>Sign a transaction that never expires only when you meant to sign something to be sent later, and know who will hold it.</li>
+<li>On a Ledger, turn blind signing on for the dapp that needs it and off again afterwards, as Solflare's guide advises.</li>
+<li>Check what a large transaction does somewhere other than the page asking you to sign it.</li>
+</ul>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://github.com/solana-foundation/SRFCs/discussions/4">sRFC 39: Solana Clear Sign (draft, Solana Foundation)</a></li>
+<li><a href="https://github.com/LedgerHQ/solana-srfc39-meta-intent-extension">Ledger: an extension of sRFC 39 to whole transactions</a></li>
+<li><a href="https://developers.ledger.com/docs/device-interaction/references/signers/solana">Ledger: the Solana signer ("only supports simple instructions like a single transfer")</a></li>
+<li><a href="https://docs.solflare.com/solflare/onboarding/web-app-and-extension/import-your-ledger-device">Solflare: import your Ledger device (blind signing)</a></li>
+<li><a href="https://developers.ledger.com/docs/clear-signing/overview">Ledger: Clear Signing and ERC-7730</a></li>
+<li><a href="https://jup.ag/wallet/security">Jupiter Wallet: security ("Approval previews estimate balance changes")</a></li>
+<li><a href="https://help.solflare.com/en/articles/9263757-why-did-my-transaction-fail">Solflare: why did my transaction fail</a></li>
+<li><a href="https://arxiv.org/html/2505.04094v1">SolPhishHunter: phishing on Solana (arXiv, 2025)</a></li>
+<li><a href="https://slowmist.medium.com/beware-of-solana-phishing-attacks-wallet-owner-permissions-may-be-altered-708bbb30518e">SlowMist: wallet owner permissions altered (2025)</a></li>
+<li><a href="https://www.chainalysis.com/blog/lessons-from-the-drift-hack/">Chainalysis: lessons from the Drift hack</a></li>
+<li><a href="https://www.nccgroup.com/research/in-depth-technical-analysis-of-the-bybit-hack/">NCC Group: technical analysis of the Bybit hack</a></li>
+</ul>`;
+    return {
+        path: '/clear-signing',
+        title: 'Clear signing on Solana: what it is and why it matters',
+        description:
+            'Clear signing shows what a Solana transaction does, in words, before you sign it. What blind signing looks like on Solana today, why it matters, and sRFC 39.',
+        updated: '2026-10-28',
+        body,
+        jsonLd: article(h1, '2026-10-28', '2026-10-28'),
+    };
+}
+
 export function comparePage(): Page {
     const body = html`<h1>SignLens compared with wallet previews, scam lists and explorers</h1>
 <p class="lead">Solana wallets already show you something before you sign: the balance changes a simulation estimates, and warnings for some known dangers. SignLens adds what a transaction is for, read from its instructions, and checks what it reads. It works alongside your wallet's own checks, not instead of them.</p>
@@ -110,7 +176,7 @@ const FAQ: [string, string | Html][] = [
     ['Which wallets does it work with?', 'Phantom, Backpack, Solflare and the other Solana wallets dapps can connect to in the browser.'],
     [
         'What is clear signing? What is blind signing?',
-        "Blind signing is approving a transaction you cannot read: a hash, or an interface's description of what the bytes do. Clear signing is seeing the transaction itself, decoded into words, before you sign. SignLens brings clear signing to Solana transactions in the browser.",
+        html`Clear signing is seeing the transaction itself, decoded into words, before you sign. Blind signing is approving a transaction you cannot read: a hash, or an interface's description of what the bytes do. SignLens brings clear signing to Solana transactions in the browser. <a href="/clear-signing">Clear signing on Solana</a> has what each looks like today, and why it matters.`,
     ],
     [
         "How is it different from my wallet's transaction preview?",
@@ -169,7 +235,7 @@ ${FAQ.map(([q, a]) => html`<h2>${q}</h2><p>${a}</p>`)}`;
         title: 'SignLens FAQ: clear signing for Solana, explained',
         description:
             'Is SignLens a wallet? Which wallets does it work with? What is blind signing? What does it send to its server? Answers about SignLens.',
-        updated: '2026-10-25',
+        updated: '2026-10-28',
         body,
     };
 }

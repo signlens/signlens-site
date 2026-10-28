@@ -100,6 +100,7 @@ ${page.hidden || page.path === '/' || page.path === '/install' ? '' : html`<p cl
 <footer class="site"><div class="bar">
 <nav aria-label="More">
 <a href="/install">Install</a>
+<a href="/clear-signing">Clear signing on Solana</a>
 <a href="/compare">Compared with wallet previews</a>
 <a href="/privacy">Privacy</a>
 <a href="/security">Security</a>

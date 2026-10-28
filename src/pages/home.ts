@@ -59,7 +59,7 @@ export function homePage(): Page {
 </section>
 <div class="prose">
 <h2>More than a balance preview</h2>
-<p>Before you sign, your wallet can show what a transaction will take from you. It does not say where that goes or what it buys. A deposit into a lending market, a liquidity position, a stake, a leveraged order and a drain can all look the same there. SignLens reads the transaction itself, every instruction of it, and says in words what it does.</p>
+<p>Before you sign, your wallet can show what a transaction will take from you. It does not say where that goes or what it buys. A deposit into a lending market, a liquidity position, a stake, a leveraged order and a drain can all look the same there. SignLens reads the transaction itself, every instruction of it, and says in words what it does: <a href="/clear-signing">clear signing</a>, in front of the wallet you already use.</p>
 <p>Real mainnet transactions, by what leaves the wallet and by SignLens's summary of them:</p>
 <div class="table stack"><table role="table">
 <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">On</th><th scope="col" role="columnheader">Leaves your wallet</th><th scope="col" role="columnheader">SignLens says</th></tr></thead>
@@ -91,7 +91,7 @@ export function homePage(): Page {
         title: 'SignLens: Solana transaction explainer for your wallet',
         description:
             'A free browser extension that explains, in plain words, each Solana transaction a dapp asks you to sign. Works with Phantom, Backpack and Solflare.',
-        updated: '2026-10-25',
+        updated: '2026-10-28',
         wide: true,
         body,
         jsonLd: {
