@@ -99,12 +99,13 @@ ${shown('kamino-lend-deposit')}
 <p>The open question is trust. An IDL is written by the program's own authors, and a drainer can describe its program as harmless: replies in the discussion propose curated lists of trusted programs, and verified builds to establish where an IDL comes from. Ledger has proposed additions, and published an extension that follows value across instructions to state what a whole transaction does. As of October 2026 sRFC 39 is still a draft. On Ethereum the equivalent is ERC-7730, the clear-signing standard Ledger started and handed to the Ethereum Foundation on 12 May 2026.</p>
 <h2 id="now">Clear signing on Solana now</h2>
 <p>Until wallets and hardware wallets read display rules like sRFC 39's, clear signing on Solana means decoding a transaction before your wallet asks you to sign it. That is what SignLens does: dapps connect it like a wallet, and it explains each transaction in its own window, from a reviewed description of each program it knows, then passes it on unchanged to your wallet (<a href="/how-it-works">how it works</a>). A program it has no description of is not guessed at: the request is <a href="/warnings/unknown-program">blocked</a>. It is free, works in front of Phantom, Backpack, Solflare and other Solana wallets, and runs in Chrome, Brave, Edge and Firefox on a computer. <a href="/compare">How it compares</a> with wallet previews, scam lists, explorers and hardware wallets.</p>
-<h2 id="meanwhile">Whatever you sign with</h2>
+<h2 id="before-you-sign">What to do before you sign</h2>
+<p>With SignLens or without it, and whichever wallet you use:</p>
 <ul>
-<li>Reject a transaction that hands over an account or approves an unlimited amount, unless you know why it must.</li>
-<li>Sign a transaction that never expires only when you meant to sign something to be sent later, and know who will hold it.</li>
-<li>On a Ledger, turn blind signing on for the dapp that needs it and off again afterwards, as Solflare's guide advises.</li>
-<li>Check what a large transaction does somewhere other than the page asking you to sign it.</li>
+<li>Reject a transaction that hands over an account or approves an unlimited amount, unless you know why it needs to.</li>
+<li>Sign a transaction that never expires only when you meant to sign something to be sent later, and you know who will hold it.</li>
+<li>On a Ledger, turn blind signing on only for the dapp that needs it, and off again afterwards, as Solflare's guide advises.</li>
+<li>For a large transaction, check what it does somewhere other than the page asking you to sign it.</li>
 </ul>
 <h2>Sources</h2>
 <ul class="sources">
