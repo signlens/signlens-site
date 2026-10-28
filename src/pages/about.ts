@@ -190,15 +190,15 @@ const FAQ: [string, string | Html][] = [
     ['Which wallets does it work with?', 'Phantom, Backpack, Solflare and the other Solana wallets dapps can connect to in the browser.'],
     [
         'What is clear signing? What is blind signing?',
-        html`Clear signing is seeing the transaction itself, decoded into words, before you sign. Blind signing is approving a transaction you cannot read: a hash, or an interface's description of what the bytes do. SignLens brings clear signing to Solana transactions in the browser. <a href="/clear-signing">Clear signing on Solana</a> has what each looks like today, and why it matters.`,
+        html`Clear signing is seeing the transaction itself, decoded into words, before you sign. Blind signing is approving a transaction you cannot read: a hash, or an interface's description of what the bytes do. SignLens brings clear signing to Solana transactions in the browser. Read <a href="/clear-signing">Clear signing on Solana</a> for what each looks like today and why it matters.`,
     ],
     [
         "How is it different from my wallet's transaction preview?",
-        'A preview shows the balance changes a simulation estimates: how much, not what for. SignLens reads the instructions and says what they do: deposit as collateral, open a position, stake for a token, hand an account to someone. It also catches what moves nothing when you sign, such as an owner change or an unlimited approval.',
+        'A preview shows the balance changes a simulation estimates: how much leaves your wallet, not why. SignLens reads the instructions and says what they do: deposit as collateral, open a liquidity position, stake SOL, or hand an account over to someone else. It also catches what moves nothing when you sign, such as an owner change or an unlimited approval.',
     ],
     [
         'What does "(verified)" mean?',
-        'That SignLens knows the token or account by its address, from a verified token list or by deriving it, not by the name it gives itself. A token SignLens cannot verify is shown by its mint address and marked unverified.',
+        'That SignLens knows the token or account by its on-chain address, either from a verified token list or by deriving its address (a program-derived address, or an associated token account), not by the name it gives itself. A token SignLens cannot verify is shown by its mint address and marked unverified.',
     ],
     [
         'What is a wallet drainer?',
@@ -206,7 +206,7 @@ const FAQ: [string, string | Html][] = [
     ],
     [
         'Can SignLens stop a wallet drainer?',
-        html`It reads each transaction before your wallet signs it. An owner change of your own account is a critical finding and blocks the request; an unlimited approval is a high finding; and a drainer's own program, which SignLens has no description of, blocks the request as unknown, as in <a href="/incidents/owner-change-phishing-2025">the November 2025 case</a>. It cannot help when a seed phrase or a key is stolen, which needs no signature, or when the computer itself is compromised.`,
+        html`It reads each transaction before your wallet signs it. Changing the owner of your account is flagged as critical and blocks the request; an unlimited approval is a High finding; and a custom drainer program is blocked as unknown because SignLens has no reviewed description of it (as in <a href="/incidents/owner-change-phishing-2025">the November 2025 case</a>). It cannot help when a seed phrase or a key is stolen, which needs no signature, or when the computer itself is compromised.`,
     ],
     [
         'What happens with a program SignLens does not know?',
@@ -218,7 +218,7 @@ const FAQ: [string, string | Html][] = [
     ],
     [
         'What does SignLens send to its server?',
-        html`In this beta, the transaction to explain, the extra addresses it refers to, the outcome of the simulation, the accounts the explanation names as your RPC returned them, your addresses from the settings and your address book. The server logs the verdict, the finding codes and a hash of the transaction, not the transaction itself. <a href="/privacy">The privacy page</a> has the details.`,
+        html`In this beta, the unsigned transaction, the addresses its lookup tables load, the simulation result, the accounts the explanation asks for as your RPC returned them, your addresses from the settings, and your address book's names and addresses. The server logs the verdict, the finding codes and a hash of the transaction, not the transaction itself. <a href="/privacy">The privacy page</a> has the details.`,
     ],
     ['Does it cost anything?', 'No. SignLens is free, and the extension is open source under the Apache 2.0 licence.'],
     ['Does it work on my phone?', 'No. It is an extension for desktop Chrome, Brave, Edge and Firefox.'],
@@ -233,7 +233,7 @@ const FAQ: [string, string | Html][] = [
     ],
     [
         'Can it check a Squads multisig proposal?',
-        html`When the proposal is created in the transaction you sign, yes: SignLens decodes its transaction step by step. When you only <a href="/warnings/multisig-approval">approve a proposal created earlier</a>, the bytes you sign do not contain it: SignLens reads the proposal and the transaction it stores from your RPC and shows its steps, as your RPC's word. When the RPC has nothing to give, SignLens says it cannot show what you approve.`,
+        html`When the proposal is created in the transaction you sign, yes: SignLens decodes its transaction step by step. When you only <a href="/warnings/multisig-approval">approve a proposal created earlier</a>, the bytes you sign do not contain it: SignLens fetches the proposal and the transaction it stores from your RPC and decodes the steps, noting that those details come from your RPC, not the bytes you are signing. If the RPC cannot return the proposal, SignLens warns that it cannot see what you are approving.`,
     ],
     [
         'How do I report a wrong explanation or a security problem?',
