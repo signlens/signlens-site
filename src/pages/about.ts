@@ -189,6 +189,10 @@ const FAQ: [string, string | Html][] = [
     ],
     ['Which wallets does it work with?', 'Phantom, Backpack, Solflare and the other Solana wallets dapps can connect to in the browser.'],
     [
+        'Does SignLens work with a Ledger or another hardware wallet?',
+        html`Yes, through the browser wallet your Ledger is connected to, such as Phantom, Backpack or Solflare. SignLens explains the transaction in its own window, then passes it to that wallet, which sends it to the Ledger to sign. For most Solana DeFi transactions the Ledger shows only a hash, with blind signing on (<a href="/clear-signing#today">what signing looks like today</a>), so SignLens's window is where you read what you approve. It does not replace the Ledger: a compromised computer could show anything in that window, while your keys stay on the device.`,
+    ],
+    [
         'What is clear signing? What is blind signing?',
         html`Clear signing is seeing the transaction itself, decoded into words, before you sign. Blind signing is approving a transaction you cannot read: a hash, or an interface's description of what the bytes do. SignLens brings clear signing to Solana transactions in the browser. Read <a href="/clear-signing">Clear signing on Solana</a> for what each looks like today and why it matters.`,
     ],
