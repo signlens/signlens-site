@@ -33,8 +33,8 @@ const WORKS_WITH: [string, string][] = [
     ['Pump', 'Pump.fun, PumpSwap, Pump Fees, Pump stables router'],
     ['Stake pools', "SPL Stake Pool, which Jito's JitoSOL and many others run on"],
     ['MetaDAO', 'Futarchy, Conditional Vault'],
-    ['Squads', 'v4 multisig, the transaction inside a proposal included'],
-    ['Drift', "the handover of the protocol's admin, only"],
+    ['Squads', 'v4 multisig (including decoding the transaction inside a proposal)'],
+    ['Drift', "only the handover of the protocol's admin, as in the April 2026 attack"],
     [
         'Aggregators and routers',
         'DFlow, Titan, OKX DEX Router, 0x Settler, LI.FI, Rango, Binance router and fee router, Kobayashi router, Liquid Mesh router',
@@ -50,8 +50,8 @@ export function homePage(): Page {
     const body = html`<section class="hero">
 <div>
 <h1>Know what you're signing on Solana</h1>
-<p class="lead">${NAME} is a Solana transaction explainer: a free browser extension that explains, in plain words, each transaction a dapp asks you to sign, before your wallet signs it, and says so when it cannot. Your wallet's preview shows what leaves your wallet; SignLens says where it goes and what it is for.</p>
-<p>It works beside the wallet you already use, Phantom, Backpack, Solflare and other Solana wallets. It holds no keys: it explains each request in its own window, and once you say so passes it on, unchanged, to your wallet, where you approve or reject as usual.</p>
+<p class="lead">${NAME} is a free Solana transaction explainer: a browser extension that decodes each transaction a dapp asks you to sign and says in plain words what it does, before your wallet signs it. When it cannot read one, it blocks the request. Your wallet's preview shows what leaves your wallet; SignLens says where it goes and what it is for.</p>
+<p>It sits in front of the wallet you already use, Phantom, Backpack, Solflare and other Solana wallets. It holds no keys: it explains each request in its own window, and once you say so passes it on, unchanged, to your wallet, where you approve or reject as usual.</p>
 <div class="actions"><a class="button primary" href="/install">Install for Chrome or Firefox</a><a class="button" href="/examples/">See real examples</a></div>
 <p class="muted">Beta, version ${VERSION}. The extension is open source. <a href="/privacy">The explanation is computed on SignLens's server</a> for now.</p>
 </div>
@@ -67,14 +67,14 @@ export function homePage(): Page {
 </table></div>
 <p>"(verified)" marks a token or an account SignLens knows by its address, not by the name it gives itself; "≤" an amount the program may take less of. <a href="/examples/">More examples</a>, from lending to multisig proposals.</p>
 <h2>It warns about what a balance preview cannot show</h2>
-<p>Some of the worst transactions take nothing when you sign them: they hand over the right to take it later. SignLens names them right under the verdict: ${WARNINGS.map((w, i) => html`${i === 0 ? '' : i === WARNINGS.length - 1 ? ' and ' : ', '}<a href="/warnings/${w.slug}">${w.name.toLowerCase()}</a>`)}. <a href="/warnings/">What each one is</a>.</p>
+<p>Some of the worst transactions take nothing when you sign them: they hand over the right to take it later. SignLens flags them right under the verdict: ${WARNINGS.map((w, i) => html`${i === 0 ? '' : i === WARNINGS.length - 1 ? ' and ' : ', '}<a href="/warnings/${w.slug}">${w.name.toLowerCase()}</a>`)}. <a href="/warnings/">See all warnings</a>.</p>
 <h2>Real attacks, read by SignLens</h2>
 <p>The transactions behind attacks that needed a signature, as SignLens reads them, and what that does and does not prove:</p>
 <ul>${INCIDENTS.map((i) => html`<li><a href="/incidents/${i.slug}">${i.name}</a></li>`)}</ul>
 <h2>What it isn't</h2>
 <ul>
 <li><b>Not a wallet.</b> It holds no keys and signs nothing. Your wallet still asks you for every signature, as it did before.</li>
-<li><b>Not a guarantee.</b> OK means SignLens read every instruction and found nothing to warn about, not that a trade is a good one or a token worth holding. It can be wrong, and the strip under each explanation is where to say so.</li>
+<li><b>Not a guarantee.</b> OK means SignLens read every instruction and found nothing to warn about, not that a trade is a good one or a token worth holding. If an explanation looks wrong, press Wrong under it and say why.</li>
 <li><b>Not a guess.</b> What it cannot read, it says it cannot read, and a program it does not know blocks the request. A simulation, or an account it reads, is shown as the claim of the Solana node that gave it, not as fact.</li>
 <li><b>Not offline, in this beta.</b> The explanation is computed on SignLens's server, which sees the transaction; <a href="/privacy">the privacy page</a> says what it keeps.</li>
 <li><b>Not on every chain yet.</b> SignLens explains Solana mainnet today and is built to take on other chains; Ethereum is next. It runs in Chrome, Brave, Edge and Firefox on a computer.</li>
