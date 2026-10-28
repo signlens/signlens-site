@@ -71,7 +71,7 @@ export function clearSigningPage(): Page {
     const h1 = 'Clear signing and blind signing on Solana';
     const body = html`<h1>${h1}</h1>
 ${published('2026-10-28')}
-<p class="lead">Clear signing is reading what a transaction will do, in words decoded from the bytes you sign, before you approve it: deposit 4,635 USDC into Kamino Lend as collateral, let this key spend your USDC, hand this account to that program. Blind signing is approving a transaction you cannot read: a hash on a hardware wallet's screen, or a dapp's own account of what its bytes do. Most Solana transactions today are signed with something in between, and the costliest attacks live in the gap.</p>
+<p class="lead">Clear signing means seeing what a transaction will actually do, in plain words decoded from the bytes you are about to sign, before you approve it. You read the action itself: deposit 4,635 USDC into Kamino Lend as collateral, let this key spend your USDC, make that key the owner of this account. Blind signing is approving a transaction you cannot read: you see a hash on a hardware wallet's screen, or you trust the dapp to tell the truth about what its bytes do. Most Solana wallets show something in between: the balance changes a transaction would cause. The costliest attacks change no balance when you sign them.</p>
 <h2 id="today">What signing looks like on Solana today</h2>
 <dl class="facts">
 <dt>On a hardware wallet</dt>
