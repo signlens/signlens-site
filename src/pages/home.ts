@@ -2,7 +2,7 @@
 import { html } from '../html.ts';
 import type { Page } from '../page.ts';
 import { load } from '../shown.ts';
-import { NAME, ORIGIN, RELEASES, REPOSITORY, VERSION } from '../site.ts';
+import { FIREFOX, NAME, ORIGIN, RELEASES, REPOSITORY, VERSION } from '../site.ts';
 import { INCIDENTS } from './incidents.ts';
 import { WARNINGS } from './warnings.ts';
 
@@ -84,14 +84,14 @@ export function homePage(): Page {
 <ul>${WORKS_WITH.map(([project, what]) => html`<li><b>${project}</b>: ${what}</li>`)}</ul>
 <p>A program not on the list is shown as unknown, and its transaction blocked. SignLens is not affiliated with any of these projects; their names are their owners' trademarks.</p>
 <h2>Get it</h2>
-<p>SignLens ${VERSION} is on <a href="${RELEASES}">GitHub</a>, for Chrome and Firefox, built reproducibly and published with its checksums. <a href="/install">How to install it</a>, <a href="/how-it-works">how it works</a>, and <a href="/faq">questions people ask</a>.</p>
+<p>SignLens ${VERSION} is on <a href="${FIREFOX}">Firefox Add-ons</a>, and on <a href="${RELEASES}">GitHub</a> for Chrome, Brave and Edge, built reproducibly and published with its checksums. <a href="/install">How to install it</a>, <a href="/how-it-works">how it works</a>, and <a href="/faq">questions people ask</a>.</p>
 </div>`;
     return {
         path: '/',
         title: 'SignLens: Solana transaction explainer for your wallet',
         description:
             'A free browser extension that explains, in plain words, each Solana transaction a dapp asks you to sign. Works with Phantom, Backpack and Solflare.',
-        updated: '2026-10-28',
+        updated: '2026-10-29',
         wide: true,
         body,
         jsonLd: {
@@ -115,6 +115,7 @@ export function homePage(): Page {
                     operatingSystem: 'Chrome, Firefox',
                     softwareVersion: VERSION,
                     downloadUrl: RELEASES,
+                    sameAs: [FIREFOX],
                     license: 'https://www.apache.org/licenses/LICENSE-2.0',
                     offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
                     publisher: { '@id': `${ORIGIN}/#organization` },

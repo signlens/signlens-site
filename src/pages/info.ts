@@ -1,27 +1,24 @@
 // Install, privacy, security, and the page for a path that does not exist.
 import { html } from '../html.ts';
 import type { Page } from '../page.ts';
-import { RELEASES, REPOSITORY, SECURITY_EMAIL, SITE_REPOSITORY, SUPPORT_EMAIL, VERSION } from '../site.ts';
+import { FIREFOX, RELEASES, REPOSITORY, SECURITY_EMAIL, SITE_REPOSITORY, SUPPORT_EMAIL, VERSION } from '../site.ts';
 
 export function installPage(): Page {
     const body = html`<h1>Install SignLens</h1>
-<p class="lead">SignLens ${VERSION} is a beta for desktop Chrome, Brave and Edge (version 111 or later) and Firefox (140 or later). Until it is in the Chrome Web Store and on Firefox Add-ons, you install it from its GitHub release.</p>
-<h2>1. Download it</h2>
-<p>From the <a href="${RELEASES}">latest release</a>: <code>signlens-extension-${VERSION}.zip</code> for Chrome, Brave and Edge, or <code>signlens-extension-firefox-${VERSION}.zip</code> for Firefox. Each comes with its SHA-256 checksum and a build attestation; the <a href="${REPOSITORY}#verifying-a-package">README says how to check them</a>.</p>
-<h2>2. Load it</h2>
-<ul>
-<li><b>Chrome, Brave, Edge:</b> unzip it, open <code>chrome://extensions</code>, turn on "Developer mode", choose "Load unpacked" and pick the unzipped folder.</li>
-<li><b>Firefox:</b> open <code>about:debugging#/runtime/this-firefox</code>, choose "Load Temporary Add-on…" and pick the zip. Firefox keeps an add-on loaded this way only until it restarts. If the SignLens popup says the browser has not let it reach the API, press "Allow https access" there.</li>
-</ul>
-<h2>3. Use it</h2>
+<p class="lead">SignLens ${VERSION} is a beta for desktop Firefox (140 or later) and Chrome, Brave and Edge (version 111 or later). For Firefox it is on Firefox Add-ons. Until it is in the Chrome Web Store, you install it in Chrome, Brave and Edge from its GitHub release.</p>
+<h2>Firefox</h2>
+<p>Open <a href="${FIREFOX}">SignLens on Firefox Add-ons</a> and choose "Add to Firefox". Firefox keeps it up to date. If the SignLens popup says the browser has not let it reach the API, press "Allow https access" there.</p>
+<h2>Chrome, Brave and Edge</h2>
+<p>Download <code>signlens-extension-${VERSION}.zip</code> from the <a href="${RELEASES}">latest release</a>. It comes with its SHA-256 checksum and a build attestation; the <a href="${REPOSITORY}#verifying-a-package">README says how to check them</a>. Unzip it, open <code>chrome://extensions</code>, turn on "Developer mode", choose "Load unpacked" and pick the unzipped folder.</p>
+<h2>Use it</h2>
 <p>In a dapp, choose <b>SignLens</b> when it asks you to connect a wallet. SignLens connects, in turn, to your own wallet in the same page, and from then on every request opens the SignLens window first. Continue, and your wallet asks you as usual. If you turn off "Show the explanation and ask first" in the settings, only the requests SignLens would refuse open the window; the rest go straight on to your wallet.</p>
 <p>In the popup's settings you can pick which of your wallets SignLens passes requests to, list your own addresses so explanations can say "you", keep an address book so transfers name the people you pay and <a href="/warnings/address-poisoning">lookalikes</a> stand out, and choose the Solana node SignLens asks for what a transaction refers to (the RPC).</p>
 <p class="note">SignLens never asks for a seed phrase or a private key, and never signs anything. Anything that asks you for one, in SignLens's name or not, is a scam.</p>`;
     return {
         path: '/install',
         title: 'Install SignLens for Chrome and Firefox',
-        description: `Install the SignLens ${VERSION} beta in Chrome, Brave, Edge or Firefox from its GitHub release, and connect it in front of your Solana wallet.`,
-        updated: '2026-10-25',
+        description: `Install the SignLens ${VERSION} beta from Firefox Add-ons, or in Chrome, Brave and Edge from its GitHub release, and connect it in front of your Solana wallet.`,
+        updated: '2026-10-29',
         body,
     };
 }

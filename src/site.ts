@@ -5,6 +5,8 @@ export const NAME = 'SignLens';
 /** The extension's repository, its releases, and this site's. */
 export const REPOSITORY = 'https://github.com/signlens/signlens-extension';
 export const RELEASES = `${REPOSITORY}/releases`;
+/** The extension on Firefox Add-ons. */
+export const FIREFOX = 'https://addons.mozilla.org/firefox/addon/signlens-beta/';
 export const SITE_REPOSITORY = 'https://github.com/signlens/signlens-site';
 /** The extension's current release. */
 export const VERSION = '0.2.0';
