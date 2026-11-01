@@ -33,7 +33,7 @@ for (const slug of slugs) {
         ...(tx.accounts.length > 0 ? { accounts: tx.accounts } : {}),
         render: true,
     };
-    const response = await fetch(`${api}/v1/explain`, {
+    const response = await fetch(`${api}/v2/explain`, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(body),

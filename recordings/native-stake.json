@@ -1,67 +1,509 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 4,
+        "summary": {
+          "id": "stake-delegate-summary",
+          "parts": [
+            {
+              "text": "Delegate stake account "
+            },
+            {
+              "short": {
+                "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "7JXU…YwU4"
+            },
+            {
+              "text": " to validator "
+            },
+            {
+              "short": {
+                "address": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "9QU2…29mF"
+            }
+          ],
+          "text": "Delegate stake account 7JXU…YwU4 to validator 9QU2…29mF"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "stake-delegate-effect",
+          "parts": [
+            {
+              "text": "Delegate "
+            },
+            {
+              "text": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": " to validator "
+            },
+            {
+              "text": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            }
+          ],
+          "text": "Delegate 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 to validator 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF"
+        },
         "type": "other",
         "value": {
-          "description": "delegate 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 to validator 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF"
+          "description": {
+            "id": "stake-delegate-effect",
+            "parts": [
+              {
+                "text": "Delegate "
+              },
+              {
+                "text": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+                "value": {
+                  "type": "address",
+                  "value": {
+                    "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  }
+                }
+              },
+              {
+                "text": " to validator "
+              },
+              {
+                "text": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+                "value": {
+                  "type": "address",
+                  "value": {
+                    "address": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  }
+                }
+              }
+            ],
+            "text": "Delegate 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 to validator 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF"
+          }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Stake program (Stak…1111)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "Stake11111111111111111111111111111111111111",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Stake program",
+                        "value": {
+                          "type": "text",
+                          "value": "Stake program"
+                        }
+                      }
+                    ],
+                    "text": "Stake program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Stake program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Stake program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Stake program"
+                                }
+                              }
+                            ],
+                            "text": "Stake program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "Stake11111111111111111111111111111111111111",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Stak…1111"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Stake program (Stak…1111)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "25 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "25000000000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "25 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "25 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4, managed by Stake program (Stak…1111), depositing 25 SOL"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "25000000000"
+            "note_words": null,
+            "units": "25000000000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "25 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "25 SOL"
+            }
           },
           "if_missing": false,
           "owner": {
             "address": "Stake11111111111111111111111111111111111111",
             "is_self": false,
-            "label": "Stake program",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Stake program",
+                  "value": {
+                    "type": "text",
+                    "value": "Stake program"
+                  }
+                }
+              ],
+              "text": "Stake program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Stake program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Stake program",
+                          "value": {
+                            "type": "text",
+                            "value": "Stake program"
+                          }
+                        }
+                      ],
+                      "text": "Stake program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "Stake11111111111111111111111111111111111111",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Stak…1111"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Stake program (Stak…1111)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000083006 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "83006",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000083006 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000083006 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000083006 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "83006"
+            "note_words": null,
+            "units": "83006",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000083006 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000083006 SOL"
+            }
           },
           "payer": {
             "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Ekbe…s9fx"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (Ekbe…s9fx)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -69,18 +511,33 @@
       }
     ],
     "findings": [],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "5283facd916b5f27459c38ac9053b0241da1f756ddcb402515ee824890b0fd41",
       "format": "solana legacy"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Stake account",
+            "label": {
+              "id": "label-stake-account",
+              "parts": [
+                {
+                  "text": "Stake account"
+                }
+              ],
+              "text": "Stake account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -88,13 +545,23 @@
                 "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Validator vote account",
+            "label": {
+              "id": "label-validator-vote-account",
+              "parts": [
+                {
+                  "text": "Validator vote account"
+                }
+              ],
+              "text": "Validator vote account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -102,21 +569,78 @@
                 "address": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Authorized by",
+            "label": {
+              "id": "label-authorized-by",
+              "parts": [
+                {
+                  "text": "Authorized by"
+                }
+              ],
+              "text": "Authorized by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Ekbe…s9fx"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (Ekbe…s9fx)"
+                }
               }
             }
           }
@@ -127,15 +651,51 @@
             "index": 4
           }
         },
-        "subtitle": "Stake program (verified)",
-        "title": "Delegate stake"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Stake program",
+              "value": {
+                "type": "text",
+                "value": "Stake program"
+              }
+            }
+          ],
+          "text": "Stake program"
+        },
+        "title": {
+          "id": "stake-delegate-title",
+          "parts": [
+            {
+              "text": "Delegate stake"
+            }
+          ],
+          "text": "Delegate stake"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -143,17 +703,49 @@
             }
           },
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "3000000 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "3,000,000 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "3,000,000 micro-lamports per compute unit"
+              }
             }
           },
           {
             "help": null,
-            "label": "Create derived account: Account",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create derived account: Account"
+                }
+              ],
+              "text": "Create derived account: Account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -161,13 +753,23 @@
                 "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Create derived account: Derived from",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create derived account: Derived from"
+                }
+              ],
+              "text": "Create derived account: Derived from"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -175,13 +777,23 @@
                 "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Create derived account: Seed",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create derived account: Seed"
+                }
+              ],
+              "text": "Create derived account: Seed"
+            },
             "trust": "fact",
             "value": {
               "type": "text",
@@ -190,63 +802,238 @@
           },
           {
             "help": null,
-            "label": "Create derived account: Owner program",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create derived account: Owner program"
+                }
+              ],
+              "text": "Create derived account: Owner program"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "Stake11111111111111111111111111111111111111",
                 "is_self": false,
-                "label": "Stake program",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-name",
+                  "parts": [
+                    {
+                      "text": "Stake program",
+                      "value": {
+                        "type": "text",
+                        "value": "Stake program"
+                      }
+                    }
+                  ],
+                  "text": "Stake program"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Stake program",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-name",
+                          "parts": [
+                            {
+                              "text": "Stake program",
+                              "value": {
+                                "type": "text",
+                                "value": "Stake program"
+                              }
+                            }
+                          ],
+                          "text": "Stake program"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "Stake11111111111111111111111111111111111111",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Stak…1111"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Stake program (Stak…1111)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Create derived account: Deposit",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create derived account: Deposit"
+                }
+              ],
+              "text": "Create derived account: Deposit"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "25000000000"
+                "note_words": null,
+                "units": "25000000000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "25 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "25 SOL"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Create derived account: Space",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create derived account: Space"
+                }
+              ],
+              "text": "Create derived account: Space"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "200 bytes"
+              "type": "words",
+              "value": {
+                "id": "decode-bytes",
+                "parts": [
+                  {
+                    "text": "200",
+                    "value": {
+                      "type": "integer",
+                      "value": "200"
+                    }
+                  },
+                  {
+                    "text": " bytes"
+                  }
+                ],
+                "text": "200 bytes"
+              }
             }
           },
           {
             "help": null,
-            "label": "Create derived account: Paid by",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create derived account: Paid by"
+                }
+              ],
+              "text": "Create derived account: Paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Ekbe…s9fx"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (Ekbe…s9fx)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Initialize stake account: Stake account",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Initialize stake account: Stake account"
+                }
+              ],
+              "text": "Initialize stake account: Stake account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -254,13 +1041,23 @@
                 "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Initialize stake account: Staker",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Initialize stake account: Staker"
+                }
+              ],
+              "text": "Initialize stake account: Staker"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -268,13 +1065,23 @@
                 "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Initialize stake account: Withdrawer",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Initialize stake account: Withdrawer"
+                }
+              ],
+              "text": "Initialize stake account: Withdrawer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -282,22 +1089,48 @@
                 "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Initialize stake account: Lockup",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Initialize stake account: Lockup"
+                }
+              ],
+              "text": "Initialize stake account: Lockup"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "none"
+              "type": "words",
+              "value": {
+                "id": "stake-no-lockup",
+                "parts": [
+                  {
+                    "text": "none"
+                  }
+                ],
+                "text": "none"
+              }
             }
           },
           {
             "help": null,
-            "label": "Initialize stake account: Lockup custodian",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Initialize stake account: Lockup custodian"
+                }
+              ],
+              "text": "Initialize stake account: Lockup custodian"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -305,7 +1138,9 @@
                 "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -314,22 +1149,93 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Ekbe…s9fx"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (Ekbe…s9fx)"
+                }
               }
             }
           }
@@ -338,84 +1244,277 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "83006"
+                "note_words": null,
+                "units": "83006",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000083006 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000083006 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "78006"
+                "note_words": null,
+                "units": "78006",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000078006 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000078006 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "3000000 micro-lamports per unit × 26002 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "3,000,000 micro-lamports per compute unit × 26,002 compute units requested"
+                  }
+                ],
+                "text": "3,000,000 micro-lamports per compute unit × 26,002 compute units requested"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Rent deposits",
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "25 SOL; returned when the accounts are closed"
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "25 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "25000000000",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "25 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "25 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": "; refunded to whoever closes the account"
+                  }
+                ],
+                "text": "25 SOL; refunded to whoever closes the account"
+              }
             }
           }
         ],
@@ -423,18 +1522,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -442,11 +1573,52 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "Delegate stake account 7JXU…YwU4 to validator 9QU2…29mF",
-    "text": "Delegate stake account 7JXU…YwU4 to validator 9QU2…29mF\nOK\n\n== Delegate stake | Stake program (verified)\n  Stake account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Validator vote account: 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF\n  Authorized by: Your wallet (Ekbe…s9fx) (verified)\n\n== Also [collapsed]\n  Compute unit limit: 26002\n  Compute unit price: 3000000 micro-lamports per unit\n  Create derived account: Account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Create derived account: Derived from: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Create derived account: Seed: exodus:1790374749187\n  Create derived account: Owner program: Stake program (Stak…1111) (verified)\n  Create derived account: Deposit: 25 SOL\n  Create derived account: Space: 200 bytes\n  Create derived account: Paid by: Your wallet (Ekbe…s9fx) (verified)\n  Initialize stake account: Stake account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Initialize stake account: Staker: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Initialize stake account: Withdrawer: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Initialize stake account: Lockup: none\n  Initialize stake account: Lockup custodian: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n\n== Signers\n  Fee payer: Your wallet (Ekbe…s9fx) (verified)\n\n== Fee\n  Total: 0.000083006 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000078006 SOL\n  Priority basis: 3000000 micro-lamports per unit × 26002 units requested\n  Rent deposits: 25 SOL; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - delegate 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 to validator 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF\n  - create 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 owned by Stake program (Stak…1111) (verified), depositing 25 SOL\n  - Your wallet (Ekbe…s9fx) (verified) pays a fee of 0.000083006 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (628 bytes)\n  digest: 5283facd916b5f27459c38ac9053b0241da1f756ddcb402515ee824890b0fd41\n",
+    "summary": {
+      "id": "stake-delegate-summary",
+      "parts": [
+        {
+          "text": "Delegate stake account "
+        },
+        {
+          "short": {
+            "address": "7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "7JXU…YwU4"
+        },
+        {
+          "text": " to validator "
+        },
+        {
+          "short": {
+            "address": "9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "9QU2…29mF"
+        }
+      ],
+      "text": "Delegate stake account 7JXU…YwU4 to validator 9QU2…29mF"
+    },
+    "text": "Delegate stake account 7JXU…YwU4 to validator 9QU2…29mF\nOK\n\n== Delegate stake | Stake program\n  Stake account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Validator vote account: 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF\n  Authorized by: Your wallet (Ekbe…s9fx)\n\n== Also [collapsed]\n  Compute unit limit: 26002\n  Compute unit price: 3,000,000 micro-lamports per compute unit\n  Create derived account: Account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Create derived account: Derived from: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Create derived account: Seed: exodus:1790374749187\n  Create derived account: Owner program: Stake program (Stak…1111)\n  Create derived account: Deposit: 25 SOL\n  Create derived account: Space: 200 bytes\n  Create derived account: Paid by: Your wallet (Ekbe…s9fx)\n  Initialize stake account: Stake account: 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4\n  Initialize stake account: Staker: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Initialize stake account: Withdrawer: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n  Initialize stake account: Lockup: none\n  Initialize stake account: Lockup custodian: EkbeVg5aTLtcf85EuCjrnrmDPCgwrefXsX2ChurQs9fx\n\n== Signers\n  Fee payer: Your wallet (Ekbe…s9fx)\n\n== Fee\n  Total: 0.000083006 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000078006 SOL\n  Priority basis: 3,000,000 micro-lamports per compute unit × 26,002 compute units requested\n  Rent deposits: 25 SOL; refunded to whoever closes the account\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Delegate 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4 to validator 9QU2QSxhb24FUX3Tu2FpczXjpK3VYrvRudywSZaM29mF\n  - Create 7JXUEWF3JvqGuN4sDzLtNVuiugbagnDWxH28PFtaYwU4, managed by Stake program (Stak…1111), depositing 25 SOL\n  - You pay a fee of 0.000083006 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (628 bytes)\n  digest: 5283facd916b5f27459c38ac9053b0241da1f756ddcb402515ee824890b0fd41\n",
     "verdict": "ok"
   }
 }

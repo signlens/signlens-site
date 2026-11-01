@@ -147,7 +147,7 @@ function incidentPage(i: Incident): Page {
 <h1>${i.h1}</h1>
 ${published(i.published)}
 ${i.body}`;
-    const updated = '2026-10-25';
+    const updated = '2026-11-01';
     return {
         path: `/incidents/${i.slug}`,
         title: i.title,

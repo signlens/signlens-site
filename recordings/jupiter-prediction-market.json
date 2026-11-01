@@ -1,66 +1,574 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 2,
+        "summary": {
+          "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-summary-else-true-true-then",
+          "parts": [
+            {
+              "text": "Buy "
+            },
+            {
+              "text": "5.33",
+              "value": {
+                "type": "words",
+                "value": {
+                  "id": "descriptor-number",
+                  "parts": [
+                    {
+                      "text": "5.33"
+                    }
+                  ],
+                  "text": "5.33"
+                }
+              }
+            },
+            {
+              "text": " YES contracts in Jupiter prediction market "
+            },
+            {
+              "text": "3913199afd6342fa3b590f0adb079c3c",
+              "value": {
+                "type": "text",
+                "value": "3913199afd6342fa3b590f0adb079c3c"
+              }
+            },
+            {
+              "text": " at the market price, depositing "
+            },
+            {
+              "text": "5 JupUSD",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+                    "symbol": "JupUSD",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "5000000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "5 "
+                      },
+                      {
+                        "text": "JupUSD",
+                        "value": {
+                          "type": "text",
+                          "value": "JupUSD"
+                        }
+                      }
+                    ],
+                    "text": "5 JupUSD"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Buy 5.33 YES contracts in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at the market price, depositing 5 JupUSD"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "5 JupUSD",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+                    "symbol": "JupUSD",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "5000000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "5 "
+                      },
+                      {
+                        "text": "JupUSD",
+                        "value": {
+                          "type": "text",
+                          "value": "JupUSD"
+                        }
+                      }
+                    ],
+                    "text": "5 JupUSD"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (Cowb…moNB)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Cowb…moNB"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (Cowb…moNB)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Jupiter prediction market (3ZZu…jvUp)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Jupiter prediction market",
+                        "value": {
+                          "type": "text",
+                          "value": "Jupiter prediction market"
+                        }
+                      }
+                    ],
+                    "text": "Jupiter prediction market"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Jupiter prediction market",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Jupiter prediction market",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Jupiter prediction market"
+                                }
+                              }
+                            ],
+                            "text": "Jupiter prediction market"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "3ZZu…jvUp"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Jupiter prediction market (3ZZu…jvUp)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send 5 JupUSD from Your wallet (Cowb…moNB) to Jupiter prediction market (3ZZu…jvUp)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 6,
+              "description": null,
               "id": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
               "symbol": "JupUSD",
               "trust": "verified"
             },
             "bound": "exact",
             "note": null,
-            "units": "5000000"
+            "note_words": null,
+            "units": "5000000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "5 "
+                },
+                {
+                  "text": "JupUSD",
+                  "value": {
+                    "type": "text",
+                    "value": "JupUSD"
+                  }
+                }
+              ],
+              "text": "5 JupUSD"
+            }
           },
           "from": {
             "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Cowb…moNB"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (Cowb…moNB)"
+            }
           },
           "to": {
             "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
             "is_self": false,
-            "label": "Jupiter prediction market",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Jupiter prediction market",
+                  "value": {
+                    "type": "text",
+                    "value": "Jupiter prediction market"
+                  }
+                }
+              ],
+              "text": "Jupiter prediction market"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Jupiter prediction market",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Jupiter prediction market",
+                          "value": {
+                            "type": "text",
+                            "value": "Jupiter prediction market"
+                          }
+                        }
+                      ],
+                      "text": "Jupiter prediction market"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "3ZZu…jvUp"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Jupiter prediction market (3ZZu…jvUp)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-effects-true-other",
+          "parts": [
+            {
+              "text": "The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit"
+            }
+          ],
+          "text": "The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit"
+        },
         "type": "other",
         "value": {
-          "description": "the order and, if new, the position account are created at the payer's cost; a keeper fills the order against the book and closes it, returning any unspent deposit (the deposit moved from the owner's account to the order's in all 217 buys in a harvest of the program's 1,000 latest transactions on 2026-10-18)"
+          "description": {
+            "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-effects-true-other",
+            "parts": [
+              {
+                "text": "The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit"
+              }
+            ],
+            "text": "The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit"
+          }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.0000275 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "27500",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.0000275 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.0000275 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.0000275 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "27500"
+            "note_words": null,
+            "units": "27500",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.0000275 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.0000275 SOL"
+            }
           },
           "payer": {
             "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Cowb…moNB"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (Cowb…moNB)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -68,64 +576,200 @@
       }
     ],
     "findings": [],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "acd3baf90c625ead58e15bf729fd452c71349793a454713fb0fbcc75b727e09a",
       "format": "solana v0"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "How many outcome contracts the order is for, in millionths: a contract pays one USD if its outcome wins and nothing otherwise, so 5,000,000 is five contracts.",
-            "label": "Contracts (millionths)",
+            "help": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/glossary-contracts",
+              "parts": [
+                {
+                  "text": "How many outcome contracts the order is for: a contract pays one USD if its outcome wins and nothing otherwise."
+                }
+              ],
+              "text": "How many outcome contracts the order is for: a contract pays one USD if its outcome wins and nothing otherwise."
+            },
+            "label": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-fields-true-args_params_contracts",
+              "parts": [
+                {
+                  "text": "Contracts"
+                }
+              ],
+              "text": "Contracts"
+            },
             "trust": "fact",
             "value": {
-              "type": "integer",
-              "value": "5330000"
+              "type": "words",
+              "value": {
+                "id": "descriptor-number",
+                "parts": [
+                  {
+                    "text": "5.33"
+                  }
+                ],
+                "text": "5.33"
+              }
             }
           },
           {
-            "help": "The most the order pays per contract, in millionths of a USD: 890,000 is 0.89 USD. A market order fills at the book's price up to this.",
-            "label": "Max price per contract (millionths of a USD)",
+            "help": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/glossary-max_price_per_contract",
+              "parts": [
+                {
+                  "text": "The most a limit order pays per contract. A market order fills at the book's price, which can be above it."
+                }
+              ],
+              "text": "The most a limit order pays per contract. A market order fills at the book's price, which can be above it."
+            },
+            "label": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-fields-true-args_params_max_fill_price_usd",
+              "parts": [
+                {
+                  "text": "Max price per contract"
+                }
+              ],
+              "text": "Max price per contract"
+            },
             "trust": "fact",
             "value": {
-              "type": "integer",
-              "value": "890000"
+              "type": "words",
+              "value": {
+                "id": "descriptor-number-unit",
+                "parts": [
+                  {
+                    "text": "0.89 "
+                  },
+                  {
+                    "text": "USD",
+                    "value": {
+                      "type": "text",
+                      "value": "USD"
+                    }
+                  }
+                ],
+                "text": "0.89 USD"
+              }
             }
           },
           {
-            "help": "What leaves your account to back the order; the unspent part comes back when the order fills or is cancelled.",
-            "label": "Deposit",
+            "help": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/glossary-deposit",
+              "parts": [
+                {
+                  "text": "What leaves your account to back the order; the unspent part comes back when the order fills or is canceled."
+                }
+              ],
+              "text": "What leaves your account to back the order; the unspent part comes back when the order fills or is canceled."
+            },
+            "label": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-fields-true-args_params_deposit_amount",
+              "parts": [
+                {
+                  "text": "Deposit"
+                }
+              ],
+              "text": "Deposit"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 6,
+                  "description": null,
                   "id": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
                   "symbol": "JupUSD",
                   "trust": "verified"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000000"
+                "note_words": null,
+                "units": "5000000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "5 "
+                    },
+                    {
+                      "text": "JupUSD",
+                      "value": {
+                        "type": "text",
+                        "value": "JupUSD"
+                      }
+                    }
+                  ],
+                  "text": "5 JupUSD"
+                }
               }
             }
           },
           {
-            "help": "A market order fills at once against the book; a limit order rests until matched at its price.",
-            "label": "Order type",
+            "help": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/glossary-order_type",
+              "parts": [
+                {
+                  "text": "A market order fills at once against the book; a limit order rests until matched at its price."
+                }
+              ],
+              "text": "A market order fills at once against the book; a limit order rests until matched at its price."
+            },
+            "label": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-fields-true-args_params_order_type",
+              "parts": [
+                {
+                  "text": "Order type"
+                }
+              ],
+              "text": "Order type"
+            },
             "trust": "verified",
             "value": {
-              "type": "text",
-              "value": "market order"
+              "type": "words",
+              "value": {
+                "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/enum-order_type-market",
+                "parts": [
+                  {
+                    "text": "market order"
+                  }
+                ],
+                "text": "market order"
+              }
             }
           },
           {
-            "help": "The market's identifier, as the interface names it.",
-            "label": "Market",
+            "help": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/glossary-market",
+              "parts": [
+                {
+                  "text": "The market's identifier, as the interface names it."
+                }
+              ],
+              "text": "The market's identifier, as the interface names it."
+            },
+            "label": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-fields-true-args_params_market_id",
+              "parts": [
+                {
+                  "text": "Market"
+                }
+              ],
+              "text": "Market"
+            },
             "trust": "fact",
             "value": {
               "type": "text",
@@ -133,8 +777,24 @@
             }
           },
           {
-            "help": "The order account, holding the order and its deposit until it fills or is cancelled.",
-            "label": "Order",
+            "help": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/glossary-order",
+              "parts": [
+                {
+                  "text": "The order account, holding the order and its deposit until it fills or is canceled."
+                }
+              ],
+              "text": "The order account, holding the order and its deposit until it fills or is canceled."
+            },
+            "label": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-fields-true-accounts_order",
+              "parts": [
+                {
+                  "text": "Order"
+                }
+              ],
+              "text": "Order"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -142,13 +802,31 @@
                 "address": "GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "Your position in this market: the contracts you hold on each outcome.",
-            "label": "Position",
+            "help": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/glossary-position",
+              "parts": [
+                {
+                  "text": "Your position in this market: the contracts you hold on each outcome."
+                }
+              ],
+              "text": "Your position in this market: the contracts you hold on each outcome."
+            },
+            "label": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-fields-true-accounts_position",
+              "parts": [
+                {
+                  "text": "Position"
+                }
+              ],
+              "text": "Position"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -156,21 +834,106 @@
                 "address": "AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The token account the deposit leaves. It should be one of yours.",
-            "label": "From account",
+            "help": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/glossary-from_account",
+              "parts": [
+                {
+                  "text": "The token account the deposit leaves. It should be one of yours."
+                }
+              ],
+              "text": "The token account the deposit leaves. It should be one of yours."
+            },
+            "label": {
+              "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-fields-true-accounts_owner_token_account",
+              "parts": [
+                {
+                  "text": "From account"
+                }
+              ],
+              "text": "From account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "8R13DsTsJnZGgcs99SJXjYPnnzJggHwqXZPwDxPKHhnW",
                 "is_self": true,
-                "label": "Your JupUSD account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "JupUSD",
+                      "value": {
+                        "type": "text",
+                        "value": "JupUSD"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your JupUSD account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your JupUSD account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "JupUSD",
+                              "value": {
+                                "type": "text",
+                                "value": "JupUSD"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your JupUSD account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "8R13DsTsJnZGgcs99SJXjYPnnzJggHwqXZPwDxPKHhnW",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8R13…HhnW"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your JupUSD account (8R13…HhnW)"
+                }
               }
             }
           }
@@ -181,24 +944,111 @@
             "index": 2
           }
         },
-        "subtitle": "Jupiter prediction market (descriptor reviewed 2026-10-18, upgradeable by 5myN…uAKx)",
-        "title": "Buy prediction contracts"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Jupiter prediction market",
+              "value": {
+                "type": "text",
+                "value": "Jupiter prediction market"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-10-18",
+              "value": {
+                "type": "text",
+                "value": "2026-10-18"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "5myNNmEmPm3UAnJ2ggLEpnTFb9t9Gk8369wKw6n3uAKx",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "5myN…uAKx"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Jupiter prediction market (descriptor reviewed 2026-10-18, upgradeable by 5myN…uAKx)"
+        },
+        "title": {
+          "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-intent-true",
+          "parts": [
+            {
+              "text": "Buy prediction contracts"
+            }
+          ],
+          "text": "Buy prediction contracts"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "50000 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "50,000 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "50,000 micro-lamports per compute unit"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -210,28 +1060,115 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "CowbXwcsuWWeCjhytNRqBRtMoUny16AbLMH7wqLpmoNB",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Cowb…moNB"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (Cowb…moNB)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Signer",
+            "help": {
+              "id": "label-signer.help",
+              "parts": [
+                {
+                  "text": "An account whose signature the transaction needs besides the fee payer."
+                }
+              ],
+              "text": "An account whose signature the transaction needs besides the fee payer."
+            },
+            "label": {
+              "id": "label-signer",
+              "parts": [
+                {
+                  "text": "Signer"
+                }
+              ],
+              "text": "Signer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -239,7 +1176,9 @@
                 "address": "AJooF3xRkSx1PUC5Y9dNZHy9LMHcx5xKhPxj4iW4jepf",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -248,75 +1187,209 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "27500"
+                "note_words": null,
+                "units": "27500",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.0000275 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.0000275 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "10000"
+                "note_words": null,
+                "units": "10000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00001 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00001 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "17500"
+                "note_words": null,
+                "units": "17500",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.0000175 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.0000175 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "50000 micro-lamports per unit × 350000 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "50,000 micro-lamports per compute unit × 350,000 compute units requested"
+                  }
+                ],
+                "text": "50,000 micro-lamports per compute unit × 350,000 compute units requested"
+              }
             }
           }
         ],
@@ -324,18 +1397,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -343,11 +1448,90 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "Buy 5330000 millionths of a YES contract in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at up to 890000 millionths of a USD each, depositing 5 JupUSD (verified)",
-    "text": "Buy 5330000 millionths of a YES contract in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at up to 890000 millionths of a USD each, depositing 5 JupUSD (verified)\nOK\n\n== Buy prediction contracts | Jupiter prediction market (descriptor reviewed 2026-10-18, upgradeable by 5myN…uAKx)\n  Contracts (millionths): 5330000\n  Max price per contract (millionths of a USD): 890000\n  Deposit: 5 JupUSD (verified)\n  Order type: market order (verified)\n  Market: 3913199afd6342fa3b590f0adb079c3c\n  Order: GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb\n  Position: AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC\n  From account: Your JupUSD account (8R13…HhnW) (verified)\n\n== Also [collapsed]\n  Compute unit price: 50000 micro-lamports per unit\n  Compute unit limit: 350000\n\n== Signers\n  Fee payer: Your wallet (Cowb…moNB) (verified)\n  Signer: AJooF3xRkSx1PUC5Y9dNZHy9LMHcx5xKhPxj4iW4jepf\n\n== Fee\n  Total: 0.0000275 SOL\n  Base: 0.00001 SOL\n  Priority: 0.0000175 SOL\n  Priority basis: 50000 micro-lamports per unit × 350000 units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 5 JupUSD (verified) from Your wallet (Cowb…moNB) (verified) to Jupiter prediction market (3ZZu…jvUp) (verified)\n  - the order and, if new, the position account are created at the payer's cost; a keeper fills the order against the book and closes it, returning any unspent deposit (the deposit moved from the owner's account to the order's in all 217 buys in a harvest of the program's 1,000 latest transactions on 2026-10-18)\n  - Your wallet (Cowb…moNB) (verified) pays a fee of 0.0000275 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (571 bytes)\n  digest: acd3baf90c625ead58e15bf729fd452c71349793a454713fb0fbcc75b727e09a\n",
+    "summary": {
+      "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-summary-else-true-true-then",
+      "parts": [
+        {
+          "text": "Buy "
+        },
+        {
+          "text": "5.33",
+          "value": {
+            "type": "words",
+            "value": {
+              "id": "descriptor-number",
+              "parts": [
+                {
+                  "text": "5.33"
+                }
+              ],
+              "text": "5.33"
+            }
+          }
+        },
+        {
+          "text": " YES contracts in Jupiter prediction market "
+        },
+        {
+          "text": "3913199afd6342fa3b590f0adb079c3c",
+          "value": {
+            "type": "text",
+            "value": "3913199afd6342fa3b590f0adb079c3c"
+          }
+        },
+        {
+          "text": " at the market price, depositing "
+        },
+        {
+          "text": "5 JupUSD",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 6,
+                "description": null,
+                "id": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+                "symbol": "JupUSD",
+                "trust": "verified"
+              },
+              "bound": "exact",
+              "note": null,
+              "note_words": null,
+              "units": "5000000",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "5 "
+                  },
+                  {
+                    "text": "JupUSD",
+                    "value": {
+                      "type": "text",
+                      "value": "JupUSD"
+                    }
+                  }
+                ],
+                "text": "5 JupUSD"
+              }
+            }
+          }
+        }
+      ],
+      "text": "Buy 5.33 YES contracts in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at the market price, depositing 5 JupUSD"
+    },
+    "text": "Buy 5.33 YES contracts in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at the market price, depositing 5 JupUSD\nOK\n\n== Buy prediction contracts | Jupiter prediction market (descriptor reviewed 2026-10-18, upgradeable by 5myN…uAKx)\n  Contracts: 5.33\n  Max price per contract: 0.89 USD\n  Deposit: 5 JupUSD\n  Order type: market order\n  Market: 3913199afd6342fa3b590f0adb079c3c\n  Order: GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb\n  Position: AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC\n  From account: Your JupUSD account (8R13…HhnW)\n\n== Also [collapsed]\n  Compute unit price: 50,000 micro-lamports per compute unit\n  Compute unit limit: 350000\n\n== Signers\n  Fee payer: Your wallet (Cowb…moNB)\n  Signer: AJooF3xRkSx1PUC5Y9dNZHy9LMHcx5xKhPxj4iW4jepf\n\n== Fee\n  Total: 0.0000275 SOL\n  Base: 0.00001 SOL\n  Priority: 0.0000175 SOL\n  Priority basis: 50,000 micro-lamports per compute unit × 350,000 compute units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 5 JupUSD from Your wallet (Cowb…moNB) to Jupiter prediction market (3ZZu…jvUp)\n  - The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit\n  - You pay a fee of 0.0000275 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (571 bytes)\n  digest: acd3baf90c625ead58e15bf729fd452c71349793a454713fb0fbcc75b727e09a\n",
     "verdict": "ok"
   }
 }

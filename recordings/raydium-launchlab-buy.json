@@ -1,117 +1,1276 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 3,
+        "summary": {
+          "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-summary",
+          "parts": [
+            {
+              "text": "Buy "
+            },
+            {
+              "text": "≥ 1 raw unit of unverified token BJDR…SHgf (before any transfer fee)",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": null,
+                    "description": null,
+                    "id": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                    "symbol": null,
+                    "trust": "fact"
+                  },
+                  "bound": "at_least",
+                  "note": {
+                    "id": "descriptor-before-fee",
+                    "parts": [
+                      {
+                        "text": "before any transfer fee"
+                      }
+                    ],
+                    "text": "before any transfer fee"
+                  },
+                  "note_words": {
+                    "id": "amount-note",
+                    "parts": [
+                      {
+                        "text": " (before any transfer fee)"
+                      }
+                    ],
+                    "text": " (before any transfer fee)"
+                  },
+                  "units": "1",
+                  "words": {
+                    "id": "amount-unverified",
+                    "parts": [
+                      {
+                        "text": "≥ 1 raw unit of unverified token "
+                      },
+                      {
+                        "short": {
+                          "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "BJDR…SHgf"
+                      }
+                    ],
+                    "text": "≥ 1 raw unit of unverified token BJDR…SHgf"
+                  }
+                }
+              }
+            },
+            {
+              "text": " for "
+            },
+            {
+              "text": "0.739178712 BP",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+                    "symbol": "BP",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "739178712",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.739178712 "
+                      },
+                      {
+                        "text": "BP",
+                        "value": {
+                          "type": "text",
+                          "value": "BP"
+                        }
+                      }
+                    ],
+                    "text": "0.739178712 BP"
+                  }
+                }
+              }
+            },
+            {
+              "text": " via Raydium LaunchLab"
+            }
+          ],
+          "text": "Buy ≥ 1 raw unit of unverified token BJDR…SHgf (before any transfer fee) for 0.739178712 BP via Raydium LaunchLab"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "0.739178712 BP",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+                    "symbol": "BP",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "739178712",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.739178712 "
+                      },
+                      {
+                        "text": "BP",
+                        "value": {
+                          "type": "text",
+                          "value": "BP"
+                        }
+                      }
+                    ],
+                    "text": "0.739178712 BP"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (8FPT…1Eg6)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "8FPT…1Eg6"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (8FPT…1Eg6)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Raydium LaunchLab (LanM…J3uj)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Raydium LaunchLab",
+                        "value": {
+                          "type": "text",
+                          "value": "Raydium LaunchLab"
+                        }
+                      }
+                    ],
+                    "text": "Raydium LaunchLab"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Raydium LaunchLab",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Raydium LaunchLab",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Raydium LaunchLab"
+                                }
+                              }
+                            ],
+                            "text": "Raydium LaunchLab"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "LanM…J3uj"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Raydium LaunchLab (LanM…J3uj)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send 0.739178712 BP from Your wallet (8FPT…1Eg6) to Raydium LaunchLab (LanM…J3uj)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
               "symbol": "BP",
               "trust": "verified"
             },
             "bound": "exact",
             "note": null,
-            "units": "739178712"
+            "note_words": null,
+            "units": "739178712",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.739178712 "
+                },
+                {
+                  "text": "BP",
+                  "value": {
+                    "type": "text",
+                    "value": "BP"
+                  }
+                }
+              ],
+              "text": "0.739178712 BP"
+            }
           },
           "from": {
             "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "8FPT…1Eg6"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (8FPT…1Eg6)"
+            }
           },
           "to": {
             "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
             "is_self": false,
-            "label": "Raydium LaunchLab",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Raydium LaunchLab",
+                  "value": {
+                    "type": "text",
+                    "value": "Raydium LaunchLab"
+                  }
+                }
+              ],
+              "text": "Raydium LaunchLab"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Raydium LaunchLab",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Raydium LaunchLab",
+                          "value": {
+                            "type": "text",
+                            "value": "Raydium LaunchLab"
+                          }
+                        }
+                      ],
+                      "text": "Raydium LaunchLab"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "LanM…J3uj"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Raydium LaunchLab (LanM…J3uj)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-receive",
+          "parts": [
+            {
+              "text": "You receive "
+            },
+            {
+              "text": "an unknown amount of unverified token BJDR…SHgf (at least 1 raw unit, before a transfer fee SignLens cannot check)",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": null,
+                    "description": null,
+                    "id": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                    "symbol": null,
+                    "trust": "fact"
+                  },
+                  "bound": "unknown",
+                  "note": {
+                    "id": "descriptor-floor-before-fee-unnamed",
+                    "parts": [
+                      {
+                        "text": "at least 1 raw unit, before a transfer fee SignLens cannot check"
+                      }
+                    ],
+                    "text": "at least 1 raw unit, before a transfer fee SignLens cannot check"
+                  },
+                  "note_words": {
+                    "id": "amount-note",
+                    "parts": [
+                      {
+                        "text": " (at least 1 raw unit, before a transfer fee SignLens cannot check)"
+                      }
+                    ],
+                    "text": " (at least 1 raw unit, before a transfer fee SignLens cannot check)"
+                  },
+                  "units": "0",
+                  "words": {
+                    "id": "amount-unverified",
+                    "parts": [
+                      {
+                        "text": "an unknown amount of unverified token "
+                      },
+                      {
+                        "short": {
+                          "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "BJDR…SHgf"
+                      }
+                    ],
+                    "text": "an unknown amount of unverified token BJDR…SHgf"
+                  }
+                }
+              }
+            },
+            {
+              "text": " into "
+            },
+            {
+              "text": "Your token account (137E…pu4H)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-unnamed-token",
+                    "parts": [
+                      {
+                        "text": "Your token account"
+                      }
+                    ],
+                    "text": "Your token account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your token account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-unnamed-token",
+                            "parts": [
+                              {
+                                "text": "Your token account"
+                              }
+                            ],
+                            "text": "Your token account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "137E…pu4H"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your token account (137E…pu4H)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Raydium LaunchLab (LanM…J3uj)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Raydium LaunchLab",
+                        "value": {
+                          "type": "text",
+                          "value": "Raydium LaunchLab"
+                        }
+                      }
+                    ],
+                    "text": "Raydium LaunchLab"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Raydium LaunchLab",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Raydium LaunchLab",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Raydium LaunchLab"
+                                }
+                              }
+                            ],
+                            "text": "Raydium LaunchLab"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "LanM…J3uj"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Raydium LaunchLab (LanM…J3uj)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You receive an unknown amount of unverified token BJDR…SHgf (at least 1 raw unit, before a transfer fee SignLens cannot check) into Your token account (137E…pu4H) from Raydium LaunchLab (LanM…J3uj)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": null,
+              "description": null,
               "id": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
               "symbol": null,
               "trust": "fact"
             },
             "bound": "unknown",
-            "note": "at least 1 raw units before a transfer fee the signer cannot know",
-            "units": "0"
+            "note": {
+              "id": "descriptor-floor-before-fee-unnamed",
+              "parts": [
+                {
+                  "text": "at least 1 raw unit, before a transfer fee SignLens cannot check"
+                }
+              ],
+              "text": "at least 1 raw unit, before a transfer fee SignLens cannot check"
+            },
+            "note_words": {
+              "id": "amount-note",
+              "parts": [
+                {
+                  "text": " (at least 1 raw unit, before a transfer fee SignLens cannot check)"
+                }
+              ],
+              "text": " (at least 1 raw unit, before a transfer fee SignLens cannot check)"
+            },
+            "units": "0",
+            "words": {
+              "id": "amount-unverified",
+              "parts": [
+                {
+                  "text": "an unknown amount of unverified token "
+                },
+                {
+                  "short": {
+                    "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "BJDR…SHgf"
+                }
+              ],
+              "text": "an unknown amount of unverified token BJDR…SHgf"
+            }
           },
           "from": {
             "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
             "is_self": false,
-            "label": "Raydium LaunchLab",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Raydium LaunchLab",
+                  "value": {
+                    "type": "text",
+                    "value": "Raydium LaunchLab"
+                  }
+                }
+              ],
+              "text": "Raydium LaunchLab"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Raydium LaunchLab",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Raydium LaunchLab",
+                          "value": {
+                            "type": "text",
+                            "value": "Raydium LaunchLab"
+                          }
+                        }
+                      ],
+                      "text": "Raydium LaunchLab"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "LanM…J3uj"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Raydium LaunchLab (LanM…J3uj)"
+            }
           },
           "to": {
             "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
-            "is_self": false,
-            "label": null,
-            "label_trust": "fact"
+            "is_self": true,
+            "label": {
+              "id": "accounts-your-unnamed-token",
+              "parts": [
+                {
+                  "text": "Your token account"
+                }
+              ],
+              "text": "Your token account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your token account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-unnamed-token",
+                      "parts": [
+                        {
+                          "text": "Your token account"
+                        }
+                      ],
+                      "text": "Your token account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "137E…pu4H"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your token account (137E…pu4H)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit-if-missing",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "Your token account (137E…pu4H)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-unnamed-token",
+                    "parts": [
+                      {
+                        "text": "Your token account"
+                      }
+                    ],
+                    "text": "Your token account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your token account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-unnamed-token",
+                            "parts": [
+                              {
+                                "text": "Your token account"
+                              }
+                            ],
+                            "text": "Your token account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "137E…pu4H"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your token account (137E…pu4H)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Token-2022 program (Toke…xuEb)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Token-2022 program",
+                        "value": {
+                          "type": "text",
+                          "value": "Token-2022 program"
+                        }
+                      }
+                    ],
+                    "text": "Token-2022 program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Token-2022 program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Token-2022 program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Token-2022 program"
+                                }
+                              }
+                            ],
+                            "text": "Token-2022 program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Toke…xuEb"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Token-2022 program (Toke…xuEb)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00151384 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1513840",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00151384 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00151384 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " unless it already exists"
+            }
+          ],
+          "text": "Create Your token account (137E…pu4H), managed by Token-2022 program (Toke…xuEb), depositing 0.00151384 SOL unless it already exists"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
-            "is_self": false,
-            "label": null,
-            "label_trust": "fact"
+            "is_self": true,
+            "label": {
+              "id": "accounts-your-unnamed-token",
+              "parts": [
+                {
+                  "text": "Your token account"
+                }
+              ],
+              "text": "Your token account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your token account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-unnamed-token",
+                      "parts": [
+                        {
+                          "text": "Your token account"
+                        }
+                      ],
+                      "text": "Your token account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "137E…pu4H"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your token account (137E…pu4H)"
+            }
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "1513840"
+            "note_words": null,
+            "units": "1513840",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00151384 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00151384 SOL"
+            }
           },
           "if_missing": true,
           "owner": {
             "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
             "is_self": false,
-            "label": "Token-2022 program",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Token-2022 program",
+                  "value": {
+                    "type": "text",
+                    "value": "Token-2022 program"
+                  }
+                }
+              ],
+              "text": "Token-2022 program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Token-2022 program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Token-2022 program",
+                          "value": {
+                            "type": "text",
+                            "value": "Token-2022 program"
+                          }
+                        }
+                      ],
+                      "text": "Token-2022 program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Toke…xuEb"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Token-2022 program (Toke…xuEb)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000155 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "155000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000155 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000155 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000155 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "155000"
+            "note_words": null,
+            "units": "155000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000155 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000155 SOL"
+            }
           },
           "payer": {
             "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "8FPT…1Eg6"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (8FPT…1Eg6)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -122,66 +1281,193 @@
       {
         "code": "NO_MINIMUM_OUTPUT",
         "instruction": 3,
-        "message": "The trade accepts almost any output: the minimum is one base unit or nothing",
+        "message": {
+          "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-check-no_minimum_output",
+          "parts": [
+            {
+              "text": "The trade accepts almost any output: its minimum is one raw unit or nothing"
+            }
+          ],
+          "text": "The trade accepts almost any output: its minimum is one raw unit or nothing"
+        },
         "severity": "warning"
       },
       {
         "code": "DESTINATION_NOT_VERIFIED",
         "instruction": 3,
-        "message": "The destination token account is not one of your accounts for a verified token; the signer cannot prove who owns it",
+        "message": {
+          "id": "descriptor-unproven-account",
+          "parts": [
+            {
+              "text": "The destination token account is not one of your accounts for a verified token; SignLens cannot confirm who owns it"
+            }
+          ],
+          "text": "The destination token account is not one of your accounts for a verified token; SignLens cannot confirm who owns it"
+        },
         "severity": "info"
       }
     ],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "2509e8eea4687f80b70634b563ddb0dfe09aea87419abc75a5082b1348782b1f",
       "format": "solana v0"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "What you pay, in the quote token.",
-            "label": "Pay",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-pay",
+              "parts": [
+                {
+                  "text": "What you pay, in the quote token."
+                }
+              ],
+              "text": "What you pay, in the quote token."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-args_amount_in",
+              "parts": [
+                {
+                  "text": "Pay"
+                }
+              ],
+              "text": "Pay"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
                   "symbol": "BP",
                   "trust": "verified"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "739178712"
+                "note_words": null,
+                "units": "739178712",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.739178712 "
+                    },
+                    {
+                      "text": "BP",
+                      "value": {
+                        "type": "text",
+                        "value": "BP"
+                      }
+                    }
+                  ],
+                  "text": "0.739178712 BP"
+                }
               }
             }
           },
           {
-            "help": "What comes back to you. Shown as at least when the program only guarantees a floor and fails below it.",
-            "label": "Receive",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-receive",
+              "parts": [
+                {
+                  "text": "What comes back to you. Shown as at least when the program only guarantees a floor and fails below it."
+                }
+              ],
+              "text": "What comes back to you. Shown as at least when the program only guarantees a floor and fails below it."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-derived_min_base",
+              "parts": [
+                {
+                  "text": "Receive"
+                }
+              ],
+              "text": "Receive"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": null,
+                  "description": null,
                   "id": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
                   "symbol": null,
                   "trust": "fact"
                 },
                 "bound": "at_least",
-                "note": "before any transfer fee",
-                "units": "1"
+                "note": {
+                  "id": "descriptor-before-fee",
+                  "parts": [
+                    {
+                      "text": "before any transfer fee"
+                    }
+                  ],
+                  "text": "before any transfer fee"
+                },
+                "note_words": {
+                  "id": "amount-note",
+                  "parts": [
+                    {
+                      "text": " (before any transfer fee)"
+                    }
+                  ],
+                  "text": " (before any transfer fee)"
+                },
+                "units": "1",
+                "words": {
+                  "id": "amount-unverified",
+                  "parts": [
+                    {
+                      "text": "≥ 1 raw unit of unverified token "
+                    },
+                    {
+                      "short": {
+                        "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "BJDR…SHgf"
+                    }
+                  ],
+                  "text": "≥ 1 raw unit of unverified token BJDR…SHgf"
+                }
               }
             }
           },
           {
-            "help": "The launch pool the token trades on before it graduates.",
-            "label": "Pool",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-pool",
+              "parts": [
+                {
+                  "text": "The launch pool the token trades on before it graduates."
+                }
+              ],
+              "text": "The launch pool the token trades on before it graduates."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_pool_state",
+              "parts": [
+                {
+                  "text": "Pool"
+                }
+              ],
+              "text": "Pool"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -189,13 +1475,31 @@
                 "address": "DnoJNeKrVJY42tEep66VL77EqmE19QNkC5ownGV4fhtC",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The token being launched.",
-            "label": "Token",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-token",
+              "parts": [
+                {
+                  "text": "The token being launched."
+                }
+              ],
+              "text": "The token being launched."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_base_token_mint",
+              "parts": [
+                {
+                  "text": "Token"
+                }
+              ],
+              "text": "Token"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -203,97 +1507,527 @@
                 "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The token the launched token is priced in, usually SOL.",
-            "label": "Quote token",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-quote_token",
+              "parts": [
+                {
+                  "text": "The token the launched token is priced in, usually SOL."
+                }
+              ],
+              "text": "The token the launched token is priced in, usually SOL."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_quote_token_mint",
+              "parts": [
+                {
+                  "text": "Quote token"
+                }
+              ],
+              "text": "Quote token"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
                 "is_self": false,
-                "label": "BP mint",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-mint",
+                  "parts": [
+                    {
+                      "text": "BP",
+                      "value": {
+                        "type": "text",
+                        "value": "BP"
+                      }
+                    },
+                    {
+                      "text": " mint"
+                    }
+                  ],
+                  "text": "BP mint"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "BP mint",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-mint",
+                          "parts": [
+                            {
+                              "text": "BP",
+                              "value": {
+                                "type": "text",
+                                "value": "BP"
+                              }
+                            },
+                            {
+                              "text": " mint"
+                            }
+                          ],
+                          "text": "BP mint"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "BPxx…jPCy"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "BP mint (BPxx…jPCy)"
+                }
               }
             }
           },
           {
-            "help": "Your account for the launched token.",
-            "label": "Token account",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-token_account",
+              "parts": [
+                {
+                  "text": "Your account for the launched token."
+                }
+              ],
+              "text": "Your account for the launched token."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_user_base_token",
+              "parts": [
+                {
+                  "text": "Token account"
+                }
+              ],
+              "text": "Token account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
-                "is_self": false,
-                "label": null,
-                "label_trust": "fact"
+                "is_self": true,
+                "label": {
+                  "id": "accounts-your-unnamed-token",
+                  "parts": [
+                    {
+                      "text": "Your token account"
+                    }
+                  ],
+                  "text": "Your token account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your token account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-unnamed-token",
+                          "parts": [
+                            {
+                              "text": "Your token account"
+                            }
+                          ],
+                          "text": "Your token account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "137E…pu4H"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your token account (137E…pu4H)"
+                }
               }
             }
           },
           {
-            "help": "Your account for the quote token, usually SOL.",
-            "label": "Quote account",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-quote_account",
+              "parts": [
+                {
+                  "text": "Your account for the quote token, usually SOL."
+                }
+              ],
+              "text": "Your account for the quote token, usually SOL."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_user_quote_token",
+              "parts": [
+                {
+                  "text": "Quote account"
+                }
+              ],
+              "text": "Quote account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "BYzPgXCRCy6w2jFMn4Ly5w4S1UXxPadA74kyVLwpvjTu",
                 "is_self": true,
-                "label": "Your BP account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "BP",
+                      "value": {
+                        "type": "text",
+                        "value": "BP"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your BP account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your BP account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "BP",
+                              "value": {
+                                "type": "text",
+                                "value": "BP"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your BP account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "BYzPgXCRCy6w2jFMn4Ly5w4S1UXxPadA74kyVLwpvjTu",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "BYzP…vjTu"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your BP account (BYzP…vjTu)"
+                }
               }
             }
           },
           {
-            "help": "The pool's reserve of the launched token.",
-            "label": "Pool token vault",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-pool_token_vault",
+              "parts": [
+                {
+                  "text": "The pool's reserve of the launched token."
+                }
+              ],
+              "text": "The pool's reserve of the launched token."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_base_vault",
+              "parts": [
+                {
+                  "text": "Pool token vault"
+                }
+              ],
+              "text": "Pool token vault"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "A6C4Lt2mKB3B5mMjT54xZNMT8kcwtKdeAwsNhnD9K88d",
                 "is_self": false,
-                "label": "Raydium LaunchLab pool vault for the launched token",
-                "label_trust": "verified"
+                "label": {
+                  "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-label-accounts_base_vault",
+                  "parts": [
+                    {
+                      "text": "Raydium LaunchLab pool vault for the launched token"
+                    }
+                  ],
+                  "text": "Raydium LaunchLab pool vault for the launched token"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Raydium LaunchLab pool vault for the launched token",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-label-accounts_base_vault",
+                          "parts": [
+                            {
+                              "text": "Raydium LaunchLab pool vault for the launched token"
+                            }
+                          ],
+                          "text": "Raydium LaunchLab pool vault for the launched token"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "A6C4Lt2mKB3B5mMjT54xZNMT8kcwtKdeAwsNhnD9K88d",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "A6C4…K88d"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Raydium LaunchLab pool vault for the launched token (A6C4…K88d)"
+                }
               }
             }
           },
           {
-            "help": "The pool's reserve of the quote token.",
-            "label": "Pool quote vault",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-pool_quote_vault",
+              "parts": [
+                {
+                  "text": "The pool's reserve of the quote token."
+                }
+              ],
+              "text": "The pool's reserve of the quote token."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_quote_vault",
+              "parts": [
+                {
+                  "text": "Pool quote vault"
+                }
+              ],
+              "text": "Pool quote vault"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "JAFM2G8GcqMD8opArWthg8yWkm3sbVgZaD4DgwWyhhQD",
                 "is_self": false,
-                "label": "Raydium LaunchLab pool vault for the quote token",
-                "label_trust": "verified"
+                "label": {
+                  "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-label-accounts_quote_vault",
+                  "parts": [
+                    {
+                      "text": "Raydium LaunchLab pool vault for the quote token"
+                    }
+                  ],
+                  "text": "Raydium LaunchLab pool vault for the quote token"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Raydium LaunchLab pool vault for the quote token",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-label-accounts_quote_vault",
+                          "parts": [
+                            {
+                              "text": "Raydium LaunchLab pool vault for the quote token"
+                            }
+                          ],
+                          "text": "Raydium LaunchLab pool vault for the quote token"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "JAFM2G8GcqMD8opArWthg8yWkm3sbVgZaD4DgwWyhhQD",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "JAFM…hhQD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Raydium LaunchLab pool vault for the quote token (JAFM…hhQD)"
+                }
               }
             }
           },
           {
-            "help": "The program's own account that signs for the pool's vaults. Not a person.",
-            "label": "Vault authority",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-vault_authority",
+              "parts": [
+                {
+                  "text": "The program's own account that signs for the pool's vaults. Not a person."
+                }
+              ],
+              "text": "The program's own account that signs for the pool's vaults. Not a person."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_authority",
+              "parts": [
+                {
+                  "text": "Vault authority"
+                }
+              ],
+              "text": "Vault authority"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh",
                 "is_self": false,
-                "label": "Raydium LaunchLab vault authority",
-                "label_trust": "verified"
+                "label": {
+                  "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-label-accounts_authority",
+                  "parts": [
+                    {
+                      "text": "Raydium LaunchLab vault authority"
+                    }
+                  ],
+                  "text": "Raydium LaunchLab vault authority"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Raydium LaunchLab vault authority",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-label-accounts_authority",
+                          "parts": [
+                            {
+                              "text": "Raydium LaunchLab vault authority"
+                            }
+                          ],
+                          "text": "Raydium LaunchLab vault authority"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "WLHv2UAZm6z4KyaaELi5pjdbJh6RESMva1Rnn8pJVVh",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "WLHv…JVVh"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Raydium LaunchLab vault authority (WLHv…JVVh)"
+                }
               }
             }
           },
           {
-            "help": "The launch platform's configuration account. It sets the fees.",
-            "label": "Platform",
+            "help": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/glossary-platform",
+              "parts": [
+                {
+                  "text": "The launch platform's configuration account. It sets the fees."
+                }
+              ],
+              "text": "The launch platform's configuration account. It sets the fees."
+            },
+            "label": {
+              "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-fields-accounts_platform_config",
+              "parts": [
+                {
+                  "text": "Platform"
+                }
+              ],
+              "text": "Platform"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -301,17 +2035,50 @@
                 "address": "6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": null,
-            "label": "Additional accounts",
+            "help": {
+              "id": "label-additional-accounts.help",
+              "parts": [
+                {
+                  "text": "Additional accounts this instruction uses that its reviewed descriptor does not name. It is normal for instructions to need several."
+                }
+              ],
+              "text": "Additional accounts this instruction uses that its reviewed descriptor does not name. It is normal for instructions to need several."
+            },
+            "label": {
+              "id": "label-additional-accounts",
+              "parts": [
+                {
+                  "text": "Additional accounts"
+                }
+              ],
+              "text": "Additional accounts"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "3, not named by this descriptor"
+              "type": "words",
+              "value": {
+                "id": "descriptor-additional-accounts",
+                "parts": [
+                  {
+                    "text": "3",
+                    "value": {
+                      "type": "integer",
+                      "value": "3"
+                    }
+                  },
+                  {
+                    "text": ", not named by this descriptor"
+                  }
+                ],
+                "text": "3, not named by this descriptor"
+              }
             }
           }
         ],
@@ -321,15 +2088,78 @@
             "index": 3
           }
         },
-        "subtitle": "Raydium LaunchLab (descriptor reviewed 2026-10-02, upgradeable by FytD…eZQK)",
-        "title": "Buy"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Raydium LaunchLab",
+              "value": {
+                "type": "text",
+                "value": "Raydium LaunchLab"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-10-02",
+              "value": {
+                "type": "text",
+                "value": "2026-10-02"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "FytD…eZQK"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Raydium LaunchLab (descriptor reviewed 2026-10-02, upgradeable by FytD…eZQK)"
+        },
+        "title": {
+          "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-intent",
+          "parts": [
+            {
+              "text": "Buy"
+            }
+          ],
+          "text": "Buy"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -337,45 +2167,203 @@
             }
           },
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "1000000 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "1,000,000 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "1,000,000 micro-lamports per compute unit"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Token account",
+            "help": {
+              "id": "label-token-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+                }
+              ],
+              "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Token account"
+                }
+              ],
+              "text": "Create token account if missing: Token account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
-                "is_self": false,
-                "label": null,
-                "label_trust": "fact"
+                "is_self": true,
+                "label": {
+                  "id": "accounts-your-unnamed-token",
+                  "parts": [
+                    {
+                      "text": "Your token account"
+                    }
+                  ],
+                  "text": "Your token account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your token account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-unnamed-token",
+                          "parts": [
+                            {
+                              "text": "Your token account"
+                            }
+                          ],
+                          "text": "Your token account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "137E…pu4H"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your token account (137E…pu4H)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Create token account if missing: Owner",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Owner"
+                }
+              ],
+              "text": "Create token account if missing: Owner"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8FPT…1Eg6"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (8FPT…1Eg6)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Mint",
+            "help": {
+              "id": "label-mint.help",
+              "parts": [
+                {
+                  "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+                }
+              ],
+              "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Mint"
+                }
+              ],
+              "text": "Create token account if missing: Mint"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -383,35 +2371,171 @@
                 "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Rent paid by",
+            "help": {
+              "id": "label-rent-paid-by.help",
+              "parts": [
+                {
+                  "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+                }
+              ],
+              "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Rent paid by"
+                }
+              ],
+              "text": "Create token account if missing: Rent paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8FPT…1Eg6"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (8FPT…1Eg6)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Token program",
+            "help": {
+              "id": "label-token-program.help",
+              "parts": [
+                {
+                  "text": "The program that manages this token: SPL Token or Token-2022."
+                }
+              ],
+              "text": "The program that manages this token: SPL Token or Token-2022."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Token program"
+                }
+              ],
+              "text": "Create token account if missing: Token program"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
                 "is_self": false,
-                "label": "Token-2022 program",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-name",
+                  "parts": [
+                    {
+                      "text": "Token-2022 program",
+                      "value": {
+                        "type": "text",
+                        "value": "Token-2022 program"
+                      }
+                    }
+                  ],
+                  "text": "Token-2022 program"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Token-2022 program",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-name",
+                          "parts": [
+                            {
+                              "text": "Token-2022 program",
+                              "value": {
+                                "type": "text",
+                                "value": "Token-2022 program"
+                              }
+                            }
+                          ],
+                          "text": "Token-2022 program"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Toke…xuEb"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Token-2022 program (Toke…xuEb)"
+                }
               }
             }
           }
@@ -420,22 +2544,93 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "8FPTxbq7wRA6GjAcePaW8PDZDqFgsBB6xYpU9WHp1Eg6",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8FPT…1Eg6"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (8FPT…1Eg6)"
+                }
               }
             }
           }
@@ -444,84 +2639,280 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "155000"
+                "note_words": null,
+                "units": "155000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000155 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000155 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "150000"
+                "note_words": null,
+                "units": "150000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00015 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00015 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "1000000 micro-lamports per unit × 150000 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "1,000,000 micro-lamports per compute unit × 150,000 compute units requested"
+                  }
+                ],
+                "text": "1,000,000 micro-lamports per compute unit × 150,000 compute units requested"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Rent deposits",
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "up to 0.00151384 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "up to "
+                  },
+                  {
+                    "text": "0.00151384 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "1513840",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.00151384 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.00151384 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": ", if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account"
+                  }
+                ],
+                "text": "up to 0.00151384 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account"
+              }
             }
           }
         ],
@@ -529,18 +2920,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -548,11 +2971,123 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "Buy ≥ 1 raw units of an unverified token (before any transfer fee) (BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf) for 0.739178712 BP (verified) via Raydium LaunchLab",
-    "text": "Buy ≥ 1 raw units of an unverified token (before any transfer fee) (BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf) for 0.739178712 BP (verified) via Raydium LaunchLab\nWARNING: review the findings before approving\n\nFindings:\n  [WARNING] The trade accepts almost any output: the minimum is one base unit or nothing (instruction 3)\n  [INFO] The destination token account is not one of your accounts for a verified token; the signer cannot prove who owns it (instruction 3)\n\n== Buy | Raydium LaunchLab (descriptor reviewed 2026-10-02, upgradeable by FytD…eZQK)\n  Pay: 0.739178712 BP (verified)\n  Receive: ≥ 1 raw units of an unverified token (before any transfer fee) (BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf)\n  Pool: DnoJNeKrVJY42tEep66VL77EqmE19QNkC5ownGV4fhtC\n  Token: BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf\n  Quote token: BP mint (BPxx…jPCy) (verified)\n  Token account: 137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H\n  Quote account: Your BP account (BYzP…vjTu) (verified)\n  Pool token vault: Raydium LaunchLab pool vault for the launched token (A6C4…K88d) (verified)\n  Pool quote vault: Raydium LaunchLab pool vault for the quote token (JAFM…hhQD) (verified)\n  Vault authority: Raydium LaunchLab vault authority (WLHv…JVVh) (verified)\n  Platform: 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt\n  Additional accounts: 3, not named by this descriptor\n\n== Also [collapsed]\n  Compute unit limit: 150000\n  Compute unit price: 1000000 micro-lamports per unit\n  Create token account if missing: Token account: 137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H\n  Create token account if missing: Owner: Your wallet (8FPT…1Eg6) (verified)\n  Create token account if missing: Mint: BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf\n  Create token account if missing: Rent paid by: Your wallet (8FPT…1Eg6) (verified)\n  Create token account if missing: Token program: Token-2022 program (Toke…xuEb) (verified)\n\n== Signers\n  Fee payer: Your wallet (8FPT…1Eg6) (verified)\n\n== Fee\n  Total: 0.000155 SOL\n  Base: 0.000005 SOL\n  Priority: 0.00015 SOL\n  Priority basis: 1000000 micro-lamports per unit × 150000 units requested\n  Rent deposits: up to 0.00151384 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 0.739178712 BP (verified) from Your wallet (8FPT…1Eg6) (verified) to Raydium LaunchLab (LanM…J3uj) (verified)\n  - transfer unknown amount of an unverified token (at least 1 raw units before a transfer fee the signer cannot know) (BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf) from Raydium LaunchLab (LanM…J3uj) (verified) to 137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H\n  - create 137EH9BoPTSU5B3pKCH6SKy5re32DRiRt1tHjvnypu4H owned by Token-2022 program (Toke…xuEb) (verified), depositing 0.00151384 SOL unless it already exists\n  - Your wallet (8FPT…1Eg6) (verified) pays a fee of 0.000155 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (762 bytes)\n  digest: 2509e8eea4687f80b70634b563ddb0dfe09aea87419abc75a5082b1348782b1f\n",
+    "summary": {
+      "id": "LanMV9sAd7wArD4vJFi2qDdfnVhFxYSUg6eADduJ3uj/buy_exact_in-summary",
+      "parts": [
+        {
+          "text": "Buy "
+        },
+        {
+          "text": "≥ 1 raw unit of unverified token BJDR…SHgf (before any transfer fee)",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": null,
+                "description": null,
+                "id": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                "symbol": null,
+                "trust": "fact"
+              },
+              "bound": "at_least",
+              "note": {
+                "id": "descriptor-before-fee",
+                "parts": [
+                  {
+                    "text": "before any transfer fee"
+                  }
+                ],
+                "text": "before any transfer fee"
+              },
+              "note_words": {
+                "id": "amount-note",
+                "parts": [
+                  {
+                    "text": " (before any transfer fee)"
+                  }
+                ],
+                "text": " (before any transfer fee)"
+              },
+              "units": "1",
+              "words": {
+                "id": "amount-unverified",
+                "parts": [
+                  {
+                    "text": "≥ 1 raw unit of unverified token "
+                  },
+                  {
+                    "short": {
+                      "address": "BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf",
+                      "is_self": false,
+                      "label": null,
+                      "label_trust": "fact",
+                      "stand_in": null,
+                      "words": null
+                    },
+                    "text": "BJDR…SHgf"
+                  }
+                ],
+                "text": "≥ 1 raw unit of unverified token BJDR…SHgf"
+              }
+            }
+          }
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "0.739178712 BP",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 9,
+                "description": null,
+                "id": "BPxxfRCXkUVhig4HS1Lh7kZqV6SPJhzfEk4x6fVBjPCy",
+                "symbol": "BP",
+                "trust": "verified"
+              },
+              "bound": "exact",
+              "note": null,
+              "note_words": null,
+              "units": "739178712",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "0.739178712 "
+                  },
+                  {
+                    "text": "BP",
+                    "value": {
+                      "type": "text",
+                      "value": "BP"
+                    }
+                  }
+                ],
+                "text": "0.739178712 BP"
+              }
+            }
+          }
+        },
+        {
+          "text": " via Raydium LaunchLab"
+        }
+      ],
+      "text": "Buy ≥ 1 raw unit of unverified token BJDR…SHgf (before any transfer fee) for 0.739178712 BP via Raydium LaunchLab"
+    },
+    "text": "Buy ≥ 1 raw unit of unverified token BJDR…SHgf (before any transfer fee) for 0.739178712 BP via Raydium LaunchLab\nWARNING: review the findings before approving\n\nFindings:\n  [WARNING] The trade accepts almost any output: its minimum is one raw unit or nothing (instruction 4)\n  [INFO] The destination token account is not one of your accounts for a verified token; SignLens cannot confirm who owns it (instruction 4)\n\n== Buy | Raydium LaunchLab (descriptor reviewed 2026-10-02, upgradeable by FytD…eZQK)\n  Pay: 0.739178712 BP\n  Receive: ≥ 1 raw unit of unverified token BJDR…SHgf (before any transfer fee)\n  Pool: DnoJNeKrVJY42tEep66VL77EqmE19QNkC5ownGV4fhtC\n  Token: BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf\n  Quote token: BP mint (BPxx…jPCy)\n  Token account: Your token account (137E…pu4H)\n  Quote account: Your BP account (BYzP…vjTu)\n  Pool token vault: Raydium LaunchLab pool vault for the launched token (A6C4…K88d)\n  Pool quote vault: Raydium LaunchLab pool vault for the quote token (JAFM…hhQD)\n  Vault authority: Raydium LaunchLab vault authority (WLHv…JVVh)\n  Platform: 6BwHHDg3u1854jC8PDLXvR4spTcLNaoBxLJNGC4nTESt\n  Additional accounts: 3, not named by this descriptor\n\n== Also [collapsed]\n  Compute unit limit: 150000\n  Compute unit price: 1,000,000 micro-lamports per compute unit\n  Create token account if missing: Token account: Your token account (137E…pu4H)\n  Create token account if missing: Owner: Your wallet (8FPT…1Eg6)\n  Create token account if missing: Mint: BJDR3K1drF9HXqj6S6pxvQV4hynedCbuGkBr6ASWSHgf\n  Create token account if missing: Rent paid by: Your wallet (8FPT…1Eg6)\n  Create token account if missing: Token program: Token-2022 program (Toke…xuEb)\n\n== Signers\n  Fee payer: Your wallet (8FPT…1Eg6)\n\n== Fee\n  Total: 0.000155 SOL\n  Base: 0.000005 SOL\n  Priority: 0.00015 SOL\n  Priority basis: 1,000,000 micro-lamports per compute unit × 150,000 compute units requested\n  Rent deposits: up to 0.00151384 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 0.739178712 BP from Your wallet (8FPT…1Eg6) to Raydium LaunchLab (LanM…J3uj)\n  - You receive an unknown amount of unverified token BJDR…SHgf (at least 1 raw unit, before a transfer fee SignLens cannot check) into Your token account (137E…pu4H) from Raydium LaunchLab (LanM…J3uj)\n  - Create Your token account (137E…pu4H), managed by Token-2022 program (Toke…xuEb), depositing 0.00151384 SOL unless it already exists\n  - You pay a fee of 0.000155 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (762 bytes)\n  digest: 2509e8eea4687f80b70634b563ddb0dfe09aea87419abc75a5082b1348782b1f\n",
     "verdict": "warn"
   }
 }

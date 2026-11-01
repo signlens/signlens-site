@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { build } from '../src/build.ts';
+import { card, readRecording } from '../src/explanation.ts';
 import { html, raw } from '../src/html.ts';
 import { fileFor } from '../src/page.ts';
 import { readTransaction } from '../src/transaction.ts';
@@ -45,6 +46,10 @@ test('no page runs a script of its own: structured data only, the analytics beac
         }
         assert.doesNotMatch(text, / on[a-z]+="/, `${page.path}: an inline event handler`);
     }
+});
+
+test('no page prints an object where it meant its words', () => {
+    for (const { page, text } of built) assert.ok(!text.includes('[object Object]'), page.path);
 });
 
 test('the sitemap lists every page but the hidden ones', () => {
@@ -102,4 +107,31 @@ test('a transaction file is read for its signer line, else its fee payer', () =>
     );
     assert.equal(vote.accounts[0]?.owner, 'GovaE4iu227srtG2s3tZzB4RmWBzw8sTwrCLZz7kN7rY');
     assert.equal(vote.accountsRead, '2026-10-25');
+});
+
+test("every card says the engine's words, line for line", () => {
+    const text = (markup: string) =>
+        markup
+            .replace(/<[^>]*>/g, '')
+            .replace(/&#39;/g, "'")
+            .replace(/&quot;/g, '"')
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&');
+    for (const file of readdirSync(new URL('../recordings/', import.meta.url))) {
+        const slug = file.slice(0, -'.json'.length);
+        const recording = readRecording(slug);
+        const out = card(readTransaction(new URL(`../transactions/${slug}.b64`, import.meta.url).pathname, slug), recording).value;
+        const e = recording.explanation;
+        const lines = [...out.matchAll(/<li[^>]*>(.*?)<\/li>/gs)].map((m) =>
+            text(m[1] ?? '').replace(/^(Info|Warning|High|Critical) /, ''),
+        );
+        const words = [
+            ...(e.actions.length > 1 ? e.actions.map((a) => a.summary.text) : []),
+            ...e.findings.map((f) => f.message.text),
+            ...e.effects.map((effect) => effect.message.text),
+        ];
+        assert.deepEqual(lines, words, slug);
+        if (e.actions.length <= 1) assert.equal(text(out.match(/<p class="summary">(.*?)<\/p>/s)?.[1] ?? ''), e.summary.text, slug);
+    }
 });

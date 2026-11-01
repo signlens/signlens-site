@@ -1,17 +1,538 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 2,
+        "summary": {
+          "id": "squads-propose-summary",
+          "parts": [
+            {
+              "text": "Propose for "
+            },
+            {
+              "short": {
+                "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+                "is_self": false,
+                "label": {
+                  "id": "accounts-name",
+                  "parts": [
+                    {
+                      "text": "Vault "
+                    },
+                    {
+                      "text": "0",
+                      "value": {
+                        "type": "integer",
+                        "value": "0"
+                      }
+                    },
+                    {
+                      "text": " of multisig "
+                    },
+                    {
+                      "short": {
+                        "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "33JZ…QP4B"
+                    }
+                  ],
+                  "text": "Vault 0 of multisig 33JZ…QP4B"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Vault 0 of multisig 33JZ…QP4B",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-name",
+                          "parts": [
+                            {
+                              "text": "Vault "
+                            },
+                            {
+                              "text": "0",
+                              "value": {
+                                "type": "integer",
+                                "value": "0"
+                              }
+                            },
+                            {
+                              "text": " of multisig "
+                            },
+                            {
+                              "short": {
+                                "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                                "is_self": false,
+                                "label": null,
+                                "label_trust": "fact",
+                                "stand_in": null,
+                                "words": null
+                              },
+                              "text": "33JZ…QP4B"
+                            }
+                          ],
+                          "text": "Vault 0 of multisig 33JZ…QP4B"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "29m9…43fp"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Vault 0 of multisig 33JZ…QP4B (29m9…43fp)"
+                }
+              },
+              "text": "29m9…43fp"
+            },
+            {
+              "text": " (Transfer "
+            },
+            {
+              "text": "130,000 of unverified token 8hS7…rise",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
+                    "symbol": null,
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "130000000000000",
+                  "words": {
+                    "id": "amount-unverified",
+                    "parts": [
+                      {
+                        "text": "130,000 of unverified token "
+                      },
+                      {
+                        "short": {
+                          "address": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "8hS7…rise"
+                      }
+                    ],
+                    "text": "130,000 of unverified token 8hS7…rise"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "short": {
+                "address": "De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "De7t…DBBS"
+            },
+            {
+              "text": " to "
+            },
+            {
+              "short": {
+                "address": "BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "BuR3…DDVB"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Propose for 29m9…43fp (Transfer 130,000 of unverified token 8hS7…rise from De7t…DBBS to BuR3…DDVB)"
+        }
+      },
+      {
+        "instruction": 3,
+        "summary": {
+          "id": "squads-create-proposal-for-summary",
+          "parts": [
+            {
+              "text": "Create proposal #"
+            },
+            {
+              "text": "30",
+              "value": {
+                "type": "integer",
+                "value": "30"
+              }
+            },
+            {
+              "text": " for the transaction proposed in instruction "
+            },
+            {
+              "text": "3",
+              "value": {
+                "type": "integer",
+                "value": "3"
+              }
+            }
+          ],
+          "text": "Create proposal #30 for the transaction proposed in instruction 3"
+        }
+      },
+      {
+        "instruction": 4,
+        "summary": {
+          "id": "squads-verb-proposed-summary",
+          "parts": [
+            {
+              "text": "Approve proposal #"
+            },
+            {
+              "text": "30",
+              "value": {
+                "type": "integer",
+                "value": "30"
+              }
+            },
+            {
+              "text": " (the transaction proposed in instruction "
+            },
+            {
+              "text": "3",
+              "value": {
+                "type": "integer",
+                "value": "3"
+              }
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Approve proposal #30 (the transaction proposed in instruction 3)"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-proposed",
+          "parts": [
+            {
+              "text": "Once approved, "
+            },
+            {
+              "text": "Vault 0 of multisig 33JZ…QP4B (29m9…43fp)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Vault "
+                      },
+                      {
+                        "text": "0",
+                        "value": {
+                          "type": "integer",
+                          "value": "0"
+                        }
+                      },
+                      {
+                        "text": " of multisig "
+                      },
+                      {
+                        "short": {
+                          "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "33JZ…QP4B"
+                      }
+                    ],
+                    "text": "Vault 0 of multisig 33JZ…QP4B"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Vault 0 of multisig 33JZ…QP4B",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Vault "
+                              },
+                              {
+                                "text": "0",
+                                "value": {
+                                  "type": "integer",
+                                  "value": "0"
+                                }
+                              },
+                              {
+                                "text": " of multisig "
+                              },
+                              {
+                                "short": {
+                                  "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                                  "is_self": false,
+                                  "label": null,
+                                  "label_trust": "fact",
+                                  "stand_in": null,
+                                  "words": null
+                                },
+                                "text": "33JZ…QP4B"
+                              }
+                            ],
+                            "text": "Vault 0 of multisig 33JZ…QP4B"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "29m9…43fp"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Vault 0 of multisig 33JZ…QP4B (29m9…43fp)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " would: Transfer "
+            },
+            {
+              "text": "130,000 of unverified token 8hS7…rise",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
+                    "symbol": null,
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "130000000000000",
+                  "words": {
+                    "id": "amount-unverified",
+                    "parts": [
+                      {
+                        "text": "130,000 of unverified token "
+                      },
+                      {
+                        "short": {
+                          "address": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "8hS7…rise"
+                      }
+                    ],
+                    "text": "130,000 of unverified token 8hS7…rise"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            }
+          ],
+          "text": "Once approved, Vault 0 of multisig 33JZ…QP4B (29m9…43fp) would: Transfer 130,000 of unverified token 8hS7…rise from De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS to BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB"
+        },
         "type": "proposed",
         "value": {
           "by": {
             "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
             "is_self": false,
-            "label": "Vault 0 of multisig 33JZ…QP4B",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Vault "
+                },
+                {
+                  "text": "0",
+                  "value": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                {
+                  "text": " of multisig "
+                },
+                {
+                  "short": {
+                    "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "33JZ…QP4B"
+                }
+              ],
+              "text": "Vault 0 of multisig 33JZ…QP4B"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Vault 0 of multisig 33JZ…QP4B",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Vault "
+                        },
+                        {
+                          "text": "0",
+                          "value": {
+                            "type": "integer",
+                            "value": "0"
+                          }
+                        },
+                        {
+                          "text": " of multisig "
+                        },
+                        {
+                          "short": {
+                            "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                            "is_self": false,
+                            "label": null,
+                            "label_trust": "fact",
+                            "stand_in": null,
+                            "words": null
+                          },
+                          "text": "33JZ…QP4B"
+                        }
+                      ],
+                      "text": "Vault 0 of multisig 33JZ…QP4B"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "29m9…43fp"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Vault 0 of multisig 33JZ…QP4B (29m9…43fp)"
+            }
           },
           "effect": {
             "type": "transfer",
@@ -19,91 +540,535 @@
               "amount": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
                   "symbol": null,
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "130000000000000"
+                "note_words": null,
+                "units": "130000000000000",
+                "words": {
+                  "id": "amount-unverified",
+                  "parts": [
+                    {
+                      "text": "130,000 of unverified token "
+                    },
+                    {
+                      "short": {
+                        "address": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8hS7…rise"
+                    }
+                  ],
+                  "text": "130,000 of unverified token 8hS7…rise"
+                }
               },
               "from": {
                 "address": "De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               },
               "to": {
                 "address": "BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Squads multisig v4 (SQDS…2pCf)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Squads multisig v4",
+                        "value": {
+                          "type": "text",
+                          "value": "Squads multisig v4"
+                        }
+                      }
+                    ],
+                    "text": "Squads multisig v4"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Squads multisig v4",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Squads multisig v4",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Squads multisig v4"
+                                }
+                              }
+                            ],
+                            "text": "Squads multisig v4"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "SQDS…2pCf"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Squads multisig v4 (SQDS…2pCf)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf, managed by Squads multisig v4 (SQDS…2pCf)"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": null,
           "if_missing": false,
           "owner": {
             "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
             "is_self": false,
-            "label": "Squads multisig v4",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Squads multisig v4",
+                  "value": {
+                    "type": "text",
+                    "value": "Squads multisig v4"
+                  }
+                }
+              ],
+              "text": "Squads multisig v4"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Squads multisig v4",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Squads multisig v4",
+                          "value": {
+                            "type": "text",
+                            "value": "Squads multisig v4"
+                          }
+                        }
+                      ],
+                      "text": "Squads multisig v4"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "SQDS…2pCf"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Squads multisig v4 (SQDS…2pCf)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Squads multisig v4 (SQDS…2pCf)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Squads multisig v4",
+                        "value": {
+                          "type": "text",
+                          "value": "Squads multisig v4"
+                        }
+                      }
+                    ],
+                    "text": "Squads multisig v4"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Squads multisig v4",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Squads multisig v4",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Squads multisig v4"
+                                }
+                              }
+                            ],
+                            "text": "Squads multisig v4"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "SQDS…2pCf"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Squads multisig v4 (SQDS…2pCf)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3, managed by Squads multisig v4 (SQDS…2pCf)"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": null,
           "if_missing": false,
           "owner": {
             "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
             "is_self": false,
-            "label": "Squads multisig v4",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Squads multisig v4",
+                  "value": {
+                    "type": "text",
+                    "value": "Squads multisig v4"
+                  }
+                }
+              ],
+              "text": "Squads multisig v4"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Squads multisig v4",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Squads multisig v4",
+                          "value": {
+                            "type": "text",
+                            "value": "Squads multisig v4"
+                          }
+                        }
+                      ],
+                      "text": "Squads multisig v4"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "SQDS…2pCf"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Squads multisig v4 (SQDS…2pCf)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000083052 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "83052",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000083052 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000083052 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000083052 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "83052"
+            "note_words": null,
+            "units": "83052",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000083052 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000083052 SOL"
+            }
           },
           "payer": {
             "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "FjWd…HyWq"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (FjWd…HyWq)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -111,18 +1076,33 @@
       }
     ],
     "findings": [],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "c57f96b438334bb8cc46ed8521128fcbc6c7bf0ae9051c5ae09828a33e125b71",
       "format": "solana v0"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Multisig",
+            "label": {
+              "id": "label-multisig",
+              "parts": [
+                {
+                  "text": "Multisig"
+                }
+              ],
+              "text": "Multisig"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -130,27 +1110,134 @@
                 "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Vault",
+            "label": {
+              "id": "label-vault",
+              "parts": [
+                {
+                  "text": "Vault"
+                }
+              ],
+              "text": "Vault"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
                 "is_self": false,
-                "label": "Vault 0 of multisig 33JZ…QP4B",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-name",
+                  "parts": [
+                    {
+                      "text": "Vault "
+                    },
+                    {
+                      "text": "0",
+                      "value": {
+                        "type": "integer",
+                        "value": "0"
+                      }
+                    },
+                    {
+                      "text": " of multisig "
+                    },
+                    {
+                      "short": {
+                        "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "33JZ…QP4B"
+                    }
+                  ],
+                  "text": "Vault 0 of multisig 33JZ…QP4B"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Vault 0 of multisig 33JZ…QP4B",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-name",
+                          "parts": [
+                            {
+                              "text": "Vault "
+                            },
+                            {
+                              "text": "0",
+                              "value": {
+                                "type": "integer",
+                                "value": "0"
+                              }
+                            },
+                            {
+                              "text": " of multisig "
+                            },
+                            {
+                              "short": {
+                                "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                                "is_self": false,
+                                "label": null,
+                                "label_trust": "fact",
+                                "stand_in": null,
+                                "words": null
+                              },
+                              "text": "33JZ…QP4B"
+                            }
+                          ],
+                          "text": "Vault 0 of multisig 33JZ…QP4B"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "29m9…43fp"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Vault 0 of multisig 33JZ…QP4B (29m9…43fp)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Transaction account",
+            "label": {
+              "id": "label-transaction-account",
+              "parts": [
+                {
+                  "text": "Transaction account"
+                }
+              ],
+              "text": "Transaction account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -158,50 +1245,194 @@
                 "address": "GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Proposed by",
+            "label": {
+              "id": "label-proposed-by",
+              "parts": [
+                {
+                  "text": "Proposed by"
+                }
+              ],
+              "text": "Proposed by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "FjWd…HyWq"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (FjWd…HyWq)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Rent paid by",
+            "help": {
+              "id": "label-rent-paid-by.help",
+              "parts": [
+                {
+                  "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+                }
+              ],
+              "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+            },
+            "label": {
+              "id": "label-rent-paid-by",
+              "parts": [
+                {
+                  "text": "Rent paid by"
+                }
+              ],
+              "text": "Rent paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "FjWd…HyWq"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (FjWd…HyWq)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Executes",
+            "label": {
+              "id": "label-executes",
+              "parts": [
+                {
+                  "text": "Executes"
+                }
+              ],
+              "text": "Executes"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "only once the multisig's approval threshold is met and someone executes it; nothing moves now"
+              "type": "words",
+              "value": {
+                "id": "squads-executes",
+                "parts": [
+                  {
+                    "text": "only once the multisig's approval threshold is met and someone executes it; nothing moves now"
+                  }
+                ],
+                "text": "only once the multisig's approval threshold is met and someone executes it; nothing moves now"
+              }
             }
           },
           {
             "help": null,
-            "label": "Steps",
+            "label": {
+              "id": "label-steps",
+              "parts": [
+                {
+                  "text": "Steps"
+                }
+              ],
+              "text": "Steps"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -215,34 +1446,92 @@
             "index": 2
           }
         },
-        "subtitle": "Squads multisig v4 (verified)",
-        "title": "Propose multisig transaction"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Squads multisig v4",
+              "value": {
+                "type": "text",
+                "value": "Squads multisig v4"
+              }
+            }
+          ],
+          "text": "Squads multisig v4"
+        },
+        "title": {
+          "id": "squads-propose-title",
+          "parts": [
+            {
+              "text": "Propose multisig transaction"
+            }
+          ],
+          "text": "Propose multisig transaction"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Amount",
+            "label": {
+              "id": "label-amount",
+              "parts": [
+                {
+                  "text": "Amount"
+                }
+              ],
+              "text": "Amount"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
                   "symbol": null,
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "130000000000000"
+                "note_words": null,
+                "units": "130000000000000",
+                "words": {
+                  "id": "amount-unverified",
+                  "parts": [
+                    {
+                      "text": "130,000 of unverified token "
+                    },
+                    {
+                      "short": {
+                        "address": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8hS7…rise"
+                    }
+                  ],
+                  "text": "130,000 of unverified token 8hS7…rise"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "From",
+            "label": {
+              "id": "label-from",
+              "parts": [
+                {
+                  "text": "From"
+                }
+              ],
+              "text": "From"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -250,13 +1539,23 @@
                 "address": "De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "To",
+            "label": {
+              "id": "label-to",
+              "parts": [
+                {
+                  "text": "To"
+                }
+              ],
+              "text": "To"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -264,27 +1563,142 @@
                 "address": "BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Authorized by",
+            "label": {
+              "id": "label-authorized-by",
+              "parts": [
+                {
+                  "text": "Authorized by"
+                }
+              ],
+              "text": "Authorized by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
                 "is_self": false,
-                "label": "Vault 0 of multisig 33JZ…QP4B",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-name",
+                  "parts": [
+                    {
+                      "text": "Vault "
+                    },
+                    {
+                      "text": "0",
+                      "value": {
+                        "type": "integer",
+                        "value": "0"
+                      }
+                    },
+                    {
+                      "text": " of multisig "
+                    },
+                    {
+                      "short": {
+                        "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "33JZ…QP4B"
+                    }
+                  ],
+                  "text": "Vault 0 of multisig 33JZ…QP4B"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Vault 0 of multisig 33JZ…QP4B",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-name",
+                          "parts": [
+                            {
+                              "text": "Vault "
+                            },
+                            {
+                              "text": "0",
+                              "value": {
+                                "type": "integer",
+                                "value": "0"
+                              }
+                            },
+                            {
+                              "text": " of multisig "
+                            },
+                            {
+                              "short": {
+                                "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                                "is_self": false,
+                                "label": null,
+                                "label_trust": "fact",
+                                "stand_in": null,
+                                "words": null
+                              },
+                              "text": "33JZ…QP4B"
+                            }
+                          ],
+                          "text": "Vault 0 of multisig 33JZ…QP4B"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "29m9…43fp"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Vault 0 of multisig 33JZ…QP4B (29m9…43fp)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Mint",
+            "help": {
+              "id": "label-mint.help",
+              "parts": [
+                {
+                  "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+                }
+              ],
+              "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+            },
+            "label": {
+              "id": "label-mint",
+              "parts": [
+                {
+                  "text": "Mint"
+                }
+              ],
+              "text": "Mint"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -292,7 +1706,9 @@
                 "address": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -304,15 +1720,43 @@
             "parent": 2
           }
         },
-        "subtitle": "Token program (verified)",
-        "title": "Transfer tokens"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Token program",
+              "value": {
+                "type": "text",
+                "value": "Token program"
+              }
+            }
+          ],
+          "text": "Token program"
+        },
+        "title": {
+          "id": "token-transfer-title",
+          "parts": [
+            {
+              "text": "Transfer tokens"
+            }
+          ],
+          "text": "Transfer tokens"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Multisig",
+            "label": {
+              "id": "label-multisig",
+              "parts": [
+                {
+                  "text": "Multisig"
+                }
+              ],
+              "text": "Multisig"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -320,13 +1764,23 @@
                 "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Proposal",
+            "label": {
+              "id": "label-proposal",
+              "parts": [
+                {
+                  "text": "Proposal"
+                }
+              ],
+              "text": "Proposal"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -334,13 +1788,23 @@
                 "address": "47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Transaction index",
+            "label": {
+              "id": "label-transaction-index",
+              "parts": [
+                {
+                  "text": "Transaction index"
+                }
+              ],
+              "text": "Transaction index"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -349,44 +1813,196 @@
           },
           {
             "help": null,
-            "label": "Content",
+            "label": {
+              "id": "label-content",
+              "parts": [
+                {
+                  "text": "Content"
+                }
+              ],
+              "text": "Content"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "the vault transaction created in instruction 3 of this transaction"
+              "type": "words",
+              "value": {
+                "id": "squads-content-created-here",
+                "parts": [
+                  {
+                    "text": "the vault transaction created in instruction "
+                  },
+                  {
+                    "text": "3",
+                    "value": {
+                      "type": "integer",
+                      "value": "3"
+                    }
+                  },
+                  {
+                    "text": " of this transaction"
+                  }
+                ],
+                "text": "the vault transaction created in instruction 3 of this transaction"
+              }
             }
           },
           {
             "help": null,
-            "label": "Proposed by",
+            "label": {
+              "id": "label-proposed-by",
+              "parts": [
+                {
+                  "text": "Proposed by"
+                }
+              ],
+              "text": "Proposed by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "FjWd…HyWq"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (FjWd…HyWq)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Rent paid by",
+            "help": {
+              "id": "label-rent-paid-by.help",
+              "parts": [
+                {
+                  "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+                }
+              ],
+              "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+            },
+            "label": {
+              "id": "label-rent-paid-by",
+              "parts": [
+                {
+                  "text": "Rent paid by"
+                }
+              ],
+              "text": "Rent paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "FjWd…HyWq"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (FjWd…HyWq)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Starts as draft",
+            "label": {
+              "id": "label-starts-as-draft",
+              "parts": [
+                {
+                  "text": "Starts as draft"
+                }
+              ],
+              "text": "Starts as draft"
+            },
             "trust": "fact",
             "value": {
               "type": "bool",
@@ -400,15 +2016,43 @@
             "index": 3
           }
         },
-        "subtitle": "Squads multisig v4 (verified)",
-        "title": "Create proposal"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Squads multisig v4",
+              "value": {
+                "type": "text",
+                "value": "Squads multisig v4"
+              }
+            }
+          ],
+          "text": "Squads multisig v4"
+        },
+        "title": {
+          "id": "squads-create-proposal-title",
+          "parts": [
+            {
+              "text": "Create proposal"
+            }
+          ],
+          "text": "Create proposal"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Multisig",
+            "label": {
+              "id": "label-multisig",
+              "parts": [
+                {
+                  "text": "Multisig"
+                }
+              ],
+              "text": "Multisig"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -416,13 +2060,23 @@
                 "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Proposal",
+            "label": {
+              "id": "label-proposal",
+              "parts": [
+                {
+                  "text": "Proposal"
+                }
+              ],
+              "text": "Proposal"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -430,30 +2084,123 @@
                 "address": "47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Content",
+            "label": {
+              "id": "label-content",
+              "parts": [
+                {
+                  "text": "Content"
+                }
+              ],
+              "text": "Content"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "proposal created in instruction 4 for the vault transaction created in instruction 3, both in this transaction"
+              "type": "words",
+              "value": {
+                "id": "squads-content-both-here",
+                "parts": [
+                  {
+                    "text": "proposal created in instruction "
+                  },
+                  {
+                    "text": "4",
+                    "value": {
+                      "type": "integer",
+                      "value": "4"
+                    }
+                  },
+                  {
+                    "text": " for the vault transaction created in instruction "
+                  },
+                  {
+                    "text": "3",
+                    "value": {
+                      "type": "integer",
+                      "value": "3"
+                    }
+                  },
+                  {
+                    "text": ", both in this transaction"
+                  }
+                ],
+                "text": "proposal created in instruction 4 for the vault transaction created in instruction 3, both in this transaction"
+              }
             }
           },
           {
             "help": null,
-            "label": "Member",
+            "label": {
+              "id": "label-member",
+              "parts": [
+                {
+                  "text": "Member"
+                }
+              ],
+              "text": "Member"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "FjWd…HyWq"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (FjWd…HyWq)"
+                }
               }
             }
           }
@@ -464,15 +2211,51 @@
             "index": 4
           }
         },
-        "subtitle": "Squads multisig v4 (verified)",
-        "title": "Approve proposal"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Squads multisig v4",
+              "value": {
+                "type": "text",
+                "value": "Squads multisig v4"
+              }
+            }
+          ],
+          "text": "Squads multisig v4"
+        },
+        "title": {
+          "id": "squads-approve-title",
+          "parts": [
+            {
+              "text": "Approve proposal"
+            }
+          ],
+          "text": "Approve proposal"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -480,12 +2263,36 @@
             }
           },
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "160000 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "160,000 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "160,000 micro-lamports per compute unit"
+              }
             }
           }
         ],
@@ -493,22 +2300,93 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "FjWdzqeKR6eejGEDnhiarkYA4p72M4xLMj6aNriaHyWq",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "FjWd…HyWq"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (FjWd…HyWq)"
+                }
               }
             }
           }
@@ -517,84 +2395,252 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "83052"
+                "note_words": null,
+                "units": "83052",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000083052 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000083052 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "78052"
+                "note_words": null,
+                "units": "78052",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000078052 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000078052 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "160000 micro-lamports per unit × 487819 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "160,000 micro-lamports per compute unit × 487,819 compute units requested"
+                  }
+                ],
+                "text": "160,000 micro-lamports per compute unit × 487,819 compute units requested"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Rent deposits",
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "for 2 accounts whose size the descriptor does not give; returned when the accounts are closed"
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "the rent of "
+                  },
+                  {
+                    "text": "2",
+                    "value": {
+                      "type": "integer",
+                      "value": "2"
+                    }
+                  },
+                  {
+                    "text": " accounts of unknown size; refunded to whoever closes the accounts"
+                  }
+                ],
+                "text": "the rent of 2 accounts of unknown size; refunded to whoever closes the accounts"
+              }
             }
           }
         ],
@@ -602,18 +2648,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -621,11 +2699,245 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "3 actions: Propose for 29m9…43fp: Transfer 130,000 of an unverified token (8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise) from De7t…DBBS to BuR3…DDVB; Create proposal #30 for the transaction proposed in instruction 3; Approve proposal #30 (the transaction proposed in instruction 3)",
-    "text": "3 actions: Propose for 29m9…43fp: Transfer 130,000 of an unverified token (8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise) from De7t…DBBS to BuR3…DDVB; Create proposal #30 for the transaction proposed in instruction 3; Approve proposal #30 (the transaction proposed in instruction 3)\nOK\n\n== Propose multisig transaction | Squads multisig v4 (verified)\n  Multisig: 33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B\n  Vault: Vault 0 of multisig 33JZ…QP4B (29m9…43fp) (verified)\n  Transaction account: GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf\n  Proposed by: Your wallet (FjWd…HyWq) (verified)\n  Rent paid by: Your wallet (FjWd…HyWq) (verified)\n  Executes: only once the multisig's approval threshold is met and someone executes it; nothing moves now\n  Steps: 1\n\n==== Step 1: Transfer tokens | Token program (verified)\n  Amount: 130,000 of an unverified token (8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise)\n  From: De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS\n  To: BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB\n  Authorized by: Vault 0 of multisig 33JZ…QP4B (29m9…43fp) (verified)\n  Mint: 8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise\n\n== Create proposal | Squads multisig v4 (verified)\n  Multisig: 33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B\n  Proposal: 47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3\n  Transaction index: 30\n  Content: the vault transaction created in instruction 3 of this transaction\n  Proposed by: Your wallet (FjWd…HyWq) (verified)\n  Rent paid by: Your wallet (FjWd…HyWq) (verified)\n  Starts as draft: no\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B\n  Proposal: 47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3\n  Content: proposal created in instruction 4 for the vault transaction created in instruction 3, both in this transaction\n  Member: Your wallet (FjWd…HyWq) (verified)\n\n== Also [collapsed]\n  Compute unit limit: 487819\n  Compute unit price: 160000 micro-lamports per unit\n\n== Signers\n  Fee payer: Your wallet (FjWd…HyWq) (verified)\n\n== Fee\n  Total: 0.000083052 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000078052 SOL\n  Priority basis: 160000 micro-lamports per unit × 487819 units requested\n  Rent deposits: for 2 accounts whose size the descriptor does not give; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - once approved, Vault 0 of multisig 33JZ…QP4B (29m9…43fp) (verified) would transfer 130,000 of an unverified token (8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise) from De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS to BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB\n  - create GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf owned by Squads multisig v4 (SQDS…2pCf) (verified)\n  - create 47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3 owned by Squads multisig v4 (SQDS…2pCf) (verified)\n  - Your wallet (FjWd…HyWq) (verified) pays a fee of 0.000083052 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (531 bytes)\n  digest: c57f96b438334bb8cc46ed8521128fcbc6c7bf0ae9051c5ae09828a33e125b71\n",
+    "summary": {
+      "id": "explain-actions",
+      "parts": [
+        {
+          "text": "3",
+          "value": {
+            "type": "integer",
+            "value": "3"
+          }
+        },
+        {
+          "text": " actions: Propose for "
+        },
+        {
+          "short": {
+            "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+            "is_self": false,
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Vault "
+                },
+                {
+                  "text": "0",
+                  "value": {
+                    "type": "integer",
+                    "value": "0"
+                  }
+                },
+                {
+                  "text": " of multisig "
+                },
+                {
+                  "short": {
+                    "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "33JZ…QP4B"
+                }
+              ],
+              "text": "Vault 0 of multisig 33JZ…QP4B"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Vault 0 of multisig 33JZ…QP4B",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Vault "
+                        },
+                        {
+                          "text": "0",
+                          "value": {
+                            "type": "integer",
+                            "value": "0"
+                          }
+                        },
+                        {
+                          "text": " of multisig "
+                        },
+                        {
+                          "short": {
+                            "address": "33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B",
+                            "is_self": false,
+                            "label": null,
+                            "label_trust": "fact",
+                            "stand_in": null,
+                            "words": null
+                          },
+                          "text": "33JZ…QP4B"
+                        }
+                      ],
+                      "text": "Vault 0 of multisig 33JZ…QP4B"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "29m9SgFscXzUJmvFnfMgm2SkaqVN6gvqiR7bwLAo43fp",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "29m9…43fp"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Vault 0 of multisig 33JZ…QP4B (29m9…43fp)"
+            }
+          },
+          "text": "29m9…43fp"
+        },
+        {
+          "text": " (Transfer "
+        },
+        {
+          "text": "130,000 of unverified token 8hS7…rise",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 9,
+                "description": null,
+                "id": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
+                "symbol": null,
+                "trust": "fact"
+              },
+              "bound": "exact",
+              "note": null,
+              "note_words": null,
+              "units": "130000000000000",
+              "words": {
+                "id": "amount-unverified",
+                "parts": [
+                  {
+                    "text": "130,000 of unverified token "
+                  },
+                  {
+                    "short": {
+                      "address": "8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise",
+                      "is_self": false,
+                      "label": null,
+                      "label_trust": "fact",
+                      "stand_in": null,
+                      "words": null
+                    },
+                    "text": "8hS7…rise"
+                  }
+                ],
+                "text": "130,000 of unverified token 8hS7…rise"
+              }
+            }
+          }
+        },
+        {
+          "text": " from "
+        },
+        {
+          "short": {
+            "address": "De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "De7t…DBBS"
+        },
+        {
+          "text": " to "
+        },
+        {
+          "short": {
+            "address": "BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "BuR3…DDVB"
+        },
+        {
+          "text": "); Create proposal #"
+        },
+        {
+          "text": "30",
+          "value": {
+            "type": "integer",
+            "value": "30"
+          }
+        },
+        {
+          "text": " for the transaction proposed in instruction "
+        },
+        {
+          "text": "3",
+          "value": {
+            "type": "integer",
+            "value": "3"
+          }
+        },
+        {
+          "text": "; Approve proposal #"
+        },
+        {
+          "text": "30",
+          "value": {
+            "type": "integer",
+            "value": "30"
+          }
+        },
+        {
+          "text": " (the transaction proposed in instruction "
+        },
+        {
+          "text": "3",
+          "value": {
+            "type": "integer",
+            "value": "3"
+          }
+        },
+        {
+          "text": ")"
+        }
+      ],
+      "text": "3 actions: Propose for 29m9…43fp (Transfer 130,000 of unverified token 8hS7…rise from De7t…DBBS to BuR3…DDVB); Create proposal #30 for the transaction proposed in instruction 3; Approve proposal #30 (the transaction proposed in instruction 3)"
+    },
+    "text": "3 actions: Propose for 29m9…43fp (Transfer 130,000 of unverified token 8hS7…rise from De7t…DBBS to BuR3…DDVB); Create proposal #30 for the transaction proposed in instruction 3; Approve proposal #30 (the transaction proposed in instruction 3)\nOK\n\n== Propose multisig transaction | Squads multisig v4\n  Multisig: 33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B\n  Vault: Vault 0 of multisig 33JZ…QP4B (29m9…43fp)\n  Transaction account: GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf\n  Proposed by: Your wallet (FjWd…HyWq)\n  Rent paid by: Your wallet (FjWd…HyWq)\n  Executes: only once the multisig's approval threshold is met and someone executes it; nothing moves now\n  Steps: 1\n\n==== Step 1: Transfer tokens | Token program\n  Amount: 130,000 of unverified token 8hS7…rise\n  From: De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS\n  To: BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB\n  Authorized by: Vault 0 of multisig 33JZ…QP4B (29m9…43fp)\n  Mint: 8hS74HdH6d6UTnnE7Vv25mJgboPeoxmM8S6DkW4Crise\n\n== Create proposal | Squads multisig v4\n  Multisig: 33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B\n  Proposal: 47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3\n  Transaction index: 30\n  Content: the vault transaction created in instruction 3 of this transaction\n  Proposed by: Your wallet (FjWd…HyWq)\n  Rent paid by: Your wallet (FjWd…HyWq)\n  Starts as draft: no\n\n== Approve proposal | Squads multisig v4\n  Multisig: 33JZt6Gtbvv4dCqLkEJ33nWTFqbz4Sc4YzHcNqbQQP4B\n  Proposal: 47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3\n  Content: proposal created in instruction 4 for the vault transaction created in instruction 3, both in this transaction\n  Member: Your wallet (FjWd…HyWq)\n\n== Also [collapsed]\n  Compute unit limit: 487819\n  Compute unit price: 160,000 micro-lamports per compute unit\n\n== Signers\n  Fee payer: Your wallet (FjWd…HyWq)\n\n== Fee\n  Total: 0.000083052 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000078052 SOL\n  Priority basis: 160,000 micro-lamports per compute unit × 487,819 compute units requested\n  Rent deposits: the rent of 2 accounts of unknown size; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Once approved, Vault 0 of multisig 33JZ…QP4B (29m9…43fp) would: Transfer 130,000 of unverified token 8hS7…rise from De7tu9Xgk8Crxi9LHvTkK8uA5F6aTUycemX5KdcVDBBS to BuR3tMgSs1FAQRiqVhr4GDA9yLGmPbvEABgYkjuHDDVB\n  - Create GP7g2JiNnxkqo5Sd66ynt8Saxesy6AFdpLaMG3zkMbFf, managed by Squads multisig v4 (SQDS…2pCf)\n  - Create 47ctiKPdVNqTYYxg4t9v3JdvWyH3NmGXKMYvdFpCUPS3, managed by Squads multisig v4 (SQDS…2pCf)\n  - You pay a fee of 0.000083052 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (531 bytes)\n  digest: c57f96b438334bb8cc46ed8521128fcbc6c7bf0ae9051c5ae09828a33e125b71\n",
     "verdict": "ok"
   }
 }

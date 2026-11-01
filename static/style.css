@@ -397,7 +397,8 @@ figure.explanation .summary {
     overflow-wrap: anywhere;
 }
 
-figure.explanation ul {
+figure.explanation ul,
+figure.explanation ol {
     margin: 0;
     padding: 0.5rem 1rem 0.5rem 2.25rem;
     overflow-wrap: anywhere;
@@ -432,6 +433,38 @@ abbr.term {
 
 .finding.info .severity {
     color: var(--muted);
+}
+
+/* Several actions, one a line under their count, as in the window. */
+figure.explanation ol.actions {
+    font-weight: 600;
+}
+
+/* What SignLens verified: a check in a ring, drawn so that no name can carry it. */
+.verified-badge {
+    display: inline-flex;
+    margin-left: 0.2em;
+    vertical-align: -0.12em;
+    cursor: help;
+}
+
+.verified-badge svg {
+    width: 0.85em;
+    height: 0.85em;
+}
+
+.verified-badge circle,
+.verified-badge path {
+    fill: none;
+    stroke: var(--ok);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* A claim: what the site or an RPC said, which SignLens could not check. */
+abbr.term.unverified {
+    color: var(--warning);
 }
 
 figure.explanation .label {

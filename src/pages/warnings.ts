@@ -53,12 +53,12 @@ ${shown('token-account-handed-over')}
             'A token approval lets someone else spend from your account later, without asking again. SignLens names the delegate and the amount, and warns on unlimited ones.',
         h1: 'Token approvals: someone else may spend from your account',
         gist: 'An approval lets another key spend from your token account later, up to an amount or without limit. SignLens names who, how much, and warns.',
-        body: html`<p class="lead">The token program's Approve names a delegate who may spend from one of your token accounts, up to an amount, at any time and without asking you again. It has legitimate uses; a drainer asks for the largest amount there is, 18,446,744,073,709,551,615 base units, and empties the account whenever it likes.</p>
+        body: html`<p class="lead">The token program's Approve names a delegate who may spend from one of your token accounts, up to an amount, at any time and without asking you again. It has legitimate uses; a drainer asks for the largest amount there is, 18,446,744,073,709,551,615 raw units, and empties the account whenever it likes.</p>
 <p>Nothing leaves your wallet when you sign an approval, so a balance preview shows nothing. In the November 2025 owner-change case, the victim's transactions also approved that amount on eight token accounts to the attacker, inside a program of the attacker's own (<a href="/incidents/owner-change-phishing-2025">the case</a>).</p>
 <h2>What SignLens shows</h2>
 <p>The delegate, the account and the amount, with "UNLIMITED" spelled out, and a high finding. A constructed example:</p>
 ${shown('unlimited-approval')}
-<p>The plain Approve instruction does not name the token, only the account; SignLens says so rather than guess. Where a dapp uses ApproveChecked, the token is named too.</p>
+<p>The plain Approve instruction names the account, not the token. Here the account is the signer's own USDC account, which SignLens can tell from its address, so it names USDC; of an account it cannot place, it says only that it is the token held there, rather than guess. Where a dapp uses ApproveChecked, the instruction names the token itself.</p>
 <h2>What to do</h2>
 <p>Approve only what an order needs, to a program you recognise, and revoke approvals you no longer use.</p>`,
         sources: [
@@ -74,15 +74,15 @@ ${shown('unlimited-approval')}
         name: 'Signatures that never expire',
         title: 'Durable nonces: Solana signatures that never expire | SignLens',
         description:
-            'A Solana transaction on a durable nonce stays valid until the nonce is used: whoever holds it can submit it next month. SignLens says "Valid FOREVER".',
+            'A Solana transaction on a durable nonce stays valid until the nonce is used: whoever holds it can submit it next month. SignLens says "NO TIME LIMIT".',
         h1: 'Durable nonces: a signature that never expires',
-        gist: 'A transaction built on a durable nonce stays valid until the nonce is used, so whoever holds it can send it next month. SignLens says "Valid FOREVER".',
+        gist: 'A transaction built on a durable nonce stays valid until the nonce is used, so whoever holds it can send it next month. SignLens says "NO TIME LIMIT".',
         body: html`<p class="lead">An ordinary Solana transaction carries a recent blockhash and expires about a minute after it is made. One built on a durable nonce carries a nonce instead and stays valid until that nonce is advanced: whoever holds the signed transaction can submit it at any time, next week or next year.</p>
 <p>Durable nonces exist for signing offline and for coordinating several signers. They are also how the Drift Protocol takeover of April 2026 worked: two members of Drift's multisig signed transactions on durable nonces that someone else had set up for them, and the attacker submitted both, one second apart, when ready (<a href="/incidents/drift-2026">the case, read by SignLens</a>). Solana plans to remove durable nonces about six months after a replacement is ready, with no date set yet, and asks wallets to "tell the user they are signing a delayed transaction", one that "stays valid until it is used or cancelled".</p>
 <h2>What SignLens shows</h2>
-<p>A high finding, "This signature never expires", and "Valid FOREVER" in what the transaction does, with the nonce account. A real transfer on a durable nonce:</p>
+<p>A high finding, "This signature has no time limit", and "NO TIME LIMIT" in what the transaction does, with the nonce account. A real transfer on a durable nonce:</p>
 ${shown('durable-nonce-transfer')}
-<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/window-dark.webp"><img src="/images/window-light.webp" width="440" height="575" alt="The SignLens window on a USDC transfer on a durable nonce: a warning that the signature never expires, what the transaction does, the simulated outcome, and Reject and Continue to Phantom"></picture></p>
+<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/window-dark.webp"><img src="/images/window-light.webp" width="440" height="575" alt="The SignLens window on a USDC transfer on a durable nonce: a high finding that the signature has no time limit, what the transaction does, the simulated outcome, and Reject and Continue to Phantom"></picture></p>
 <h2>What to do</h2>
 <p>Sign a durable-nonce transaction only when you meant to sign something to be sent later, and know who will hold it.</p>`,
         sources: [
@@ -181,7 +181,7 @@ function warningPage(w: Warning): Page {
 ${published(w.published)}
 ${w.body}
 <p>Other warnings: ${WARNINGS.filter((o) => o !== w).map((o, i) => html`${i > 0 ? ', ' : ''}<a href="/warnings/${o.slug}">${o.name.toLowerCase()}</a>`)}.</p>`;
-    const updated = '2026-10-25';
+    const updated = '2026-11-01';
     return {
         path: `/warnings/${w.slug}`,
         title: w.title,
@@ -202,7 +202,7 @@ function indexPage(): Page {
         title: 'What SignLens warns about on Solana | SignLens',
         description:
             'Owner changes, unlimited approvals, durable nonces, lookalike addresses, unknown programs and blind multisig approvals: what SignLens warns about.',
-        updated: '2026-10-25',
+        updated: '2026-11-01',
         body,
     };
 }

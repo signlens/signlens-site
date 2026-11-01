@@ -1,89 +1,1128 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 2,
+        "summary": {
+          "id": "token-send-summary",
+          "parts": [
+            {
+              "text": "Send "
+            },
+            {
+              "text": "0.996423 USDC",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "symbol": "USDC",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "996423",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.996423 "
+                      },
+                      {
+                        "text": "USDC",
+                        "value": {
+                          "type": "text",
+                          "value": "USDC"
+                        }
+                      }
+                    ],
+                    "text": "0.996423 USDC"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "short": {
+                "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                "is_self": false,
+                "label": {
+                  "id": "accounts-others-token",
+                  "parts": [
+                    {
+                      "short": {
+                        "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "BNgs…TT1Z"
+                    },
+                    {
+                      "text": "'s "
+                    },
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "BNgs…TT1Z's USDC account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "BNgs…TT1Z's USDC account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-others-token",
+                          "parts": [
+                            {
+                              "short": {
+                                "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                                "is_self": false,
+                                "label": null,
+                                "label_trust": "fact",
+                                "stand_in": null,
+                                "words": null
+                              },
+                              "text": "BNgs…TT1Z"
+                            },
+                            {
+                              "text": "'s "
+                            },
+                            {
+                              "text": "USDC",
+                              "value": {
+                                "type": "text",
+                                "value": "USDC"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "BNgs…TT1Z's USDC account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "DV3B…L7Qp"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+                }
+              },
+              "text": "DV3B…L7Qp"
+            }
+          ],
+          "text": "Send 0.996423 USDC to DV3B…L7Qp"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "0.996423 USDC",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "symbol": "USDC",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "996423",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.996423 "
+                      },
+                      {
+                        "text": "USDC",
+                        "value": {
+                          "type": "text",
+                          "value": "USDC"
+                        }
+                      }
+                    ],
+                    "text": "0.996423 USDC"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your token account (Ffz5…piwg)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "Ffz5kwUjkUNw7hV4r6iCJnUoXXsAPFHkCMCmKKDypiwg",
+                  "is_self": true,
+                  "label": {
+                    "id": "token-your-account",
+                    "parts": [
+                      {
+                        "text": "Your token account"
+                      }
+                    ],
+                    "text": "Your token account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your token account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "token-your-account",
+                            "parts": [
+                              {
+                                "text": "Your token account"
+                              }
+                            ],
+                            "text": "Your token account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "Ffz5kwUjkUNw7hV4r6iCJnUoXXsAPFHkCMCmKKDypiwg",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Ffz5…piwg"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your token account (Ffz5…piwg)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-others-token",
+                    "parts": [
+                      {
+                        "short": {
+                          "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "BNgs…TT1Z"
+                      },
+                      {
+                        "text": "'s "
+                      },
+                      {
+                        "text": "USDC",
+                        "value": {
+                          "type": "text",
+                          "value": "USDC"
+                        }
+                      },
+                      {
+                        "text": " account"
+                      }
+                    ],
+                    "text": "BNgs…TT1Z's USDC account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "BNgs…TT1Z's USDC account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-others-token",
+                            "parts": [
+                              {
+                                "short": {
+                                  "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                                  "is_self": false,
+                                  "label": null,
+                                  "label_trust": "fact",
+                                  "stand_in": null,
+                                  "words": null
+                                },
+                                "text": "BNgs…TT1Z"
+                              },
+                              {
+                                "text": "'s "
+                              },
+                              {
+                                "text": "USDC",
+                                "value": {
+                                  "type": "text",
+                                  "value": "USDC"
+                                }
+                              },
+                              {
+                                "text": " account"
+                              }
+                            ],
+                            "text": "BNgs…TT1Z's USDC account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "DV3B…L7Qp"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send 0.996423 USDC from Your token account (Ffz5…piwg) to BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 6,
+              "description": null,
               "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
               "symbol": "USDC",
               "trust": "verified"
             },
             "bound": "exact",
             "note": null,
-            "units": "996423"
+            "note_words": null,
+            "units": "996423",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.996423 "
+                },
+                {
+                  "text": "USDC",
+                  "value": {
+                    "type": "text",
+                    "value": "USDC"
+                  }
+                }
+              ],
+              "text": "0.996423 USDC"
+            }
           },
           "from": {
             "address": "Ffz5kwUjkUNw7hV4r6iCJnUoXXsAPFHkCMCmKKDypiwg",
             "is_self": true,
-            "label": "Your token account",
-            "label_trust": "verified"
+            "label": {
+              "id": "token-your-account",
+              "parts": [
+                {
+                  "text": "Your token account"
+                }
+              ],
+              "text": "Your token account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your token account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "token-your-account",
+                      "parts": [
+                        {
+                          "text": "Your token account"
+                        }
+                      ],
+                      "text": "Your token account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "Ffz5kwUjkUNw7hV4r6iCJnUoXXsAPFHkCMCmKKDypiwg",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Ffz5…piwg"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your token account (Ffz5…piwg)"
+            }
           },
           "to": {
             "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
             "is_self": false,
-            "label": "BNgs…TT1Z's USDC account",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-others-token",
+              "parts": [
+                {
+                  "short": {
+                    "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "BNgs…TT1Z"
+                },
+                {
+                  "text": "'s "
+                },
+                {
+                  "text": "USDC",
+                  "value": {
+                    "type": "text",
+                    "value": "USDC"
+                  }
+                },
+                {
+                  "text": " account"
+                }
+              ],
+              "text": "BNgs…TT1Z's USDC account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "BNgs…TT1Z's USDC account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-others-token",
+                      "parts": [
+                        {
+                          "short": {
+                            "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                            "is_self": false,
+                            "label": null,
+                            "label_trust": "fact",
+                            "stand_in": null,
+                            "words": null
+                          },
+                          "text": "BNgs…TT1Z"
+                        },
+                        {
+                          "text": "'s "
+                        },
+                        {
+                          "text": "USDC",
+                          "value": {
+                            "type": "text",
+                            "value": "USDC"
+                          }
+                        },
+                        {
+                          "text": " account"
+                        }
+                      ],
+                      "text": "BNgs…TT1Z's USDC account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "DV3B…L7Qp"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit-if-missing",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-others-token",
+                    "parts": [
+                      {
+                        "short": {
+                          "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "BNgs…TT1Z"
+                      },
+                      {
+                        "text": "'s "
+                      },
+                      {
+                        "text": "USDC",
+                        "value": {
+                          "type": "text",
+                          "value": "USDC"
+                        }
+                      },
+                      {
+                        "text": " account"
+                      }
+                    ],
+                    "text": "BNgs…TT1Z's USDC account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "BNgs…TT1Z's USDC account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-others-token",
+                            "parts": [
+                              {
+                                "short": {
+                                  "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                                  "is_self": false,
+                                  "label": null,
+                                  "label_trust": "fact",
+                                  "stand_in": null,
+                                  "words": null
+                                },
+                                "text": "BNgs…TT1Z"
+                              },
+                              {
+                                "text": "'s "
+                              },
+                              {
+                                "text": "USDC",
+                                "value": {
+                                  "type": "text",
+                                  "value": "USDC"
+                                }
+                              },
+                              {
+                                "text": " account"
+                              }
+                            ],
+                            "text": "BNgs…TT1Z's USDC account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "DV3B…L7Qp"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Token program (Toke…Q5DA)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "text",
+                          "value": "Token program"
+                        }
+                      }
+                    ],
+                    "text": "Token program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Token program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Token program"
+                                }
+                              }
+                            ],
+                            "text": "Token program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Toke…Q5DA"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Token program (Toke…Q5DA)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00148844 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1488440",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00148844 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00148844 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " unless it already exists"
+            }
+          ],
+          "text": "Create BNgs…TT1Z's USDC account (DV3B…L7Qp), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
             "is_self": false,
-            "label": "BNgs…TT1Z's USDC account",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-others-token",
+              "parts": [
+                {
+                  "short": {
+                    "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "BNgs…TT1Z"
+                },
+                {
+                  "text": "'s "
+                },
+                {
+                  "text": "USDC",
+                  "value": {
+                    "type": "text",
+                    "value": "USDC"
+                  }
+                },
+                {
+                  "text": " account"
+                }
+              ],
+              "text": "BNgs…TT1Z's USDC account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "BNgs…TT1Z's USDC account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-others-token",
+                      "parts": [
+                        {
+                          "short": {
+                            "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                            "is_self": false,
+                            "label": null,
+                            "label_trust": "fact",
+                            "stand_in": null,
+                            "words": null
+                          },
+                          "text": "BNgs…TT1Z"
+                        },
+                        {
+                          "text": "'s "
+                        },
+                        {
+                          "text": "USDC",
+                          "value": {
+                            "type": "text",
+                            "value": "USDC"
+                          }
+                        },
+                        {
+                          "text": " account"
+                        }
+                      ],
+                      "text": "BNgs…TT1Z's USDC account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "DV3B…L7Qp"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+            }
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "1488440"
+            "note_words": null,
+            "units": "1488440",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00148844 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00148844 SOL"
+            }
           },
           "if_missing": true,
           "owner": {
             "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "is_self": false,
-            "label": "Token program",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "text",
+                    "value": "Token program"
+                  }
+                }
+              ],
+              "text": "Token program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Token program",
+                          "value": {
+                            "type": "text",
+                            "value": "Token program"
+                          }
+                        }
+                      ],
+                      "text": "Token program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Toke…Q5DA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Token program (Toke…Q5DA)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000012218 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "12218",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000012218 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000012218 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000012218 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "12218"
+            "note_words": null,
+            "units": "12218",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000012218 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000012218 SOL"
+            }
           },
           "payer": {
             "address": "8KvyzLR8fMXggYaxrdMX5921wwfoANcuSuV55a6Ap1fa",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "8KvyzLR8fMXggYaxrdMX5921wwfoANcuSuV55a6Ap1fa",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "8Kvy…p1fa"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (8Kvy…p1fa)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-durable-nonce",
+          "parts": [
+            {
+              "text": "Valid until nonce account "
+            },
+            {
+              "text": "AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": " is advanced, with "
+            },
+            {
+              "emphasis": true,
+              "text": "NO TIME LIMIT"
+            },
+            {
+              "text": " (durable nonce)"
+            }
+          ],
+          "text": "Valid until nonce account AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw is advanced, with NO TIME LIMIT (durable nonce)"
+        },
         "type": "lifetime",
         "value": {
           "type": "durable_nonce",
@@ -92,7 +1131,9 @@
               "address": "AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw",
               "is_self": false,
               "label": null,
-              "label_trust": "fact"
+              "label_trust": "fact",
+              "stand_in": null,
+              "words": null
             }
           }
         }
@@ -102,91 +1143,416 @@
       {
         "code": "DURABLE_NONCE",
         "instruction": null,
-        "message": "This signature never expires; anyone holding the signed transaction can submit it at any later time until the nonce is advanced",
+        "message": {
+          "id": "explain-durable-nonce",
+          "parts": [
+            {
+              "text": "This signature has no time limit: anyone holding the signed transaction can submit it at any later time, until the nonce account is advanced"
+            }
+          ],
+          "text": "This signature has no time limit: anyone holding the signed transaction can submit it at any later time, until the nonce account is advanced"
+        },
         "severity": "high"
       }
     ],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "05d51e61e33bad79d124089e71be7988c37cccf1f9268ee6e338e439f5ec582f",
       "format": "solana legacy"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Amount",
+            "label": {
+              "id": "label-amount",
+              "parts": [
+                {
+                  "text": "Amount"
+                }
+              ],
+              "text": "Amount"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 6,
+                  "description": null,
                   "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
                   "symbol": "USDC",
                   "trust": "verified"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "996423"
+                "note_words": null,
+                "units": "996423",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.996423 "
+                    },
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    }
+                  ],
+                  "text": "0.996423 USDC"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "From",
+            "label": {
+              "id": "label-from",
+              "parts": [
+                {
+                  "text": "From"
+                }
+              ],
+              "text": "From"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "Ffz5kwUjkUNw7hV4r6iCJnUoXXsAPFHkCMCmKKDypiwg",
                 "is_self": true,
-                "label": "Your token account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "token-your-account",
+                  "parts": [
+                    {
+                      "text": "Your token account"
+                    }
+                  ],
+                  "text": "Your token account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your token account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "token-your-account",
+                          "parts": [
+                            {
+                              "text": "Your token account"
+                            }
+                          ],
+                          "text": "Your token account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "Ffz5kwUjkUNw7hV4r6iCJnUoXXsAPFHkCMCmKKDypiwg",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Ffz5…piwg"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your token account (Ffz5…piwg)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "To",
+            "label": {
+              "id": "label-to",
+              "parts": [
+                {
+                  "text": "To"
+                }
+              ],
+              "text": "To"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
                 "is_self": false,
-                "label": "BNgs…TT1Z's USDC account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-others-token",
+                  "parts": [
+                    {
+                      "short": {
+                        "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "BNgs…TT1Z"
+                    },
+                    {
+                      "text": "'s "
+                    },
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "BNgs…TT1Z's USDC account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "BNgs…TT1Z's USDC account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-others-token",
+                          "parts": [
+                            {
+                              "short": {
+                                "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                                "is_self": false,
+                                "label": null,
+                                "label_trust": "fact",
+                                "stand_in": null,
+                                "words": null
+                              },
+                              "text": "BNgs…TT1Z"
+                            },
+                            {
+                              "text": "'s "
+                            },
+                            {
+                              "text": "USDC",
+                              "value": {
+                                "type": "text",
+                                "value": "USDC"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "BNgs…TT1Z's USDC account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "DV3B…L7Qp"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Authorized by",
+            "label": {
+              "id": "label-authorized-by",
+              "parts": [
+                {
+                  "text": "Authorized by"
+                }
+              ],
+              "text": "Authorized by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "8KvyzLR8fMXggYaxrdMX5921wwfoANcuSuV55a6Ap1fa",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "8KvyzLR8fMXggYaxrdMX5921wwfoANcuSuV55a6Ap1fa",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8Kvy…p1fa"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (8Kvy…p1fa)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Mint",
+            "help": {
+              "id": "label-mint.help",
+              "parts": [
+                {
+                  "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+                }
+              ],
+              "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+            },
+            "label": {
+              "id": "label-mint",
+              "parts": [
+                {
+                  "text": "Mint"
+                }
+              ],
+              "text": "Mint"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
                 "is_self": false,
-                "label": "USDC mint",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-mint",
+                  "parts": [
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    },
+                    {
+                      "text": " mint"
+                    }
+                  ],
+                  "text": "USDC mint"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "USDC mint",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-mint",
+                          "parts": [
+                            {
+                              "text": "USDC",
+                              "value": {
+                                "type": "text",
+                                "value": "USDC"
+                              }
+                            },
+                            {
+                              "text": " mint"
+                            }
+                          ],
+                          "text": "USDC mint"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "EPjF…Dt1v"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "USDC mint (EPjF…Dt1v)"
+                }
               }
             }
           }
@@ -197,15 +1563,51 @@
             "index": 2
           }
         },
-        "subtitle": "Token program (verified)",
-        "title": "Transfer tokens"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Token program",
+              "value": {
+                "type": "text",
+                "value": "Token program"
+              }
+            }
+          ],
+          "text": "Token program"
+        },
+        "title": {
+          "id": "token-transfer-title",
+          "parts": [
+            {
+              "text": "Transfer tokens"
+            }
+          ],
+          "text": "Transfer tokens"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Advance durable nonce: Nonce account",
+            "help": {
+              "id": "label-nonce-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds a durable nonce. A transaction that uses its nonce in place of a recent blockhash stays valid until the nonce is advanced, so anyone holding it signed can submit it until then."
+                }
+              ],
+              "text": "An account that holds a durable nonce. A transaction that uses its nonce in place of a recent blockhash stays valid until the nonce is advanced, so anyone holding it signed can submit it until then."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Advance durable nonce: Nonce account"
+                }
+              ],
+              "text": "Advance durable nonce: Nonce account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -213,13 +1615,23 @@
                 "address": "AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Advance durable nonce: Authority",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Advance durable nonce: Authority"
+                }
+              ],
+              "text": "Advance durable nonce: Authority"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -227,27 +1639,142 @@
                 "address": "EbsUZEFAU23Z2SgAymFtU2hADLiyNLzaPLKiJfvpKnE7",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Token account",
+            "help": {
+              "id": "label-token-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+                }
+              ],
+              "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Token account"
+                }
+              ],
+              "text": "Create token account if missing: Token account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
                 "is_self": false,
-                "label": "BNgs…TT1Z's USDC account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-others-token",
+                  "parts": [
+                    {
+                      "short": {
+                        "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "BNgs…TT1Z"
+                    },
+                    {
+                      "text": "'s "
+                    },
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "BNgs…TT1Z's USDC account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "BNgs…TT1Z's USDC account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-others-token",
+                          "parts": [
+                            {
+                              "short": {
+                                "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                                "is_self": false,
+                                "label": null,
+                                "label_trust": "fact",
+                                "stand_in": null,
+                                "words": null
+                              },
+                              "text": "BNgs…TT1Z"
+                            },
+                            {
+                              "text": "'s "
+                            },
+                            {
+                              "text": "USDC",
+                              "value": {
+                                "type": "text",
+                                "value": "USDC"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "BNgs…TT1Z's USDC account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "DV3B…L7Qp"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Create token account if missing: Owner",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Owner"
+                }
+              ],
+              "text": "Create token account if missing: Owner"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -255,55 +1782,284 @@
                 "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Mint",
+            "help": {
+              "id": "label-mint.help",
+              "parts": [
+                {
+                  "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+                }
+              ],
+              "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Mint"
+                }
+              ],
+              "text": "Create token account if missing: Mint"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
                 "is_self": false,
-                "label": "USDC mint",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-mint",
+                  "parts": [
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    },
+                    {
+                      "text": " mint"
+                    }
+                  ],
+                  "text": "USDC mint"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "USDC mint",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-mint",
+                          "parts": [
+                            {
+                              "text": "USDC",
+                              "value": {
+                                "type": "text",
+                                "value": "USDC"
+                              }
+                            },
+                            {
+                              "text": " mint"
+                            }
+                          ],
+                          "text": "USDC mint"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "EPjF…Dt1v"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "USDC mint (EPjF…Dt1v)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Rent paid by",
+            "help": {
+              "id": "label-rent-paid-by.help",
+              "parts": [
+                {
+                  "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+                }
+              ],
+              "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Rent paid by"
+                }
+              ],
+              "text": "Create token account if missing: Rent paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "8KvyzLR8fMXggYaxrdMX5921wwfoANcuSuV55a6Ap1fa",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "8KvyzLR8fMXggYaxrdMX5921wwfoANcuSuV55a6Ap1fa",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8Kvy…p1fa"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (8Kvy…p1fa)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Token program",
+            "help": {
+              "id": "label-token-program.help",
+              "parts": [
+                {
+                  "text": "The program that manages this token: SPL Token or Token-2022."
+                }
+              ],
+              "text": "The program that manages this token: SPL Token or Token-2022."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Token program"
+                }
+              ],
+              "text": "Create token account if missing: Token program"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
                 "is_self": false,
-                "label": "Token program",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-name",
+                  "parts": [
+                    {
+                      "text": "Token program",
+                      "value": {
+                        "type": "text",
+                        "value": "Token program"
+                      }
+                    }
+                  ],
+                  "text": "Token program"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Token program",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-name",
+                          "parts": [
+                            {
+                              "text": "Token program",
+                              "value": {
+                                "type": "text",
+                                "value": "Token program"
+                              }
+                            }
+                          ],
+                          "text": "Token program"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Toke…Q5DA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Token program (Toke…Q5DA)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -311,12 +2067,36 @@
             }
           },
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "107000 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "107,000 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "107,000 micro-lamports per compute unit"
+              }
             }
           }
         ],
@@ -324,28 +2104,115 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "8KvyzLR8fMXggYaxrdMX5921wwfoANcuSuV55a6Ap1fa",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "8KvyzLR8fMXggYaxrdMX5921wwfoANcuSuV55a6Ap1fa",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8Kvy…p1fa"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (8Kvy…p1fa)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Signer",
+            "help": {
+              "id": "label-signer.help",
+              "parts": [
+                {
+                  "text": "An account whose signature the transaction needs besides the fee payer."
+                }
+              ],
+              "text": "An account whose signature the transaction needs besides the fee payer."
+            },
+            "label": {
+              "id": "label-signer",
+              "parts": [
+                {
+                  "text": "Signer"
+                }
+              ],
+              "text": "Signer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -353,7 +2220,9 @@
                 "address": "EbsUZEFAU23Z2SgAymFtU2hADLiyNLzaPLKiJfvpKnE7",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -362,84 +2231,280 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "12218"
+                "note_words": null,
+                "units": "12218",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000012218 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000012218 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "10000"
+                "note_words": null,
+                "units": "10000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00001 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00001 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "2218"
+                "note_words": null,
+                "units": "2218",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000002218 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000002218 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "107000 micro-lamports per unit × 20728 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "107,000 micro-lamports per compute unit × 20,728 compute units requested"
+                  }
+                ],
+                "text": "107,000 micro-lamports per compute unit × 20,728 compute units requested"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Rent deposits",
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "up to 0.00148844 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "up to "
+                  },
+                  {
+                    "text": "0.00148844 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "1488440",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.00148844 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.00148844 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": ", if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account"
+                  }
+                ],
+                "text": "up to 0.00148844 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account"
+              }
             }
           }
         ],
@@ -447,23 +2512,71 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "never, until the nonce account is advanced"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-never",
+                "parts": [
+                  {
+                    "text": "when the nonce account is advanced, with no time limit"
+                  }
+                ],
+                "text": "when the nonce account is advanced, with no time limit"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Nonce account",
+            "help": {
+              "id": "label-nonce-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds a durable nonce. A transaction that uses its nonce in place of a recent blockhash stays valid until the nonce is advanced, so anyone holding it signed can submit it until then."
+                }
+              ],
+              "text": "An account that holds a durable nonce. A transaction that uses its nonce in place of a recent blockhash stays valid until the nonce is advanced, so anyone holding it signed can submit it until then."
+            },
+            "label": {
+              "id": "label-nonce-account",
+              "parts": [
+                {
+                  "text": "Nonce account"
+                }
+              ],
+              "text": "Nonce account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -471,7 +2584,9 @@
                 "address": "AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -480,11 +2595,163 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "Send 0.996423 USDC (verified) to DV3B…L7Qp",
-    "text": "Send 0.996423 USDC (verified) to DV3B…L7Qp\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] This signature never expires; anyone holding the signed transaction can submit it at any later time until the nonce is advanced\n\n== Transfer tokens | Token program (verified)\n  Amount: 0.996423 USDC (verified)\n  From: Your token account (Ffz5…piwg) (verified)\n  To: BNgs…TT1Z's USDC account (DV3B…L7Qp) (verified)\n  Authorized by: Your wallet (8Kvy…p1fa) (verified)\n  Mint: USDC mint (EPjF…Dt1v) (verified)\n\n== Also [collapsed]\n  Advance durable nonce: Nonce account: AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw\n  Advance durable nonce: Authority: EbsUZEFAU23Z2SgAymFtU2hADLiyNLzaPLKiJfvpKnE7\n  Create token account if missing: Token account: BNgs…TT1Z's USDC account (DV3B…L7Qp) (verified)\n  Create token account if missing: Owner: BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z\n  Create token account if missing: Mint: USDC mint (EPjF…Dt1v) (verified)\n  Create token account if missing: Rent paid by: Your wallet (8Kvy…p1fa) (verified)\n  Create token account if missing: Token program: Token program (Toke…Q5DA) (verified)\n  Compute unit limit: 20728\n  Compute unit price: 107000 micro-lamports per unit\n\n== Signers\n  Fee payer: Your wallet (8Kvy…p1fa) (verified)\n  Signer: EbsUZEFAU23Z2SgAymFtU2hADLiyNLzaPLKiJfvpKnE7\n\n== Fee\n  Total: 0.000012218 SOL\n  Base: 0.00001 SOL\n  Priority: 0.000002218 SOL\n  Priority basis: 107000 micro-lamports per unit × 20728 units requested\n  Rent deposits: up to 0.00148844 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: never, until the nonce account is advanced\n  Nonce account: AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw\n\nEffects:\n  - send 0.996423 USDC (verified) from Your token account (Ffz5…piwg) (verified) to BNgs…TT1Z's USDC account (DV3B…L7Qp) (verified)\n  - create BNgs…TT1Z's USDC account (DV3B…L7Qp) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL unless it already exists\n  - Your wallet (8Kvy…p1fa) (verified) pays a fee of 0.000012218 SOL\n  - valid FOREVER until nonce account AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw is advanced (durable nonce)\n\nRaw: solana legacy (511 bytes)\n  digest: 05d51e61e33bad79d124089e71be7988c37cccf1f9268ee6e338e439f5ec582f\n",
+    "summary": {
+      "id": "token-send-summary",
+      "parts": [
+        {
+          "text": "Send "
+        },
+        {
+          "text": "0.996423 USDC",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 6,
+                "description": null,
+                "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "symbol": "USDC",
+                "trust": "verified"
+              },
+              "bound": "exact",
+              "note": null,
+              "note_words": null,
+              "units": "996423",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "0.996423 "
+                  },
+                  {
+                    "text": "USDC",
+                    "value": {
+                      "type": "text",
+                      "value": "USDC"
+                    }
+                  }
+                ],
+                "text": "0.996423 USDC"
+              }
+            }
+          }
+        },
+        {
+          "text": " to "
+        },
+        {
+          "short": {
+            "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+            "is_self": false,
+            "label": {
+              "id": "accounts-others-token",
+              "parts": [
+                {
+                  "short": {
+                    "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "BNgs…TT1Z"
+                },
+                {
+                  "text": "'s "
+                },
+                {
+                  "text": "USDC",
+                  "value": {
+                    "type": "text",
+                    "value": "USDC"
+                  }
+                },
+                {
+                  "text": " account"
+                }
+              ],
+              "text": "BNgs…TT1Z's USDC account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "BNgs…TT1Z's USDC account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-others-token",
+                      "parts": [
+                        {
+                          "short": {
+                            "address": "BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z",
+                            "is_self": false,
+                            "label": null,
+                            "label_trust": "fact",
+                            "stand_in": null,
+                            "words": null
+                          },
+                          "text": "BNgs…TT1Z"
+                        },
+                        {
+                          "text": "'s "
+                        },
+                        {
+                          "text": "USDC",
+                          "value": {
+                            "type": "text",
+                            "value": "USDC"
+                          }
+                        },
+                        {
+                          "text": " account"
+                        }
+                      ],
+                      "text": "BNgs…TT1Z's USDC account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "DV3BDugD4uSbnFBwEzy6Lg4RksvPEtVCazWNwjzcL7Qp",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "DV3B…L7Qp"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "BNgs…TT1Z's USDC account (DV3B…L7Qp)"
+            }
+          },
+          "text": "DV3B…L7Qp"
+        }
+      ],
+      "text": "Send 0.996423 USDC to DV3B…L7Qp"
+    },
+    "text": "Send 0.996423 USDC to DV3B…L7Qp\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] This signature has no time limit: anyone holding the signed transaction can submit it at any later time, until the nonce account is advanced\n\n== Transfer tokens | Token program\n  Amount: 0.996423 USDC\n  From: Your token account (Ffz5…piwg)\n  To: BNgs…TT1Z's USDC account (DV3B…L7Qp)\n  Authorized by: Your wallet (8Kvy…p1fa)\n  Mint: USDC mint (EPjF…Dt1v)\n\n== Also [collapsed]\n  Advance durable nonce: Nonce account: AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw\n  Advance durable nonce: Authority: EbsUZEFAU23Z2SgAymFtU2hADLiyNLzaPLKiJfvpKnE7\n  Create token account if missing: Token account: BNgs…TT1Z's USDC account (DV3B…L7Qp)\n  Create token account if missing: Owner: BNgsxo3eHqQLNTaKy4juhAUJ8DyewcJNEcYdMuSmTT1Z\n  Create token account if missing: Mint: USDC mint (EPjF…Dt1v)\n  Create token account if missing: Rent paid by: Your wallet (8Kvy…p1fa)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Compute unit limit: 20728\n  Compute unit price: 107,000 micro-lamports per compute unit\n\n== Signers\n  Fee payer: Your wallet (8Kvy…p1fa)\n  Signer: EbsUZEFAU23Z2SgAymFtU2hADLiyNLzaPLKiJfvpKnE7\n\n== Fee\n  Total: 0.000012218 SOL\n  Base: 0.00001 SOL\n  Priority: 0.000002218 SOL\n  Priority basis: 107,000 micro-lamports per compute unit × 20,728 compute units requested\n  Rent deposits: up to 0.00148844 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account\n\n== Validity\n  Expires: when the nonce account is advanced, with no time limit\n  Nonce account: AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw\n\nEffects:\n  - You send 0.996423 USDC from Your token account (Ffz5…piwg) to BNgs…TT1Z's USDC account (DV3B…L7Qp)\n  - Create BNgs…TT1Z's USDC account (DV3B…L7Qp), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - You pay a fee of 0.000012218 SOL\n  - Valid until nonce account AMcUzQhmG9YsWLWFp4we4oyAQU3hqgjUkSadkPrjeuyw is advanced, with NO TIME LIMIT (durable nonce)\n\nRaw: solana legacy (511 bytes)\n  digest: 05d51e61e33bad79d124089e71be7988c37cccf1f9268ee6e338e439f5ec582f\n",
     "verdict": "warn"
   }
 }

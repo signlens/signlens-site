@@ -9,7 +9,7 @@ export const RELEASES = `${REPOSITORY}/releases`;
 export const FIREFOX = 'https://addons.mozilla.org/firefox/addon/signlens-beta/';
 export const SITE_REPOSITORY = 'https://github.com/signlens/signlens-site';
 /** The extension's current release. */
-export const VERSION = '0.2.0';
+export const VERSION = '0.3.0';
 /** Where vulnerabilities are reported (the security page, security.txt). */
 export const SECURITY_EMAIL = 'security@signlens.dev';
 /** Where everything else goes: questions, and having one's feedback deleted. */

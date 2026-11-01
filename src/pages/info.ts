@@ -11,24 +11,25 @@ export function installPage(): Page {
 <h2>Chrome, Brave and Edge</h2>
 <p>Download <code>signlens-extension-${VERSION}.zip</code> from the <a href="${RELEASES}">latest release</a>. It comes with its SHA-256 checksum and a build attestation; the <a href="${REPOSITORY}#verifying-a-package">README says how to check them</a>. Unzip it, open <code>chrome://extensions</code>, turn on "Developer mode", choose "Load unpacked" and pick the unzipped folder.</p>
 <h2>Use it</h2>
-<p>In a dapp, choose <b>SignLens</b> when it asks you to connect a wallet. SignLens connects, in turn, to your own wallet in the same page, and from then on every request opens the SignLens window first. Continue, and your wallet asks you as usual. If you turn off "Show the explanation and ask first" in the settings, only the requests SignLens would refuse open the window; the rest go straight on to your wallet.</p>
-<p>In the popup's settings you can pick which of your wallets SignLens passes requests to, list your own addresses so explanations can say "you", keep an address book so transfers name the people you pay and <a href="/warnings/address-poisoning">lookalikes</a> stand out, and choose the Solana node SignLens asks for what a transaction refers to (the RPC).</p>
+<p>A new install opens a setup page in a tab of its own: add your wallet addresses there, so that explanations can say "you", and pin SignLens to the toolbar.</p>
+<p>In a dapp, choose <b>SignLens</b> when it asks you to connect a wallet, not your wallet itself. SignLens connects, in turn, to your own wallet in the same page; when the page has several, it asks you once which one, and keeps your choice. From then on every request opens the SignLens window first. Continue, and your wallet asks you as usual. If you turn off "Show the explanation and ask first" in the settings, only the requests SignLens would refuse open the window; the rest go straight on to your wallet.</p>
+<p>In the popup's settings you can change which of your wallets SignLens passes requests to, list your own addresses so explanations can say "you", keep an address book so transfers name the people you pay and <a href="/warnings/address-poisoning">lookalikes</a> stand out, and choose the Solana node SignLens asks for what a transaction refers to (the RPC).</p>
 <p class="note">SignLens never asks for a seed phrase or a private key, and never signs anything. Anything that asks you for one, in SignLens's name or not, is a scam.</p>`;
     return {
         path: '/install',
         title: 'Install SignLens for Chrome and Firefox',
         description: `Install the SignLens ${VERSION} beta from Firefox Add-ons, or in Chrome, Brave and Edge from its GitHub release, and connect it in front of your Solana wallet.`,
-        updated: '2026-10-29',
+        updated: '2026-11-01',
         body,
     };
 }
 
 export function privacyPage(): Page {
     const body = html`<h1>Privacy</h1>
-<p class="lead">What the SignLens extension and this site send, to whom, and what is kept. Last changed 25 October 2026.</p>
+<p class="lead">What the SignLens extension and this site send, to whom, and what is kept. Last changed 1 November 2026.</p>
 <h2>The extension</h2>
 <h3>What goes to the SignLens API</h3>
-<p>In this beta, SignLens's server computes the explanation. For each transaction a dapp asks you to sign, the extension sends the SignLens API: the transaction, the addresses its lookup tables load, the outcome of the simulation if it ran, your addresses from the settings (in watch-only mode the watched one), so that the explanation can say "you", and your address book, names and addresses, so that contacts can be named. When account lookup is on and the explanation names accounts it would read, such as a multisig proposal and the transaction it stores or a DAO proposal and its options, it asks again with those accounts as your RPC returned them, at most twice. When token lookup is on and the explanation leaves tokens unnamed, it asks again with their symbols. This happens when the dapp asks, before the window opens, and also when "Show the explanation and ask first" is off and no window opens.</p>
+<p>In this beta, SignLens's server computes the explanation. For each transaction a dapp asks you to sign, the extension sends the SignLens API: the transaction, the addresses its lookup tables load, the outcome of the simulation if it ran, at most eight of your addresses from the settings (in watch-only mode the watched one), so that the explanation can say "you"; the languages your browser asks for, so that it is worded in the first of them SignLens has; and at most 64 addresses from your address book, each with a stand-in for its name: its place in the list and a random tag drawn for each request, which says nothing of the name. The extension puts the names back before the window shows the explanation, so they never leave your browser. When account lookup is on and the explanation names accounts it would read, such as a multisig proposal and the transaction it stores or a DAO proposal and its options, it asks again with those accounts as your RPC returned them, at most twice. When token lookup is on and the explanation leaves tokens unnamed, it asks again with their symbols. It also asks again when you press "Try again" or "Show in English" in the window. This happens when the dapp asks, before the window opens, and also when "Show the explanation and ask first" is off and no window opens.</p>
 <p>For each request the API logs the time, how long it took, the verdict, the finding codes, the program names, the size and a SHA-256 hash of the transaction's message, and keeps nothing else. The hash cannot be turned back into the transaction, but once the transaction is on chain anyone can compute the same hash from it, so a log line can be matched to that transaction and its signer. Messages to sign never leave the extension.</p>
 <h3>Your IP address</h3>
 <p>Every request reaches the API through Cloudflare, which sees your IP address, as it does for any site it serves. The API uses the address only to count your requests against its limit, in memory and as a keyed hash, and logs it nowhere.</p>
@@ -37,7 +38,7 @@ export function privacyPage(): Page {
 <h3>Your RPC and the token list</h3>
 <p>The RPC in the settings, by default the public <code>solana-rpc.publicnode.com</code>, is asked for the lookup tables of every transaction that uses any, sees the whole transaction when simulation is on, is asked for the accounts an explanation names when account lookup is on, and for the mints of unlisted tokens when token lookup is on. Those mints also go to the token list, by default Jupiter's <code>lite-api.jup.ag</code>. Simulation, account lookup and token lookup are on by default; the settings turn them off, and the RPC and the token list can be your own.</p>
 <h3>Feedback</h3>
-<p>The feedback strip under an explanation sends nothing until you rate it, and says what a rating sends before you give one. A rating sends, for each transaction explained: the rating, your comment, a hash of the transaction, the site's host and the extension's version (in Firefox only once you allow them), the wallet method the site called, and what the window showed you: the verdict, the summary, the findings by code and severity, and the program each instruction calls. The transaction itself goes only if you tick "Send this transaction to SignLens so it can be looked into", which is offered unticked. Feedback is kept to improve the explanations; to have yours deleted, write to <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a> with the time you sent it.</p>
+<p>The feedback strip under an explanation sends nothing until you rate it, and says what a rating sends before you give one. A rating sends, for each transaction explained: the rating, your comment, a hash of the transaction, the site's host and the extension's version (in Firefox only once you allow them), the wallet method the site called, the language the explanation was in, and what the window showed you: the verdict, the summary, with any contact in it as "a contact", the findings by code and severity, and the program each instruction calls. The transaction itself goes only if you tick "Send this transaction to SignLens so it can be looked into", which is offered unticked. Feedback is kept to improve the explanations; to have yours deleted, write to <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a> with the time you sent it.</p>
 <h3>What the dapp learns</h3>
 <p>The dapp is told whether the request was passed on, rejected by you, or refused by SignLens and why, never the verdict or the explanation. In watch-only mode it learns the watched address only once you allow it.</p>
 <h2>This site</h2>
@@ -51,7 +52,7 @@ export function privacyPage(): Page {
         title: 'Privacy | SignLens',
         description:
             'What the SignLens extension sends to its API, your RPC and the token list, what is kept, and what signlens.dev counts.',
-        updated: '2026-10-25',
+        updated: '2026-11-01',
         body,
     };
 }

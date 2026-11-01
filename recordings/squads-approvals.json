@@ -1,32 +1,221 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 2,
+        "summary": {
+          "id": "squads-verb-address-summary",
+          "parts": [
+            {
+              "text": "Approve proposal "
+            },
+            {
+              "short": {
+                "address": "AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "AZEy…gXM7"
+            }
+          ],
+          "text": "Approve proposal AZEy…gXM7"
+        }
+      },
+      {
+        "instruction": 3,
+        "summary": {
+          "id": "squads-verb-address-summary",
+          "parts": [
+            {
+              "text": "Approve proposal "
+            },
+            {
+              "short": {
+                "address": "6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "6yju…U9d9"
+            }
+          ],
+          "text": "Approve proposal 6yju…U9d9"
+        }
+      },
+      {
+        "instruction": 4,
+        "summary": {
+          "id": "squads-verb-address-summary",
+          "parts": [
+            {
+              "text": "Approve proposal "
+            },
+            {
+              "short": {
+                "address": "Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "Gyks…hWap"
+            }
+          ],
+          "text": "Approve proposal Gyks…hWap"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000012 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "12000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000012 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000012 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000012 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "12000"
+            "note_words": null,
+            "units": "12000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000012 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000012 SOL"
+            }
           },
           "payer": {
             "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "By8Z…h5wY"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (By8Z…h5wY)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -37,34 +226,73 @@
       {
         "code": "PROPOSAL_CONTENT_NOT_SHOWN",
         "instruction": 2,
-        "message": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does",
+        "message": {
+          "id": "squads-not-shown",
+          "parts": [
+            {
+              "text": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+            }
+          ],
+          "text": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+        },
         "severity": "high"
       },
       {
         "code": "PROPOSAL_CONTENT_NOT_SHOWN",
         "instruction": 3,
-        "message": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does",
+        "message": {
+          "id": "squads-not-shown",
+          "parts": [
+            {
+              "text": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+            }
+          ],
+          "text": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+        },
         "severity": "high"
       },
       {
         "code": "PROPOSAL_CONTENT_NOT_SHOWN",
         "instruction": 4,
-        "message": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does",
+        "message": {
+          "id": "squads-not-shown",
+          "parts": [
+            {
+              "text": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+            }
+          ],
+          "text": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+        },
         "severity": "high"
       }
     ],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "3b6740be3740ec2b03ef6d6463058ebcf11855ad0b55da435ba5f194c5c3e711",
       "format": "solana legacy"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Multisig",
+            "label": {
+              "id": "label-multisig",
+              "parts": [
+                {
+                  "text": "Multisig"
+                }
+              ],
+              "text": "Multisig"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -72,13 +300,23 @@
                 "address": "2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Proposal",
+            "label": {
+              "id": "label-proposal",
+              "parts": [
+                {
+                  "text": "Proposal"
+                }
+              ],
+              "text": "Proposal"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -86,30 +324,103 @@
                 "address": "AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Content",
+            "label": {
+              "id": "label-content",
+              "parts": [
+                {
+                  "text": "Content"
+                }
+              ],
+              "text": "Content"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "on chain, not in these bytes"
+              "type": "words",
+              "value": {
+                "id": "squads-content-on-chain",
+                "parts": [
+                  {
+                    "text": "on chain, not in these bytes"
+                  }
+                ],
+                "text": "on chain, not in these bytes"
+              }
             }
           },
           {
             "help": null,
-            "label": "Member",
+            "label": {
+              "id": "label-member",
+              "parts": [
+                {
+                  "text": "Member"
+                }
+              ],
+              "text": "Member"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "By8Z…h5wY"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (By8Z…h5wY)"
+                }
               }
             }
           }
@@ -120,15 +431,43 @@
             "index": 2
           }
         },
-        "subtitle": "Squads multisig v4 (verified)",
-        "title": "Approve proposal"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Squads multisig v4",
+              "value": {
+                "type": "text",
+                "value": "Squads multisig v4"
+              }
+            }
+          ],
+          "text": "Squads multisig v4"
+        },
+        "title": {
+          "id": "squads-approve-title",
+          "parts": [
+            {
+              "text": "Approve proposal"
+            }
+          ],
+          "text": "Approve proposal"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Multisig",
+            "label": {
+              "id": "label-multisig",
+              "parts": [
+                {
+                  "text": "Multisig"
+                }
+              ],
+              "text": "Multisig"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -136,13 +475,23 @@
                 "address": "2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Proposal",
+            "label": {
+              "id": "label-proposal",
+              "parts": [
+                {
+                  "text": "Proposal"
+                }
+              ],
+              "text": "Proposal"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -150,30 +499,103 @@
                 "address": "6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Content",
+            "label": {
+              "id": "label-content",
+              "parts": [
+                {
+                  "text": "Content"
+                }
+              ],
+              "text": "Content"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "on chain, not in these bytes"
+              "type": "words",
+              "value": {
+                "id": "squads-content-on-chain",
+                "parts": [
+                  {
+                    "text": "on chain, not in these bytes"
+                  }
+                ],
+                "text": "on chain, not in these bytes"
+              }
             }
           },
           {
             "help": null,
-            "label": "Member",
+            "label": {
+              "id": "label-member",
+              "parts": [
+                {
+                  "text": "Member"
+                }
+              ],
+              "text": "Member"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "By8Z…h5wY"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (By8Z…h5wY)"
+                }
               }
             }
           }
@@ -184,15 +606,43 @@
             "index": 3
           }
         },
-        "subtitle": "Squads multisig v4 (verified)",
-        "title": "Approve proposal"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Squads multisig v4",
+              "value": {
+                "type": "text",
+                "value": "Squads multisig v4"
+              }
+            }
+          ],
+          "text": "Squads multisig v4"
+        },
+        "title": {
+          "id": "squads-approve-title",
+          "parts": [
+            {
+              "text": "Approve proposal"
+            }
+          ],
+          "text": "Approve proposal"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Multisig",
+            "label": {
+              "id": "label-multisig",
+              "parts": [
+                {
+                  "text": "Multisig"
+                }
+              ],
+              "text": "Multisig"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -200,13 +650,23 @@
                 "address": "2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Proposal",
+            "label": {
+              "id": "label-proposal",
+              "parts": [
+                {
+                  "text": "Proposal"
+                }
+              ],
+              "text": "Proposal"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -214,30 +674,103 @@
                 "address": "Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Content",
+            "label": {
+              "id": "label-content",
+              "parts": [
+                {
+                  "text": "Content"
+                }
+              ],
+              "text": "Content"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "on chain, not in these bytes"
+              "type": "words",
+              "value": {
+                "id": "squads-content-on-chain",
+                "parts": [
+                  {
+                    "text": "on chain, not in these bytes"
+                  }
+                ],
+                "text": "on chain, not in these bytes"
+              }
             }
           },
           {
             "help": null,
-            "label": "Member",
+            "label": {
+              "id": "label-member",
+              "parts": [
+                {
+                  "text": "Member"
+                }
+              ],
+              "text": "Member"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "By8Z…h5wY"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (By8Z…h5wY)"
+                }
               }
             }
           }
@@ -248,24 +781,84 @@
             "index": 4
           }
         },
-        "subtitle": "Squads multisig v4 (verified)",
-        "title": "Approve proposal"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Squads multisig v4",
+              "value": {
+                "type": "text",
+                "value": "Squads multisig v4"
+              }
+            }
+          ],
+          "text": "Squads multisig v4"
+        },
+        "title": {
+          "id": "squads-approve-title",
+          "parts": [
+            {
+              "text": "Approve proposal"
+            }
+          ],
+          "text": "Approve proposal"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "100000 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "100,000 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "100,000 micro-lamports per compute unit"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -277,22 +870,93 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "By8ZMDk9pt3sY2vuKiwcYhzrTTH8bw648iH8nmbnh5wY",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "By8Z…h5wY"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (By8Z…h5wY)"
+                }
               }
             }
           }
@@ -301,75 +965,209 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "12000"
+                "note_words": null,
+                "units": "12000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000012 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000012 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "7000"
+                "note_words": null,
+                "units": "7000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000007 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000007 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "100000 micro-lamports per unit × 70000 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "100,000 micro-lamports per compute unit × 70,000 compute units requested"
+                  }
+                ],
+                "text": "100,000 micro-lamports per compute unit × 70,000 compute units requested"
+              }
             }
           }
         ],
@@ -377,18 +1175,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -396,24 +1226,110 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "3 actions: Approve proposal AZEy…gXM7; Approve proposal 6yju…U9d9; Approve proposal Gyks…hWap",
-    "text": "3 actions: Approve proposal AZEy…gXM7; Approve proposal 6yju…U9d9; Approve proposal Gyks…hWap\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does (instruction 2)\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does (instruction 3)\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does (instruction 4)\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY) (verified)\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: 6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY) (verified)\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY) (verified)\n\n== Also [collapsed]\n  Compute unit price: 100000 micro-lamports per unit\n  Compute unit limit: 70000\n\n== Signers\n  Fee payer: Your wallet (By8Z…h5wY) (verified)\n\n== Fee\n  Total: 0.000012 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000007 SOL\n  Priority basis: 100000 micro-lamports per unit × 70000 units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Your wallet (By8Z…h5wY) (verified) pays a fee of 0.000012 SOL\n  - valid for about a minute (recent blockhash)\n\nWould read, to explain more:\n  - AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7: the proposal: its index names the transaction it runs\n  - 6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9: the proposal: its index names the transaction it runs\n  - Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap: the proposal: its index names the transaction it runs\n\nRaw: solana legacy (326 bytes)\n  digest: 3b6740be3740ec2b03ef6d6463058ebcf11855ad0b55da435ba5f194c5c3e711\n",
+    "summary": {
+      "id": "explain-actions",
+      "parts": [
+        {
+          "text": "3",
+          "value": {
+            "type": "integer",
+            "value": "3"
+          }
+        },
+        {
+          "text": " actions: Approve proposal "
+        },
+        {
+          "short": {
+            "address": "AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "AZEy…gXM7"
+        },
+        {
+          "text": "; Approve proposal "
+        },
+        {
+          "short": {
+            "address": "6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "6yju…U9d9"
+        },
+        {
+          "text": "; Approve proposal "
+        },
+        {
+          "short": {
+            "address": "Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "Gyks…hWap"
+        }
+      ],
+      "text": "3 actions: Approve proposal AZEy…gXM7; Approve proposal 6yju…U9d9; Approve proposal Gyks…hWap"
+    },
+    "text": "3 actions: Approve proposal AZEy…gXM7; Approve proposal 6yju…U9d9; Approve proposal Gyks…hWap\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does (instruction 3)\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does (instruction 4)\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does (instruction 5)\n\n== Approve proposal | Squads multisig v4\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY)\n\n== Approve proposal | Squads multisig v4\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: 6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY)\n\n== Approve proposal | Squads multisig v4\n  Multisig: 2ZDFsDzcztw6fRgpvRECytSDTnWtJbUDiVqck7CJS1oi\n  Proposal: Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap\n  Content: on chain, not in these bytes\n  Member: Your wallet (By8Z…h5wY)\n\n== Also [collapsed]\n  Compute unit price: 100,000 micro-lamports per compute unit\n  Compute unit limit: 70000\n\n== Signers\n  Fee payer: Your wallet (By8Z…h5wY)\n\n== Fee\n  Total: 0.000012 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000007 SOL\n  Priority basis: 100,000 micro-lamports per compute unit × 70,000 compute units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You pay a fee of 0.000012 SOL\n  - Valid for about a minute (recent blockhash)\n\nWould read, to explain more:\n  - AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7: the proposal: its index names the transaction it runs\n  - 6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9: the proposal: its index names the transaction it runs\n  - Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap: the proposal: its index names the transaction it runs\n\nRaw: solana legacy (326 bytes)\n  digest: 3b6740be3740ec2b03ef6d6463058ebcf11855ad0b55da435ba5f194c5c3e711\n",
     "verdict": "warn",
     "wanted_accounts": [
       {
         "address": "AZEy1xu8MxB8BwbSYTfEmDmTuTKTc9DFQnFwdyFXgXM7",
-        "reason": "the proposal: its index names the transaction it runs"
+        "reason": {
+          "id": "squads-wanted-proposal",
+          "parts": [
+            {
+              "text": "the proposal: its index names the transaction it runs"
+            }
+          ],
+          "text": "the proposal: its index names the transaction it runs"
+        }
       },
       {
         "address": "6yjuCo1HuS8Zv9m253XXnmm2k7rM464P4R8PtGg5U9d9",
-        "reason": "the proposal: its index names the transaction it runs"
+        "reason": {
+          "id": "squads-wanted-proposal",
+          "parts": [
+            {
+              "text": "the proposal: its index names the transaction it runs"
+            }
+          ],
+          "text": "the proposal: its index names the transaction it runs"
+        }
       },
       {
         "address": "Gyksz4KLTiG2E1UPDd7QEdsA16eBc2w64MFhDfyvhWap",
-        "reason": "the proposal: its index names the transaction it runs"
+        "reason": {
+          "id": "squads-wanted-proposal",
+          "parts": [
+            {
+              "text": "the proposal: its index names the transaction it runs"
+            }
+          ],
+          "text": "the proposal: its index names the transaction it runs"
+        }
       }
     ]
   }

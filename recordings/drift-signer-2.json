@@ -1,32 +1,222 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 1,
+        "summary": {
+          "id": "squads-verb-address-summary",
+          "parts": [
+            {
+              "text": "Approve proposal "
+            },
+            {
+              "short": {
+                "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "J1w1…xti8"
+            }
+          ],
+          "text": "Approve proposal J1w1…xti8"
+        }
+      },
+      {
+        "instruction": 2,
+        "summary": {
+          "id": "squads-verb-address-summary",
+          "parts": [
+            {
+              "text": "Execute proposal "
+            },
+            {
+              "short": {
+                "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "J1w1…xti8"
+            }
+          ],
+          "text": "Execute proposal J1w1…xti8"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000005 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "5000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000005 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000005 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000005 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "5000"
+            "note_words": null,
+            "units": "5000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000005 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000005 SOL"
+            }
           },
           "payer": {
             "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "6UJb…u924"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (6UJb…u924)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-durable-nonce",
+          "parts": [
+            {
+              "text": "Valid until nonce account "
+            },
+            {
+              "text": "EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": " is advanced, with "
+            },
+            {
+              "emphasis": true,
+              "text": "NO TIME LIMIT"
+            },
+            {
+              "text": " (durable nonce)"
+            }
+          ],
+          "text": "Valid until nonce account EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc is advanced, with NO TIME LIMIT (durable nonce)"
+        },
         "type": "lifetime",
         "value": {
           "type": "durable_nonce",
@@ -35,7 +225,9 @@
               "address": "EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc",
               "is_self": false,
               "label": null,
-              "label_trust": "fact"
+              "label_trust": "fact",
+              "stand_in": null,
+              "words": null
             }
           }
         }
@@ -45,34 +237,73 @@
       {
         "code": "PROPOSAL_CONTENT_NOT_SHOWN",
         "instruction": 1,
-        "message": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does",
+        "message": {
+          "id": "squads-not-shown",
+          "parts": [
+            {
+              "text": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+            }
+          ],
+          "text": "This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+        },
         "severity": "high"
       },
       {
         "code": "PROPOSAL_CONTENT_NOT_SHOWN",
         "instruction": 2,
-        "message": "This would execute a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does",
+        "message": {
+          "id": "squads-not-shown",
+          "parts": [
+            {
+              "text": "This would execute a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+            }
+          ],
+          "text": "This would execute a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does"
+        },
         "severity": "high"
       },
       {
         "code": "DURABLE_NONCE",
         "instruction": null,
-        "message": "This signature never expires; anyone holding the signed transaction can submit it at any later time until the nonce is advanced",
+        "message": {
+          "id": "explain-durable-nonce",
+          "parts": [
+            {
+              "text": "This signature has no time limit: anyone holding the signed transaction can submit it at any later time, until the nonce account is advanced"
+            }
+          ],
+          "text": "This signature has no time limit: anyone holding the signed transaction can submit it at any later time, until the nonce account is advanced"
+        },
         "severity": "high"
       }
     ],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "ee7706555a2bed3f52dde729942482697f4aef89b2e733ee1e75b78b037a2af5",
       "format": "solana legacy"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Multisig",
+            "label": {
+              "id": "label-multisig",
+              "parts": [
+                {
+                  "text": "Multisig"
+                }
+              ],
+              "text": "Multisig"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -80,13 +311,23 @@
                 "address": "2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Proposal",
+            "label": {
+              "id": "label-proposal",
+              "parts": [
+                {
+                  "text": "Proposal"
+                }
+              ],
+              "text": "Proposal"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -94,30 +335,103 @@
                 "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Content",
+            "label": {
+              "id": "label-content",
+              "parts": [
+                {
+                  "text": "Content"
+                }
+              ],
+              "text": "Content"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "on chain, not in these bytes"
+              "type": "words",
+              "value": {
+                "id": "squads-content-on-chain",
+                "parts": [
+                  {
+                    "text": "on chain, not in these bytes"
+                  }
+                ],
+                "text": "on chain, not in these bytes"
+              }
             }
           },
           {
             "help": null,
-            "label": "Member",
+            "label": {
+              "id": "label-member",
+              "parts": [
+                {
+                  "text": "Member"
+                }
+              ],
+              "text": "Member"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "6UJb…u924"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (6UJb…u924)"
+                }
               }
             }
           }
@@ -128,15 +442,43 @@
             "index": 1
           }
         },
-        "subtitle": "Squads multisig v4 (verified)",
-        "title": "Approve proposal"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Squads multisig v4",
+              "value": {
+                "type": "text",
+                "value": "Squads multisig v4"
+              }
+            }
+          ],
+          "text": "Squads multisig v4"
+        },
+        "title": {
+          "id": "squads-approve-title",
+          "parts": [
+            {
+              "text": "Approve proposal"
+            }
+          ],
+          "text": "Approve proposal"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Multisig",
+            "label": {
+              "id": "label-multisig",
+              "parts": [
+                {
+                  "text": "Multisig"
+                }
+              ],
+              "text": "Multisig"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -144,13 +486,23 @@
                 "address": "2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Proposal",
+            "label": {
+              "id": "label-proposal",
+              "parts": [
+                {
+                  "text": "Proposal"
+                }
+              ],
+              "text": "Proposal"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -158,30 +510,103 @@
                 "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Content",
+            "label": {
+              "id": "label-content",
+              "parts": [
+                {
+                  "text": "Content"
+                }
+              ],
+              "text": "Content"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "on chain, not in these bytes"
+              "type": "words",
+              "value": {
+                "id": "squads-content-on-chain",
+                "parts": [
+                  {
+                    "text": "on chain, not in these bytes"
+                  }
+                ],
+                "text": "on chain, not in these bytes"
+              }
             }
           },
           {
             "help": null,
-            "label": "Member",
+            "label": {
+              "id": "label-member",
+              "parts": [
+                {
+                  "text": "Member"
+                }
+              ],
+              "text": "Member"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "6UJb…u924"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (6UJb…u924)"
+                }
               }
             }
           }
@@ -192,15 +617,51 @@
             "index": 2
           }
         },
-        "subtitle": "Squads multisig v4 (verified)",
-        "title": "Execute vault transaction"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "Squads multisig v4",
+              "value": {
+                "type": "text",
+                "value": "Squads multisig v4"
+              }
+            }
+          ],
+          "text": "Squads multisig v4"
+        },
+        "title": {
+          "id": "squads-execute-title",
+          "parts": [
+            {
+              "text": "Execute vault transaction"
+            }
+          ],
+          "text": "Execute vault transaction"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Advance durable nonce: Nonce account",
+            "help": {
+              "id": "label-nonce-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds a durable nonce. A transaction that uses its nonce in place of a recent blockhash stays valid until the nonce is advanced, so anyone holding it signed can submit it until then."
+                }
+              ],
+              "text": "An account that holds a durable nonce. A transaction that uses its nonce in place of a recent blockhash stays valid until the nonce is advanced, so anyone holding it signed can submit it until then."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Advance durable nonce: Nonce account"
+                }
+              ],
+              "text": "Advance durable nonce: Nonce account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -208,21 +669,78 @@
                 "address": "EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
             "help": null,
-            "label": "Advance durable nonce: Authority",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Advance durable nonce: Authority"
+                }
+              ],
+              "text": "Advance durable nonce: Authority"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "6UJb…u924"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (6UJb…u924)"
+                }
               }
             }
           }
@@ -231,22 +749,93 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "6UJbu9ut5VAsFYQFgPEa5xPfoyF5bB5oi4EknFPvu924",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "6UJb…u924"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (6UJb…u924)"
+                }
               }
             }
           }
@@ -255,46 +844,122 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           }
@@ -303,23 +968,71 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "never, until the nonce account is advanced"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-never",
+                "parts": [
+                  {
+                    "text": "when the nonce account is advanced, with no time limit"
+                  }
+                ],
+                "text": "when the nonce account is advanced, with no time limit"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Nonce account",
+            "help": {
+              "id": "label-nonce-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds a durable nonce. A transaction that uses its nonce in place of a recent blockhash stays valid until the nonce is advanced, so anyone holding it signed can submit it until then."
+                }
+              ],
+              "text": "An account that holds a durable nonce. A transaction that uses its nonce in place of a recent blockhash stays valid until the nonce is advanced, so anyone holding it signed can submit it until then."
+            },
+            "label": {
+              "id": "label-nonce-account",
+              "parts": [
+                {
+                  "text": "Nonce account"
+                }
+              ],
+              "text": "Nonce account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -327,7 +1040,9 @@
                 "address": "EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -336,20 +1051,84 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "2 actions: Approve proposal J1w1…xti8; Execute proposal J1w1…xti8",
-    "text": "2 actions: Approve proposal J1w1…xti8; Execute proposal J1w1…xti8\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does (instruction 1)\n  [HIGH] This would execute a multisig proposal whose content is on chain, not in the signed bytes; the signer cannot show what it does (instruction 2)\n  [HIGH] This signature never expires; anyone holding the signed transaction can submit it at any later time until the nonce is advanced\n\n== Approve proposal | Squads multisig v4 (verified)\n  Multisig: 2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88\n  Proposal: J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8\n  Content: on chain, not in these bytes\n  Member: Your wallet (6UJb…u924) (verified)\n\n== Execute vault transaction | Squads multisig v4 (verified)\n  Multisig: 2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88\n  Proposal: J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8\n  Content: on chain, not in these bytes\n  Member: Your wallet (6UJb…u924) (verified)\n\n== Also [collapsed]\n  Advance durable nonce: Nonce account: EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc\n  Advance durable nonce: Authority: Your wallet (6UJb…u924) (verified)\n\n== Signers\n  Fee payer: Your wallet (6UJb…u924) (verified)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: never, until the nonce account is advanced\n  Nonce account: EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc\n\nEffects:\n  - Your wallet (6UJb…u924) (verified) pays a fee of 0.000005 SOL\n  - valid FOREVER until nonce account EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc is advanced (durable nonce)\n\nWould read, to explain more:\n  - J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8: the proposal: its index names the transaction it runs\n  - 2QmMUBZYv2Ssm6ED73Gapt8cgn9u1HQbPaJtfYdDDAwc: the transaction the proposal runs\n\nRaw: solana legacy (432 bytes)\n  digest: ee7706555a2bed3f52dde729942482697f4aef89b2e733ee1e75b78b037a2af5\n",
+    "summary": {
+      "id": "explain-actions",
+      "parts": [
+        {
+          "text": "2",
+          "value": {
+            "type": "integer",
+            "value": "2"
+          }
+        },
+        {
+          "text": " actions: Approve proposal "
+        },
+        {
+          "short": {
+            "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "J1w1…xti8"
+        },
+        {
+          "text": "; Execute proposal "
+        },
+        {
+          "short": {
+            "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "J1w1…xti8"
+        }
+      ],
+      "text": "2 actions: Approve proposal J1w1…xti8; Execute proposal J1w1…xti8"
+    },
+    "text": "2 actions: Approve proposal J1w1…xti8; Execute proposal J1w1…xti8\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] This would approve a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does (instruction 2)\n  [HIGH] This would execute a multisig proposal whose content is on chain, not in the signed bytes; SignLens cannot show what it does (instruction 3)\n  [HIGH] This signature has no time limit: anyone holding the signed transaction can submit it at any later time, until the nonce account is advanced\n\n== Approve proposal | Squads multisig v4\n  Multisig: 2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88\n  Proposal: J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8\n  Content: on chain, not in these bytes\n  Member: Your wallet (6UJb…u924)\n\n== Execute vault transaction | Squads multisig v4\n  Multisig: 2LW6PSEjp81xSEttWwXDB6Etb1eKdhYPbFEojYbyhx88\n  Proposal: J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8\n  Content: on chain, not in these bytes\n  Member: Your wallet (6UJb…u924)\n\n== Also [collapsed]\n  Advance durable nonce: Nonce account: EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc\n  Advance durable nonce: Authority: Your wallet (6UJb…u924)\n\n== Signers\n  Fee payer: Your wallet (6UJb…u924)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: when the nonce account is advanced, with no time limit\n  Nonce account: EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc\n\nEffects:\n  - You pay a fee of 0.000005 SOL\n  - Valid until nonce account EmYEryTDXtuVCxrjNqJXbiwr4hfiJajd4g5P58vvhQnc is advanced, with NO TIME LIMIT (durable nonce)\n\nWould read, to explain more:\n  - J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8: the proposal: its index names the transaction it runs\n  - 2QmMUBZYv2Ssm6ED73Gapt8cgn9u1HQbPaJtfYdDDAwc: the transaction the proposal runs\n\nRaw: solana legacy (432 bytes)\n  digest: ee7706555a2bed3f52dde729942482697f4aef89b2e733ee1e75b78b037a2af5\n",
     "verdict": "warn",
     "wanted_accounts": [
       {
         "address": "J1w1U5BB9W4Tnf2NhrcnTmV5t6iZugXSkujYKadwxti8",
-        "reason": "the proposal: its index names the transaction it runs"
+        "reason": {
+          "id": "squads-wanted-proposal",
+          "parts": [
+            {
+              "text": "the proposal: its index names the transaction it runs"
+            }
+          ],
+          "text": "the proposal: its index names the transaction it runs"
+        }
       },
       {
         "address": "2QmMUBZYv2Ssm6ED73Gapt8cgn9u1HQbPaJtfYdDDAwc",
-        "reason": "the transaction the proposal runs"
+        "reason": {
+          "id": "squads-wanted-transaction",
+          "parts": [
+            {
+              "text": "the transaction the proposal runs"
+            }
+          ],
+          "text": "the transaction the proposal runs"
+        }
       }
     ]
   }

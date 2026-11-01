@@ -1,229 +1,1939 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 2,
+        "summary": {
+          "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-summary",
+          "parts": [
+            {
+              "text": "Open a Raydium CLMM position with "
+            },
+            {
+              "text": "≤ 0.00985543 GOOGLx",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 8,
+                    "description": null,
+                    "id": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+                    "symbol": "GOOGLx",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "985543",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 0.00985543 "
+                      },
+                      {
+                        "text": "GOOGLx",
+                        "value": {
+                          "type": "text",
+                          "value": "GOOGLx"
+                        }
+                      }
+                    ],
+                    "text": "≤ 0.00985543 GOOGLx"
+                  }
+                }
+              }
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "≤ 33.874114 USDC",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "symbol": "USDC",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "33874114",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 33.874114 "
+                      },
+                      {
+                        "text": "USDC",
+                        "value": {
+                          "type": "text",
+                          "value": "USDC"
+                        }
+                      }
+                    ],
+                    "text": "≤ 33.874114 USDC"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx and ≤ 33.874114 USDC"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "≤ 0.00985543 GOOGLx",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 8,
+                    "description": null,
+                    "id": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+                    "symbol": "GOOGLx",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "985543",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 0.00985543 "
+                      },
+                      {
+                        "text": "GOOGLx",
+                        "value": {
+                          "type": "text",
+                          "value": "GOOGLx"
+                        }
+                      }
+                    ],
+                    "text": "≤ 0.00985543 GOOGLx"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (B1Q4…mxGP)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "B1Q4…mxGP"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (B1Q4…mxGP)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Raydium CLMM (CAMM…rWqK)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "text",
+                          "value": "Raydium CLMM"
+                        }
+                      }
+                    ],
+                    "text": "Raydium CLMM"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Raydium CLMM",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Raydium CLMM"
+                                }
+                              }
+                            ],
+                            "text": "Raydium CLMM"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "CAMM…rWqK"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Raydium CLMM (CAMM…rWqK)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send ≤ 0.00985543 GOOGLx from Your wallet (B1Q4…mxGP) to Raydium CLMM (CAMM…rWqK)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 8,
+              "description": null,
               "id": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
               "symbol": "GOOGLx",
               "trust": "verified"
             },
             "bound": "at_most",
             "note": null,
-            "units": "985543"
+            "note_words": null,
+            "units": "985543",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "≤ 0.00985543 "
+                },
+                {
+                  "text": "GOOGLx",
+                  "value": {
+                    "type": "text",
+                    "value": "GOOGLx"
+                  }
+                }
+              ],
+              "text": "≤ 0.00985543 GOOGLx"
+            }
           },
           "from": {
             "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "B1Q4…mxGP"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (B1Q4…mxGP)"
+            }
           },
           "to": {
             "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
             "is_self": false,
-            "label": "Raydium CLMM",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "text",
+                    "value": "Raydium CLMM"
+                  }
+                }
+              ],
+              "text": "Raydium CLMM"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Raydium CLMM",
+                          "value": {
+                            "type": "text",
+                            "value": "Raydium CLMM"
+                          }
+                        }
+                      ],
+                      "text": "Raydium CLMM"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "CAMM…rWqK"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Raydium CLMM (CAMM…rWqK)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "≤ 33.874114 USDC",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "symbol": "USDC",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "33874114",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 33.874114 "
+                      },
+                      {
+                        "text": "USDC",
+                        "value": {
+                          "type": "text",
+                          "value": "USDC"
+                        }
+                      }
+                    ],
+                    "text": "≤ 33.874114 USDC"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (B1Q4…mxGP)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "B1Q4…mxGP"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (B1Q4…mxGP)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Raydium CLMM (CAMM…rWqK)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "text",
+                          "value": "Raydium CLMM"
+                        }
+                      }
+                    ],
+                    "text": "Raydium CLMM"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Raydium CLMM",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Raydium CLMM"
+                                }
+                              }
+                            ],
+                            "text": "Raydium CLMM"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "CAMM…rWqK"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Raydium CLMM (CAMM…rWqK)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send ≤ 33.874114 USDC from Your wallet (B1Q4…mxGP) to Raydium CLMM (CAMM…rWqK)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 6,
+              "description": null,
               "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
               "symbol": "USDC",
               "trust": "verified"
             },
             "bound": "at_most",
             "note": null,
-            "units": "33874114"
+            "note_words": null,
+            "units": "33874114",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "≤ 33.874114 "
+                },
+                {
+                  "text": "USDC",
+                  "value": {
+                    "type": "text",
+                    "value": "USDC"
+                  }
+                }
+              ],
+              "text": "≤ 33.874114 USDC"
+            }
           },
           "from": {
             "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "B1Q4…mxGP"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (B1Q4…mxGP)"
+            }
           },
           "to": {
             "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
             "is_self": false,
-            "label": "Raydium CLMM",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "text",
+                    "value": "Raydium CLMM"
+                  }
+                }
+              ],
+              "text": "Raydium CLMM"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Raydium CLMM",
+                          "value": {
+                            "type": "text",
+                            "value": "Raydium CLMM"
+                          }
+                        }
+                      ],
+                      "text": "Raydium CLMM"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "CAMM…rWqK"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Raydium CLMM (CAMM…rWqK)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "the account at lookup table AcL1…zJkU[2]",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": null,
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": {
+                    "id": "accounts-lookup-table-slot",
+                    "parts": [
+                      {
+                        "text": "the account at lookup table "
+                      },
+                      {
+                        "short": {
+                          "address": "AcL1Vo8oy1ULiavEcjSUcwfBSForXMudcZvDZy5nzJkU",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "AcL1…zJkU"
+                      },
+                      {
+                        "text": "["
+                      },
+                      {
+                        "text": "2",
+                        "value": {
+                          "type": "integer",
+                          "value": "2"
+                        }
+                      },
+                      {
+                        "text": "]"
+                      }
+                    ],
+                    "text": "the account at lookup table AcL1…zJkU[2]"
+                  },
+                  "words": null
+                }
+              }
+            }
+          ],
+          "text": "Create DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk, managed by the account at lookup table AcL1…zJkU[2]"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": null,
           "if_missing": false,
           "owner": {
-            "address": "lookup table AcL1…zJkU[2]",
+            "address": null,
             "is_self": false,
-            "label": "not read",
-            "label_trust": "fact"
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": {
+              "id": "accounts-lookup-table-slot",
+              "parts": [
+                {
+                  "text": "the account at lookup table "
+                },
+                {
+                  "short": {
+                    "address": "AcL1Vo8oy1ULiavEcjSUcwfBSForXMudcZvDZy5nzJkU",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "AcL1…zJkU"
+                },
+                {
+                  "text": "["
+                },
+                {
+                  "text": "2",
+                  "value": {
+                    "type": "integer",
+                    "value": "2"
+                  }
+                },
+                {
+                  "text": "]"
+                }
+              ],
+              "text": "the account at lookup table AcL1…zJkU[2]"
+            },
+            "words": null
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "the account at lookup table AcL1…zJkU[2]",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": null,
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": {
+                    "id": "accounts-lookup-table-slot",
+                    "parts": [
+                      {
+                        "text": "the account at lookup table "
+                      },
+                      {
+                        "short": {
+                          "address": "AcL1Vo8oy1ULiavEcjSUcwfBSForXMudcZvDZy5nzJkU",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "AcL1…zJkU"
+                      },
+                      {
+                        "text": "["
+                      },
+                      {
+                        "text": "2",
+                        "value": {
+                          "type": "integer",
+                          "value": "2"
+                        }
+                      },
+                      {
+                        "text": "]"
+                      }
+                    ],
+                    "text": "the account at lookup table AcL1…zJkU[2]"
+                  },
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00151384 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1513840",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00151384 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00151384 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au, managed by the account at lookup table AcL1…zJkU[2], depositing 0.00151384 SOL"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "1513840"
+            "note_words": null,
+            "units": "1513840",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00151384 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00151384 SOL"
+            }
           },
           "if_missing": false,
           "owner": {
-            "address": "lookup table AcL1…zJkU[2]",
+            "address": null,
             "is_self": false,
-            "label": "not read",
-            "label_trust": "fact"
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": {
+              "id": "accounts-lookup-table-slot",
+              "parts": [
+                {
+                  "text": "the account at lookup table "
+                },
+                {
+                  "short": {
+                    "address": "AcL1Vo8oy1ULiavEcjSUcwfBSForXMudcZvDZy5nzJkU",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "AcL1…zJkU"
+                },
+                {
+                  "text": "["
+                },
+                {
+                  "text": "2",
+                  "value": {
+                    "type": "integer",
+                    "value": "2"
+                  }
+                },
+                {
+                  "text": "]"
+                }
+              ],
+              "text": "the account at lookup table AcL1…zJkU[2]"
+            },
+            "words": null
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Raydium CLMM (CAMM…rWqK)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "text",
+                          "value": "Raydium CLMM"
+                        }
+                      }
+                    ],
+                    "text": "Raydium CLMM"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Raydium CLMM",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Raydium CLMM"
+                                }
+                              }
+                            ],
+                            "text": "Raydium CLMM"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "CAMM…rWqK"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Raydium CLMM (CAMM…rWqK)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00207772 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "2077720",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00207772 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00207772 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ, managed by Raydium CLMM (CAMM…rWqK), depositing 0.00207772 SOL"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "2077720"
+            "note_words": null,
+            "units": "2077720",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00207772 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00207772 SOL"
+            }
           },
           "if_missing": false,
           "owner": {
             "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
             "is_self": false,
-            "label": "Raydium CLMM",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "text",
+                    "value": "Raydium CLMM"
+                  }
+                }
+              ],
+              "text": "Raydium CLMM"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Raydium CLMM",
+                          "value": {
+                            "type": "text",
+                            "value": "Raydium CLMM"
+                          }
+                        }
+                      ],
+                      "text": "Raydium CLMM"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "CAMM…rWqK"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Raydium CLMM (CAMM…rWqK)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit-if-missing",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Raydium CLMM (CAMM…rWqK)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "text",
+                          "value": "Raydium CLMM"
+                        }
+                      }
+                    ],
+                    "text": "Raydium CLMM"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Raydium CLMM",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Raydium CLMM"
+                                }
+                              }
+                            ],
+                            "text": "Raydium CLMM"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "CAMM…rWqK"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Raydium CLMM (CAMM…rWqK)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.05266944 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "52669440",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.05266944 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.05266944 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " unless it already exists"
+            }
+          ],
+          "text": "Create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg, managed by Raydium CLMM (CAMM…rWqK), depositing 0.05266944 SOL unless it already exists"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "52669440"
+            "note_words": null,
+            "units": "52669440",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.05266944 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.05266944 SOL"
+            }
           },
           "if_missing": true,
           "owner": {
             "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
             "is_self": false,
-            "label": "Raydium CLMM",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "text",
+                    "value": "Raydium CLMM"
+                  }
+                }
+              ],
+              "text": "Raydium CLMM"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Raydium CLMM",
+                          "value": {
+                            "type": "text",
+                            "value": "Raydium CLMM"
+                          }
+                        }
+                      ],
+                      "text": "Raydium CLMM"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "CAMM…rWqK"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Raydium CLMM (CAMM…rWqK)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit-if-missing",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Raydium CLMM (CAMM…rWqK)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "text",
+                          "value": "Raydium CLMM"
+                        }
+                      }
+                    ],
+                    "text": "Raydium CLMM"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Raydium CLMM",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Raydium CLMM",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Raydium CLMM"
+                                }
+                              }
+                            ],
+                            "text": "Raydium CLMM"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "CAMM…rWqK"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Raydium CLMM (CAMM…rWqK)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.05266944 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "52669440",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.05266944 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.05266944 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " unless it already exists"
+            }
+          ],
+          "text": "Create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg, managed by Raydium CLMM (CAMM…rWqK), depositing 0.05266944 SOL unless it already exists"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "52669440"
+            "note_words": null,
+            "units": "52669440",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.05266944 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.05266944 SOL"
+            }
           },
           "if_missing": true,
           "owner": {
             "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
             "is_self": false,
-            "label": "Raydium CLMM",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "text",
+                    "value": "Raydium CLMM"
+                  }
+                }
+              ],
+              "text": "Raydium CLMM"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Raydium CLMM",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Raydium CLMM",
+                          "value": {
+                            "type": "text",
+                            "value": "Raydium CLMM"
+                          }
+                        }
+                      ],
+                      "text": "Raydium CLMM"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "CAMM…rWqK"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Raydium CLMM (CAMM…rWqK)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-effects-other",
+          "parts": [
+            {
+              "text": "Mint a position NFT, the claim on the deposited liquidity, to the position NFT owner"
+            }
+          ],
+          "text": "Mint a position NFT, the claim on the deposited liquidity, to the position NFT owner"
+        },
         "type": "other",
         "value": {
-          "description": "mints a position NFT, the claim on the deposited liquidity, to the position NFT owner"
+          "description": {
+            "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-effects-other",
+            "parts": [
+              {
+                "text": "Mint a position NFT, the claim on the deposited liquidity, to the position NFT owner"
+              }
+            ],
+            "text": "Mint a position NFT, the claim on the deposited liquidity, to the position NFT owner"
+          }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.00001018 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "10180",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00001018 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00001018 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.00001018 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "10180"
+            "note_words": null,
+            "units": "10180",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00001018 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00001018 SOL"
+            }
           },
           "payer": {
             "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "B1Q4…mxGP"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (B1Q4…mxGP)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -231,70 +1941,211 @@
       }
     ],
     "findings": [],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "f26bd6948c7dd5065e270fe8e06a918d374ac18c430e02450689b810924b90af",
       "format": "solana v0"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "What you put in for liquidity, at most. The pool takes the amounts its current price allows.",
-            "label": "Deposit",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-deposit",
+              "parts": [
+                {
+                  "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+                }
+              ],
+              "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-derived_max_0",
+              "parts": [
+                {
+                  "text": "Deposit"
+                }
+              ],
+              "text": "Deposit"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 8,
+                  "description": null,
                   "id": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
                   "symbol": "GOOGLx",
                   "trust": "verified"
                 },
                 "bound": "at_most",
                 "note": null,
-                "units": "985543"
+                "note_words": null,
+                "units": "985543",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "≤ 0.00985543 "
+                    },
+                    {
+                      "text": "GOOGLx",
+                      "value": {
+                        "type": "text",
+                        "value": "GOOGLx"
+                      }
+                    }
+                  ],
+                  "text": "≤ 0.00985543 GOOGLx"
+                }
               }
             }
           },
           {
-            "help": "What you put in for liquidity, at most. The pool takes the amounts its current price allows.",
-            "label": "Deposit",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-deposit",
+              "parts": [
+                {
+                  "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+                }
+              ],
+              "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-derived_max_1",
+              "parts": [
+                {
+                  "text": "Deposit"
+                }
+              ],
+              "text": "Deposit"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 6,
+                  "description": null,
                   "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
                   "symbol": "USDC",
                   "trust": "verified"
                 },
                 "bound": "at_most",
                 "note": null,
-                "units": "33874114"
+                "note_words": null,
+                "units": "33874114",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "≤ 33.874114 "
+                    },
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    }
+                  ],
+                  "text": "≤ 33.874114 USDC"
+                }
               }
             }
           },
           {
-            "help": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them.",
-            "label": "Pool",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-pool",
+              "parts": [
+                {
+                  "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+                }
+              ],
+              "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-accounts_pool_state",
+              "parts": [
+                {
+                  "text": "Pool"
+                }
+              ],
+              "text": "Pool"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
-                "address": "lookup table E3xN…KDe5[197]",
+                "address": null,
                 "is_self": false,
-                "label": "not read",
-                "label_trust": "fact"
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": {
+                  "id": "accounts-lookup-table-slot",
+                  "parts": [
+                    {
+                      "text": "the account at lookup table "
+                    },
+                    {
+                      "short": {
+                        "address": "E3xNq89eto4MUVk1nSbkESXRi8B43BDPFiXrTaUMKDe5",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E3xN…KDe5"
+                    },
+                    {
+                      "text": "["
+                    },
+                    {
+                      "text": "197",
+                      "value": {
+                        "type": "integer",
+                        "value": "197"
+                      }
+                    },
+                    {
+                      "text": "]"
+                    }
+                  ],
+                  "text": "the account at lookup table E3xN…KDe5[197]"
+                },
+                "words": null
               }
             }
           },
           {
-            "help": "The bottom of the price range the position provides liquidity in, as the pool's tick index rather than a price.",
-            "label": "Lower tick",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-lower_tick",
+              "parts": [
+                {
+                  "text": "The bottom of the price range the position provides liquidity in, as the pool's tick index rather than a price."
+                }
+              ],
+              "text": "The bottom of the price range the position provides liquidity in, as the pool's tick index rather than a price."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-args_tick_lower_index",
+              "parts": [
+                {
+                  "text": "Lower tick"
+                }
+              ],
+              "text": "Lower tick"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -302,8 +2153,24 @@
             }
           },
           {
-            "help": "The top of the price range the position provides liquidity in, as the pool's tick index rather than a price.",
-            "label": "Upper tick",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-upper_tick",
+              "parts": [
+                {
+                  "text": "The top of the price range the position provides liquidity in, as the pool's tick index rather than a price."
+                }
+              ],
+              "text": "The top of the price range the position provides liquidity in, as the pool's tick index rather than a price."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-args_tick_upper_index",
+              "parts": [
+                {
+                  "text": "Upper tick"
+                }
+              ],
+              "text": "Upper tick"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -311,22 +2178,101 @@
             }
           },
           {
-            "help": "The wallet that will hold the position NFT, and so control the position.",
-            "label": "Position NFT goes to",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-position_nft_goes_to",
+              "parts": [
+                {
+                  "text": "The wallet that will hold the position NFT, and so control the position."
+                }
+              ],
+              "text": "The wallet that will hold the position NFT, and so control the position."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-accounts_position_nft_owner",
+              "parts": [
+                {
+                  "text": "Position NFT goes to"
+                }
+              ],
+              "text": "Position NFT goes to"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "B1Q4…mxGP"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (B1Q4…mxGP)"
+                }
               }
             }
           },
           {
-            "help": "The token that proves ownership of the position. Whoever holds it controls the position.",
-            "label": "Position NFT",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-position_nft",
+              "parts": [
+                {
+                  "text": "The token that proves ownership of the position. Whoever holds it controls the position."
+                }
+              ],
+              "text": "The token that proves ownership of the position. Whoever holds it controls the position."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-accounts_position_nft_mint",
+              "parts": [
+                {
+                  "text": "Position NFT"
+                }
+              ],
+              "text": "Position NFT"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -334,63 +2280,331 @@
                 "address": "DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "Your account for the pool's first token.",
-            "label": "From account 0",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-from_account_0",
+              "parts": [
+                {
+                  "text": "Your account for the pool's first token."
+                }
+              ],
+              "text": "Your account for the pool's first token."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-accounts_token_account_0",
+              "parts": [
+                {
+                  "text": "From account 0"
+                }
+              ],
+              "text": "From account 0"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "3q66dpAzE9aL5KuBXw3YtNbYWHCxHvSbNKGxwzo1Cmdb",
                 "is_self": true,
-                "label": "Your GOOGLx account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "GOOGLx",
+                      "value": {
+                        "type": "text",
+                        "value": "GOOGLx"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your GOOGLx account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your GOOGLx account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "GOOGLx",
+                              "value": {
+                                "type": "text",
+                                "value": "GOOGLx"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your GOOGLx account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "3q66dpAzE9aL5KuBXw3YtNbYWHCxHvSbNKGxwzo1Cmdb",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "3q66…Cmdb"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your GOOGLx account (3q66…Cmdb)"
+                }
               }
             }
           },
           {
-            "help": "Your account for the pool's second token.",
-            "label": "From account 1",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-from_account_1",
+              "parts": [
+                {
+                  "text": "Your account for the pool's second token."
+                }
+              ],
+              "text": "Your account for the pool's second token."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-accounts_token_account_1",
+              "parts": [
+                {
+                  "text": "From account 1"
+                }
+              ],
+              "text": "From account 1"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "6GqwZ24evbE2nBr9quXkv3SxeUSvUsUjwzs2nS5WfNtf",
                 "is_self": true,
-                "label": "Your USDC account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your USDC account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your USDC account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "USDC",
+                              "value": {
+                                "type": "text",
+                                "value": "USDC"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your USDC account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "6GqwZ24evbE2nBr9quXkv3SxeUSvUsUjwzs2nS5WfNtf",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "6Gqw…fNtf"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your USDC account (6Gqw…fNtf)"
+                }
               }
             }
           },
           {
-            "help": "The pool's reserve of its first token.",
-            "label": "Pool vault 0",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-pool_vault_0",
+              "parts": [
+                {
+                  "text": "The pool's reserve of its first token."
+                }
+              ],
+              "text": "The pool's reserve of its first token."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-accounts_token_vault_0",
+              "parts": [
+                {
+                  "text": "Pool vault 0"
+                }
+              ],
+              "text": "Pool vault 0"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
-                "address": "lookup table E3xN…KDe5[200]",
+                "address": null,
                 "is_self": false,
-                "label": "not read",
-                "label_trust": "fact"
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": {
+                  "id": "accounts-lookup-table-slot",
+                  "parts": [
+                    {
+                      "text": "the account at lookup table "
+                    },
+                    {
+                      "short": {
+                        "address": "E3xNq89eto4MUVk1nSbkESXRi8B43BDPFiXrTaUMKDe5",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E3xN…KDe5"
+                    },
+                    {
+                      "text": "["
+                    },
+                    {
+                      "text": "200",
+                      "value": {
+                        "type": "integer",
+                        "value": "200"
+                      }
+                    },
+                    {
+                      "text": "]"
+                    }
+                  ],
+                  "text": "the account at lookup table E3xN…KDe5[200]"
+                },
+                "words": null
               }
             }
           },
           {
-            "help": "The pool's reserve of its second token.",
-            "label": "Pool vault 1",
+            "help": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/glossary-pool_vault_1",
+              "parts": [
+                {
+                  "text": "The pool's reserve of its second token."
+                }
+              ],
+              "text": "The pool's reserve of its second token."
+            },
+            "label": {
+              "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-fields-accounts_token_vault_1",
+              "parts": [
+                {
+                  "text": "Pool vault 1"
+                }
+              ],
+              "text": "Pool vault 1"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
-                "address": "lookup table E3xN…KDe5[201]",
+                "address": null,
                 "is_self": false,
-                "label": "not read",
-                "label_trust": "fact"
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": {
+                  "id": "accounts-lookup-table-slot",
+                  "parts": [
+                    {
+                      "text": "the account at lookup table "
+                    },
+                    {
+                      "short": {
+                        "address": "E3xNq89eto4MUVk1nSbkESXRi8B43BDPFiXrTaUMKDe5",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E3xN…KDe5"
+                    },
+                    {
+                      "text": "["
+                    },
+                    {
+                      "text": "201",
+                      "value": {
+                        "type": "integer",
+                        "value": "201"
+                      }
+                    },
+                    {
+                      "text": "]"
+                    }
+                  ],
+                  "text": "the account at lookup table E3xN…KDe5[201]"
+                },
+                "words": null
               }
             }
           }
@@ -401,24 +2615,111 @@
             "index": 2
           }
         },
-        "subtitle": "Raydium CLMM (descriptor reviewed 2026-09-29, upgradeable by FytD…eZQK)",
-        "title": "Add liquidity"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Raydium CLMM",
+              "value": {
+                "type": "text",
+                "value": "Raydium CLMM"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-09-29",
+              "value": {
+                "type": "text",
+                "value": "2026-09-29"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "FytDrVzDybM1TwFQPGb8qaxZR7dBCzNeqT3vtQsceZQK",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "FytD…eZQK"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Raydium CLMM (descriptor reviewed 2026-09-29, upgradeable by FytD…eZQK)"
+        },
+        "title": {
+          "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-intent",
+          "parts": [
+            {
+              "text": "Add liquidity"
+            }
+          ],
+          "text": "Add liquidity"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "1000 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "1,000 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "1,000 micro-lamports per compute unit"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -430,28 +2731,115 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "B1Q4DTePJry3zSUkuVkkdhzhN6HpiRdjZPut23SbmxGP",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "B1Q4…mxGP"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (B1Q4…mxGP)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Signer",
+            "help": {
+              "id": "label-signer.help",
+              "parts": [
+                {
+                  "text": "An account whose signature the transaction needs besides the fee payer."
+                }
+              ],
+              "text": "An account whose signature the transaction needs besides the fee payer."
+            },
+            "label": {
+              "id": "label-signer",
+              "parts": [
+                {
+                  "text": "Signer"
+                }
+              ],
+              "text": "Signer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -459,7 +2847,9 @@
                 "address": "DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -468,84 +2858,325 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "10180"
+                "note_words": null,
+                "units": "10180",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00001018 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00001018 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "10000"
+                "note_words": null,
+                "units": "10000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00001 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00001 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "180"
+                "note_words": null,
+                "units": "180",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00000018 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00000018 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "1000 micro-lamports per unit × 180000 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "1,000 micro-lamports per compute unit × 180,000 compute units requested"
+                  }
+                ],
+                "text": "1,000 micro-lamports per compute unit × 180,000 compute units requested"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Rent deposits",
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "0.00359156 SOL, up to 0.10893044 SOL if the accounts it creates only when missing do not exist yet, plus 1 account whose size the descriptor does not give; returned when the accounts are closed"
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "0.00359156 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "3591560",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.00359156 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.00359156 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": ", or "
+                  },
+                  {
+                    "text": "0.10893044 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "108930440",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.10893044 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.10893044 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": " in all if the accounts this transaction creates when missing do not exist yet, plus the rent of "
+                  },
+                  {
+                    "text": "1",
+                    "value": {
+                      "type": "integer",
+                      "value": "1"
+                    }
+                  },
+                  {
+                    "text": " account of unknown size; refunded to whoever closes the accounts"
+                  }
+                ],
+                "text": "0.00359156 SOL, or 0.10893044 SOL in all if the accounts this transaction creates when missing do not exist yet, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts"
+              }
             }
           }
         ],
@@ -553,18 +3184,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -572,11 +3235,100 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx (verified) and ≤ 33.874114 USDC (verified)",
-    "text": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx (verified) and ≤ 33.874114 USDC (verified)\nOK\n\n== Add liquidity | Raydium CLMM (descriptor reviewed 2026-09-29, upgradeable by FytD…eZQK)\n  Deposit: ≤ 0.00985543 GOOGLx (verified)\n  Deposit: ≤ 33.874114 USDC (verified)\n  Pool: not read (lookup table E3xN…KDe5[197])\n  Lower tick: 12300\n  Upper tick: 12360\n  Position NFT goes to: Your wallet (B1Q4…mxGP) (verified)\n  Position NFT: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n  From account 0: Your GOOGLx account (3q66…Cmdb) (verified)\n  From account 1: Your USDC account (6Gqw…fNtf) (verified)\n  Pool vault 0: not read (lookup table E3xN…KDe5[200])\n  Pool vault 1: not read (lookup table E3xN…KDe5[201])\n\n== Also [collapsed]\n  Compute unit price: 1000 micro-lamports per unit\n  Compute unit limit: 180000\n\n== Signers\n  Fee payer: Your wallet (B1Q4…mxGP) (verified)\n  Signer: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n\n== Fee\n  Total: 0.00001018 SOL\n  Base: 0.00001 SOL\n  Priority: 0.00000018 SOL\n  Priority basis: 1000 micro-lamports per unit × 180000 units requested\n  Rent deposits: 0.00359156 SOL, up to 0.10893044 SOL if the accounts it creates only when missing do not exist yet, plus 1 account whose size the descriptor does not give; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send ≤ 0.00985543 GOOGLx (verified) from Your wallet (B1Q4…mxGP) (verified) to Raydium CLMM (CAMM…rWqK) (verified)\n  - send ≤ 33.874114 USDC (verified) from Your wallet (B1Q4…mxGP) (verified) to Raydium CLMM (CAMM…rWqK) (verified)\n  - create DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk owned by not read (lookup table AcL1…zJkU[2])\n  - create 4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au owned by not read (lookup table AcL1…zJkU[2]), depositing 0.00151384 SOL\n  - create 9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ owned by Raydium CLMM (CAMM…rWqK) (verified), depositing 0.00207772 SOL\n  - create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg owned by Raydium CLMM (CAMM…rWqK) (verified), depositing 0.05266944 SOL unless it already exists\n  - create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg owned by Raydium CLMM (CAMM…rWqK) (verified), depositing 0.05266944 SOL unless it already exists\n  - mints a position NFT, the claim on the deposited liquidity, to the position NFT owner\n  - Your wallet (B1Q4…mxGP) (verified) pays a fee of 0.00001018 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (539 bytes)\n  digest: f26bd6948c7dd5065e270fe8e06a918d374ac18c430e02450689b810924b90af\n",
+    "summary": {
+      "id": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK/open_position_with_token22_nft-summary",
+      "parts": [
+        {
+          "text": "Open a Raydium CLMM position with "
+        },
+        {
+          "text": "≤ 0.00985543 GOOGLx",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 8,
+                "description": null,
+                "id": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+                "symbol": "GOOGLx",
+                "trust": "verified"
+              },
+              "bound": "at_most",
+              "note": null,
+              "note_words": null,
+              "units": "985543",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "≤ 0.00985543 "
+                  },
+                  {
+                    "text": "GOOGLx",
+                    "value": {
+                      "type": "text",
+                      "value": "GOOGLx"
+                    }
+                  }
+                ],
+                "text": "≤ 0.00985543 GOOGLx"
+              }
+            }
+          }
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "≤ 33.874114 USDC",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 6,
+                "description": null,
+                "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "symbol": "USDC",
+                "trust": "verified"
+              },
+              "bound": "at_most",
+              "note": null,
+              "note_words": null,
+              "units": "33874114",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "≤ 33.874114 "
+                  },
+                  {
+                    "text": "USDC",
+                    "value": {
+                      "type": "text",
+                      "value": "USDC"
+                    }
+                  }
+                ],
+                "text": "≤ 33.874114 USDC"
+              }
+            }
+          }
+        }
+      ],
+      "text": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx and ≤ 33.874114 USDC"
+    },
+    "text": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx and ≤ 33.874114 USDC\nOK\n\n== Add liquidity | Raydium CLMM (descriptor reviewed 2026-09-29, upgradeable by FytD…eZQK)\n  Deposit: ≤ 0.00985543 GOOGLx\n  Deposit: ≤ 33.874114 USDC\n  Pool: the account at lookup table E3xN…KDe5[197]\n  Lower tick: 12300\n  Upper tick: 12360\n  Position NFT goes to: Your wallet (B1Q4…mxGP)\n  Position NFT: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n  From account 0: Your GOOGLx account (3q66…Cmdb)\n  From account 1: Your USDC account (6Gqw…fNtf)\n  Pool vault 0: the account at lookup table E3xN…KDe5[200]\n  Pool vault 1: the account at lookup table E3xN…KDe5[201]\n\n== Also [collapsed]\n  Compute unit price: 1,000 micro-lamports per compute unit\n  Compute unit limit: 180000\n\n== Signers\n  Fee payer: Your wallet (B1Q4…mxGP)\n  Signer: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n\n== Fee\n  Total: 0.00001018 SOL\n  Base: 0.00001 SOL\n  Priority: 0.00000018 SOL\n  Priority basis: 1,000 micro-lamports per compute unit × 180,000 compute units requested\n  Rent deposits: 0.00359156 SOL, or 0.10893044 SOL in all if the accounts this transaction creates when missing do not exist yet, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send ≤ 0.00985543 GOOGLx from Your wallet (B1Q4…mxGP) to Raydium CLMM (CAMM…rWqK)\n  - You send ≤ 33.874114 USDC from Your wallet (B1Q4…mxGP) to Raydium CLMM (CAMM…rWqK)\n  - Create DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk, managed by the account at lookup table AcL1…zJkU[2]\n  - Create 4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au, managed by the account at lookup table AcL1…zJkU[2], depositing 0.00151384 SOL\n  - Create 9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ, managed by Raydium CLMM (CAMM…rWqK), depositing 0.00207772 SOL\n  - Create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg, managed by Raydium CLMM (CAMM…rWqK), depositing 0.05266944 SOL unless it already exists\n  - Create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg, managed by Raydium CLMM (CAMM…rWqK), depositing 0.05266944 SOL unless it already exists\n  - Mint a position NFT, the claim on the deposited liquidity, to the position NFT owner\n  - You pay a fee of 0.00001018 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (539 bytes)\n  digest: f26bd6948c7dd5065e270fe8e06a918d374ac18c430e02450689b810924b90af\n",
     "verdict": "ok"
   }
 }

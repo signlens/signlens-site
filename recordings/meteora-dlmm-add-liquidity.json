@@ -1,169 +1,1867 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 4,
+        "summary": {
+          "id": "system-send-summary",
+          "parts": [
+            {
+              "text": "Send "
+            },
+            {
+              "text": "0.500169061 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "500169061",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.500169061 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.500169061 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "short": {
+                "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                "is_self": true,
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your SOL account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your SOL account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your SOL account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E88m…YFXA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your SOL account (E88m…YFXA)"
+                }
+              },
+              "text": "E88m…YFXA"
+            }
+          ],
+          "text": "Send 0.500169061 SOL to E88m…YFXA"
+        }
+      },
+      {
+        "instruction": 6,
+        "summary": {
+          "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-summary-else-then",
+          "parts": [
+            {
+              "text": "Add "
+            },
+            {
+              "text": "≤ 0.500169061 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "So11111111111111111111111111111111111111112",
+                    "symbol": "SOL",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "500169061",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 0.500169061 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "≤ 0.500169061 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to a Meteora DLMM position"
+            }
+          ],
+          "text": "Add ≤ 0.500169061 SOL to a Meteora DLMM position"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-transfer",
+          "parts": [
+            {
+              "text": "Transfer "
+            },
+            {
+              "text": "0.500169061 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "500169061",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.500169061 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.500169061 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (4VY2…5etD)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "4VY2…5etD"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (4VY2…5etD)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Your SOL account (E88m…YFXA)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-token",
+                    "parts": [
+                      {
+                        "text": "Your "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      },
+                      {
+                        "text": " account"
+                      }
+                    ],
+                    "text": "Your SOL account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your SOL account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-token",
+                            "parts": [
+                              {
+                                "text": "Your "
+                              },
+                              {
+                                "text": "SOL",
+                                "value": {
+                                  "type": "text",
+                                  "value": "SOL"
+                                }
+                              },
+                              {
+                                "text": " account"
+                              }
+                            ],
+                            "text": "Your SOL account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "E88m…YFXA"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your SOL account (E88m…YFXA)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Transfer 0.500169061 SOL from Your wallet (4VY2…5etD) to Your SOL account (E88m…YFXA)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "500169061"
+            "note_words": null,
+            "units": "500169061",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.500169061 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.500169061 SOL"
+            }
           },
           "from": {
             "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "4VY2…5etD"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (4VY2…5etD)"
+            }
           },
           "to": {
             "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
             "is_self": true,
-            "label": "Your SOL account",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-token",
+              "parts": [
+                {
+                  "text": "Your "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                },
+                {
+                  "text": " account"
+                }
+              ],
+              "text": "Your SOL account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your SOL account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-token",
+                      "parts": [
+                        {
+                          "text": "Your "
+                        },
+                        {
+                          "text": "SOL",
+                          "value": {
+                            "type": "text",
+                            "value": "SOL"
+                          }
+                        },
+                        {
+                          "text": " account"
+                        }
+                      ],
+                      "text": "Your SOL account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "E88m…YFXA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your SOL account (E88m…YFXA)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "≤ 0.500169061 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "So11111111111111111111111111111111111111112",
+                    "symbol": "SOL",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "500169061",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 0.500169061 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "≤ 0.500169061 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (4VY2…5etD)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "4VY2…5etD"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (4VY2…5etD)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Meteora DLMM (LBUZ…Pwxo)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Meteora DLMM",
+                        "value": {
+                          "type": "text",
+                          "value": "Meteora DLMM"
+                        }
+                      }
+                    ],
+                    "text": "Meteora DLMM"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Meteora DLMM",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Meteora DLMM",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Meteora DLMM"
+                                }
+                              }
+                            ],
+                            "text": "Meteora DLMM"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "LBUZ…Pwxo"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Meteora DLMM (LBUZ…Pwxo)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send ≤ 0.500169061 SOL from Your wallet (4VY2…5etD) to Meteora DLMM (LBUZ…Pwxo)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "So11111111111111111111111111111111111111112",
               "symbol": "SOL",
               "trust": "verified"
             },
             "bound": "at_most",
             "note": null,
-            "units": "500169061"
+            "note_words": null,
+            "units": "500169061",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "≤ 0.500169061 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "≤ 0.500169061 SOL"
+            }
           },
           "from": {
             "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "4VY2…5etD"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (4VY2…5etD)"
+            }
           },
           "to": {
             "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
             "is_self": false,
-            "label": "Meteora DLMM",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Meteora DLMM",
+                  "value": {
+                    "type": "text",
+                    "value": "Meteora DLMM"
+                  }
+                }
+              ],
+              "text": "Meteora DLMM"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Meteora DLMM",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Meteora DLMM",
+                          "value": {
+                            "type": "text",
+                            "value": "Meteora DLMM"
+                          }
+                        }
+                      ],
+                      "text": "Meteora DLMM"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "LBUZ…Pwxo"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Meteora DLMM (LBUZ…Pwxo)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-effects-else-then-other",
+          "parts": [
+            {
+              "text": "Credit the liquidity to the position named, spread over its bins as the instruction says; SignLens cannot see who owns that position"
+            }
+          ],
+          "text": "Credit the liquidity to the position named, spread over its bins as the instruction says; SignLens cannot see who owns that position"
+        },
         "type": "other",
         "value": {
-          "description": "credits the liquidity to the position named, spread over its bins as the instruction says; the signer cannot read who owns that position"
+          "description": {
+            "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-effects-else-then-other",
+            "parts": [
+              {
+                "text": "Credit the liquidity to the position named, spread over its bins as the instruction says; SignLens cannot see who owns that position"
+              }
+            ],
+            "text": "Credit the liquidity to the position named, spread over its bins as the instruction says; SignLens cannot see who owns that position"
+          }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Meteora DLMM (LBUZ…Pwxo)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Meteora DLMM",
+                        "value": {
+                          "type": "text",
+                          "value": "Meteora DLMM"
+                        }
+                      }
+                    ],
+                    "text": "Meteora DLMM"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Meteora DLMM",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Meteora DLMM",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Meteora DLMM"
+                                }
+                              }
+                            ],
+                            "text": "Meteora DLMM"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "LBUZ…Pwxo"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Meteora DLMM (LBUZ…Pwxo)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.04189984 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "41899840",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.04189984 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.04189984 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My, managed by Meteora DLMM (LBUZ…Pwxo), depositing 0.04189984 SOL"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "41899840"
+            "note_words": null,
+            "units": "41899840",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.04189984 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.04189984 SOL"
+            }
           },
           "if_missing": false,
           "owner": {
             "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
             "is_self": false,
-            "label": "Meteora DLMM",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Meteora DLMM",
+                  "value": {
+                    "type": "text",
+                    "value": "Meteora DLMM"
+                  }
+                }
+              ],
+              "text": "Meteora DLMM"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Meteora DLMM",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Meteora DLMM",
+                          "value": {
+                            "type": "text",
+                            "value": "Meteora DLMM"
+                          }
+                        }
+                      ],
+                      "text": "Meteora DLMM"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "LBUZ…Pwxo"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Meteora DLMM (LBUZ…Pwxo)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit-if-missing",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "Your SOL account (E88m…YFXA)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-token",
+                    "parts": [
+                      {
+                        "text": "Your "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      },
+                      {
+                        "text": " account"
+                      }
+                    ],
+                    "text": "Your SOL account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your SOL account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-token",
+                            "parts": [
+                              {
+                                "text": "Your "
+                              },
+                              {
+                                "text": "SOL",
+                                "value": {
+                                  "type": "text",
+                                  "value": "SOL"
+                                }
+                              },
+                              {
+                                "text": " account"
+                              }
+                            ],
+                            "text": "Your SOL account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "E88m…YFXA"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your SOL account (E88m…YFXA)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Token program (Toke…Q5DA)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "text",
+                          "value": "Token program"
+                        }
+                      }
+                    ],
+                    "text": "Token program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Token program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Token program"
+                                }
+                              }
+                            ],
+                            "text": "Token program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Toke…Q5DA"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Token program (Toke…Q5DA)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00148844 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1488440",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00148844 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00148844 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " unless it already exists"
+            }
+          ],
+          "text": "Create Your SOL account (E88m…YFXA), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
             "is_self": true,
-            "label": "Your SOL account",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-token",
+              "parts": [
+                {
+                  "text": "Your "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                },
+                {
+                  "text": " account"
+                }
+              ],
+              "text": "Your SOL account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your SOL account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-token",
+                      "parts": [
+                        {
+                          "text": "Your "
+                        },
+                        {
+                          "text": "SOL",
+                          "value": {
+                            "type": "text",
+                            "value": "SOL"
+                          }
+                        },
+                        {
+                          "text": " account"
+                        }
+                      ],
+                      "text": "Your SOL account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "E88m…YFXA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your SOL account (E88m…YFXA)"
+            }
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "1488440"
+            "note_words": null,
+            "units": "1488440",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00148844 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00148844 SOL"
+            }
           },
           "if_missing": true,
           "owner": {
             "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "is_self": false,
-            "label": "Token program",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "text",
+                    "value": "Token program"
+                  }
+                }
+              ],
+              "text": "Token program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Token program",
+                          "value": {
+                            "type": "text",
+                            "value": "Token program"
+                          }
+                        }
+                      ],
+                      "text": "Token program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Toke…Q5DA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Token program (Toke…Q5DA)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-close",
+          "parts": [
+            {
+              "text": "Close "
+            },
+            {
+              "text": "Your token account (E88m…YFXA)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                  "is_self": true,
+                  "label": {
+                    "id": "token-your-account",
+                    "parts": [
+                      {
+                        "text": "Your token account"
+                      }
+                    ],
+                    "text": "Your token account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your token account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "token-your-account",
+                            "parts": [
+                              {
+                                "text": "Your token account"
+                              }
+                            ],
+                            "text": "Your token account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "E88m…YFXA"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your token account (E88m…YFXA)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " and send its SOL to "
+            },
+            {
+              "text": "Your wallet (4VY2…5etD)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "4VY2…5etD"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (4VY2…5etD)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Close Your token account (E88m…YFXA) and send its SOL to Your wallet (4VY2…5etD)"
+        },
         "type": "close",
         "value": {
           "account": {
             "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
             "is_self": true,
-            "label": "Your token account",
-            "label_trust": "verified"
+            "label": {
+              "id": "token-your-account",
+              "parts": [
+                {
+                  "text": "Your token account"
+                }
+              ],
+              "text": "Your token account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your token account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "token-your-account",
+                      "parts": [
+                        {
+                          "text": "Your token account"
+                        }
+                      ],
+                      "text": "Your token account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "E88m…YFXA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your token account (E88m…YFXA)"
+            }
           },
           "destination": {
             "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "4VY2…5etD"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (4VY2…5etD)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000021003 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "21003",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000021003 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000021003 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000021003 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "21003"
+            "note_words": null,
+            "units": "21003",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000021003 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000021003 SOL"
+            }
           },
           "payer": {
             "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "4VY2…5etD"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (4VY2…5etD)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -171,59 +1869,222 @@
       }
     ],
     "findings": [],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "57c581c98741f1b680679e6f62d96aee07f2e01c6545ed8352f900579cc40367",
       "format": "solana legacy"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Amount",
+            "label": {
+              "id": "label-amount",
+              "parts": [
+                {
+                  "text": "Amount"
+                }
+              ],
+              "text": "Amount"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "500169061"
+                "note_words": null,
+                "units": "500169061",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.500169061 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.500169061 SOL"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "From",
+            "label": {
+              "id": "label-from",
+              "parts": [
+                {
+                  "text": "From"
+                }
+              ],
+              "text": "From"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "4VY2…5etD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (4VY2…5etD)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "To",
+            "label": {
+              "id": "label-to",
+              "parts": [
+                {
+                  "text": "To"
+                }
+              ],
+              "text": "To"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
                 "is_self": true,
-                "label": "Your SOL account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your SOL account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your SOL account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your SOL account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E88m…YFXA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your SOL account (E88m…YFXA)"
+                }
               }
             }
           }
@@ -234,34 +2095,104 @@
             "index": 4
           }
         },
-        "subtitle": "System program (verified)",
-        "title": "Transfer"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "System program",
+              "value": {
+                "type": "text",
+                "value": "System program"
+              }
+            }
+          ],
+          "text": "System program"
+        },
+        "title": {
+          "id": "system-transfer-title",
+          "parts": [
+            {
+              "text": "Transfer"
+            }
+          ],
+          "text": "Transfer"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "What you put in for liquidity, at most. The pool takes the amounts its current price allows.",
-            "label": "Deposit",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-deposit",
+              "parts": [
+                {
+                  "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+                }
+              ],
+              "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-derived_max_y",
+              "parts": [
+                {
+                  "text": "Deposit"
+                }
+              ],
+              "text": "Deposit"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "So11111111111111111111111111111111111111112",
                   "symbol": "SOL",
                   "trust": "verified"
                 },
                 "bound": "at_most",
                 "note": null,
-                "units": "500169061"
+                "note_words": null,
+                "units": "500169061",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "≤ 0.500169061 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "≤ 0.500169061 SOL"
+                }
               }
             }
           },
           {
-            "help": "Your liquidity position: which price bins you provide in, and what it has earned.",
-            "label": "Position",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-position",
+              "parts": [
+                {
+                  "text": "Your liquidity position: which price bins you provide in, and what it has earned."
+                }
+              ],
+              "text": "Your liquidity position: which price bins you provide in, and what it has earned."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-accounts_position",
+              "parts": [
+                {
+                  "text": "Position"
+                }
+              ],
+              "text": "Position"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -269,13 +2200,31 @@
                 "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them.",
-            "label": "Pool",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-pool",
+              "parts": [
+                {
+                  "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+                }
+              ],
+              "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-accounts_lb_pair",
+              "parts": [
+                {
+                  "text": "Pool"
+                }
+              ],
+              "text": "Pool"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -283,22 +2232,64 @@
                 "address": "HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "How the deposit is spread across the bins: spot, curve or bid-ask.",
-            "label": "Shape",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-shape",
+              "parts": [
+                {
+                  "text": "How the deposit is spread across the bins: spot, curve or bid-ask."
+                }
+              ],
+              "text": "How the deposit is spread across the bins: spot, curve or bid-ask."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-args_liquidity_parameter_strategy_parameters_strategy_type",
+              "parts": [
+                {
+                  "text": "Shape"
+                }
+              ],
+              "text": "Shape"
+            },
             "trust": "verified",
             "value": {
-              "type": "text",
-              "value": "Spot"
+              "type": "words",
+              "value": {
+                "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/enum-strategy_type-spot_im_balanced",
+                "parts": [
+                  {
+                    "text": "Spot"
+                  }
+                ],
+                "text": "Spot"
+              }
             }
           },
           {
-            "help": "The bottom of the position's price range, as a bin index.",
-            "label": "Lowest bin",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-lowest_bin",
+              "parts": [
+                {
+                  "text": "The bottom of the position's price range, as a bin index."
+                }
+              ],
+              "text": "The bottom of the position's price range, as a bin index."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-args_liquidity_parameter_strategy_parameters_min_bin_id",
+              "parts": [
+                {
+                  "text": "Lowest bin"
+                }
+              ],
+              "text": "Lowest bin"
+            },
             "trust": "fact",
             "value": {
               "type": "text",
@@ -306,8 +2297,24 @@
             }
           },
           {
-            "help": "The top of the position's price range, as a bin index.",
-            "label": "Highest bin",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-highest_bin",
+              "parts": [
+                {
+                  "text": "The top of the position's price range, as a bin index."
+                }
+              ],
+              "text": "The top of the position's price range, as a bin index."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-args_liquidity_parameter_strategy_parameters_max_bin_id",
+              "parts": [
+                {
+                  "text": "Highest bin"
+                }
+              ],
+              "text": "Highest bin"
+            },
             "trust": "fact",
             "value": {
               "type": "text",
@@ -315,8 +2322,24 @@
             }
           },
           {
-            "help": "The price bin the site thinks is current. The add fails if the pool has moved further than allowed.",
-            "label": "Active bin expected",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-active_bin_expected",
+              "parts": [
+                {
+                  "text": "The price bin the site thinks is current. The add fails if the pool has moved further than allowed."
+                }
+              ],
+              "text": "The price bin the site thinks is current. The add fails if the pool has moved further than allowed."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-args_liquidity_parameter_active_id",
+              "parts": [
+                {
+                  "text": "Active bin expected"
+                }
+              ],
+              "text": "Active bin expected"
+            },
             "trust": "fact",
             "value": {
               "type": "text",
@@ -324,8 +2347,24 @@
             }
           },
           {
-            "help": "How many bins the current price may have moved since the quote before the add fails.",
-            "label": "Active bin may differ by",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-active_bin_may_differ_by",
+              "parts": [
+                {
+                  "text": "How many bins the current price may have moved since the quote before the add fails."
+                }
+              ],
+              "text": "How many bins the current price may have moved since the quote before the add fails."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-args_liquidity_parameter_max_active_bin_slippage",
+              "parts": [
+                {
+                  "text": "Active bin may differ by"
+                }
+              ],
+              "text": "Active bin may differ by"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -333,8 +2372,24 @@
             }
           },
           {
-            "help": "Your account for the pool's X token.",
-            "label": "From account X",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-from_account_x",
+              "parts": [
+                {
+                  "text": "Your account for the pool's X token."
+                }
+              ],
+              "text": "Your account for the pool's X token."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-accounts_user_token_x",
+              "parts": [
+                {
+                  "text": "From account X"
+                }
+              ],
+              "text": "From account X"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -342,59 +2397,301 @@
                 "address": "6JyBEAKJ6vwZoaLmveqRTgubT5xfQYQWYovM4ofjk8RV",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "Your account for the pool's Y token.",
-            "label": "From account Y",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-from_account_y",
+              "parts": [
+                {
+                  "text": "Your account for the pool's Y token."
+                }
+              ],
+              "text": "Your account for the pool's Y token."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-accounts_user_token_y",
+              "parts": [
+                {
+                  "text": "From account Y"
+                }
+              ],
+              "text": "From account Y"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
                 "is_self": true,
-                "label": "Your SOL account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your SOL account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your SOL account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your SOL account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E88m…YFXA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your SOL account (E88m…YFXA)"
+                }
               }
             }
           },
           {
-            "help": "The pool's reserve of its X token.",
-            "label": "Reserve X",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-reserve_x",
+              "parts": [
+                {
+                  "text": "The pool's reserve of its X token."
+                }
+              ],
+              "text": "The pool's reserve of its X token."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-accounts_reserve_x",
+              "parts": [
+                {
+                  "text": "Reserve X"
+                }
+              ],
+              "text": "Reserve X"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "DtJWUppt7abikiLQscqDx8h32bYuMQMcYk3D7vFAZhKV",
                 "is_self": false,
-                "label": "Meteora DLMM reserve for token X",
-                "label_trust": "verified"
+                "label": {
+                  "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-label-accounts_reserve_x",
+                  "parts": [
+                    {
+                      "text": "Meteora DLMM reserve for token X"
+                    }
+                  ],
+                  "text": "Meteora DLMM reserve for token X"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Meteora DLMM reserve for token X",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-label-accounts_reserve_x",
+                          "parts": [
+                            {
+                              "text": "Meteora DLMM reserve for token X"
+                            }
+                          ],
+                          "text": "Meteora DLMM reserve for token X"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "DtJWUppt7abikiLQscqDx8h32bYuMQMcYk3D7vFAZhKV",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "DtJW…ZhKV"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Meteora DLMM reserve for token X (DtJW…ZhKV)"
+                }
               }
             }
           },
           {
-            "help": "The pool's reserve of its Y token.",
-            "label": "Reserve Y",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-reserve_y",
+              "parts": [
+                {
+                  "text": "The pool's reserve of its Y token."
+                }
+              ],
+              "text": "The pool's reserve of its Y token."
+            },
+            "label": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-fields-accounts_reserve_y",
+              "parts": [
+                {
+                  "text": "Reserve Y"
+                }
+              ],
+              "text": "Reserve Y"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "AhKd3Sfxmg6FMQjdXPXsuzQfM7rA6WQ6NR7BkoqbioD9",
                 "is_self": false,
-                "label": "Meteora DLMM reserve for token Y",
-                "label_trust": "verified"
+                "label": {
+                  "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-label-accounts_reserve_y",
+                  "parts": [
+                    {
+                      "text": "Meteora DLMM reserve for token Y"
+                    }
+                  ],
+                  "text": "Meteora DLMM reserve for token Y"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Meteora DLMM reserve for token Y",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-label-accounts_reserve_y",
+                          "parts": [
+                            {
+                              "text": "Meteora DLMM reserve for token Y"
+                            }
+                          ],
+                          "text": "Meteora DLMM reserve for token Y"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "AhKd3Sfxmg6FMQjdXPXsuzQfM7rA6WQ6NR7BkoqbioD9",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "AhKd…ioD9"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Meteora DLMM reserve for token Y (AhKd…ioD9)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Additional accounts",
+            "help": {
+              "id": "label-additional-accounts.help",
+              "parts": [
+                {
+                  "text": "Additional accounts this instruction uses that its reviewed descriptor does not name. It is normal for instructions to need several."
+                }
+              ],
+              "text": "Additional accounts this instruction uses that its reviewed descriptor does not name. It is normal for instructions to need several."
+            },
+            "label": {
+              "id": "label-additional-accounts",
+              "parts": [
+                {
+                  "text": "Additional accounts"
+                }
+              ],
+              "text": "Additional accounts"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "2, not named by this descriptor"
+              "type": "words",
+              "value": {
+                "id": "descriptor-additional-accounts",
+                "parts": [
+                  {
+                    "text": "2",
+                    "value": {
+                      "type": "integer",
+                      "value": "2"
+                    }
+                  },
+                  {
+                    "text": ", not named by this descriptor"
+                  }
+                ],
+                "text": "2, not named by this descriptor"
+              }
             }
           }
         ],
@@ -404,24 +2701,111 @@
             "index": 6
           }
         },
-        "subtitle": "Meteora DLMM (descriptor reviewed 2026-09-28, upgradeable by JADa…CVLd)",
-        "title": "Add liquidity"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Meteora DLMM",
+              "value": {
+                "type": "text",
+                "value": "Meteora DLMM"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-09-28",
+              "value": {
+                "type": "text",
+                "value": "2026-09-28"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "JADaUV8kvDpDbJr55wxXJHVaBS3VCj8thZZHjfeuCVLd",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "JADa…CVLd"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Meteora DLMM (descriptor reviewed 2026-09-28, upgradeable by JADa…CVLd)"
+        },
+        "title": {
+          "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/add_liquidity_by_strategy2-intent",
+          "parts": [
+            {
+              "text": "Add liquidity"
+            }
+          ],
+          "text": "Add liquidity"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "34725 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "34,725 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "34,725 micro-lamports per compute unit"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -429,8 +2813,24 @@
             }
           },
           {
-            "help": "Your liquidity position: which price bins you provide in, and what it has earned.",
-            "label": "Open position: Position",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-position",
+              "parts": [
+                {
+                  "text": "Your liquidity position: which price bins you provide in, and what it has earned."
+                }
+              ],
+              "text": "Your liquidity position: which price bins you provide in, and what it has earned."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Open position: Position"
+                }
+              ],
+              "text": "Open position: Position"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -438,13 +2838,31 @@
                 "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them.",
-            "label": "Open position: Pool",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-pool",
+              "parts": [
+                {
+                  "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+                }
+              ],
+              "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Open position: Pool"
+                }
+              ],
+              "text": "Open position: Pool"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -452,27 +2870,108 @@
                 "address": "HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The wallet that controls the account.",
-            "label": "Open position: Owner",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-owner",
+              "parts": [
+                {
+                  "text": "The wallet that controls the account."
+                }
+              ],
+              "text": "The wallet that controls the account."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Open position: Owner"
+                }
+              ],
+              "text": "Open position: Owner"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "4VY2…5etD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (4VY2…5etD)"
+                }
               }
             }
           },
           {
-            "help": "The bottom of the position's price range, as a bin index.",
-            "label": "Open position: Lowest bin",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-lowest_bin",
+              "parts": [
+                {
+                  "text": "The bottom of the position's price range, as a bin index."
+                }
+              ],
+              "text": "The bottom of the position's price range, as a bin index."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Open position: Lowest bin"
+                }
+              ],
+              "text": "Open position: Lowest bin"
+            },
             "trust": "fact",
             "value": {
               "type": "text",
@@ -480,8 +2979,24 @@
             }
           },
           {
-            "help": "How many price bins the position spans.",
-            "label": "Open position: Bins",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-bins",
+              "parts": [
+                {
+                  "text": "How many price bins the position spans."
+                }
+              ],
+              "text": "How many price bins the position spans."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Open position: Bins"
+                }
+              ],
+              "text": "Open position: Bins"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -489,142 +3004,802 @@
             }
           },
           {
-            "help": "Who pays the small deposit that keeps a new account alive on chain. It comes back when the account is closed.",
-            "label": "Open position: Rent paid by",
+            "help": {
+              "id": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo/glossary-rent_paid_by",
+              "parts": [
+                {
+                  "text": "Who pays the small deposit that keeps a new account alive on chain. It comes back when the account is closed."
+                }
+              ],
+              "text": "Who pays the small deposit that keeps a new account alive on chain. It comes back when the account is closed."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Open position: Rent paid by"
+                }
+              ],
+              "text": "Open position: Rent paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "4VY2…5etD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (4VY2…5etD)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Token account",
+            "help": {
+              "id": "label-token-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+                }
+              ],
+              "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Token account"
+                }
+              ],
+              "text": "Create token account if missing: Token account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
                 "is_self": true,
-                "label": "Your SOL account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your SOL account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your SOL account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your SOL account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E88m…YFXA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your SOL account (E88m…YFXA)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Create token account if missing: Owner",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Owner"
+                }
+              ],
+              "text": "Create token account if missing: Owner"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "4VY2…5etD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (4VY2…5etD)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Mint",
+            "help": {
+              "id": "label-mint.help",
+              "parts": [
+                {
+                  "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+                }
+              ],
+              "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Mint"
+                }
+              ],
+              "text": "Create token account if missing: Mint"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "So11111111111111111111111111111111111111112",
                 "is_self": false,
-                "label": "SOL mint",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-mint",
+                  "parts": [
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    },
+                    {
+                      "text": " mint"
+                    }
+                  ],
+                  "text": "SOL mint"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "SOL mint",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-mint",
+                          "parts": [
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            },
+                            {
+                              "text": " mint"
+                            }
+                          ],
+                          "text": "SOL mint"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "So11111111111111111111111111111111111111112",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "So11…1112"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "SOL mint (So11…1112)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Rent paid by",
+            "help": {
+              "id": "label-rent-paid-by.help",
+              "parts": [
+                {
+                  "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+                }
+              ],
+              "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Rent paid by"
+                }
+              ],
+              "text": "Create token account if missing: Rent paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "4VY2…5etD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (4VY2…5etD)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account if missing: Token program",
+            "help": {
+              "id": "label-token-program.help",
+              "parts": [
+                {
+                  "text": "The program that manages this token: SPL Token or Token-2022."
+                }
+              ],
+              "text": "The program that manages this token: SPL Token or Token-2022."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account if missing: Token program"
+                }
+              ],
+              "text": "Create token account if missing: Token program"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
                 "is_self": false,
-                "label": "Token program",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-name",
+                  "parts": [
+                    {
+                      "text": "Token program",
+                      "value": {
+                        "type": "text",
+                        "value": "Token program"
+                      }
+                    }
+                  ],
+                  "text": "Token program"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Token program",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-name",
+                          "parts": [
+                            {
+                              "text": "Token program",
+                              "value": {
+                                "type": "text",
+                                "value": "Token program"
+                              }
+                            }
+                          ],
+                          "text": "Token program"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Toke…Q5DA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Token program (Toke…Q5DA)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Sync wrapped SOL: Account",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Sync wrapped SOL: Account"
+                }
+              ],
+              "text": "Sync wrapped SOL: Account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
                 "is_self": true,
-                "label": "Your SOL account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your SOL account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your SOL account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your SOL account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E88m…YFXA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your SOL account (E88m…YFXA)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Close token account: Token account",
+            "help": {
+              "id": "label-token-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+                }
+              ],
+              "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Close token account: Token account"
+                }
+              ],
+              "text": "Close token account: Token account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
                 "is_self": true,
-                "label": "Your token account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "token-your-account",
+                  "parts": [
+                    {
+                      "text": "Your token account"
+                    }
+                  ],
+                  "text": "Your token account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your token account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "token-your-account",
+                          "parts": [
+                            {
+                              "text": "Your token account"
+                            }
+                          ],
+                          "text": "Your token account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "E88m…YFXA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your token account (E88m…YFXA)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Close token account: SOL goes to",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Close token account: SOL goes to"
+                }
+              ],
+              "text": "Close token account: SOL goes to"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "4VY2…5etD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (4VY2…5etD)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Close token account: Owner",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Close token account: Owner"
+                }
+              ],
+              "text": "Close token account: Owner"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "4VY2…5etD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (4VY2…5etD)"
+                }
               }
             }
           }
@@ -633,28 +3808,115 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "4VY2BAdqqvKef6X26gs1cJAZ7575CDBw9hqs2E5o5etD",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "4VY2…5etD"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (4VY2…5etD)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Signer",
+            "help": {
+              "id": "label-signer.help",
+              "parts": [
+                {
+                  "text": "An account whose signature the transaction needs besides the fee payer."
+                }
+              ],
+              "text": "An account whose signature the transaction needs besides the fee payer."
+            },
+            "label": {
+              "id": "label-signer",
+              "parts": [
+                {
+                  "text": "Signer"
+                }
+              ],
+              "text": "Signer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -662,7 +3924,9 @@
                 "address": "ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -671,84 +3935,315 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "21003"
+                "note_words": null,
+                "units": "21003",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000021003 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000021003 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "10000"
+                "note_words": null,
+                "units": "10000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00001 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00001 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "11003"
+                "note_words": null,
+                "units": "11003",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000011003 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000011003 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "34725 micro-lamports per unit × 316836 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "34,725 micro-lamports per compute unit × 316,836 compute units requested"
+                  }
+                ],
+                "text": "34,725 micro-lamports per compute unit × 316,836 compute units requested"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Rent deposits",
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "0.04189984 SOL, up to 0.04338828 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed"
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "0.04189984 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "41899840",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.04189984 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.04189984 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": ", or "
+                  },
+                  {
+                    "text": "0.04338828 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "43388280",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.04338828 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.04338828 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": " in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts"
+                  }
+                ],
+                "text": "0.04189984 SOL, or 0.04338828 SOL in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts"
+              }
             }
           }
         ],
@@ -756,18 +4251,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -775,11 +4302,189 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "2 actions: Send 0.500169061 SOL to E88m…YFXA; Add ≤ 0.500169061 SOL (verified) to a Meteora DLMM position",
-    "text": "2 actions: Send 0.500169061 SOL to E88m…YFXA; Add ≤ 0.500169061 SOL (verified) to a Meteora DLMM position\nOK\n\n== Transfer | System program (verified)\n  Amount: 0.500169061 SOL\n  From: Your wallet (4VY2…5etD) (verified)\n  To: Your SOL account (E88m…YFXA) (verified)\n\n== Add liquidity | Meteora DLMM (descriptor reviewed 2026-09-28, upgradeable by JADa…CVLd)\n  Deposit: ≤ 0.500169061 SOL (verified)\n  Position: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n  Pool: HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7\n  Shape: Spot (verified)\n  Lowest bin: -623\n  Highest bin: -554\n  Active bin expected: -554\n  Active bin may differ by: 8\n  From account X: 6JyBEAKJ6vwZoaLmveqRTgubT5xfQYQWYovM4ofjk8RV\n  From account Y: Your SOL account (E88m…YFXA) (verified)\n  Reserve X: Meteora DLMM reserve for token X (DtJW…ZhKV) (verified)\n  Reserve Y: Meteora DLMM reserve for token Y (AhKd…ioD9) (verified)\n  Additional accounts: 2, not named by this descriptor\n\n== Also [collapsed]\n  Compute unit price: 34725 micro-lamports per unit\n  Compute unit limit: 316836\n  Open position: Position: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n  Open position: Pool: HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7\n  Open position: Owner: Your wallet (4VY2…5etD) (verified)\n  Open position: Lowest bin: -623\n  Open position: Bins: 70\n  Open position: Rent paid by: Your wallet (4VY2…5etD) (verified)\n  Create token account if missing: Token account: Your SOL account (E88m…YFXA) (verified)\n  Create token account if missing: Owner: Your wallet (4VY2…5etD) (verified)\n  Create token account if missing: Mint: SOL mint (So11…1112) (verified)\n  Create token account if missing: Rent paid by: Your wallet (4VY2…5etD) (verified)\n  Create token account if missing: Token program: Token program (Toke…Q5DA) (verified)\n  Sync wrapped SOL: Account: Your SOL account (E88m…YFXA) (verified)\n  Close token account: Token account: Your token account (E88m…YFXA) (verified)\n  Close token account: SOL goes to: Your wallet (4VY2…5etD) (verified)\n  Close token account: Owner: Your wallet (4VY2…5etD) (verified)\n\n== Signers\n  Fee payer: Your wallet (4VY2…5etD) (verified)\n  Signer: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n\n== Fee\n  Total: 0.000021003 SOL\n  Base: 0.00001 SOL\n  Priority: 0.000011003 SOL\n  Priority basis: 34725 micro-lamports per unit × 316836 units requested\n  Rent deposits: 0.04189984 SOL, up to 0.04338828 SOL if the accounts it creates only when missing do not exist yet; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - transfer 0.500169061 SOL from Your wallet (4VY2…5etD) (verified) to Your SOL account (E88m…YFXA) (verified)\n  - send ≤ 0.500169061 SOL (verified) from Your wallet (4VY2…5etD) (verified) to Meteora DLMM (LBUZ…Pwxo) (verified)\n  - credits the liquidity to the position named, spread over its bins as the instruction says; the signer cannot read who owns that position\n  - create ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My owned by Meteora DLMM (LBUZ…Pwxo) (verified), depositing 0.04189984 SOL\n  - create Your SOL account (E88m…YFXA) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL unless it already exists\n  - close Your token account (E88m…YFXA) (verified) and send its balance to Your wallet (4VY2…5etD) (verified)\n  - Your wallet (4VY2…5etD) (verified) pays a fee of 0.000021003 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (863 bytes)\n  digest: 57c581c98741f1b680679e6f62d96aee07f2e01c6545ed8352f900579cc40367\n",
+    "summary": {
+      "id": "explain-actions",
+      "parts": [
+        {
+          "text": "2",
+          "value": {
+            "type": "integer",
+            "value": "2"
+          }
+        },
+        {
+          "text": " actions: Send "
+        },
+        {
+          "text": "0.500169061 SOL",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 9,
+                "description": null,
+                "id": "native",
+                "symbol": "SOL",
+                "trust": "fact"
+              },
+              "bound": "exact",
+              "note": null,
+              "note_words": null,
+              "units": "500169061",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "0.500169061 "
+                  },
+                  {
+                    "text": "SOL",
+                    "value": {
+                      "type": "text",
+                      "value": "SOL"
+                    }
+                  }
+                ],
+                "text": "0.500169061 SOL"
+              }
+            }
+          }
+        },
+        {
+          "text": " to "
+        },
+        {
+          "short": {
+            "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+            "is_self": true,
+            "label": {
+              "id": "accounts-your-token",
+              "parts": [
+                {
+                  "text": "Your "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                },
+                {
+                  "text": " account"
+                }
+              ],
+              "text": "Your SOL account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your SOL account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-token",
+                      "parts": [
+                        {
+                          "text": "Your "
+                        },
+                        {
+                          "text": "SOL",
+                          "value": {
+                            "type": "text",
+                            "value": "SOL"
+                          }
+                        },
+                        {
+                          "text": " account"
+                        }
+                      ],
+                      "text": "Your SOL account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "E88mQLdcWhQ5evbSZFJbxV9ioHJnN2CRXsWidVrbYFXA",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "E88m…YFXA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your SOL account (E88m…YFXA)"
+            }
+          },
+          "text": "E88m…YFXA"
+        },
+        {
+          "text": "; Add "
+        },
+        {
+          "text": "≤ 0.500169061 SOL",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 9,
+                "description": null,
+                "id": "So11111111111111111111111111111111111111112",
+                "symbol": "SOL",
+                "trust": "verified"
+              },
+              "bound": "at_most",
+              "note": null,
+              "note_words": null,
+              "units": "500169061",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "≤ 0.500169061 "
+                  },
+                  {
+                    "text": "SOL",
+                    "value": {
+                      "type": "text",
+                      "value": "SOL"
+                    }
+                  }
+                ],
+                "text": "≤ 0.500169061 SOL"
+              }
+            }
+          }
+        },
+        {
+          "text": " to a Meteora DLMM position"
+        }
+      ],
+      "text": "2 actions: Send 0.500169061 SOL to E88m…YFXA; Add ≤ 0.500169061 SOL to a Meteora DLMM position"
+    },
+    "text": "2 actions: Send 0.500169061 SOL to E88m…YFXA; Add ≤ 0.500169061 SOL to a Meteora DLMM position\nOK\n\n== Transfer | System program\n  Amount: 0.500169061 SOL\n  From: Your wallet (4VY2…5etD)\n  To: Your SOL account (E88m…YFXA)\n\n== Add liquidity | Meteora DLMM (descriptor reviewed 2026-09-28, upgradeable by JADa…CVLd)\n  Deposit: ≤ 0.500169061 SOL\n  Position: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n  Pool: HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7\n  Shape: Spot\n  Lowest bin: -623\n  Highest bin: -554\n  Active bin expected: -554\n  Active bin may differ by: 8\n  From account X: 6JyBEAKJ6vwZoaLmveqRTgubT5xfQYQWYovM4ofjk8RV\n  From account Y: Your SOL account (E88m…YFXA)\n  Reserve X: Meteora DLMM reserve for token X (DtJW…ZhKV)\n  Reserve Y: Meteora DLMM reserve for token Y (AhKd…ioD9)\n  Additional accounts: 2, not named by this descriptor\n\n== Also [collapsed]\n  Compute unit price: 34,725 micro-lamports per compute unit\n  Compute unit limit: 316836\n  Open position: Position: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n  Open position: Pool: HFiXZF4chgvHBDiqc3CGrgK9sTsYTg1AMcH6PcobavB7\n  Open position: Owner: Your wallet (4VY2…5etD)\n  Open position: Lowest bin: -623\n  Open position: Bins: 70\n  Open position: Rent paid by: Your wallet (4VY2…5etD)\n  Create token account if missing: Token account: Your SOL account (E88m…YFXA)\n  Create token account if missing: Owner: Your wallet (4VY2…5etD)\n  Create token account if missing: Mint: SOL mint (So11…1112)\n  Create token account if missing: Rent paid by: Your wallet (4VY2…5etD)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Sync wrapped SOL: Account: Your SOL account (E88m…YFXA)\n  Close token account: Token account: Your token account (E88m…YFXA)\n  Close token account: SOL goes to: Your wallet (4VY2…5etD)\n  Close token account: Owner: Your wallet (4VY2…5etD)\n\n== Signers\n  Fee payer: Your wallet (4VY2…5etD)\n  Signer: ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My\n\n== Fee\n  Total: 0.000021003 SOL\n  Base: 0.00001 SOL\n  Priority: 0.000011003 SOL\n  Priority basis: 34,725 micro-lamports per compute unit × 316,836 compute units requested\n  Rent deposits: 0.04189984 SOL, or 0.04338828 SOL in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Transfer 0.500169061 SOL from Your wallet (4VY2…5etD) to Your SOL account (E88m…YFXA)\n  - You send ≤ 0.500169061 SOL from Your wallet (4VY2…5etD) to Meteora DLMM (LBUZ…Pwxo)\n  - Credit the liquidity to the position named, spread over its bins as the instruction says; SignLens cannot see who owns that position\n  - Create ASKm2Aqk2z7x7pp5RpoTpjoUX6SDFWQqBXaFjbEvf5My, managed by Meteora DLMM (LBUZ…Pwxo), depositing 0.04189984 SOL\n  - Create Your SOL account (E88m…YFXA), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - Close Your token account (E88m…YFXA) and send its SOL to Your wallet (4VY2…5etD)\n  - You pay a fee of 0.000021003 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (863 bytes)\n  digest: 57c581c98741f1b680679e6f62d96aee07f2e01c6545ed8352f900579cc40367\n",
     "verdict": "ok"
   }
 }

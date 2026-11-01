@@ -1,124 +1,1219 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
-    "chain": "solana",
-    "effects": [
+    "actions": [
       {
-        "type": "other",
-        "value": {
-          "description": "the staking account's lock is set to the locker's maximum and renews itself; nothing moves, and the stake cannot be withdrawn while this is on"
+        "instruction": 2,
+        "summary": {
+          "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/toggle_max_lock-summary-true",
+          "parts": [
+            {
+              "text": "Keep the JUP in "
+            },
+            {
+              "short": {
+                "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "9ok6…ShZi"
+            },
+            {
+              "text": " locked at the maximum: the lock renews itself until max lock is turned off"
+            }
+          ],
+          "text": "Keep the JUP in 9ok6…ShZi locked at the maximum: the lock renews itself until max lock is turned off"
         }
       },
       {
+        "instruction": 3,
+        "summary": {
+          "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/increase_locked_amount-summary",
+          "parts": [
+            {
+              "text": "Stake "
+            },
+            {
+              "text": "746.94905 JUP",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                    "symbol": "JUP",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "746949050",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "746.94905 "
+                      },
+                      {
+                        "text": "JUP",
+                        "value": {
+                          "type": "text",
+                          "value": "JUP"
+                        }
+                      }
+                    ],
+                    "text": "746.94905 JUP"
+                  }
+                }
+              }
+            },
+            {
+              "text": " in Jupiter DAO governance"
+            }
+          ],
+          "text": "Stake 746.94905 JUP in Jupiter DAO governance"
+        }
+      }
+    ],
+    "chain": "solana",
+    "effects": [
+      {
+        "message": {
+          "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/toggle_max_lock-effects-true-other",
+          "parts": [
+            {
+              "text": "The staking account's lock is set to the locker's maximum and renews itself; nothing moves, and the stake cannot be withdrawn while this is on"
+            }
+          ],
+          "text": "The staking account's lock is set to the locker's maximum and renews itself; nothing moves, and the stake cannot be withdrawn while this is on"
+        },
+        "type": "other",
+        "value": {
+          "description": {
+            "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/toggle_max_lock-effects-true-other",
+            "parts": [
+              {
+                "text": "The staking account's lock is set to the locker's maximum and renews itself; nothing moves, and the stake cannot be withdrawn while this is on"
+              }
+            ],
+            "text": "The staking account's lock is set to the locker's maximum and renews itself; nothing moves, and the stake cannot be withdrawn while this is on"
+          }
+        }
+      },
+      {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "746.94905 JUP",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                    "symbol": "JUP",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "746949050",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "746.94905 "
+                      },
+                      {
+                        "text": "JUP",
+                        "value": {
+                          "type": "text",
+                          "value": "JUP"
+                        }
+                      }
+                    ],
+                    "text": "746.94905 JUP"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (3Ugv…wfEv)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "3Ugv…wfEv"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (3Ugv…wfEv)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Jupiter DAO staking (voTp…mVSj)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Jupiter DAO staking",
+                        "value": {
+                          "type": "text",
+                          "value": "Jupiter DAO staking"
+                        }
+                      }
+                    ],
+                    "text": "Jupiter DAO staking"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Jupiter DAO staking",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Jupiter DAO staking",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Jupiter DAO staking"
+                                }
+                              }
+                            ],
+                            "text": "Jupiter DAO staking"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "voTp…mVSj"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Jupiter DAO staking (voTp…mVSj)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send 746.94905 JUP from Your wallet (3Ugv…wfEv) to Jupiter DAO staking (voTp…mVSj)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 6,
+              "description": null,
               "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
               "symbol": "JUP",
               "trust": "verified"
             },
             "bound": "exact",
             "note": null,
-            "units": "746949050"
+            "note_words": null,
+            "units": "746949050",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "746.94905 "
+                },
+                {
+                  "text": "JUP",
+                  "value": {
+                    "type": "text",
+                    "value": "JUP"
+                  }
+                }
+              ],
+              "text": "746.94905 JUP"
+            }
           },
           "from": {
             "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "3Ugv…wfEv"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (3Ugv…wfEv)"
+            }
           },
           "to": {
             "address": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
             "is_self": false,
-            "label": "Jupiter DAO staking",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Jupiter DAO staking",
+                  "value": {
+                    "type": "text",
+                    "value": "Jupiter DAO staking"
+                  }
+                }
+              ],
+              "text": "Jupiter DAO staking"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Jupiter DAO staking",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Jupiter DAO staking",
+                          "value": {
+                            "type": "text",
+                            "value": "Jupiter DAO staking"
+                          }
+                        }
+                      ],
+                      "text": "Jupiter DAO staking"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "voTp…mVSj"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Jupiter DAO staking (voTp…mVSj)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Jupiter DAO staking (voTp…mVSj)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Jupiter DAO staking",
+                        "value": {
+                          "type": "text",
+                          "value": "Jupiter DAO staking"
+                        }
+                      }
+                    ],
+                    "text": "Jupiter DAO staking"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Jupiter DAO staking",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Jupiter DAO staking",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Jupiter DAO staking"
+                                }
+                              }
+                            ],
+                            "text": "Jupiter DAO staking"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "voTp…mVSj"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Jupiter DAO staking (voTp…mVSj)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.002286 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "2286000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.002286 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.002286 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi, managed by Jupiter DAO staking (voTp…mVSj), depositing 0.002286 SOL"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "2286000"
+            "note_words": null,
+            "units": "2286000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.002286 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.002286 SOL"
+            }
           },
           "if_missing": false,
           "owner": {
             "address": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
             "is_self": false,
-            "label": "Jupiter DAO staking",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Jupiter DAO staking",
+                  "value": {
+                    "type": "text",
+                    "value": "Jupiter DAO staking"
+                  }
+                }
+              ],
+              "text": "Jupiter DAO staking"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Jupiter DAO staking",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Jupiter DAO staking",
+                          "value": {
+                            "type": "text",
+                            "value": "Jupiter DAO staking"
+                          }
+                        }
+                      ],
+                      "text": "Jupiter DAO staking"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "voTp…mVSj"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Jupiter DAO staking (voTp…mVSj)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "9ok6…ShZi's JUP account (5NbX…X3Ju)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "5NbXSrHMAtH4a7YAFzKzdUSm75r2w3CA2EyZLkuxX3Ju",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-others-token",
+                    "parts": [
+                      {
+                        "short": {
+                          "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "fact",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "9ok6…ShZi"
+                      },
+                      {
+                        "text": "'s "
+                      },
+                      {
+                        "text": "JUP",
+                        "value": {
+                          "type": "text",
+                          "value": "JUP"
+                        }
+                      },
+                      {
+                        "text": " account"
+                      }
+                    ],
+                    "text": "9ok6…ShZi's JUP account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "9ok6…ShZi's JUP account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-others-token",
+                            "parts": [
+                              {
+                                "short": {
+                                  "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+                                  "is_self": false,
+                                  "label": null,
+                                  "label_trust": "fact",
+                                  "stand_in": null,
+                                  "words": null
+                                },
+                                "text": "9ok6…ShZi"
+                              },
+                              {
+                                "text": "'s "
+                              },
+                              {
+                                "text": "JUP",
+                                "value": {
+                                  "type": "text",
+                                  "value": "JUP"
+                                }
+                              },
+                              {
+                                "text": " account"
+                              }
+                            ],
+                            "text": "9ok6…ShZi's JUP account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "5NbXSrHMAtH4a7YAFzKzdUSm75r2w3CA2EyZLkuxX3Ju",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "5NbX…X3Ju"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "9ok6…ShZi's JUP account (5NbX…X3Ju)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Token program (Toke…Q5DA)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "text",
+                          "value": "Token program"
+                        }
+                      }
+                    ],
+                    "text": "Token program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Token program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Token program"
+                                }
+                              }
+                            ],
+                            "text": "Token program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Toke…Q5DA"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Token program (Toke…Q5DA)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00148844 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1488440",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00148844 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00148844 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 9ok6…ShZi's JUP account (5NbX…X3Ju), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "5NbXSrHMAtH4a7YAFzKzdUSm75r2w3CA2EyZLkuxX3Ju",
             "is_self": false,
-            "label": "9ok6…ShZi's JUP account",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-others-token",
+              "parts": [
+                {
+                  "short": {
+                    "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "fact",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "9ok6…ShZi"
+                },
+                {
+                  "text": "'s "
+                },
+                {
+                  "text": "JUP",
+                  "value": {
+                    "type": "text",
+                    "value": "JUP"
+                  }
+                },
+                {
+                  "text": " account"
+                }
+              ],
+              "text": "9ok6…ShZi's JUP account"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "9ok6…ShZi's JUP account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-others-token",
+                      "parts": [
+                        {
+                          "short": {
+                            "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+                            "is_self": false,
+                            "label": null,
+                            "label_trust": "fact",
+                            "stand_in": null,
+                            "words": null
+                          },
+                          "text": "9ok6…ShZi"
+                        },
+                        {
+                          "text": "'s "
+                        },
+                        {
+                          "text": "JUP",
+                          "value": {
+                            "type": "text",
+                            "value": "JUP"
+                          }
+                        },
+                        {
+                          "text": " account"
+                        }
+                      ],
+                      "text": "9ok6…ShZi's JUP account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "5NbXSrHMAtH4a7YAFzKzdUSm75r2w3CA2EyZLkuxX3Ju",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "5NbX…X3Ju"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "9ok6…ShZi's JUP account (5NbX…X3Ju)"
+            }
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "1488440"
+            "note_words": null,
+            "units": "1488440",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00148844 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00148844 SOL"
+            }
           },
           "if_missing": false,
           "owner": {
             "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "is_self": false,
-            "label": "Token program",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "text",
+                    "value": "Token program"
+                  }
+                }
+              ],
+              "text": "Token program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Token program",
+                          "value": {
+                            "type": "text",
+                            "value": "Token program"
+                          }
+                        }
+                      ],
+                      "text": "Token program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Toke…Q5DA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Token program (Toke…Q5DA)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.0000051 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "5100",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.0000051 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.0000051 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.0000051 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "5100"
+            "note_words": null,
+            "units": "5100",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.0000051 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.0000051 SOL"
+            }
           },
           "payer": {
             "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "3Ugv…wfEv"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (3Ugv…wfEv)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -126,18 +1221,41 @@
       }
     ],
     "findings": [],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "6f9c7783854d0531e6ef68d03dbe9596c726bdbdcbf54b781fd3861b39213f37",
       "format": "solana legacy"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "When on, the lock renews itself every slot at the locker's maximum (7 days for JUP), so the stake never unlocks; turning it off starts the 7-day cooldown after which the whole stake can be withdrawn.",
-            "label": "Max lock",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-max_lock",
+              "parts": [
+                {
+                  "text": "When on, the lock renews itself every slot at the locker's maximum (7 days for JUP), so the stake never unlocks; turning it off starts the 7-day cooldown after which the whole stake can be withdrawn."
+                }
+              ],
+              "text": "When on, the lock renews itself every slot at the locker's maximum (7 days for JUP), so the stake never unlocks; turning it off starts the 7-day cooldown after which the whole stake can be withdrawn."
+            },
+            "label": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/toggle_max_lock-fields-args_is_max_lock",
+              "parts": [
+                {
+                  "text": "Max lock"
+                }
+              ],
+              "text": "Max lock"
+            },
             "trust": "fact",
             "value": {
               "type": "bool",
@@ -145,8 +1263,24 @@
             }
           },
           {
-            "help": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker.",
-            "label": "Staking account",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-staking_account",
+              "parts": [
+                {
+                  "text": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker."
+                }
+              ],
+              "text": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker."
+            },
+            "label": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/toggle_max_lock-fields-accounts_escrow",
+              "parts": [
+                {
+                  "text": "Staking account"
+                }
+              ],
+              "text": "Staking account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -154,13 +1288,31 @@
                 "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on.",
-            "label": "Locker",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-locker",
+              "parts": [
+                {
+                  "text": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on."
+                }
+              ],
+              "text": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on."
+            },
+            "label": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/toggle_max_lock-fields-accounts_locker",
+              "parts": [
+                {
+                  "text": "Locker"
+                }
+              ],
+              "text": "Locker"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -168,7 +1320,9 @@
                 "address": "CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -179,48 +1333,228 @@
             "index": 2
           }
         },
-        "subtitle": "Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)",
-        "title": "Max lock"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Jupiter DAO staking",
+              "value": {
+                "type": "text",
+                "value": "Jupiter DAO staking"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-10-25",
+              "value": {
+                "type": "text",
+                "value": "2026-10-25"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "CvQZ…tipQ"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)"
+        },
+        "title": {
+          "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/toggle_max_lock-intent-true",
+          "parts": [
+            {
+              "text": "Max lock"
+            }
+          ],
+          "text": "Max lock"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "The JUP that moves into your staking account. It stays locked while the account's lock runs, and leaves only through an unstake.",
-            "label": "Stake",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-stake",
+              "parts": [
+                {
+                  "text": "The JUP that moves into your staking account. It stays locked while the account's lock runs, and leaves only through an unstake."
+                }
+              ],
+              "text": "The JUP that moves into your staking account. It stays locked while the account's lock runs, and leaves only through an unstake."
+            },
+            "label": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/increase_locked_amount-fields-derived_amount",
+              "parts": [
+                {
+                  "text": "Stake"
+                }
+              ],
+              "text": "Stake"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 6,
+                  "description": null,
                   "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
                   "symbol": "JUP",
                   "trust": "verified"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "746949050"
+                "note_words": null,
+                "units": "746949050",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "746.94905 "
+                    },
+                    {
+                      "text": "JUP",
+                      "value": {
+                        "type": "text",
+                        "value": "JUP"
+                      }
+                    }
+                  ],
+                  "text": "746.94905 JUP"
+                }
               }
             }
           },
           {
-            "help": "The token account the JUP leaves. It should be one of yours.",
-            "label": "From account",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-from_account",
+              "parts": [
+                {
+                  "text": "The token account the JUP leaves. It should be one of yours."
+                }
+              ],
+              "text": "The token account the JUP leaves. It should be one of yours."
+            },
+            "label": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/increase_locked_amount-fields-accounts_source_tokens",
+              "parts": [
+                {
+                  "text": "From account"
+                }
+              ],
+              "text": "From account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "8nkMdU7mfuHMPxRtvsTgPbxBfjJzaU9guP2qKwPpQR4V",
                 "is_self": true,
-                "label": "Your JUP account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "JUP",
+                      "value": {
+                        "type": "text",
+                        "value": "JUP"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your JUP account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your JUP account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "JUP",
+                              "value": {
+                                "type": "text",
+                                "value": "JUP"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your JUP account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "8nkMdU7mfuHMPxRtvsTgPbxBfjJzaU9guP2qKwPpQR4V",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "8nkM…QR4V"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your JUP account (8nkM…QR4V)"
+                }
               }
             }
           },
           {
-            "help": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker.",
-            "label": "Staking account",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-staking_account",
+              "parts": [
+                {
+                  "text": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker."
+                }
+              ],
+              "text": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker."
+            },
+            "label": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/increase_locked_amount-fields-accounts_escrow",
+              "parts": [
+                {
+                  "text": "Staking account"
+                }
+              ],
+              "text": "Staking account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -228,13 +1562,31 @@
                 "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on.",
-            "label": "Locker",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-locker",
+              "parts": [
+                {
+                  "text": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on."
+                }
+              ],
+              "text": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on."
+            },
+            "label": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/increase_locked_amount-fields-accounts_locker",
+              "parts": [
+                {
+                  "text": "Locker"
+                }
+              ],
+              "text": "Locker"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -242,7 +1594,9 @@
                 "address": "CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -253,29 +1607,155 @@
             "index": 3
           }
         },
-        "subtitle": "Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)",
-        "title": "Stake"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Jupiter DAO staking",
+              "value": {
+                "type": "text",
+                "value": "Jupiter DAO staking"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-10-25",
+              "value": {
+                "type": "text",
+                "value": "2026-10-25"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "CvQZZ23qYDWF2RUpxYJ8y9K4skmuvYEEjH7fK58jtipQ",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "CvQZ…tipQ"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)"
+        },
+        "title": {
+          "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/increase_locked_amount-intent",
+          "parts": [
+            {
+              "text": "Stake"
+            }
+          ],
+          "text": "Stake"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": "The wallet that controls the account.",
-            "label": "Create staking account: Owner",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-owner",
+              "parts": [
+                {
+                  "text": "The wallet that controls the account."
+                }
+              ],
+              "text": "The wallet that controls the account."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create staking account: Owner"
+                }
+              ],
+              "text": "Create staking account: Owner"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "3Ugv…wfEv"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (3Ugv…wfEv)"
+                }
               }
             }
           },
           {
-            "help": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker.",
-            "label": "Create staking account: Staking account",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-staking_account",
+              "parts": [
+                {
+                  "text": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker."
+                }
+              ],
+              "text": "Jupiter's vote escrow: the account that holds your staked JUP, counts your voting power and records when the lock ends. One per wallet per locker."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create staking account: Staking account"
+                }
+              ],
+              "text": "Create staking account: Staking account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -283,13 +1763,31 @@
                 "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on.",
-            "label": "Create staking account: Locker",
+            "help": {
+              "id": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj/glossary-locker",
+              "parts": [
+                {
+                  "text": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on."
+                }
+              ],
+              "text": "The pool of staked tokens this account belongs to. Jupiter's JUP locker sets the lock to 7 days, renewed continuously while max lock is on."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create staking account: Locker"
+                }
+              ],
+              "text": "Create staking account: Locker"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -297,27 +1795,142 @@
                 "address": "CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account: Token account",
+            "help": {
+              "id": "label-token-account.help",
+              "parts": [
+                {
+                  "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+                }
+              ],
+              "text": "An account that holds one token for one wallet. A wallet has a separate one for each token it holds."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account: Token account"
+                }
+              ],
+              "text": "Create token account: Token account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "5NbXSrHMAtH4a7YAFzKzdUSm75r2w3CA2EyZLkuxX3Ju",
                 "is_self": false,
-                "label": "9ok6…ShZi's JUP account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-others-token",
+                  "parts": [
+                    {
+                      "short": {
+                        "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "fact",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "9ok6…ShZi"
+                    },
+                    {
+                      "text": "'s "
+                    },
+                    {
+                      "text": "JUP",
+                      "value": {
+                        "type": "text",
+                        "value": "JUP"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "9ok6…ShZi's JUP account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "9ok6…ShZi's JUP account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-others-token",
+                          "parts": [
+                            {
+                              "short": {
+                                "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+                                "is_self": false,
+                                "label": null,
+                                "label_trust": "fact",
+                                "stand_in": null,
+                                "words": null
+                              },
+                              "text": "9ok6…ShZi"
+                            },
+                            {
+                              "text": "'s "
+                            },
+                            {
+                              "text": "JUP",
+                              "value": {
+                                "type": "text",
+                                "value": "JUP"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "9ok6…ShZi's JUP account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "5NbXSrHMAtH4a7YAFzKzdUSm75r2w3CA2EyZLkuxX3Ju",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "5NbX…X3Ju"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "9ok6…ShZi's JUP account (5NbX…X3Ju)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "Create token account: Owner",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account: Owner"
+                }
+              ],
+              "text": "Create token account: Owner"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -325,55 +1938,284 @@
                 "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account: Mint",
+            "help": {
+              "id": "label-mint.help",
+              "parts": [
+                {
+                  "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+                }
+              ],
+              "text": "The address that identifies the token itself, as opposed to an account holding some of it."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account: Mint"
+                }
+              ],
+              "text": "Create token account: Mint"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
                 "is_self": false,
-                "label": "JUP mint",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-mint",
+                  "parts": [
+                    {
+                      "text": "JUP",
+                      "value": {
+                        "type": "text",
+                        "value": "JUP"
+                      }
+                    },
+                    {
+                      "text": " mint"
+                    }
+                  ],
+                  "text": "JUP mint"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "JUP mint",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-mint",
+                          "parts": [
+                            {
+                              "text": "JUP",
+                              "value": {
+                                "type": "text",
+                                "value": "JUP"
+                              }
+                            },
+                            {
+                              "text": " mint"
+                            }
+                          ],
+                          "text": "JUP mint"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "JUPy…DvCN"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "JUP mint (JUPy…DvCN)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account: Rent paid by",
+            "help": {
+              "id": "label-rent-paid-by.help",
+              "parts": [
+                {
+                  "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+                }
+              ],
+              "text": "Who pays the deposit that keeps a new account on chain. It comes back when the account is closed."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account: Rent paid by"
+                }
+              ],
+              "text": "Create token account: Rent paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "3Ugv…wfEv"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (3Ugv…wfEv)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Create token account: Token program",
+            "help": {
+              "id": "label-token-program.help",
+              "parts": [
+                {
+                  "text": "The program that manages this token: SPL Token or Token-2022."
+                }
+              ],
+              "text": "The program that manages this token: SPL Token or Token-2022."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Create token account: Token program"
+                }
+              ],
+              "text": "Create token account: Token program"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
                 "is_self": false,
-                "label": "Token program",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-name",
+                  "parts": [
+                    {
+                      "text": "Token program",
+                      "value": {
+                        "type": "text",
+                        "value": "Token program"
+                      }
+                    }
+                  ],
+                  "text": "Token program"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Token program",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-name",
+                          "parts": [
+                            {
+                              "text": "Token program",
+                              "value": {
+                                "type": "text",
+                                "value": "Token program"
+                              }
+                            }
+                          ],
+                          "text": "Token program"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                        "is_self": false,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "Toke…Q5DA"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Token program (Toke…Q5DA)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -381,12 +2223,36 @@
             }
           },
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "666 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "666 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "666 micro-lamports per compute unit"
+              }
             }
           }
         ],
@@ -394,22 +2260,93 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "3UgvJQSVyuMWUcMtQxQySMi1w2MpWmrnZ3BCQu6bwfEv",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "3Ugv…wfEv"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (3Ugv…wfEv)"
+                }
               }
             }
           }
@@ -418,84 +2355,277 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5100"
+                "note_words": null,
+                "units": "5100",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.0000051 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.0000051 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "100"
+                "note_words": null,
+                "units": "100",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.0000001 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.0000001 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "666 micro-lamports per unit × 150000 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "666 micro-lamports per compute unit × 150,000 compute units requested"
+                  }
+                ],
+                "text": "666 micro-lamports per compute unit × 150,000 compute units requested"
+              }
             }
           },
           {
-            "help": null,
-            "label": "Rent deposits",
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "0.00377444 SOL; returned when the accounts are closed"
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "0.00377444 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "3774440",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.00377444 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.00377444 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": "; refunded to whoever closes the accounts"
+                  }
+                ],
+                "text": "0.00377444 SOL; refunded to whoever closes the accounts"
+              }
             }
           }
         ],
@@ -503,18 +2633,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -522,11 +2684,86 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "2 actions: Keep the JUP in 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi locked at the maximum: the lock renews itself until max lock is turned off; Stake 746.94905 JUP (verified) in Jupiter DAO governance",
-    "text": "2 actions: Keep the JUP in 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi locked at the maximum: the lock renews itself until max lock is turned off; Stake 746.94905 JUP (verified) in Jupiter DAO governance\nOK\n\n== Max lock | Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)\n  Max lock: yes\n  Staking account: 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi\n  Locker: CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN\n\n== Stake | Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)\n  Stake: 746.94905 JUP (verified)\n  From account: Your JUP account (8nkM…QR4V) (verified)\n  Staking account: 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi\n  Locker: CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN\n\n== Also [collapsed]\n  Create staking account: Owner: Your wallet (3Ugv…wfEv) (verified)\n  Create staking account: Staking account: 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi\n  Create staking account: Locker: CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN\n  Create token account: Token account: 9ok6…ShZi's JUP account (5NbX…X3Ju) (verified)\n  Create token account: Owner: 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi\n  Create token account: Mint: JUP mint (JUPy…DvCN) (verified)\n  Create token account: Rent paid by: Your wallet (3Ugv…wfEv) (verified)\n  Create token account: Token program: Token program (Toke…Q5DA) (verified)\n  Compute unit limit: 150000\n  Compute unit price: 666 micro-lamports per unit\n\n== Signers\n  Fee payer: Your wallet (3Ugv…wfEv) (verified)\n\n== Fee\n  Total: 0.0000051 SOL\n  Base: 0.000005 SOL\n  Priority: 0.0000001 SOL\n  Priority basis: 666 micro-lamports per unit × 150000 units requested\n  Rent deposits: 0.00377444 SOL; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - the staking account's lock is set to the locker's maximum and renews itself; nothing moves, and the stake cannot be withdrawn while this is on\n  - send 746.94905 JUP (verified) from Your wallet (3Ugv…wfEv) (verified) to Jupiter DAO staking (voTp…mVSj) (verified)\n  - create 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi owned by Jupiter DAO staking (voTp…mVSj) (verified), depositing 0.002286 SOL\n  - create 9ok6…ShZi's JUP account (5NbX…X3Ju) (verified) owned by Token program (Toke…Q5DA) (verified), depositing 0.00148844 SOL\n  - Your wallet (3Ugv…wfEv) (verified) pays a fee of 0.0000051 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (474 bytes)\n  digest: 6f9c7783854d0531e6ef68d03dbe9596c726bdbdcbf54b781fd3861b39213f37\n",
+    "summary": {
+      "id": "explain-actions",
+      "parts": [
+        {
+          "text": "2",
+          "value": {
+            "type": "integer",
+            "value": "2"
+          }
+        },
+        {
+          "text": " actions: Keep the JUP in "
+        },
+        {
+          "short": {
+            "address": "9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "9ok6…ShZi"
+        },
+        {
+          "text": " locked at the maximum: the lock renews itself until max lock is turned off; Stake "
+        },
+        {
+          "text": "746.94905 JUP",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 6,
+                "description": null,
+                "id": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                "symbol": "JUP",
+                "trust": "verified"
+              },
+              "bound": "exact",
+              "note": null,
+              "note_words": null,
+              "units": "746949050",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "746.94905 "
+                  },
+                  {
+                    "text": "JUP",
+                    "value": {
+                      "type": "text",
+                      "value": "JUP"
+                    }
+                  }
+                ],
+                "text": "746.94905 JUP"
+              }
+            }
+          }
+        },
+        {
+          "text": " in Jupiter DAO governance"
+        }
+      ],
+      "text": "2 actions: Keep the JUP in 9ok6…ShZi locked at the maximum: the lock renews itself until max lock is turned off; Stake 746.94905 JUP in Jupiter DAO governance"
+    },
+    "text": "2 actions: Keep the JUP in 9ok6…ShZi locked at the maximum: the lock renews itself until max lock is turned off; Stake 746.94905 JUP in Jupiter DAO governance\nOK\n\n== Max lock | Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)\n  Max lock: yes\n  Staking account: 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi\n  Locker: CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN\n\n== Stake | Jupiter DAO staking (descriptor reviewed 2026-10-25, upgradeable by CvQZ…tipQ)\n  Stake: 746.94905 JUP\n  From account: Your JUP account (8nkM…QR4V)\n  Staking account: 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi\n  Locker: CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN\n\n== Also [collapsed]\n  Create staking account: Owner: Your wallet (3Ugv…wfEv)\n  Create staking account: Staking account: 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi\n  Create staking account: Locker: CVMdMd79no569tjc5Sq7kzz8isbfCcFyBS5TLGsrZ5dN\n  Create token account: Token account: 9ok6…ShZi's JUP account (5NbX…X3Ju)\n  Create token account: Owner: 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi\n  Create token account: Mint: JUP mint (JUPy…DvCN)\n  Create token account: Rent paid by: Your wallet (3Ugv…wfEv)\n  Create token account: Token program: Token program (Toke…Q5DA)\n  Compute unit limit: 150000\n  Compute unit price: 666 micro-lamports per compute unit\n\n== Signers\n  Fee payer: Your wallet (3Ugv…wfEv)\n\n== Fee\n  Total: 0.0000051 SOL\n  Base: 0.000005 SOL\n  Priority: 0.0000001 SOL\n  Priority basis: 666 micro-lamports per compute unit × 150,000 compute units requested\n  Rent deposits: 0.00377444 SOL; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - The staking account's lock is set to the locker's maximum and renews itself; nothing moves, and the stake cannot be withdrawn while this is on\n  - You send 746.94905 JUP from Your wallet (3Ugv…wfEv) to Jupiter DAO staking (voTp…mVSj)\n  - Create 9ok6NQ9KZx55epU9apTtJdj5iuGDu1Bn4djWQSBRShZi, managed by Jupiter DAO staking (voTp…mVSj), depositing 0.002286 SOL\n  - Create 9ok6…ShZi's JUP account (5NbX…X3Ju), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL\n  - You pay a fee of 0.0000051 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (474 bytes)\n  digest: 6f9c7783854d0531e6ef68d03dbe9596c726bdbdcbf54b781fd3861b39213f37\n",
     "verdict": "ok"
   }
 }

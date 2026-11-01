@@ -1,66 +1,614 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 5,
+        "summary": {
+          "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-summary-some",
+          "parts": [
+            {
+              "text": "Increase a "
+            },
+            {
+              "text": "short",
+              "value": {
+                "type": "words",
+                "value": {
+                  "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/enum-side-short",
+                  "parts": [
+                    {
+                      "text": "short"
+                    }
+                  ],
+                  "text": "short"
+                }
+              }
+            },
+            {
+              "text": " Jupiter Perps position by "
+            },
+            {
+              "text": "99.28661 USD",
+              "value": {
+                "type": "words",
+                "value": {
+                  "id": "descriptor-number-unit",
+                  "parts": [
+                    {
+                      "text": "99.28661 "
+                    },
+                    {
+                      "text": "USD",
+                      "value": {
+                        "type": "text",
+                        "value": "USD"
+                      }
+                    }
+                  ],
+                  "text": "99.28661 USD"
+                }
+              }
+            },
+            {
+              "text": " with "
+            },
+            {
+              "text": "10 USDC",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "symbol": "USDC",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "10000000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "10 "
+                      },
+                      {
+                        "text": "USDC",
+                        "value": {
+                          "type": "text",
+                          "value": "USDC"
+                        }
+                      }
+                    ],
+                    "text": "10 USDC"
+                  }
+                }
+              }
+            },
+            {
+              "text": " collateral, price limit "
+            },
+            {
+              "text": "117.417238 USD",
+              "value": {
+                "type": "words",
+                "value": {
+                  "id": "descriptor-number-unit",
+                  "parts": [
+                    {
+                      "text": "117.417238 "
+                    },
+                    {
+                      "text": "USD",
+                      "value": {
+                        "type": "text",
+                        "value": "USD"
+                      }
+                    }
+                  ],
+                  "text": "117.417238 USD"
+                }
+              }
+            }
+          ],
+          "text": "Increase a short Jupiter Perps position by 99.28661 USD with 10 USDC collateral, price limit 117.417238 USD"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "10 USDC",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 6,
+                    "description": null,
+                    "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                    "symbol": "USDC",
+                    "trust": "verified"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "10000000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "10 "
+                      },
+                      {
+                        "text": "USDC",
+                        "value": {
+                          "type": "text",
+                          "value": "USDC"
+                        }
+                      }
+                    ],
+                    "text": "10 USDC"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (B47h…EXoo)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "B47hRAiBKyRz68vUwwzbBvVv7YfG14FfVZUuxijeEXoo",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "B47hRAiBKyRz68vUwwzbBvVv7YfG14FfVZUuxijeEXoo",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "B47h…EXoo"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (B47h…EXoo)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Jupiter Perpetuals (PERP…qQJu)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Jupiter Perpetuals",
+                        "value": {
+                          "type": "text",
+                          "value": "Jupiter Perpetuals"
+                        }
+                      }
+                    ],
+                    "text": "Jupiter Perpetuals"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Jupiter Perpetuals",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Jupiter Perpetuals",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Jupiter Perpetuals"
+                                }
+                              }
+                            ],
+                            "text": "Jupiter Perpetuals"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "PERP…qQJu"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Jupiter Perpetuals (PERP…qQJu)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send 10 USDC from Your wallet (B47h…EXoo) to Jupiter Perpetuals (PERP…qQJu)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 6,
+              "description": null,
               "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
               "symbol": "USDC",
               "trust": "verified"
             },
             "bound": "exact",
             "note": null,
-            "units": "10000000"
+            "note_words": null,
+            "units": "10000000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "10 "
+                },
+                {
+                  "text": "USDC",
+                  "value": {
+                    "type": "text",
+                    "value": "USDC"
+                  }
+                }
+              ],
+              "text": "10 USDC"
+            }
           },
           "from": {
             "address": "B47hRAiBKyRz68vUwwzbBvVv7YfG14FfVZUuxijeEXoo",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "B47hRAiBKyRz68vUwwzbBvVv7YfG14FfVZUuxijeEXoo",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "B47h…EXoo"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (B47h…EXoo)"
+            }
           },
           "to": {
             "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
             "is_self": false,
-            "label": "Jupiter Perpetuals",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Jupiter Perpetuals",
+                  "value": {
+                    "type": "text",
+                    "value": "Jupiter Perpetuals"
+                  }
+                }
+              ],
+              "text": "Jupiter Perpetuals"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Jupiter Perpetuals",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Jupiter Perpetuals",
+                          "value": {
+                            "type": "text",
+                            "value": "Jupiter Perpetuals"
+                          }
+                        }
+                      ],
+                      "text": "Jupiter Perpetuals"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "PERP…qQJu"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Jupiter Perpetuals (PERP…qQJu)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/update_many_with_pyth_lazer-effects-other",
+          "parts": [
+            {
+              "text": "The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts"
+            }
+          ],
+          "text": "The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts"
+        },
         "type": "other",
         "value": {
-          "description": "the Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts"
+          "description": {
+            "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/update_many_with_pyth_lazer-effects-other",
+            "parts": [
+              {
+                "text": "The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts"
+              }
+            ],
+            "text": "The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts"
+          }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000031944 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "31944",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000031944 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000031944 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000031944 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "31944"
+            "note_words": null,
+            "units": "31944",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000031944 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000031944 SOL"
+            }
           },
           "payer": {
             "address": "B47hRAiBKyRz68vUwwzbBvVv7YfG14FfVZUuxijeEXoo",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "B47hRAiBKyRz68vUwwzbBvVv7YfG14FfVZUuxijeEXoo",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "B47h…EXoo"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (B47h…EXoo)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -68,64 +616,207 @@
       }
     ],
     "findings": [],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "d0087cca71abd54a22c5db1d720741b8bbf189adf249020816c4c9f63f4f64a5",
       "format": "solana v0"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "Long bets the price rises, short that it falls.",
-            "label": "Side",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-side",
+              "parts": [
+                {
+                  "text": "Long bets the price rises, short that it falls."
+                }
+              ],
+              "text": "Long bets the price rises, short that it falls."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-args_params_side",
+              "parts": [
+                {
+                  "text": "Side"
+                }
+              ],
+              "text": "Side"
+            },
             "trust": "verified",
             "value": {
-              "type": "text",
-              "value": "short"
+              "type": "words",
+              "value": {
+                "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/enum-side-short",
+                "parts": [
+                  {
+                    "text": "short"
+                  }
+                ],
+                "text": "short"
+              }
             }
           },
           {
-            "help": "How much the position's notional value grows, in USD, leverage included.",
-            "label": "Size added",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-size_added",
+              "parts": [
+                {
+                  "text": "How much the position's notional value grows, in USD, leverage included."
+                }
+              ],
+              "text": "How much the position's notional value grows, in USD, leverage included."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-args_params_size_usd_delta",
+              "parts": [
+                {
+                  "text": "Size added"
+                }
+              ],
+              "text": "Size added"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "99.28661 USD"
+              "type": "words",
+              "value": {
+                "id": "descriptor-number-unit",
+                "parts": [
+                  {
+                    "text": "99.28661 "
+                  },
+                  {
+                    "text": "USD",
+                    "value": {
+                      "type": "text",
+                      "value": "USD"
+                    }
+                  }
+                ],
+                "text": "99.28661 USD"
+              }
             }
           },
           {
-            "help": "What is added to the collateral backing the trade.",
-            "label": "Collateral added",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-collateral_added",
+              "parts": [
+                {
+                  "text": "What is added to the collateral backing the trade."
+                }
+              ],
+              "text": "What is added to the collateral backing the trade."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-args_params_collateral_token_delta_some",
+              "parts": [
+                {
+                  "text": "Collateral added"
+                }
+              ],
+              "text": "Collateral added"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 6,
+                  "description": null,
                   "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
                   "symbol": "USDC",
                   "trust": "verified"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "10000000"
+                "note_words": null,
+                "units": "10000000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "10 "
+                    },
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    }
+                  ],
+                  "text": "10 USDC"
+                }
               }
             }
           },
           {
-            "help": "The worst price accepted when the request executes, in USD.",
-            "label": "Price limit",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-price_limit",
+              "parts": [
+                {
+                  "text": "The worst price accepted when the request executes, in USD."
+                }
+              ],
+              "text": "The worst price accepted when the request executes, in USD."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-args_params_price_slippage",
+              "parts": [
+                {
+                  "text": "Price limit"
+                }
+              ],
+              "text": "Price limit"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "117.417238 USD"
+              "type": "words",
+              "value": {
+                "id": "descriptor-number-unit",
+                "parts": [
+                  {
+                    "text": "117.417238 "
+                  },
+                  {
+                    "text": "USD",
+                    "value": {
+                      "type": "text",
+                      "value": "USD"
+                    }
+                  }
+                ],
+                "text": "117.417238 USD"
+              }
             }
           },
           {
-            "help": "Your leveraged trade: the market, the side and the size.",
-            "label": "Position",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-position",
+              "parts": [
+                {
+                  "text": "Your leveraged trade: the market, the side and the size."
+                }
+              ],
+              "text": "Your leveraged trade: the market, the side and the size."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-accounts_position",
+              "parts": [
+                {
+                  "text": "Position"
+                }
+              ],
+              "text": "Position"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -133,13 +824,31 @@
                 "address": "Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The pool's holding of the token being traded.",
-            "label": "Market custody",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-market_custody",
+              "parts": [
+                {
+                  "text": "The pool's holding of the token being traded."
+                }
+              ],
+              "text": "The pool's holding of the token being traded."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-accounts_custody",
+              "parts": [
+                {
+                  "text": "Market custody"
+                }
+              ],
+              "text": "Market custody"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -147,13 +856,31 @@
                 "address": "7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The pool's holding of the token used as collateral.",
-            "label": "Collateral custody",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-collateral_custody",
+              "parts": [
+                {
+                  "text": "The pool's holding of the token used as collateral."
+                }
+              ],
+              "text": "The pool's holding of the token used as collateral."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-accounts_collateral_custody",
+              "parts": [
+                {
+                  "text": "Collateral custody"
+                }
+              ],
+              "text": "Collateral custody"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -161,27 +888,128 @@
                 "address": "G18jKKXQwBbrHeiK3C9MRXhkHsLHf7XgCSisykV46EZa",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The token account the tokens leave. It should be one of yours.",
-            "label": "From account",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-from_account",
+              "parts": [
+                {
+                  "text": "The token account the tokens leave. It should be one of yours."
+                }
+              ],
+              "text": "The token account the tokens leave. It should be one of yours."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-accounts_funding_account",
+              "parts": [
+                {
+                  "text": "From account"
+                }
+              ],
+              "text": "From account"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "6kMcfMc3mj9fAVoWUXsipx3YHheF8yx6ixAWAUgDaeWh",
                 "is_self": true,
-                "label": "Your USDC account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "USDC",
+                      "value": {
+                        "type": "text",
+                        "value": "USDC"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your USDC account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your USDC account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "USDC",
+                              "value": {
+                                "type": "text",
+                                "value": "USDC"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your USDC account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "6kMcfMc3mj9fAVoWUXsipx3YHheF8yx6ixAWAUgDaeWh",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "6kMc…aeWh"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your USDC account (6kMc…aeWh)"
+                }
               }
             }
           },
           {
-            "help": "When the request was made. It expires if the keeper is late.",
-            "label": "Request time",
+            "help": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/glossary-request_time",
+              "parts": [
+                {
+                  "text": "When the request was made. It expires if the keeper is late."
+                }
+              ],
+              "text": "When the request was made. It expires if the keeper is late."
+            },
+            "label": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-fields-args_params_request_time",
+              "parts": [
+                {
+                  "text": "Request time"
+                }
+              ],
+              "text": "Request time"
+            },
             "trust": "fact",
             "value": {
               "type": "timestamp",
@@ -195,15 +1023,78 @@
             "index": 5
           }
         },
-        "subtitle": "Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)",
-        "title": "Increase position"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Jupiter Perpetuals",
+              "value": {
+                "type": "text",
+                "value": "Jupiter Perpetuals"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-10-07",
+              "value": {
+                "type": "text",
+                "value": "2026-10-07"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "5myNNmEmPm3UAnJ2ggLEpnTFb9t9Gk8369wKw6n3uAKx",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "5myN…uAKx"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)"
+        },
+        "title": {
+          "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-intent",
+          "parts": [
+            {
+              "text": "Increase position"
+            }
+          ],
+          "text": "Increase position"
+        }
       },
       {
         "collapsed": true,
         "fields": [
           {
-            "help": null,
-            "label": "Compute unit limit",
+            "help": {
+              "id": "label-compute-unit-limit.help",
+              "parts": [
+                {
+                  "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+                }
+              ],
+              "text": "How much work the transaction may do. It affects the fee, not what the transaction does."
+            },
+            "label": {
+              "id": "label-compute-unit-limit",
+              "parts": [
+                {
+                  "text": "Compute unit limit"
+                }
+              ],
+              "text": "Compute unit limit"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -211,35 +1102,159 @@
             }
           },
           {
-            "help": null,
-            "label": "Compute unit price",
+            "help": {
+              "id": "label-compute-unit-price.help",
+              "parts": [
+                {
+                  "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+                }
+              ],
+              "text": "The tip per unit of work, in millionths of a lamport. With the limit, it sets the priority fee."
+            },
+            "label": {
+              "id": "label-compute-unit-price",
+              "parts": [
+                {
+                  "text": "Compute unit price"
+                }
+              ],
+              "text": "Compute unit price"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "100000 micro-lamports per unit"
+              "type": "words",
+              "value": {
+                "id": "compute-budget-price",
+                "parts": [
+                  {
+                    "text": "100,000 micro-lamports per compute unit"
+                  }
+                ],
+                "text": "100,000 micro-lamports per compute unit"
+              }
             }
           },
           {
             "help": null,
-            "label": "Ed25519 signature check: Signer 1",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Ed25519",
+                  "value": {
+                    "type": "text",
+                    "value": "Ed25519"
+                  }
+                },
+                {
+                  "text": " signature check: Signer "
+                },
+                {
+                  "text": "1",
+                  "value": {
+                    "type": "integer",
+                    "value": "1"
+                  }
+                }
+              ],
+              "text": "Ed25519 signature check: Signer 1"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in instruction 3's data"
+              "type": "words",
+              "value": {
+                "id": "precompiles-key-elsewhere",
+                "parts": [
+                  {
+                    "text": "in instruction "
+                  },
+                  {
+                    "text": "4",
+                    "value": {
+                      "type": "integer",
+                      "value": "4"
+                    }
+                  },
+                  {
+                    "text": "'s data"
+                  }
+                ],
+                "text": "in instruction 4's data"
+              }
             }
           },
           {
             "help": null,
-            "label": "Ed25519 signature check: Message 1",
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Ed25519",
+                  "value": {
+                    "type": "text",
+                    "value": "Ed25519"
+                  }
+                },
+                {
+                  "text": " signature check: Message "
+                },
+                {
+                  "text": "1",
+                  "value": {
+                    "type": "integer",
+                    "value": "1"
+                  }
+                }
+              ],
+              "text": "Ed25519 signature check: Message 1"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "50 bytes in instruction 3"
+              "type": "words",
+              "value": {
+                "id": "precompiles-message-elsewhere",
+                "parts": [
+                  {
+                    "text": "50",
+                    "value": {
+                      "type": "integer",
+                      "value": "50"
+                    }
+                  },
+                  {
+                    "text": " bytes in instruction "
+                  },
+                  {
+                    "text": "4",
+                    "value": {
+                      "type": "integer",
+                      "value": "4"
+                    }
+                  }
+                ],
+                "text": "50 bytes in instruction 4"
+              }
             }
           },
           {
-            "help": "The price data as the oracle signed it, in bytes.",
-            "label": "Oracle price update: Signed message",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-signed_message",
+              "parts": [
+                {
+                  "text": "The price data as the oracle signed it, in bytes."
+                }
+              ],
+              "text": "The price data as the oracle signed it, in bytes."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Signed message"
+                }
+              ],
+              "text": "Oracle price update: Signed message"
+            },
             "trust": "fact",
             "value": {
               "type": "bytes",
@@ -247,8 +1262,24 @@
             }
           },
           {
-            "help": "Which instruction of this transaction carries the signature proving the price data is genuine.",
-            "label": "Oracle price update: Ed25519 instruction",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-ed25519_instruction",
+              "parts": [
+                {
+                  "text": "Which instruction of this transaction carries the signature proving the price data is genuine."
+                }
+              ],
+              "text": "Which instruction of this transaction carries the signature proving the price data is genuine."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Ed25519 instruction"
+                }
+              ],
+              "text": "Oracle price update: Ed25519 instruction"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -256,8 +1287,24 @@
             }
           },
           {
-            "help": "Which signature in the oracle's message is checked.",
-            "label": "Oracle price update: Signature index",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-signature_index",
+              "parts": [
+                {
+                  "text": "Which signature in the oracle's message is checked."
+                }
+              ],
+              "text": "Which signature in the oracle's message is checked."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Signature index"
+                }
+              ],
+              "text": "Oracle price update: Signature index"
+            },
             "trust": "fact",
             "value": {
               "type": "integer",
@@ -265,8 +1312,24 @@
             }
           },
           {
-            "help": "When yes, the whole transaction fails if the posted price is too old.",
-            "label": "Oracle price update: Fails the transaction on a stale price",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-fails_the_transaction_on_a_stale_price",
+              "parts": [
+                {
+                  "text": "When yes, the whole transaction fails if the posted price is too old."
+                }
+              ],
+              "text": "When yes, the whole transaction fails if the posted price is too old."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Fails the transaction on a stale price"
+                }
+              ],
+              "text": "Oracle price update: Fails the transaction on a stale price"
+            },
             "trust": "fact",
             "value": {
               "type": "bool",
@@ -274,8 +1337,24 @@
             }
           },
           {
-            "help": "The account submitting the price update, usually the site's own keeper rather than you.",
-            "label": "Oracle price update: Posted by",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-posted_by",
+              "parts": [
+                {
+                  "text": "The account submitting the price update, usually the site's own keeper rather than you."
+                }
+              ],
+              "text": "The account submitting the price update, usually the site's own keeper rather than you."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Posted by"
+                }
+              ],
+              "text": "Oracle price update: Posted by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -283,13 +1362,31 @@
                 "address": "Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "Where the oracle's update fee goes.",
-            "label": "Oracle price update: Pyth Lazer treasury",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-pyth_lazer_treasury",
+              "parts": [
+                {
+                  "text": "Where the oracle's update fee goes."
+                }
+              ],
+              "text": "Where the oracle's update fee goes."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Pyth Lazer treasury"
+                }
+              ],
+              "text": "Oracle price update: Pyth Lazer treasury"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -297,22 +1394,71 @@
                 "address": "Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": null,
-            "label": "Oracle price update: Additional accounts",
+            "help": {
+              "id": "label-additional-accounts.help",
+              "parts": [
+                {
+                  "text": "Additional accounts this instruction uses that its reviewed descriptor does not name. It is normal for instructions to need several."
+                }
+              ],
+              "text": "Additional accounts this instruction uses that its reviewed descriptor does not name. It is normal for instructions to need several."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Additional accounts"
+                }
+              ],
+              "text": "Oracle price update: Additional accounts"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "1, not named by this descriptor"
+              "type": "words",
+              "value": {
+                "id": "descriptor-additional-accounts",
+                "parts": [
+                  {
+                    "text": "1",
+                    "value": {
+                      "type": "integer",
+                      "value": "1"
+                    }
+                  },
+                  {
+                    "text": ", not named by this descriptor"
+                  }
+                ],
+                "text": "1, not named by this descriptor"
+              }
             }
           },
           {
-            "help": "The oracle account that combines several price sources into one price.",
-            "label": "Oracle price update: Aggregated feed",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-aggregated_feed",
+              "parts": [
+                {
+                  "text": "The oracle account that combines several price sources into one price."
+                }
+              ],
+              "text": "The oracle account that combines several price sources into one price."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Aggregated feed"
+                }
+              ],
+              "text": "Oracle price update: Aggregated feed"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -320,13 +1466,31 @@
                 "address": "FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "One of the price sources feeding the aggregate.",
-            "label": "Oracle price update: Pyth Lazer feed",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-pyth_lazer_feed",
+              "parts": [
+                {
+                  "text": "One of the price sources feeding the aggregate."
+                }
+              ],
+              "text": "One of the price sources feeding the aggregate."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Pyth Lazer feed"
+                }
+              ],
+              "text": "Oracle price update: Pyth Lazer feed"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -334,13 +1498,31 @@
                 "address": "A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "One of the price sources feeding the aggregate.",
-            "label": "Oracle price update: Chainlink feed",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-chainlink_feed",
+              "parts": [
+                {
+                  "text": "One of the price sources feeding the aggregate."
+                }
+              ],
+              "text": "One of the price sources feeding the aggregate."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Chainlink feed"
+                }
+              ],
+              "text": "Oracle price update: Chainlink feed"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -348,13 +1530,31 @@
                 "address": "FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "One of the price sources feeding the aggregate.",
-            "label": "Oracle price update: RedStone feed",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-red_stone_feed",
+              "parts": [
+                {
+                  "text": "One of the price sources feeding the aggregate."
+                }
+              ],
+              "text": "One of the price sources feeding the aggregate."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: RedStone feed"
+                }
+              ],
+              "text": "Oracle price update: RedStone feed"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -362,13 +1562,31 @@
                 "address": "9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The account submitting the price refresh, usually the site's own keeper rather than you.",
-            "label": "Oracle price update: Refreshed by",
+            "help": {
+              "id": "DoVEsk76QybCEHQGzkvYPWLQu9gzNoZZZt3TPiL597e/glossary-refreshed_by",
+              "parts": [
+                {
+                  "text": "The account submitting the price refresh, usually the site's own keeper rather than you."
+                }
+              ],
+              "text": "The account submitting the price refresh, usually the site's own keeper rather than you."
+            },
+            "label": {
+              "id": "explain-housekeeping-label",
+              "parts": [
+                {
+                  "text": "Oracle price update: Refreshed by"
+                }
+              ],
+              "text": "Oracle price update: Refreshed by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -376,7 +1594,9 @@
                 "address": "Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -385,28 +1605,115 @@
           "type": "housekeeping"
         },
         "subtitle": null,
-        "title": "Also"
+        "title": {
+          "id": "explain-also",
+          "parts": [
+            {
+              "text": "Also"
+            }
+          ],
+          "text": "Also"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "B47hRAiBKyRz68vUwwzbBvVv7YfG14FfVZUuxijeEXoo",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "B47hRAiBKyRz68vUwwzbBvVv7YfG14FfVZUuxijeEXoo",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "B47h…EXoo"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (B47h…EXoo)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Signer",
+            "help": {
+              "id": "label-signer.help",
+              "parts": [
+                {
+                  "text": "An account whose signature the transaction needs besides the fee payer."
+                }
+              ],
+              "text": "An account whose signature the transaction needs besides the fee payer."
+            },
+            "label": {
+              "id": "label-signer",
+              "parts": [
+                {
+                  "text": "Signer"
+                }
+              ],
+              "text": "Signer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -414,13 +1721,31 @@
                 "address": "Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": null,
-            "label": "Signer",
+            "help": {
+              "id": "label-signer.help",
+              "parts": [
+                {
+                  "text": "An account whose signature the transaction needs besides the fee payer."
+                }
+              ],
+              "text": "An account whose signature the transaction needs besides the fee payer."
+            },
+            "label": {
+              "id": "label-signer",
+              "parts": [
+                {
+                  "text": "Signer"
+                }
+              ],
+              "text": "Signer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -428,7 +1753,9 @@
                 "address": "perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -437,75 +1764,209 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "31944"
+                "note_words": null,
+                "units": "31944",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000031944 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000031944 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "15000"
+                "note_words": null,
+                "units": "15000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000015 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000015 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority",
+            "help": {
+              "id": "label-priority.help",
+              "parts": [
+                {
+                  "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+                }
+              ],
+              "text": "A tip the site added so validators take the transaction sooner. It is optional, and it is yours to pay."
+            },
+            "label": {
+              "id": "label-priority",
+              "parts": [
+                {
+                  "text": "Priority"
+                }
+              ],
+              "text": "Priority"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "16944"
+                "note_words": null,
+                "units": "16944",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000016944 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000016944 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Priority basis",
+            "help": {
+              "id": "label-priority-basis.help",
+              "parts": [
+                {
+                  "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+                }
+              ],
+              "text": "How the tip was computed: the price per unit of work, times the work the transaction asked to be allowed."
+            },
+            "label": {
+              "id": "label-priority-basis",
+              "parts": [
+                {
+                  "text": "Priority basis"
+                }
+              ],
+              "text": "Priority basis"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "100000 micro-lamports per unit × 169439 units requested"
+              "type": "words",
+              "value": {
+                "id": "explain-priority-basis",
+                "parts": [
+                  {
+                    "text": "100,000 micro-lamports per compute unit × 169,439 compute units requested"
+                  }
+                ],
+                "text": "100,000 micro-lamports per compute unit × 169,439 compute units requested"
+              }
             }
           }
         ],
@@ -513,18 +1974,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -532,11 +2025,130 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "Increase a short Jupiter Perps position by 99.28661 USD with 10 USDC (verified) collateral, price limit 117.417238 USD",
-    "text": "Increase a short Jupiter Perps position by 99.28661 USD with 10 USDC (verified) collateral, price limit 117.417238 USD\nOK\n\n== Increase position | Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)\n  Side: short (verified)\n  Size added: 99.28661 USD\n  Collateral added: 10 USDC (verified)\n  Price limit: 117.417238 USD\n  Position: Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7\n  Market custody: 7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz\n  Collateral custody: G18jKKXQwBbrHeiK3C9MRXhkHsLHf7XgCSisykV46EZa\n  From account: Your USDC account (6kMc…aeWh) (verified)\n  Request time: unix time 1791360003\n\n== Also [collapsed]\n  Compute unit limit: 169439\n  Compute unit price: 100000 micro-lamports per unit\n  Ed25519 signature check: Signer 1: in instruction 3's data\n  Ed25519 signature check: Message 1: 50 bytes in instruction 3\n  Oracle price update: Signed message: 0xb9011a823f0c63567a347568663a6abdd5b71f097eda246b4684ac24558938d5f2e9f3ade428595dee2671d810cc52e669190adae0e34b492ee476e97ca52349a50d610180efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c320075d3c793c09ad5803b5d06000301060000000400f63aeec20200000004f8ff0577482f00000000000c01c09ad5803b5d0600\n  Oracle price update: Ed25519 instruction: 2\n  Oracle price update: Signature index: 0\n  Oracle price update: Fails the transaction on a stale price: no\n  Oracle price update: Posted by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Oracle price update: Pyth Lazer treasury: Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak\n  Oracle price update: Additional accounts: 1, not named by this descriptor\n  Oracle price update: Aggregated feed: FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh\n  Oracle price update: Pyth Lazer feed: A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe\n  Oracle price update: Chainlink feed: FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78\n  Oracle price update: RedStone feed: 9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3\n  Oracle price update: Refreshed by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n\n== Signers\n  Fee payer: Your wallet (B47h…EXoo) (verified)\n  Signer: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Signer: perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx\n\n== Fee\n  Total: 0.000031944 SOL\n  Base: 0.000015 SOL\n  Priority: 0.000016944 SOL\n  Priority basis: 100000 micro-lamports per unit × 169439 units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 10 USDC (verified) from Your wallet (B47h…EXoo) (verified) to Jupiter Perpetuals (PERP…qQJu) (verified)\n  - the Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts\n  - Your wallet (B47h…EXoo) (verified) pays a fee of 0.000031944 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana v0 (740 bytes)\n  digest: d0087cca71abd54a22c5db1d720741b8bbf189adf249020816c4c9f63f4f64a5\n",
+    "summary": {
+      "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/instant_increase_position-summary-some",
+      "parts": [
+        {
+          "text": "Increase a "
+        },
+        {
+          "text": "short",
+          "value": {
+            "type": "words",
+            "value": {
+              "id": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu/enum-side-short",
+              "parts": [
+                {
+                  "text": "short"
+                }
+              ],
+              "text": "short"
+            }
+          }
+        },
+        {
+          "text": " Jupiter Perps position by "
+        },
+        {
+          "text": "99.28661 USD",
+          "value": {
+            "type": "words",
+            "value": {
+              "id": "descriptor-number-unit",
+              "parts": [
+                {
+                  "text": "99.28661 "
+                },
+                {
+                  "text": "USD",
+                  "value": {
+                    "type": "text",
+                    "value": "USD"
+                  }
+                }
+              ],
+              "text": "99.28661 USD"
+            }
+          }
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "10 USDC",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 6,
+                "description": null,
+                "id": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "symbol": "USDC",
+                "trust": "verified"
+              },
+              "bound": "exact",
+              "note": null,
+              "note_words": null,
+              "units": "10000000",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "10 "
+                  },
+                  {
+                    "text": "USDC",
+                    "value": {
+                      "type": "text",
+                      "value": "USDC"
+                    }
+                  }
+                ],
+                "text": "10 USDC"
+              }
+            }
+          }
+        },
+        {
+          "text": " collateral, price limit "
+        },
+        {
+          "text": "117.417238 USD",
+          "value": {
+            "type": "words",
+            "value": {
+              "id": "descriptor-number-unit",
+              "parts": [
+                {
+                  "text": "117.417238 "
+                },
+                {
+                  "text": "USD",
+                  "value": {
+                    "type": "text",
+                    "value": "USD"
+                  }
+                }
+              ],
+              "text": "117.417238 USD"
+            }
+          }
+        }
+      ],
+      "text": "Increase a short Jupiter Perps position by 99.28661 USD with 10 USDC collateral, price limit 117.417238 USD"
+    },
+    "text": "Increase a short Jupiter Perps position by 99.28661 USD with 10 USDC collateral, price limit 117.417238 USD\nOK\n\n== Increase position | Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)\n  Side: short\n  Size added: 99.28661 USD\n  Collateral added: 10 USDC\n  Price limit: 117.417238 USD\n  Position: Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7\n  Market custody: 7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz\n  Collateral custody: G18jKKXQwBbrHeiK3C9MRXhkHsLHf7XgCSisykV46EZa\n  From account: Your USDC account (6kMc…aeWh)\n  Request time: 2026-10-07 08:00:03 UTC\n\n== Also [collapsed]\n  Compute unit limit: 169439\n  Compute unit price: 100,000 micro-lamports per compute unit\n  Ed25519 signature check: Signer 1: in instruction 4's data\n  Ed25519 signature check: Message 1: 50 bytes in instruction 4\n  Oracle price update: Signed message: 0xb9011a823f0c63567a347568663a6abdd5b71f097eda246b4684ac24558938d5f2e9f3ade428595dee2671d810cc52e669190adae0e34b492ee476e97ca52349a50d610180efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c320075d3c793c09ad5803b5d06000301060000000400f63aeec20200000004f8ff0577482f00000000000c01c09ad5803b5d0600\n  Oracle price update: Ed25519 instruction: 2\n  Oracle price update: Signature index: 0\n  Oracle price update: Fails the transaction on a stale price: no\n  Oracle price update: Posted by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Oracle price update: Pyth Lazer treasury: Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak\n  Oracle price update: Additional accounts: 1, not named by this descriptor\n  Oracle price update: Aggregated feed: FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh\n  Oracle price update: Pyth Lazer feed: A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe\n  Oracle price update: Chainlink feed: FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78\n  Oracle price update: RedStone feed: 9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3\n  Oracle price update: Refreshed by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n\n== Signers\n  Fee payer: Your wallet (B47h…EXoo)\n  Signer: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Signer: perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx\n\n== Fee\n  Total: 0.000031944 SOL\n  Base: 0.000015 SOL\n  Priority: 0.000016944 SOL\n  Priority basis: 100,000 micro-lamports per compute unit × 169,439 compute units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 10 USDC from Your wallet (B47h…EXoo) to Jupiter Perpetuals (PERP…qQJu)\n  - The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts\n  - You pay a fee of 0.000031944 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (740 bytes)\n  digest: d0087cca71abd54a22c5db1d720741b8bbf189adf249020816c4c9f63f4f64a5\n",
     "verdict": "ok"
   }
 }

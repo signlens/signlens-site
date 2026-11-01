@@ -1,60 +1,431 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 0,
+        "summary": {
+          "id": "system-send-summary",
+          "parts": [
+            {
+              "text": "Send "
+            },
+            {
+              "text": "0.1 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "100000000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.1 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.1 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "short": {
+                "address": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "6Q6w…ni4j"
+            }
+          ],
+          "text": "Send 0.1 SOL to 6Q6w…ni4j"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "0.1 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "100000000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.1 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.1 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (BqHR…Tx9A)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "BqHR…Tx9A"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (BqHR…Tx9A)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            }
+          ],
+          "text": "You send 0.1 SOL from Your wallet (BqHR…Tx9A) to 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "100000000"
+            "note_words": null,
+            "units": "100000000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.1 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.1 SOL"
+            }
           },
           "from": {
             "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "BqHR…Tx9A"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (BqHR…Tx9A)"
+            }
           },
           "to": {
             "address": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.000005 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "5000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.000005 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.000005 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.000005 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "5000"
+            "note_words": null,
+            "units": "5000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.000005 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.000005 SOL"
+            }
           },
           "payer": {
             "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "BqHR…Tx9A"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (BqHR…Tx9A)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -65,55 +436,200 @@
       {
         "code": "LOOKALIKE_ADDRESS",
         "instruction": null,
-        "message": "The recipient 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j looks like Bob (6Q6w…ni4j) but is a different address: only its first and last characters match",
+        "message": {
+          "id": "explain-lookalike",
+          "parts": [
+            {
+              "text": "The recipient "
+            },
+            {
+              "text": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": " looks like "
+            },
+            {
+              "text": "Bob",
+              "value": {
+                "type": "text",
+                "value": "Bob"
+              }
+            },
+            {
+              "text": " ("
+            },
+            {
+              "short": {
+                "address": "6Q6wVYukhaZ3wAFzZjNWmuY3zeoykvuQRbs1X2Bvni4j",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "6Q6w…ni4j"
+            },
+            {
+              "text": ") but is a different address: only its first and last characters match"
+            }
+          ],
+          "text": "The recipient 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j looks like Bob (6Q6w…ni4j) but is a different address: only its first and last characters match"
+        },
         "severity": "high"
       }
     ],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "e156c38f1c1e3a4e65155ab6927dc8775f06295d13bcf0f20e2190d4b1498d68",
       "format": "solana legacy"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
             "help": null,
-            "label": "Amount",
+            "label": {
+              "id": "label-amount",
+              "parts": [
+                {
+                  "text": "Amount"
+                }
+              ],
+              "text": "Amount"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "100000000"
+                "note_words": null,
+                "units": "100000000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.1 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.1 SOL"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "From",
+            "label": {
+              "id": "label-from",
+              "parts": [
+                {
+                  "text": "From"
+                }
+              ],
+              "text": "From"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "BqHR…Tx9A"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (BqHR…Tx9A)"
+                }
               }
             }
           },
           {
             "help": null,
-            "label": "To",
+            "label": {
+              "id": "label-to",
+              "parts": [
+                {
+                  "text": "To"
+                }
+              ],
+              "text": "To"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -121,7 +637,9 @@
                 "address": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -132,23 +650,106 @@
             "index": 0
           }
         },
-        "subtitle": "System program (verified)",
-        "title": "Transfer"
+        "subtitle": {
+          "id": "decode-program-verified",
+          "parts": [
+            {
+              "text": "System program",
+              "value": {
+                "type": "text",
+                "value": "System program"
+              }
+            }
+          ],
+          "text": "System program"
+        },
+        "title": {
+          "id": "system-transfer-title",
+          "parts": [
+            {
+              "text": "Transfer"
+            }
+          ],
+          "text": "Transfer"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "BqHRmuFYxr8jCPc3N7ebMfnJJKYcSnoaqknXQ2x1Tx9A",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "BqHR…Tx9A"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (BqHR…Tx9A)"
+                }
               }
             }
           }
@@ -157,46 +758,122 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "5000"
+                "note_words": null,
+                "units": "5000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.000005 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.000005 SOL"
+                }
               }
             }
           }
@@ -205,18 +882,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -224,11 +933,76 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "Send 0.1 SOL to 6Q6w…ni4j",
-    "text": "Send 0.1 SOL to 6Q6w…ni4j\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] The recipient 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j looks like Bob (6Q6w…ni4j) but is a different address: only its first and last characters match\n\n== Transfer | System program (verified)\n  Amount: 0.1 SOL\n  From: Your wallet (BqHR…Tx9A) (verified)\n  To: 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j\n\n== Signers\n  Fee payer: Your wallet (BqHR…Tx9A) (verified)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - send 0.1 SOL from Your wallet (BqHR…Tx9A) (verified) to 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j\n  - Your wallet (BqHR…Tx9A) (verified) pays a fee of 0.000005 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (150 bytes)\n  digest: e156c38f1c1e3a4e65155ab6927dc8775f06295d13bcf0f20e2190d4b1498d68\n",
+    "summary": {
+      "id": "system-send-summary",
+      "parts": [
+        {
+          "text": "Send "
+        },
+        {
+          "text": "0.1 SOL",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 9,
+                "description": null,
+                "id": "native",
+                "symbol": "SOL",
+                "trust": "fact"
+              },
+              "bound": "exact",
+              "note": null,
+              "note_words": null,
+              "units": "100000000",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "0.1 "
+                  },
+                  {
+                    "text": "SOL",
+                    "value": {
+                      "type": "text",
+                      "value": "SOL"
+                    }
+                  }
+                ],
+                "text": "0.1 SOL"
+              }
+            }
+          }
+        },
+        {
+          "text": " to "
+        },
+        {
+          "short": {
+            "address": "6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "text": "6Q6w…ni4j"
+        }
+      ],
+      "text": "Send 0.1 SOL to 6Q6w…ni4j"
+    },
+    "text": "Send 0.1 SOL to 6Q6w…ni4j\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] The recipient 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j looks like Bob (6Q6w…ni4j) but is a different address: only its first and last characters match\n\n== Transfer | System program\n  Amount: 0.1 SOL\n  From: Your wallet (BqHR…Tx9A)\n  To: 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j\n\n== Signers\n  Fee payer: Your wallet (BqHR…Tx9A)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 0.1 SOL from Your wallet (BqHR…Tx9A) to 6Q6w5TbVR788jYjwqn6bNncWZLCoogXgP5VTQiaPni4j\n  - You pay a fee of 0.000005 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (150 bytes)\n  digest: e156c38f1c1e3a4e65155ab6927dc8775f06295d13bcf0f20e2190d4b1498d68\n",
     "verdict": "warn"
   }
 }

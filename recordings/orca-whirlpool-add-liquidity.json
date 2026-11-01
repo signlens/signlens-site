@@ -1,171 +1,1579 @@
 {
-  "recorded": "2026-10-25",
-  "engine": "the SignLens engine 0.1.0",
+  "recorded": "2026-11-01",
+  "engine": "the SignLens engine 0.3.0",
   "explanation": {
+    "actions": [
+      {
+        "instruction": 0,
+        "summary": {
+          "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-summary",
+          "parts": [
+            {
+              "text": "Open an Orca Whirlpool position from tick "
+            },
+            {
+              "text": "-54248",
+              "value": {
+                "type": "text",
+                "value": "-54248"
+              }
+            },
+            {
+              "text": " to tick "
+            },
+            {
+              "text": "-54240",
+              "value": {
+                "type": "text",
+                "value": "-54240"
+              }
+            }
+          ],
+          "text": "Open an Orca Whirlpool position from tick -54248 to tick -54240"
+        }
+      },
+      {
+        "instruction": 1,
+        "summary": {
+          "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-summary",
+          "parts": [
+            {
+              "text": "Add "
+            },
+            {
+              "text": "≤ 2.0004 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "So11111111111111111111111111111111111111112",
+                    "symbol": "SOL",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "2000400000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 2.0004 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "≤ 2.0004 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " and "
+            },
+            {
+              "text": "≤ 0.0019912 ETH",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 8,
+                    "description": null,
+                    "id": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                    "symbol": "ETH",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "199120",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 0.0019912 "
+                      },
+                      {
+                        "text": "ETH",
+                        "value": {
+                          "type": "text",
+                          "value": "ETH"
+                        }
+                      }
+                    ],
+                    "text": "≤ 0.0019912 ETH"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to an Orca Whirlpool position"
+            }
+          ],
+          "text": "Add ≤ 2.0004 SOL and ≤ 0.0019912 ETH to an Orca Whirlpool position"
+        }
+      }
+    ],
     "chain": "solana",
     "effects": [
       {
+        "message": {
+          "id": "effect-create",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Token-2022 program (Toke…xuEb)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Token-2022 program",
+                        "value": {
+                          "type": "text",
+                          "value": "Token-2022 program"
+                        }
+                      }
+                    ],
+                    "text": "Token-2022 program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Token-2022 program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Token-2022 program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Token-2022 program"
+                                }
+                              }
+                            ],
+                            "text": "Token-2022 program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Toke…xuEb"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Token-2022 program (Toke…xuEb)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a, managed by Token-2022 program (Toke…xuEb)"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": null,
           "if_missing": false,
           "owner": {
             "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
             "is_self": false,
-            "label": "Token-2022 program",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Token-2022 program",
+                  "value": {
+                    "type": "text",
+                    "value": "Token-2022 program"
+                  }
+                }
+              ],
+              "text": "Token-2022 program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Token-2022 program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Token-2022 program",
+                          "value": {
+                            "type": "text",
+                            "value": "Token-2022 program"
+                          }
+                        }
+                      ],
+                      "text": "Token-2022 program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Toke…xuEb"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Token-2022 program (Toke…xuEb)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Token-2022 program (Toke…xuEb)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Token-2022 program",
+                        "value": {
+                          "type": "text",
+                          "value": "Token-2022 program"
+                        }
+                      }
+                    ],
+                    "text": "Token-2022 program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Token-2022 program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Token-2022 program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Token-2022 program"
+                                }
+                              }
+                            ],
+                            "text": "Token-2022 program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Toke…xuEb"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Token-2022 program (Toke…xuEb)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00151384 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1513840",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00151384 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00151384 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7, managed by Token-2022 program (Toke…xuEb), depositing 0.00151384 SOL"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "1513840"
+            "note_words": null,
+            "units": "1513840",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00151384 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00151384 SOL"
+            }
           },
           "if_missing": false,
           "owner": {
             "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
             "is_self": false,
-            "label": "Token-2022 program",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Token-2022 program",
+                  "value": {
+                    "type": "text",
+                    "value": "Token-2022 program"
+                  }
+                }
+              ],
+              "text": "Token-2022 program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Token-2022 program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Token-2022 program",
+                          "value": {
+                            "type": "text",
+                            "value": "Token-2022 program"
+                          }
+                        }
+                      ],
+                      "text": "Token-2022 program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Toke…xuEb"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Token-2022 program (Toke…xuEb)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Orca Whirlpool (whir…tyCc)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Orca Whirlpool",
+                        "value": {
+                          "type": "text",
+                          "value": "Orca Whirlpool"
+                        }
+                      }
+                    ],
+                    "text": "Orca Whirlpool"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Orca Whirlpool",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Orca Whirlpool",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Orca Whirlpool"
+                                }
+                              }
+                            ],
+                            "text": "Orca Whirlpool"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "whir…tyCc"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Orca Whirlpool (whir…tyCc)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00174752 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1747520",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00174752 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00174752 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu, managed by Orca Whirlpool (whir…tyCc), depositing 0.00174752 SOL"
+        },
         "type": "create",
         "value": {
           "account": {
             "address": "CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu",
             "is_self": false,
             "label": null,
-            "label_trust": "fact"
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
           },
           "deposit": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "1747520"
+            "note_words": null,
+            "units": "1747520",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00174752 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00174752 SOL"
+            }
           },
           "if_missing": false,
           "owner": {
             "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
             "is_self": false,
-            "label": "Orca Whirlpool",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Orca Whirlpool",
+                  "value": {
+                    "type": "text",
+                    "value": "Orca Whirlpool"
+                  }
+                }
+              ],
+              "text": "Orca Whirlpool"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Orca Whirlpool",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Orca Whirlpool",
+                          "value": {
+                            "type": "text",
+                            "value": "Orca Whirlpool"
+                          }
+                        }
+                      ],
+                      "text": "Orca Whirlpool"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "whir…tyCc"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Orca Whirlpool (whir…tyCc)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-effects-other",
+          "parts": [
+            {
+              "text": "Create an empty position and mint its NFT, the only claim on the liquidity later added to it, to the position NFT owner"
+            }
+          ],
+          "text": "Create an empty position and mint its NFT, the only claim on the liquidity later added to it, to the position NFT owner"
+        },
         "type": "other",
         "value": {
-          "description": "creates an empty position and mints its NFT, the only claim on the liquidity later added to it, to the position NFT owner"
+          "description": {
+            "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-effects-other",
+            "parts": [
+              {
+                "text": "Create an empty position and mint its NFT, the only claim on the liquidity later added to it, to the position NFT owner"
+              }
+            ],
+            "text": "Create an empty position and mint its NFT, the only claim on the liquidity later added to it, to the position NFT owner"
+          }
         }
       },
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "≤ 2.0004 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "So11111111111111111111111111111111111111112",
+                    "symbol": "SOL",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "2000400000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 2.0004 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "≤ 2.0004 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (EyLF…1dh9)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "EyLF…1dh9"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (EyLF…1dh9)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Orca Whirlpool (whir…tyCc)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Orca Whirlpool",
+                        "value": {
+                          "type": "text",
+                          "value": "Orca Whirlpool"
+                        }
+                      }
+                    ],
+                    "text": "Orca Whirlpool"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Orca Whirlpool",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Orca Whirlpool",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Orca Whirlpool"
+                                }
+                              }
+                            ],
+                            "text": "Orca Whirlpool"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "whir…tyCc"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Orca Whirlpool (whir…tyCc)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send ≤ 2.0004 SOL from Your wallet (EyLF…1dh9) to Orca Whirlpool (whir…tyCc)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "So11111111111111111111111111111111111111112",
               "symbol": "SOL",
               "trust": "verified"
             },
             "bound": "at_most",
             "note": null,
-            "units": "2000400000"
+            "note_words": null,
+            "units": "2000400000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "≤ 2.0004 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "≤ 2.0004 SOL"
+            }
           },
           "from": {
             "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "EyLF…1dh9"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (EyLF…1dh9)"
+            }
           },
           "to": {
             "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
             "is_self": false,
-            "label": "Orca Whirlpool",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Orca Whirlpool",
+                  "value": {
+                    "type": "text",
+                    "value": "Orca Whirlpool"
+                  }
+                }
+              ],
+              "text": "Orca Whirlpool"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Orca Whirlpool",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Orca Whirlpool",
+                          "value": {
+                            "type": "text",
+                            "value": "Orca Whirlpool"
+                          }
+                        }
+                      ],
+                      "text": "Orca Whirlpool"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "whir…tyCc"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Orca Whirlpool (whir…tyCc)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-send",
+          "parts": [
+            {
+              "text": "You send "
+            },
+            {
+              "text": "≤ 0.0019912 ETH",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 8,
+                    "description": null,
+                    "id": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                    "symbol": "ETH",
+                    "trust": "verified"
+                  },
+                  "bound": "at_most",
+                  "note": null,
+                  "note_words": null,
+                  "units": "199120",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "≤ 0.0019912 "
+                      },
+                      {
+                        "text": "ETH",
+                        "value": {
+                          "type": "text",
+                          "value": "ETH"
+                        }
+                      }
+                    ],
+                    "text": "≤ 0.0019912 ETH"
+                  }
+                }
+              }
+            },
+            {
+              "text": " from "
+            },
+            {
+              "text": "Your wallet (EyLF…1dh9)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-wallet",
+                    "parts": [
+                      {
+                        "text": "Your wallet"
+                      }
+                    ],
+                    "text": "Your wallet"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your wallet",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-wallet",
+                            "parts": [
+                              {
+                                "text": "Your wallet"
+                              }
+                            ],
+                            "text": "Your wallet"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "EyLF…1dh9"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your wallet (EyLF…1dh9)"
+                  }
+                }
+              }
+            },
+            {
+              "text": " to "
+            },
+            {
+              "text": "Orca Whirlpool (whir…tyCc)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Orca Whirlpool",
+                        "value": {
+                          "type": "text",
+                          "value": "Orca Whirlpool"
+                        }
+                      }
+                    ],
+                    "text": "Orca Whirlpool"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Orca Whirlpool",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Orca Whirlpool",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Orca Whirlpool"
+                                }
+                              }
+                            ],
+                            "text": "Orca Whirlpool"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "whir…tyCc"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Orca Whirlpool (whir…tyCc)"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You send ≤ 0.0019912 ETH from Your wallet (EyLF…1dh9) to Orca Whirlpool (whir…tyCc)"
+        },
         "type": "transfer",
         "value": {
           "amount": {
             "asset": {
               "decimals": 8,
+              "description": null,
               "id": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
               "symbol": "ETH",
               "trust": "verified"
             },
             "bound": "at_most",
             "note": null,
-            "units": "199120"
+            "note_words": null,
+            "units": "199120",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "≤ 0.0019912 "
+                },
+                {
+                  "text": "ETH",
+                  "value": {
+                    "type": "text",
+                    "value": "ETH"
+                  }
+                }
+              ],
+              "text": "≤ 0.0019912 ETH"
+            }
           },
           "from": {
             "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "EyLF…1dh9"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (EyLF…1dh9)"
+            }
           },
           "to": {
             "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
             "is_self": false,
-            "label": "Orca Whirlpool",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Orca Whirlpool",
+                  "value": {
+                    "type": "text",
+                    "value": "Orca Whirlpool"
+                  }
+                }
+              ],
+              "text": "Orca Whirlpool"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Orca Whirlpool",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Orca Whirlpool",
+                          "value": {
+                            "type": "text",
+                            "value": "Orca Whirlpool"
+                          }
+                        }
+                      ],
+                      "text": "Orca Whirlpool"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "whir…tyCc"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Orca Whirlpool (whir…tyCc)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-fee-own",
+          "parts": [
+            {
+              "text": "You pay a fee of "
+            },
+            {
+              "text": "0.00001 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "10000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00001 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00001 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "You pay a fee of 0.00001 SOL"
+        },
         "type": "fee",
         "value": {
           "amount": {
             "asset": {
               "decimals": 9,
+              "description": null,
               "id": "native",
               "symbol": "SOL",
               "trust": "fact"
             },
             "bound": "exact",
             "note": null,
-            "units": "10000"
+            "note_words": null,
+            "units": "10000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00001 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00001 SOL"
+            }
           },
           "payer": {
             "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
             "is_self": true,
-            "label": "Your wallet",
-            "label_trust": "verified"
+            "label": {
+              "id": "accounts-your-wallet",
+              "parts": [
+                {
+                  "text": "Your wallet"
+                }
+              ],
+              "text": "Your wallet"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your wallet",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-wallet",
+                      "parts": [
+                        {
+                          "text": "Your wallet"
+                        }
+                      ],
+                      "text": "Your wallet"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "EyLF…1dh9"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your wallet (EyLF…1dh9)"
+            }
           }
         }
       },
       {
+        "message": {
+          "id": "effect-recent-blockhash",
+          "parts": [
+            {
+              "text": "Valid for about a minute (recent blockhash)"
+            }
+          ],
+          "text": "Valid for about a minute (recent blockhash)"
+        },
         "type": "lifetime",
         "value": {
           "type": "recent_blockhash"
@@ -173,18 +1581,41 @@
       }
     ],
     "findings": [],
+    "locale": {
+      "asked": [],
+      "direction": "ltr",
+      "fallbacks": 0,
+      "review": null,
+      "used": "en"
+    },
     "raw": {
       "digest": "260480de9df69125dff4b64fc85e71d8f956728e15842be4a2a42c214d72e92e",
       "format": "solana legacy"
     },
-    "schema": "signlens-explanation/1",
+    "schema": "signlens-explanation/2",
     "sections": [
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "The bottom of the price range the position provides liquidity in, as the pool's tick index rather than a price.",
-            "label": "Lower tick",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-lower_tick",
+              "parts": [
+                {
+                  "text": "The bottom of the price range the position provides liquidity in, as the pool's tick index rather than a price."
+                }
+              ],
+              "text": "The bottom of the price range the position provides liquidity in, as the pool's tick index rather than a price."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-fields-args_tick_lower_index",
+              "parts": [
+                {
+                  "text": "Lower tick"
+                }
+              ],
+              "text": "Lower tick"
+            },
             "trust": "fact",
             "value": {
               "type": "text",
@@ -192,8 +1623,24 @@
             }
           },
           {
-            "help": "The top of the price range the position provides liquidity in, as the pool's tick index rather than a price.",
-            "label": "Upper tick",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-upper_tick",
+              "parts": [
+                {
+                  "text": "The top of the price range the position provides liquidity in, as the pool's tick index rather than a price."
+                }
+              ],
+              "text": "The top of the price range the position provides liquidity in, as the pool's tick index rather than a price."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-fields-args_tick_upper_index",
+              "parts": [
+                {
+                  "text": "Upper tick"
+                }
+              ],
+              "text": "Upper tick"
+            },
             "trust": "fact",
             "value": {
               "type": "text",
@@ -201,8 +1648,24 @@
             }
           },
           {
-            "help": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them.",
-            "label": "Pool",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-pool",
+              "parts": [
+                {
+                  "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+                }
+              ],
+              "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-fields-accounts_whirlpool",
+              "parts": [
+                {
+                  "text": "Pool"
+                }
+              ],
+              "text": "Pool"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -210,27 +1673,108 @@
                 "address": "HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "The wallet that will hold the position NFT, and so control the position.",
-            "label": "Position NFT goes to",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-position_nft_goes_to",
+              "parts": [
+                {
+                  "text": "The wallet that will hold the position NFT, and so control the position."
+                }
+              ],
+              "text": "The wallet that will hold the position NFT, and so control the position."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-fields-accounts_owner",
+              "parts": [
+                {
+                  "text": "Position NFT goes to"
+                }
+              ],
+              "text": "Position NFT goes to"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "EyLF…1dh9"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (EyLF…1dh9)"
+                }
               }
             }
           },
           {
-            "help": "The token that proves ownership of the position. Whoever holds it controls the position.",
-            "label": "Position NFT",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-position_nft",
+              "parts": [
+                {
+                  "text": "The token that proves ownership of the position. Whoever holds it controls the position."
+                }
+              ],
+              "text": "The token that proves ownership of the position. Whoever holds it controls the position."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-fields-accounts_position_mint",
+              "parts": [
+                {
+                  "text": "Position NFT"
+                }
+              ],
+              "text": "Position NFT"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -238,21 +1782,86 @@
                 "address": "3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "Who pays the small deposit that keeps a new account alive on chain. It comes back when the account is closed.",
-            "label": "Rent paid by",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-rent_paid_by",
+              "parts": [
+                {
+                  "text": "Who pays the small deposit that keeps a new account alive on chain. It comes back when the account is closed."
+                }
+              ],
+              "text": "Who pays the small deposit that keeps a new account alive on chain. It comes back when the account is closed."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-fields-accounts_funder",
+              "parts": [
+                {
+                  "text": "Rent paid by"
+                }
+              ],
+              "text": "Rent paid by"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "EyLF…1dh9"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (EyLF…1dh9)"
+                }
               }
             }
           }
@@ -263,53 +1872,184 @@
             "index": 0
           }
         },
-        "subtitle": "Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)",
-        "title": "Open position"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Orca Whirlpool",
+              "value": {
+                "type": "text",
+                "value": "Orca Whirlpool"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-09-28",
+              "value": {
+                "type": "text",
+                "value": "2026-09-28"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "GwH3Hiv5mACLX3ufTw1pFsrhSPon5tdw252DBs4Rx4PV",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "GwH3…x4PV"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)"
+        },
+        "title": {
+          "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-intent",
+          "parts": [
+            {
+              "text": "Open position"
+            }
+          ],
+          "text": "Open position"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": "What you put in for liquidity, at most. The pool takes the amounts its current price allows.",
-            "label": "Deposit",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-deposit",
+              "parts": [
+                {
+                  "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+                }
+              ],
+              "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-fields-derived_max_a",
+              "parts": [
+                {
+                  "text": "Deposit"
+                }
+              ],
+              "text": "Deposit"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "So11111111111111111111111111111111111111112",
                   "symbol": "SOL",
                   "trust": "verified"
                 },
                 "bound": "at_most",
                 "note": null,
-                "units": "2000400000"
+                "note_words": null,
+                "units": "2000400000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "≤ 2.0004 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "≤ 2.0004 SOL"
+                }
               }
             }
           },
           {
-            "help": "What you put in for liquidity, at most. The pool takes the amounts its current price allows.",
-            "label": "Deposit",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-deposit",
+              "parts": [
+                {
+                  "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+                }
+              ],
+              "text": "What you put in for liquidity, at most. The pool takes the amounts its current price allows."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-fields-derived_max_b",
+              "parts": [
+                {
+                  "text": "Deposit"
+                }
+              ],
+              "text": "Deposit"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 8,
+                  "description": null,
                   "id": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
                   "symbol": "ETH",
                   "trust": "verified"
                 },
                 "bound": "at_most",
                 "note": null,
-                "units": "199120"
+                "note_words": null,
+                "units": "199120",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "≤ 0.0019912 "
+                    },
+                    {
+                      "text": "ETH",
+                      "value": {
+                        "type": "text",
+                        "value": "ETH"
+                      }
+                    }
+                  ],
+                  "text": "≤ 0.0019912 ETH"
+                }
               }
             }
           },
           {
-            "help": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them.",
-            "label": "Pool",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-pool",
+              "parts": [
+                {
+                  "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+                }
+              ],
+              "text": "The liquidity pool the trade goes through: the reserves of two tokens and the price between them."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-fields-accounts_whirlpool",
+              "parts": [
+                {
+                  "text": "Pool"
+                }
+              ],
+              "text": "Pool"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -317,13 +2057,31 @@
                 "address": "HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "Your liquidity position in the pool: the price range you provide in and what it has earned.",
-            "label": "Position",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-position",
+              "parts": [
+                {
+                  "text": "Your liquidity position in the pool: the price range you provide in and what it has earned."
+                }
+              ],
+              "text": "Your liquidity position in the pool: the price range you provide in and what it has earned."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-fields-accounts_position",
+              "parts": [
+                {
+                  "text": "Position"
+                }
+              ],
+              "text": "Position"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -331,35 +2089,203 @@
                 "address": "CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           },
           {
-            "help": "Your account for the pool's A token.",
-            "label": "From account A",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-from_account_a",
+              "parts": [
+                {
+                  "text": "Your account for the pool's A token."
+                }
+              ],
+              "text": "Your account for the pool's A token."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-fields-accounts_token_owner_account_a",
+              "parts": [
+                {
+                  "text": "From account A"
+                }
+              ],
+              "text": "From account A"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "5iyQtYSjkmqMJt8eFyr6Fd6sHgTVzkKiKiBKUmeFokUb",
                 "is_self": true,
-                "label": "Your SOL account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your SOL account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your SOL account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your SOL account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "5iyQtYSjkmqMJt8eFyr6Fd6sHgTVzkKiKiBKUmeFokUb",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "5iyQ…okUb"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your SOL account (5iyQ…okUb)"
+                }
               }
             }
           },
           {
-            "help": "Your account for the pool's B token.",
-            "label": "From account B",
+            "help": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/glossary-from_account_b",
+              "parts": [
+                {
+                  "text": "Your account for the pool's B token."
+                }
+              ],
+              "text": "Your account for the pool's B token."
+            },
+            "label": {
+              "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-fields-accounts_token_owner_account_b",
+              "parts": [
+                {
+                  "text": "From account B"
+                }
+              ],
+              "text": "From account B"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "C2D6yA2gXgBPWGDoALCEqQJpaqr13jAtZuR7o2UHSXph",
                 "is_self": true,
-                "label": "Your ETH account",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-token",
+                  "parts": [
+                    {
+                      "text": "Your "
+                    },
+                    {
+                      "text": "ETH",
+                      "value": {
+                        "type": "text",
+                        "value": "ETH"
+                      }
+                    },
+                    {
+                      "text": " account"
+                    }
+                  ],
+                  "text": "Your ETH account"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your ETH account",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-token",
+                          "parts": [
+                            {
+                              "text": "Your "
+                            },
+                            {
+                              "text": "ETH",
+                              "value": {
+                                "type": "text",
+                                "value": "ETH"
+                              }
+                            },
+                            {
+                              "text": " account"
+                            }
+                          ],
+                          "text": "Your ETH account"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "C2D6yA2gXgBPWGDoALCEqQJpaqr13jAtZuR7o2UHSXph",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "C2D6…SXph"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your ETH account (C2D6…SXph)"
+                }
               }
             }
           }
@@ -370,29 +2296,155 @@
             "index": 1
           }
         },
-        "subtitle": "Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)",
-        "title": "Add liquidity"
+        "subtitle": {
+          "id": "descriptor-subtitle",
+          "parts": [
+            {
+              "text": "Orca Whirlpool",
+              "value": {
+                "type": "text",
+                "value": "Orca Whirlpool"
+              }
+            },
+            {
+              "text": " (descriptor reviewed "
+            },
+            {
+              "text": "2026-09-28",
+              "value": {
+                "type": "text",
+                "value": "2026-09-28"
+              }
+            },
+            {
+              "text": ", upgradeable by "
+            },
+            {
+              "short": {
+                "address": "GwH3Hiv5mACLX3ufTw1pFsrhSPon5tdw252DBs4Rx4PV",
+                "is_self": false,
+                "label": null,
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
+              },
+              "text": "GwH3…x4PV"
+            },
+            {
+              "text": ")"
+            }
+          ],
+          "text": "Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)"
+        },
+        "title": {
+          "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-intent",
+          "parts": [
+            {
+              "text": "Add liquidity"
+            }
+          ],
+          "text": "Add liquidity"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Fee payer",
+            "help": {
+              "id": "label-fee-payer.help",
+              "parts": [
+                {
+                  "text": "The account that pays the fee: the first signer."
+                }
+              ],
+              "text": "The account that pays the fee: the first signer."
+            },
+            "label": {
+              "id": "label-fee-payer",
+              "parts": [
+                {
+                  "text": "Fee payer"
+                }
+              ],
+              "text": "Fee payer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
               "value": {
                 "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
                 "is_self": true,
-                "label": "Your wallet",
-                "label_trust": "verified"
+                "label": {
+                  "id": "accounts-your-wallet",
+                  "parts": [
+                    {
+                      "text": "Your wallet"
+                    }
+                  ],
+                  "text": "Your wallet"
+                },
+                "label_trust": "verified",
+                "stand_in": null,
+                "words": {
+                  "id": "address-labelled",
+                  "parts": [
+                    {
+                      "text": "Your wallet",
+                      "value": {
+                        "type": "words",
+                        "value": {
+                          "id": "accounts-your-wallet",
+                          "parts": [
+                            {
+                              "text": "Your wallet"
+                            }
+                          ],
+                          "text": "Your wallet"
+                        }
+                      }
+                    },
+                    {
+                      "text": " ("
+                    },
+                    {
+                      "short": {
+                        "address": "EyLFF5mo5j8eb73fHMirHiAVomNcyV6BcNo24df81dh9",
+                        "is_self": true,
+                        "label": null,
+                        "label_trust": "verified",
+                        "stand_in": null,
+                        "words": null
+                      },
+                      "text": "EyLF…1dh9"
+                    },
+                    {
+                      "text": ")"
+                    }
+                  ],
+                  "text": "Your wallet (EyLF…1dh9)"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Signer",
+            "help": {
+              "id": "label-signer.help",
+              "parts": [
+                {
+                  "text": "An account whose signature the transaction needs besides the fee payer."
+                }
+              ],
+              "text": "An account whose signature the transaction needs besides the fee payer."
+            },
+            "label": {
+              "id": "label-signer",
+              "parts": [
+                {
+                  "text": "Signer"
+                }
+              ],
+              "text": "Signer"
+            },
             "trust": "fact",
             "value": {
               "type": "address",
@@ -400,7 +2452,9 @@
                 "address": "3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a",
                 "is_self": false,
                 "label": null,
-                "label_trust": "fact"
+                "label_trust": "fact",
+                "stand_in": null,
+                "words": null
               }
             }
           }
@@ -409,56 +2463,201 @@
           "type": "signers"
         },
         "subtitle": null,
-        "title": "Signers"
+        "title": {
+          "id": "explain-signers",
+          "parts": [
+            {
+              "text": "Signers"
+            }
+          ],
+          "text": "Signers"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Total",
+            "help": {
+              "id": "label-total.help",
+              "parts": [
+                {
+                  "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+                }
+              ],
+              "text": "What the network charges for this transaction. The fee payer pays it whether the transaction succeeds or fails."
+            },
+            "label": {
+              "id": "label-total",
+              "parts": [
+                {
+                  "text": "Total"
+                }
+              ],
+              "text": "Total"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "10000"
+                "note_words": null,
+                "units": "10000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00001 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00001 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Base",
+            "help": {
+              "id": "label-base.help",
+              "parts": [
+                {
+                  "text": "The flat part of the fee: the network charges it per signature."
+                }
+              ],
+              "text": "The flat part of the fee: the network charges it per signature."
+            },
+            "label": {
+              "id": "label-base",
+              "parts": [
+                {
+                  "text": "Base"
+                }
+              ],
+              "text": "Base"
+            },
             "trust": "fact",
             "value": {
               "type": "amount",
               "value": {
                 "asset": {
                   "decimals": 9,
+                  "description": null,
                   "id": "native",
                   "symbol": "SOL",
                   "trust": "fact"
                 },
                 "bound": "exact",
                 "note": null,
-                "units": "10000"
+                "note_words": null,
+                "units": "10000",
+                "words": {
+                  "id": "amount",
+                  "parts": [
+                    {
+                      "text": "0.00001 "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    }
+                  ],
+                  "text": "0.00001 SOL"
+                }
               }
             }
           },
           {
-            "help": null,
-            "label": "Rent deposits",
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "0.00326136 SOL, plus 1 account whose size the descriptor does not give; returned when the accounts are closed"
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "0.00326136 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "3261360",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.00326136 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.00326136 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": ", plus the rent of "
+                  },
+                  {
+                    "text": "1",
+                    "value": {
+                      "type": "integer",
+                      "value": "1"
+                    }
+                  },
+                  {
+                    "text": " account of unknown size; refunded to whoever closes the accounts"
+                  }
+                ],
+                "text": "0.00326136 SOL, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts"
+              }
             }
           }
         ],
@@ -466,18 +2665,50 @@
           "type": "fees"
         },
         "subtitle": null,
-        "title": "Fee"
+        "title": {
+          "id": "explain-fee",
+          "parts": [
+            {
+              "text": "Fee"
+            }
+          ],
+          "text": "Fee"
+        }
       },
       {
         "collapsed": false,
         "fields": [
           {
-            "help": null,
-            "label": "Expires",
+            "help": {
+              "id": "label-expires.help",
+              "parts": [
+                {
+                  "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+                }
+              ],
+              "text": "How long the signature can be used. About a minute is normal; a durable nonce keeps it usable until the nonce is advanced."
+            },
+            "label": {
+              "id": "label-expires",
+              "parts": [
+                {
+                  "text": "Expires"
+                }
+              ],
+              "text": "Expires"
+            },
             "trust": "fact",
             "value": {
-              "type": "text",
-              "value": "in about a minute (recent blockhash)"
+              "type": "words",
+              "value": {
+                "id": "explain-expires-soon",
+                "parts": [
+                  {
+                    "text": "in about a minute (recent blockhash)"
+                  }
+                ],
+                "text": "in about a minute (recent blockhash)"
+              }
             }
           }
         ],
@@ -485,11 +2716,130 @@
           "type": "lifetime"
         },
         "subtitle": null,
-        "title": "Validity"
+        "title": {
+          "id": "explain-validity",
+          "parts": [
+            {
+              "text": "Validity"
+            }
+          ],
+          "text": "Validity"
+        }
       }
     ],
-    "summary": "2 actions: Open an Orca Whirlpool position from tick -54248 to tick -54240; Add ≤ 2.0004 SOL (verified) and ≤ 0.0019912 ETH (verified) to an Orca Whirlpool position",
-    "text": "2 actions: Open an Orca Whirlpool position from tick -54248 to tick -54240; Add ≤ 2.0004 SOL (verified) and ≤ 0.0019912 ETH (verified) to an Orca Whirlpool position\nOK\n\n== Open position | Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)\n  Lower tick: -54248\n  Upper tick: -54240\n  Pool: HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF\n  Position NFT goes to: Your wallet (EyLF…1dh9) (verified)\n  Position NFT: 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a\n  Rent paid by: Your wallet (EyLF…1dh9) (verified)\n\n== Add liquidity | Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)\n  Deposit: ≤ 2.0004 SOL (verified)\n  Deposit: ≤ 0.0019912 ETH (verified)\n  Pool: HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF\n  Position: CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu\n  From account A: Your SOL account (5iyQ…okUb) (verified)\n  From account B: Your ETH account (C2D6…SXph) (verified)\n\n== Signers\n  Fee payer: Your wallet (EyLF…1dh9) (verified)\n  Signer: 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a\n\n== Fee\n  Total: 0.00001 SOL\n  Base: 0.00001 SOL\n  Rent deposits: 0.00326136 SOL, plus 1 account whose size the descriptor does not give; returned when the accounts are closed\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - create 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a owned by Token-2022 program (Toke…xuEb) (verified)\n  - create 5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7 owned by Token-2022 program (Toke…xuEb) (verified), depositing 0.00151384 SOL\n  - create CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu owned by Orca Whirlpool (whir…tyCc) (verified), depositing 0.00174752 SOL\n  - creates an empty position and mints its NFT, the only claim on the liquidity later added to it, to the position NFT owner\n  - send ≤ 2.0004 SOL (verified) from Your wallet (EyLF…1dh9) (verified) to Orca Whirlpool (whir…tyCc) (verified)\n  - send ≤ 0.0019912 ETH (verified) from Your wallet (EyLF…1dh9) (verified) to Orca Whirlpool (whir…tyCc) (verified)\n  - Your wallet (EyLF…1dh9) (verified) pays a fee of 0.00001 SOL\n  - valid for about a minute (recent blockhash)\n\nRaw: solana legacy (633 bytes)\n  digest: 260480de9df69125dff4b64fc85e71d8f956728e15842be4a2a42c214d72e92e\n",
+    "summary": {
+      "id": "explain-actions",
+      "parts": [
+        {
+          "text": "2",
+          "value": {
+            "type": "integer",
+            "value": "2"
+          }
+        },
+        {
+          "text": " actions: Open an Orca Whirlpool position from tick "
+        },
+        {
+          "text": "-54248",
+          "value": {
+            "type": "text",
+            "value": "-54248"
+          }
+        },
+        {
+          "text": " to tick "
+        },
+        {
+          "text": "-54240",
+          "value": {
+            "type": "text",
+            "value": "-54240"
+          }
+        },
+        {
+          "text": "; Add "
+        },
+        {
+          "text": "≤ 2.0004 SOL",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 9,
+                "description": null,
+                "id": "So11111111111111111111111111111111111111112",
+                "symbol": "SOL",
+                "trust": "verified"
+              },
+              "bound": "at_most",
+              "note": null,
+              "note_words": null,
+              "units": "2000400000",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "≤ 2.0004 "
+                  },
+                  {
+                    "text": "SOL",
+                    "value": {
+                      "type": "text",
+                      "value": "SOL"
+                    }
+                  }
+                ],
+                "text": "≤ 2.0004 SOL"
+              }
+            }
+          }
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "≤ 0.0019912 ETH",
+          "value": {
+            "type": "amount",
+            "value": {
+              "asset": {
+                "decimals": 8,
+                "description": null,
+                "id": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+                "symbol": "ETH",
+                "trust": "verified"
+              },
+              "bound": "at_most",
+              "note": null,
+              "note_words": null,
+              "units": "199120",
+              "words": {
+                "id": "amount",
+                "parts": [
+                  {
+                    "text": "≤ 0.0019912 "
+                  },
+                  {
+                    "text": "ETH",
+                    "value": {
+                      "type": "text",
+                      "value": "ETH"
+                    }
+                  }
+                ],
+                "text": "≤ 0.0019912 ETH"
+              }
+            }
+          }
+        },
+        {
+          "text": " to an Orca Whirlpool position"
+        }
+      ],
+      "text": "2 actions: Open an Orca Whirlpool position from tick -54248 to tick -54240; Add ≤ 2.0004 SOL and ≤ 0.0019912 ETH to an Orca Whirlpool position"
+    },
+    "text": "2 actions: Open an Orca Whirlpool position from tick -54248 to tick -54240; Add ≤ 2.0004 SOL and ≤ 0.0019912 ETH to an Orca Whirlpool position\nOK\n\n== Open position | Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)\n  Lower tick: -54248\n  Upper tick: -54240\n  Pool: HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF\n  Position NFT goes to: Your wallet (EyLF…1dh9)\n  Position NFT: 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a\n  Rent paid by: Your wallet (EyLF…1dh9)\n\n== Add liquidity | Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)\n  Deposit: ≤ 2.0004 SOL\n  Deposit: ≤ 0.0019912 ETH\n  Pool: HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF\n  Position: CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu\n  From account A: Your SOL account (5iyQ…okUb)\n  From account B: Your ETH account (C2D6…SXph)\n\n== Signers\n  Fee payer: Your wallet (EyLF…1dh9)\n  Signer: 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a\n\n== Fee\n  Total: 0.00001 SOL\n  Base: 0.00001 SOL\n  Rent deposits: 0.00326136 SOL, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Create 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a, managed by Token-2022 program (Toke…xuEb)\n  - Create 5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7, managed by Token-2022 program (Toke…xuEb), depositing 0.00151384 SOL\n  - Create CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu, managed by Orca Whirlpool (whir…tyCc), depositing 0.00174752 SOL\n  - Create an empty position and mint its NFT, the only claim on the liquidity later added to it, to the position NFT owner\n  - You send ≤ 2.0004 SOL from Your wallet (EyLF…1dh9) to Orca Whirlpool (whir…tyCc)\n  - You send ≤ 0.0019912 ETH from Your wallet (EyLF…1dh9) to Orca Whirlpool (whir…tyCc)\n  - You pay a fee of 0.00001 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (633 bytes)\n  digest: 260480de9df69125dff4b64fc85e71d8f956728e15842be4a2a42c214d72e92e\n",
     "verdict": "ok"
   }
 }

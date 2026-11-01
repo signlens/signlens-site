@@ -1,7 +1,9 @@
-// An explanation document (`signlens-explanation/1`) as the SignLens window
-// shows it, in HTML that needs no script: the verdict and the summary, the
-// findings, what the transaction does as sentences, and the engine's full
-// text. The sentences follow the extension's `src/ui/render.ts`.
+// An explanation document (`signlens-explanation/2`) as the SignLens window
+// shows it, in HTML that needs no script: the verdict and the summary, or
+// each action, the findings, what the transaction does, and the engine's
+// full text. Every sentence is the engine's words; the amounts and
+// addresses they name are laid out as the extension's `src/ui/render.ts`
+// lays them out, with a badge on what SignLens verified.
 import { readFileSync } from 'node:fs';
 import { type Html, html } from './html.ts';
 import { explorer } from './site.ts';
@@ -12,38 +14,52 @@ type Bound = 'exact' | 'at_least' | 'at_most' | 'unlimited' | 'unknown';
 export type Verdict = 'ok' | 'warn' | 'block';
 type Severity = 'info' | 'warning' | 'high' | 'critical';
 
-interface Address {
-    address: string;
-    label: string | null;
-    label_trust: Trust;
-    is_self: boolean;
+/** The engine's words: the text, and the values it names, part by part. */
+interface Message {
+    id: string;
+    text: string;
+    parts: Part[];
 }
+interface Part {
+    text: string;
+    value?: Value;
+    /** An address written short. */
+    short?: Address;
+    /** Words the engine emphasises ("UNLIMITED", "NO TIME LIMIT"). */
+    emphasis?: boolean;
+}
+type Value =
+    | { type: 'amount'; value: Amount }
+    | { type: 'address'; value: Address }
+    | { type: 'words'; value: Message }
+    | { type: 'text' | 'integer'; value: string };
 interface Amount {
     units: string;
-    asset: { id: string; symbol: string | null; decimals: number | null; trust: Trust };
+    asset: { id: string | null; symbol: string | null; decimals: number | null; trust: Trust };
     bound: Bound;
-    note: string | null;
+    note: Message | null;
+    /** The note in the explanation's language's brackets. */
+    note_words: Message | null;
+    words: Message;
 }
-type Lifetime = { type: 'recent_blockhash' } | { type: 'durable_nonce'; value: { nonce_account: Address } };
-type Effect =
-    | { type: 'transfer'; value: { from: Address; to: Address; amount: Amount } }
-    | { type: 'burn'; value: { account: Address; amount: Amount } }
-    | { type: 'authority_change'; value: { subject: Address; authority: string; new_authority: Address | null } }
-    | { type: 'delegate'; value: { subject: Address; delegate: Address; amount: Amount } }
-    | { type: 'revoke'; value: { subject: Address } }
-    | { type: 'create'; value: { account: Address; owner: Address; deposit: Amount | null; if_missing: boolean } }
-    | { type: 'close'; value: { account: Address; destination: Address } }
-    | { type: 'fee'; value: { payer: Address; amount: Amount } }
-    | { type: 'lifetime'; value: Lifetime }
-    | { type: 'proposed'; value: { by: Address; effect: Effect } }
-    | { type: 'other'; value: { description: string } };
+interface Address {
+    /** Null where words stand in for an address the engine does not know. */
+    address: string | null;
+    label: Message | null;
+    label_trust: Trust;
+    is_self: boolean;
+    stand_in: Message | null;
+    /** The label and the short address, in the language's order and brackets. */
+    words: Message | null;
+}
 
 export interface Explanation {
     schema: string;
-    summary: string;
+    summary: Message;
+    actions: { instruction: number | null; summary: Message }[];
     verdict: Verdict;
-    findings: { severity: Severity; code: string; message: string; instruction: number | null }[];
-    effects: Effect[];
+    findings: { severity: Severity; code: string; message: Message; instruction: number | null }[];
+    effects: { type: string; message: Message }[];
     raw: { format: string; digest: string | null } | null;
     text: string;
 }
@@ -60,129 +76,92 @@ export function readRecording(slug: string): Recording {
 }
 
 export const VERDICT_WORD: Record<Verdict, string> = { ok: 'OK', warn: 'Warning', block: 'Blocked' };
-const SEVERITY_WORD: Record<Severity, string> = { info: 'Note', warning: 'Warning', high: 'High', critical: 'Critical' };
-const PREFIX: Record<Bound, string> = { exact: '', at_least: '≥ ', at_most: '≤ ', unlimited: 'UNLIMITED ', unknown: 'unknown amount of ' };
+const SEVERITY_WORD: Record<Severity, string> = { info: 'Info', warning: 'Warning', high: 'High', critical: 'Critical' };
 
-/** What a marker on a card means, for a reader who hovers it; /how-it-works#reading says it at length. */
+/** What a marker on a card means, for a reader who hovers it, in the window's words; /how-it-works#reading says it at length. */
 const HELP = {
-    verified: 'Known by its address, from a verified token list or by derivation, not by the name it gives itself',
-    claimed: 'Not checked: what the token calls itself, or what an RPC reported',
-    at_least: 'At least: the exact amount is set when the transaction runs, and will not be less',
-    at_most: 'At most: the program may take less, never more',
-    unlimited: 'The largest amount there is: no limit',
-    raw: "SignLens does not know this token's decimals, so the amount is in the token's smallest units",
+    verified:
+        'This name comes from SignLens or from you: its reviewed descriptors, its verified token list, your addresses in its settings, or your address book. The site could not have supplied it.',
+    claimed:
+        'This came from the site or from the RPC the extension asked, not from the transaction itself. SignLens could not check it, so do not rely on it.',
 } as const;
 
-function term(text: string, help: string): Html {
-    return html`<abbr class="term" title="${help}">${text}</abbr>`;
+function term(text: string, help: string, className = 'term'): Html {
+    return html`<abbr class="${className}" title="${help}">${text}</abbr>`;
 }
 
-/** The marker after a name or an amount: nothing for a fact, else what it rests on. */
+/** A verified value's badge: a check in a ring, drawn rather than written, so that no name can carry it. */
+export const VERIFIED_BADGE = html`<span class="verified-badge" role="img" aria-label="verified" title="${HELP.verified}"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5"/><path d="M5 8.2 7.1 10.3 11 6"/></svg></span>`;
+
+/** The marker after a name or an amount: the badge for what SignLens verified, a claim's warning in words, nothing for a fact. */
 function marker(trust: Trust): Html | string {
-    if (trust === 'verified') return html` ${term('(verified)', HELP.verified)}`;
-    if (trust === 'claimed') return html` ${term('(unverified)', HELP.claimed)}`;
+    if (trust === 'verified') return VERIFIED_BADGE;
+    if (trust === 'claimed') return html` ${term('(claimed, unverified)', HELP.claimed, 'term unverified')}`;
     return '';
-}
-
-/** The bound before an amount, with what it means. */
-function prefix(bound: Bound): Html | string {
-    if (bound === 'at_least' || bound === 'at_most' || bound === 'unlimited') {
-        return html`${term(PREFIX[bound].trim(), HELP[bound])} `;
-    }
-    return PREFIX[bound];
 }
 
 function group(digits: string): string {
     return digits.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
-/** An amount's quantity as the engine writes it: scaled by the asset's decimals, or raw units. */
-function quantity(amount: Amount): Html | string {
-    const decimals = amount.asset.decimals;
-    const units = BigInt(amount.units);
-    if (decimals === null) return html`${String(units)} ${term('raw units', HELP.raw)}`;
-    const sign = units < 0n ? '-' : '';
-    const magnitude = units < 0n ? -units : units;
-    const scale = 10n ** BigInt(decimals);
-    const fraction = (magnitude % scale).toString().padStart(decimals, '0').replace(/0+$/, '');
-    const integer = group((magnitude / scale).toString());
-    return `${sign}${fraction ? `${integer}.${fraction}` : integer}`;
-}
-
 export function short(address: string): string {
     return address.length > 12 ? `${address.slice(0, 4)}…${address.slice(-4)}` : address;
 }
 
-function amountHtml(amount: Amount): Html {
-    const before = prefix(amount.bound);
-    const symbol = amount.asset.symbol;
-    let text: Html;
-    if ((amount.bound === 'unlimited' || amount.bound === 'unknown') && symbol) text = html`${before}${symbol}`;
-    else if (amount.bound === 'unlimited') text = html`${before}unverified token`;
-    else if (amount.bound === 'unknown') text = html`unknown amount of an unverified token`;
-    else if (symbol) text = html`${before}${quantity(amount)} ${symbol}`;
-    else text = html`${before}${quantity(amount)} of an unverified token`;
-    let tail = '';
-    if (amount.note) tail += ` (${amount.note})`;
-    if (!symbol) tail += ` (${amount.asset.id})`;
-    return html`<b class="amount">${text}${marker(amount.asset.trust)}</b>${tail}`;
+/** A message: its words as text, and each value it names laid out as that value is. */
+function messageHtml(message: Message | null): Html {
+    return html`${(message?.parts ?? []).map(partHtml)}`;
 }
 
+function partHtml(part: Part): Html | string {
+    if (part.value) return valueHtml(part.value);
+    if (part.short) return keyHtml(part.short, true);
+    if (part.emphasis) return html`<strong class="emphasis">${part.text}</strong>`;
+    return part.text;
+}
+
+function valueHtml(value: Value): Html | string {
+    switch (value.type) {
+        case 'amount':
+            return amountHtml(value.value);
+        case 'address':
+            return addressHtml(value.value);
+        case 'words':
+            return messageHtml(value.value);
+        case 'text':
+        case 'integer':
+            return value.value;
+    }
+}
+
+/** An amount as the engine words it, with its marker, and its note after it. */
+function amountHtml(amount: Amount): Html {
+    return html`<b class="amount">${messageHtml(amount.words)}${marker(amount.asset.trust)}</b>${messageHtml(amount.note_words)}`;
+}
+
+/** An address: its label in bold and its short form, or the address itself; the signer's own label is green. */
 function addressHtml(address: Address): Html {
     const self = address.is_self ? ' self' : '';
-    if (address.label)
-        return html`<span class="address${self}"><b>${address.label}</b> (<code>${term(short(address.address), address.address)}</code>)${marker(address.label_trust)}</span>`;
-    return html`<span class="address${self}"><code>${address.address}</code></span>`;
+    if (!address.label || !address.words) return html`<span class="address${self}">${keyHtml(address, false)}</span>`;
+    const parts = address.words.parts.map((part) => {
+        if (part.value?.type === 'words') return html`<b>${part.value.value.text}</b>`;
+        if (part.short) return keyHtml(address, true);
+        return part.text;
+    });
+    return html`<span class="address${self}">${parts}${marker(address.label_trust)}</span>`;
 }
 
-/** One effect as a sentence, in the second person where it happens to the signer. */
-function effectHtml(effect: Effect): Html {
-    switch (effect.type) {
-        case 'transfer': {
-            const v = effect.value;
-            if (v.from.is_self && !v.to.is_self)
-                return html`You send ${amountHtml(v.amount)} from ${addressHtml(v.from)} to ${addressHtml(v.to)}`;
-            if (v.to.is_self && !v.from.is_self)
-                return html`You receive ${amountHtml(v.amount)} into ${addressHtml(v.to)} from ${addressHtml(v.from)}`;
-            return html`Transfer ${amountHtml(v.amount)} from ${addressHtml(v.from)} to ${addressHtml(v.to)}`;
-        }
-        case 'burn':
-            return html`${effect.value.account.is_self ? 'You burn' : 'Burn'} ${amountHtml(effect.value.amount)} from ${addressHtml(effect.value.account)}`;
-        case 'authority_change': {
-            const v = effect.value;
-            return v.new_authority
-                ? html`Give the ${v.authority} authority over ${addressHtml(v.subject)} to ${addressHtml(v.new_authority)}`
-                : html`Permanently remove the ${v.authority} authority over ${addressHtml(v.subject)}`;
-        }
-        case 'delegate': {
-            const v = effect.value;
-            return html`Allow ${addressHtml(v.delegate)} to spend ${amountHtml(v.amount)} from ${addressHtml(v.subject)}`;
-        }
-        case 'revoke':
-            return html`Revoke the delegate on ${addressHtml(effect.value.subject)}`;
-        case 'create': {
-            const v = effect.value;
-            return html`Create ${addressHtml(v.account)} owned by ${addressHtml(v.owner)}${v.deposit ? html`, depositing ${amountHtml(v.deposit)}` : ''}${v.if_missing ? ' unless it already exists' : ''}`;
-        }
-        case 'close':
-            return html`Close ${addressHtml(effect.value.account)} and send its balance to ${addressHtml(effect.value.destination)}`;
-        case 'fee': {
-            const v = effect.value;
-            return v.payer.is_self
-                ? html`You pay a fee of ${amountHtml(v.amount)}`
-                : html`${addressHtml(v.payer)} pays a fee of ${amountHtml(v.amount)}`;
-        }
-        case 'lifetime': {
-            const v = effect.value;
-            return v.type === 'durable_nonce'
-                ? html`<b>Valid FOREVER</b> until nonce account ${addressHtml(v.value.nonce_account)} is advanced (durable nonce)`
-                : html`Valid for about a minute (recent blockhash)`;
-        }
-        case 'proposed':
-            return html`Once approved, ${addressHtml(effect.value.by)} would: ${effectHtml(effect.value.effect)}`;
-        case 'other':
-            return html`${effect.value.description}`;
-    }
+/** The address itself, shortened with its whole on hover when `shorten`; or the words that stand in for it. */
+function keyHtml(address: Address, shorten: boolean): Html {
+    if (address.address === null) return messageHtml(address.stand_in);
+    const whole = address.address;
+    if (!shorten || short(whole) === whole) return html`<code>${whole}</code>`;
+    return html`<code>${term(short(whole), whole)}</code>`;
+}
+
+/** A recording's summary, as the window's band shows it: the engine's words, with what they name laid out. */
+export function summaryHtml(recording: Recording): Html {
+    return messageHtml(recording.explanation.summary);
 }
 
 /** The line under a card: where the transaction comes from, and for whom it was explained. */
@@ -197,18 +176,21 @@ function caption(tx: TransactionFile, recording: Recording): Html {
     return html`${origin}. Explained for <code>${short(tx.signer)}</code> as the signer, by ${recording.engine}, on ${recording.recorded}${read}.`;
 }
 
-/** The card for one transaction, as the window shows it. */
+/** The card for one transaction, as the window shows it: several actions are counted at the top and listed one a line. */
 export function card(tx: TransactionFile, recording: Recording): Html {
     const e = recording.explanation;
+    const several = e.actions.length > 1;
     return html`<figure class="explanation verdict-${e.verdict}">
-<div class="head"><span class="badge">${VERDICT_WORD[e.verdict]}</span><p class="summary">${e.summary}</p></div>
+<div class="head"><span class="badge">${VERDICT_WORD[e.verdict]}</span><p class="summary">${several ? `${e.actions.length} actions` : messageHtml(e.summary)}</p></div>
+${several ? html`<ol class="actions">${e.actions.map((action) => html`<li>${messageHtml(action.summary)}</li>`)}</ol>` : ''}
 ${
     e.findings.length > 0
-        ? html`<ul class="findings">${e.findings.map((f) => html`<li class="finding ${f.severity}"><span class="severity">${SEVERITY_WORD[f.severity]}</span> ${f.message}</li>`)}</ul>`
+        ? html`<p class="label">What SignLens found</p>
+<ul class="findings">${e.findings.map((f) => html`<li class="finding ${f.severity}"><span class="severity">${SEVERITY_WORD[f.severity]}</span> ${messageHtml(f.message)}</li>`)}</ul>`
         : ''
 }
 <p class="label">What this does</p>
-<ul class="effects">${e.effects.map((effect) => html`<li>${effectHtml(effect)}</li>`)}</ul>
+<ul class="effects">${e.effects.map((effect) => html`<li>${messageHtml(effect.message)}</li>`)}</ul>
 <details class="full"><summary>Full text, as the engine prints it</summary><pre tabindex="0" aria-label="The full text">${e.text}</pre></details>
 <figcaption>${caption(tx, recording)} <a href="/how-it-works#reading">How to read this</a>.</figcaption>
 </figure>`;

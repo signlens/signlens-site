@@ -83,7 +83,7 @@ export const CATEGORIES: Category[] = [
             {
                 slug: 'jito-stake',
                 title: 'Stake SOL with Jito for JitoSOL',
-                lead: "This is how Jito's own staking page builds a stake: your wallet sends the SOL to a one-time key, the key deposits it in Jito's pool, and the JitoSOL comes back to your own account. SignLens names the pool by its token, the JitoSOL stake pool (verified), notes that another signer makes the deposit, and shows the JitoSOL landing in your account. How much JitoSOL you get is the pool's rate when the transaction executes, and SignLens says so rather than guess.",
+                lead: "This is how Jito's own staking page builds a stake: your wallet sends the SOL to a one-time key, the key deposits it in Jito's pool, and the JitoSOL comes back to your own account. SignLens knows the pool by its address, the JitoSOL stake pool, notes that another signer makes the deposit, and shows the JitoSOL landing in your account. How much JitoSOL you get is the pool's rate when the transaction executes, and SignLens says so rather than guess.",
             },
             {
                 slug: 'native-stake',
@@ -145,7 +145,7 @@ export const CATEGORIES: Category[] = [
             {
                 slug: 'raydium-launchlab-buy',
                 title: 'Buy a token on Raydium LaunchLab, with no minimum',
-                lead: 'The trade sets its minimum output to one base unit, so it accepts almost any price. SignLens warns about it.',
+                lead: 'The trade sets its minimum output to one raw unit, so it accepts almost any price. SignLens warns about it.',
             },
         ],
     },
@@ -181,7 +181,7 @@ ${category.examples.map(
 ${shown(example.slug)}`,
 )}
 <p>More: ${CATEGORIES.filter((c) => c !== category).map((c, i) => html`${i > 0 ? ', ' : ''}<a href="/examples/${c.slug}">${c.name.toLowerCase()}</a>`)}. What SignLens <a href="/warnings/">warns about</a>.</p>`;
-    return { path: `/examples/${category.slug}`, title: category.title, description: category.description, updated: '2026-10-25', body };
+    return { path: `/examples/${category.slug}`, title: category.title, description: category.description, updated: '2026-11-01', body };
 }
 
 function indexPage(): Page {
