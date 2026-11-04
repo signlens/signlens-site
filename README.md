@@ -8,7 +8,8 @@ install it.
 
 Plain HTML, written by a small TypeScript script that Node runs as it is,
 with no runtime dependency and no script in the pages. Served by
-Cloudflare Workers static assets.
+Cloudflare Workers static assets, behind a small Worker that answers a
+page's Markdown to a client that asks for it (`Accept: text/markdown`).
 
 ## Building
 
@@ -16,10 +17,10 @@ Node 26.1 or later (`nvm use` reads `.nvmrc`).
 
 ```sh
 npm ci
-npm run build    # dist/: every page, the static files, sitemap.xml, robots.txt, llms.txt, security.txt, _headers
-npm run serve    # dist/ on http://127.0.0.1:8788, resolved as Workers resolves it
+npm run build    # dist/: every page and its Markdown, the static files, sitemap.xml, robots.txt, llms.txt, security.txt, _headers
+npm run serve    # dist/ on http://127.0.0.1:8788, through the Worker, resolved as Workers resolves it
 npm run check    # Biome (lint and format) and the TypeScript compiler, strict
-npm test         # builds, then checks every link, page head, the sitemap and the transaction reader
+npm test         # builds, then checks every link, page head, the sitemap, the Markdown, the Worker and the transaction reader
 ```
 
 ## Layout
@@ -32,11 +33,13 @@ npm test         # builds, then checks every link, page head, the sitemap and th
 | `src/explanation.ts` | an explanation (`signlens-explanation/2`) as the SignLens window shows it, in HTML: the engine's words, with the amounts and addresses they name laid out as the extension's `src/ui/render.ts` lays them out |
 | `src/transaction.ts` | a transaction file: its header lines and its bytes |
 | `src/html.ts` | HTML from template literals, escaping what is interpolated |
+| `src/markdown.ts` | a page's main column as Markdown, for agents: written beside its HTML as `faq.md`, `examples/index.html.md` |
+| `src/worker.ts` | the Worker: a request that prefers `text/markdown` gets the page's Markdown, every other one the static files |
 | `transactions/` | the transactions the site shows: mainnet ones with their signature, constructed ones marked so |
 | `recordings/` | what a SignLens API answered for each, written by `npm run record` |
 | `static/` | the stylesheet, the icons and the images, copied as they are |
 | `design/og.html` | the social preview, rendered into `static/images/og.png` |
-| `wrangler.jsonc` | the Workers configuration: `dist/` as static assets, 404s from `404.html`, no `workers.dev` copy |
+| `wrangler.jsonc` | the Workers configuration: the Worker in front of `dist/`, images straight from it, 404s from `404.html`, no `workers.dev` copy |
 
 ## The examples are recorded, never written
 

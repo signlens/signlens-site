@@ -1,8 +1,10 @@
-// signlens.dev: static files only, served by Cloudflare Workers static assets.
-// `npm run build` writes dist/; no Worker script runs.
+// signlens.dev: the static files `npm run build` writes to dist/, behind
+// one small script, src/worker.ts, that answers a request for Markdown
+// (Accept: text/markdown) with the page's Markdown.
 {
     "name": "signlens-site",
     "compatibility_date": "2026-10-20",
+    "main": "src/worker.ts",
     // Only signlens.dev serves the site: no copy at signlens-site.<account>.workers.dev.
     "workers_dev": false,
     // Each branch build still gets a preview URL on workers.dev, which
@@ -11,6 +13,9 @@
     "preview_urls": true,
     "assets": {
         "directory": "./dist",
+        "binding": "ASSETS",
+        // Pages go through the script, which hands them on; images go straight to the static files.
+        "run_worker_first": ["/*", "!/images/*"],
         // An unknown path gets dist/404.html with a 404 status, not the home page.
         "not_found_handling": "404-page",
         // /privacy serves privacy.html; /privacy.html and /privacy/ redirect to /privacy.
