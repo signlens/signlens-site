@@ -1,14 +1,12 @@
 import assert from 'node:assert/strict';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { test } from 'node:test';
-import { assets } from '../scripts/serve.ts';
 import { build } from '../src/build.ts';
 import { card, readRecording } from '../src/explanation.ts';
 import { html, raw } from '../src/html.ts';
 import { markdown } from '../src/markdown.ts';
-import { fileFor, markdownFor, pathOfMarkdown } from '../src/page.ts';
+import { fileFor, markdownFor } from '../src/page.ts';
 import { readTransaction } from '../src/transaction.ts';
-import worker, { prefersMarkdown } from '../src/worker.ts';
 
 const pages = build();
 const dist = (path: string) => new URL(`../dist/${path}`, import.meta.url);
@@ -147,7 +145,6 @@ test("every card says the engine's words, line for line", () => {
 test('every page but the hidden ones has its Markdown, under its title, its address and its heading', () => {
     for (const { page, text } of built) {
         const file = markdownFor(page.path);
-        assert.equal(pathOfMarkdown(file), page.path);
         assert.equal(existsSync(dist(file)), !page.hidden, file);
         if (page.hidden) continue;
         const md = readFileSync(dist(file), 'utf8');
@@ -201,44 +198,16 @@ A [link](https://signlens.dev/how-it-works#verdict), **bold once**, \`Ffz5kwUjkU
     );
 });
 
-test('a client prefers Markdown when it asks for it at least as much as for HTML', () => {
-    assert.equal(prefersMarkdown('text/markdown'), true);
-    assert.equal(prefersMarkdown('text/markdown, text/html, */*'), true);
-    assert.equal(prefersMarkdown('text/html;q=0.9, text/markdown'), true);
-    assert.equal(prefersMarkdown('text/markdown;q=0.5, text/html'), false);
-    assert.equal(prefersMarkdown('text/markdown;q=0'), false);
-    assert.equal(prefersMarkdown('text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'), false);
-    assert.equal(prefersMarkdown('*/*'), false);
-    assert.equal(prefersMarkdown(null), false);
-});
-
-test('a page answers Markdown to who prefers it and HTML to everyone else, and says it varies with Accept', async () => {
-    const get = (path: string, accept?: string) =>
-        worker.fetch(new Request(`https://signlens.dev${path}`, accept ? { headers: { Accept: accept } } : {}), {
-            ASSETS: { fetch: assets },
-        });
-    for (const path of ['/', '/faq', '/examples/', '/warnings/durable-nonce']) {
-        const md = await get(path, 'text/markdown');
-        assert.equal(md.status, 200, path);
-        assert.equal(md.headers.get('Content-Type'), 'text/markdown; charset=utf-8', path);
-        assert.equal(md.headers.get('Vary'), 'Accept', path);
-        assert.equal(md.headers.get('Link'), `<https://signlens.dev${path}>; rel="canonical"`, path);
-        assert.equal(md.headers.get('Content-Signal'), 'search=yes, ai-input=yes, ai-train=yes', path);
-        assert.equal(await md.text(), readFileSync(dist(markdownFor(path)), 'utf8'), path);
-        const page = await get(path, 'text/html,*/*;q=0.8');
-        assert.equal(page.headers.get('Content-Type'), 'text/html; charset=utf-8', path);
-        assert.equal(page.headers.get('Vary'), 'Accept', path);
-        assert.equal(await page.text(), readFileSync(dist(fileFor(path)), 'utf8'), path);
+test("the zone's rewrite rules find every page's Markdown, and every answer varies with Accept", () => {
+    // As README, Deploying, has them: a path ending in / gets index.html.md, a path with no . gets .md.
+    const rewrite = (path: string) => (path.endsWith('/') ? `${path}index.html.md` : path.includes('.') ? path : `${path}.md`);
+    for (const { page } of built) {
+        if (page.hidden) continue;
+        assert.equal(rewrite(page.path), `/${markdownFor(page.path)}`, page.path);
+        assert.ok(existsSync(dist(markdownFor(page.path))), page.path);
     }
-    const direct = await get('/faq.md');
-    assert.equal(direct.headers.get('Content-Type'), 'text/markdown; charset=utf-8');
-    assert.equal(direct.headers.get('Link'), '<https://signlens.dev/faq>; rel="canonical"');
-    const missing = await get('/nowhere', 'text/markdown');
-    assert.equal(missing.status, 404);
-    assert.equal(missing.headers.get('Content-Type'), 'text/html; charset=utf-8');
-    const style = await get('/style.css', 'text/markdown');
-    assert.equal(style.headers.get('Content-Type'), 'text/css');
-    assert.equal(style.headers.get('Vary'), null);
+    const all = readFileSync(dist('_headers'), 'utf8').split(/\n(?=\S)/)[0] ?? '';
+    assert.match(all, /^\/\*\n {2}Vary: Accept\n/);
 });
 
 test("llms.txt links each page's Markdown", () => {

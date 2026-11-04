@@ -8,8 +8,9 @@ install it.
 
 Plain HTML, written by a small TypeScript script that Node runs as it is,
 with no runtime dependency and no script in the pages. Served by
-Cloudflare Workers static assets, behind a small Worker that answers a
-page's Markdown to a client that asks for it (`Accept: text/markdown`).
+Cloudflare Workers static assets. Each page is also written as Markdown,
+which a client that asks for it (`Accept: text/markdown`) gets at the
+page's own address, by two rewrite rules on the zone (see Deploying).
 
 ## Building
 
@@ -18,9 +19,9 @@ Node 26.1 or later (`nvm use` reads `.nvmrc`).
 ```sh
 npm ci
 npm run build    # dist/: every page and its Markdown, the static files, sitemap.xml, robots.txt, llms.txt, security.txt, _headers
-npm run serve    # dist/ on http://127.0.0.1:8788, through the Worker, resolved as Workers resolves it
+npm run serve    # dist/ on http://127.0.0.1:8788, resolved as Workers resolves it
 npm run check    # Biome (lint and format) and the TypeScript compiler, strict
-npm test         # builds, then checks every link, page head, the sitemap, the Markdown, the Worker and the transaction reader
+npm test         # builds, then checks every link, page head, the sitemap, the Markdown and the transaction reader
 ```
 
 ## Layout
@@ -34,12 +35,11 @@ npm test         # builds, then checks every link, page head, the sitemap, the M
 | `src/transaction.ts` | a transaction file: its header lines and its bytes |
 | `src/html.ts` | HTML from template literals, escaping what is interpolated |
 | `src/markdown.ts` | a page's main column as Markdown, for agents: written beside its HTML as `faq.md`, `examples/index.html.md` |
-| `src/worker.ts` | the Worker: a request that prefers `text/markdown` gets the page's Markdown, every other one the static files |
 | `transactions/` | the transactions the site shows: mainnet ones with their signature, constructed ones marked so |
 | `recordings/` | what a SignLens API answered for each, written by `npm run record` |
 | `static/` | the stylesheet, the icons and the images, copied as they are |
 | `design/og.html` | the social preview, rendered into `static/images/og.png` |
-| `wrangler.jsonc` | the Workers configuration: the Worker in front of `dist/`, images straight from it, 404s from `404.html`, no `workers.dev` copy |
+| `wrangler.jsonc` | the Workers configuration: `dist/` as static assets, 404s from `404.html`, no `workers.dev` copy |
 
 ## The examples are recorded, never written
 
@@ -81,7 +81,16 @@ Cloudflare's Git integration (Workers Builds) deploys `master`:
 - `www.signlens.dev` redirects to `signlens.dev`, set in the dashboard: a
   proxied DNS record for `www` (an `AAAA` to `100::`) and a redirect rule
   from `www.signlens.dev/*` to `https://signlens.dev/${1}`, status 301,
-  query string kept.
+  query string kept;
+- a request for Markdown gets the page's Markdown, by two URL rewrite
+  rules set in the dashboard (Rules), each rewriting the path dynamically
+  when `any(http.request.headers["accept"][*] contains "text/markdown")`:
+  a path ending in `/` to `concat(http.request.uri.path, "index.html.md")`,
+  and a path with no `.` that does not end in `/` to
+  `concat(http.request.uri.path, ".md")`. Static assets already serve
+  `.md` as `text/markdown`, and `_headers` adds `Vary: Accept`. After a
+  deploy, `curl -sI -H "Accept: text/markdown" https://signlens.dev/faq`
+  shows whether they apply.
 
 Visits are counted by Cloudflare Web Analytics with automatic setup:
 Cloudflare adds its beacon to every HTML response at the edge, so the

@@ -34,12 +34,6 @@ export function markdownFor(path: string): string {
     return `${path.slice(1)}.md`;
 }
 
-/** The path whose Markdown a file is: markdownFor's inverse. */
-export function pathOfMarkdown(file: string): string {
-    if (file === 'index.html.md' || file.endsWith('/index.html.md')) return `/${file.slice(0, -'index.html.md'.length)}`;
-    return `/${file.slice(0, -'.md'.length)}`;
-}
-
 const NAV: [string, string][] = [
     ['/examples/', 'Examples'],
     ['/warnings/', 'Warnings'],

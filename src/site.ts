@@ -14,7 +14,7 @@ export const VERSION = '0.3.0';
 export const SECURITY_EMAIL = 'security@signlens.dev';
 /** Where everything else goes: questions, and having one's feedback deleted. */
 export const SUPPORT_EMAIL = 'support@signlens.dev';
-/** What the site's content may be used for (contentsignals.org): search, AI answers, and training. In robots.txt and on each Markdown answer. */
+/** What the site's content may be used for (contentsignals.org): search, AI answers, and training. */
 export const CONTENT_SIGNAL = 'search=yes, ai-input=yes, ai-train=yes';
 /** Explorer link for a transaction signature. */
 export function explorer(signature: string): string {

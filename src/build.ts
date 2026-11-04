@@ -65,7 +65,9 @@ Allow: /
 Sitemap: ${ORIGIN}/sitemap.xml
 `;
 
+/** The response headers. Every answer varies with Accept: a page answers its Markdown to a client that asks for text/markdown, by the zone's rewrite rules (README, Deploying). */
 const HEADERS = `/*
+  Vary: Accept
   Content-Security-Policy: default-src 'none'; script-src https://static.cloudflareinsights.com; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
   Strict-Transport-Security: max-age=63072000; includeSubDomains
   X-Content-Type-Options: nosniff
