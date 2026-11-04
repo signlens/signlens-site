@@ -54,6 +54,16 @@ function check(all: Page[]): void {
     }
 }
 
+/** Every crawler is welcome, and the content signals (contentsignals.org) say what for: search, AI answers, and training. */
+const ROBOTS = `# Content signals (https://contentsignals.org/): you may use this site's content
+# for search, as input to AI answers, and to train AI models.
+User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+Sitemap: ${ORIGIN}/sitemap.xml
+`;
+
 const HEADERS = `/*
   Content-Security-Policy: default-src 'none'; script-src https://static.cloudflareinsights.com; style-src 'self'; img-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
   Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -116,7 +126,7 @@ export function build(): Page[] {
     cpSync(new URL('../static/', import.meta.url), DIST, { recursive: true });
     for (const page of all) write(fileFor(page.path), render(page));
     write('sitemap.xml', sitemap(all));
-    write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${ORIGIN}/sitemap.xml\n`);
+    write('robots.txt', ROBOTS);
     write('llms.txt', llms(all));
     write('.well-known/security.txt', securityTxt());
     write('_headers', HEADERS);

@@ -68,8 +68,13 @@ test('the favicon is an icon of the three sizes, and the home-screen icon is 180
     assert.deepEqual([touch.readUInt32BE(16), touch.readUInt32BE(20)], [180, 180]);
 });
 
-test('robots.txt allows every crawler and names the sitemap', () => {
-    assert.equal(readFileSync(dist('robots.txt'), 'utf8'), 'User-agent: *\nAllow: /\n\nSitemap: https://signlens.dev/sitemap.xml\n');
+test('robots.txt allows every crawler, signals search, AI input and training, and names the sitemap', () => {
+    const robots = readFileSync(dist('robots.txt'), 'utf8');
+    assert.match(
+        robots,
+        /^User-agent: \*\nContent-Signal: search=yes, ai-input=yes, ai-train=yes\nAllow: \/\n\nSitemap: https:\/\/signlens\.dev\/sitemap\.xml\n$/m,
+    );
+    assert.doesNotMatch(robots, /Disallow/);
 });
 
 test('a preview on workers.dev is kept out of search engines, and signlens.dev is not', () => {
