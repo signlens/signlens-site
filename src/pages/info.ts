@@ -14,7 +14,7 @@ export function installPage(): Page {
 <h2>Use it</h2>
 <p>A new install opens a setup page in a tab of its own: add your wallet addresses there, so that explanations can say "you", and pin SignLens to the toolbar.</p>
 <p>In a dapp, choose <b>SignLens</b> when it asks you to connect a wallet, not your wallet itself. SignLens connects, in turn, to your own wallet in the same page; when the page has several, it asks you once which one, and keeps your choice. From then on every request opens the SignLens window first. Continue, and your wallet asks you as usual. If you turn off "Show the explanation and ask first" in the settings, only the requests SignLens would refuse open the window; the rest go straight on to your wallet.</p>
-<p>In the popup's settings you can change which of your wallets SignLens passes requests to, list your own addresses so explanations can say "you", keep an address book so transfers name the people you pay and <a href="/warnings/address-poisoning">lookalikes</a> stand out, and choose the Solana node SignLens asks for what a transaction refers to (the RPC).</p>
+<p>In the popup's settings you can choose the language SignLens and its explanations are in, change which of your wallets it passes requests to, list your own addresses so explanations can say "you", keep an address book so transfers name the people you pay and <a href="/warnings/address-poisoning">lookalikes</a> stand out, and choose the Solana node SignLens asks for what a transaction refers to (the RPC).</p>
 <p class="note">SignLens never asks for a seed phrase or a private key, and never signs anything. Anything that asks you for one, in SignLens's name or not, is a scam.</p>`;
     return {
         path: '/install',
@@ -27,10 +27,10 @@ export function installPage(): Page {
 
 export function privacyPage(): Page {
     const body = html`<h1>Privacy</h1>
-<p class="lead">What the SignLens extension and this site send, to whom, and what is kept. Last changed 1 November 2026.</p>
+<p class="lead">What the SignLens extension and this site send, to whom, and what is kept. Last changed 6 November 2026.</p>
 <h2>The extension</h2>
 <h3>What goes to the SignLens API</h3>
-<p>In this beta, SignLens's server computes the explanation. For each transaction a dapp asks you to sign, the extension sends the SignLens API: the transaction, the addresses its lookup tables load, the outcome of the simulation if it ran, at most eight of your addresses from the settings (in watch-only mode the watched one), so that the explanation can say "you"; the languages your browser asks for, so that it is worded in the first of them SignLens has; and at most 64 addresses from your address book, each with a stand-in for its name: its place in the list and a random tag drawn for each request, which says nothing of the name. The extension puts the names back before the window shows the explanation, so they never leave your browser. When account lookup is on and the explanation names accounts it would read, such as a multisig proposal and the transaction it stores or a DAO proposal and its options, it asks again with those accounts as your RPC returned them, at most twice. When token lookup is on and the explanation leaves tokens unnamed, it asks again with their symbols. It also asks again when you press "Try again" or "Show in English" in the window. This happens when the dapp asks, before the window opens, and also when "Show the explanation and ask first" is off and no window opens.</p>
+<p>In this beta, SignLens's server computes the explanation. For each transaction a dapp asks you to sign, the extension sends the SignLens API: the transaction, the addresses its lookup tables load, the outcome of the simulation if it ran, at most eight of your addresses from the settings (in watch-only mode the watched one), so that the explanation can say "you"; the language you chose in the settings, if any, then the languages your browser asks for, at most eight in all, so that it is worded in the first of them SignLens has; and at most 64 addresses from your address book, each with a stand-in for its name: its place in the list and a random tag drawn for each request, which says nothing of the name. The extension puts the names back before the window shows the explanation, so they never leave your browser. When account lookup is on and the explanation names accounts it would read, such as a multisig proposal and the transaction it stores or a DAO proposal and its options, it asks again with those accounts as your RPC returned them, at most twice. When token lookup is on and the explanation leaves tokens unnamed, it asks again with their symbols. It also asks again when you press "Try again" or "Show in English" in the window. This happens when the dapp asks, before the window opens, and also when "Show the explanation and ask first" is off and no window opens.</p>
 <p>For each request the API logs the time, how long it took, the verdict, the finding codes, the program names, the size and a SHA-256 hash of the transaction's message, and keeps nothing else. The hash cannot be turned back into the transaction, but once the transaction is on chain anyone can compute the same hash from it, so a log line can be matched to that transaction and its signer. Messages to sign never leave the extension.</p>
 <h3>Your IP address</h3>
 <p>Every request reaches the API through Cloudflare, which sees your IP address, as it does for any site it serves. The API uses the address only to count your requests against its limit, in memory and as a keyed hash, and logs it nowhere.</p>
@@ -53,7 +53,7 @@ export function privacyPage(): Page {
         title: 'Privacy | SignLens',
         description:
             'What the SignLens extension sends to its API, your RPC and the token list, what is kept, and what signlens.dev counts.',
-        updated: '2026-11-01',
+        updated: '2026-11-06',
         body,
     };
 }

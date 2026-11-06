@@ -16,7 +16,7 @@ export function howItWorksPage(): Page {
 <li><b>The window opens before your wallet does.</b> The verdict and a one-line summary at the top, or, when the transaction does several things, how many, with each on a line of its own; the findings; what the transaction does to you, as a list; each instruction with its fields; and the engine's full text.</li>
 <li><b>You decide.</b> Reject, and the dapp is told you refused. Continue, and the exact bytes SignLens explained go to your wallet, which asks you as usual. A page that changes its transaction afterwards changes nothing.</li>
 </ol>
-<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/popup-dark.webp"><img src="/images/popup-light.webp" width="360" height="378" alt="The SignLens popup: the API ready, explaining in English and Simplified Chinese, and three requests, a warning passed on, an OK swap passed on, and a blocked swap rejected"></picture></p>
+<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/popup-dark.webp"><img src="/images/popup-light.webp" width="360" height="392" alt="The SignLens popup: the API ready, explaining in English and Simplified Chinese, and three requests, a warning passed on, an OK swap passed on, and a blocked swap rejected"></picture></p>
 <h2 id="verdict">The verdict</h2>
 <ul>
 <li><b>OK</b>: nothing beyond notes.</li>
@@ -63,7 +63,7 @@ export function howItWorksPage(): Page {
         title: 'How SignLens works: clear signing for any Solana wallet',
         description:
             'Dapps connect SignLens like a wallet, but it holds no keys: it explains each request in its own window, then passes it unchanged to your real wallet.',
-        updated: '2026-11-01',
+        updated: '2026-11-06',
         body,
     };
 }
@@ -223,13 +223,13 @@ const FAQ: [string, string | Html][] = [
     ],
     [
         'What does SignLens send to its server?',
-        html`In this beta, the unsigned transaction, the addresses its lookup tables load, the simulation result, the accounts the explanation asks for as your RPC returned them, your addresses from the settings, your browser's languages, and your address book's addresses, each with a random stand-in for its name: the names stay in your browser. The server logs the verdict, the finding codes and a hash of the transaction, not the transaction itself. <a href="/privacy">The privacy page</a> has the details.`,
+        html`In this beta, the unsigned transaction, the addresses its lookup tables load, the simulation result, the accounts the explanation asks for as your RPC returned them, your addresses from the settings, your languages (the one you chose in the settings, if any, then your browser's), and your address book's addresses, each with a random stand-in for its name: the names stay in your browser. The server logs the verdict, the finding codes and a hash of the transaction, not the transaction itself. <a href="/privacy">The privacy page</a> has the details.`,
     ],
     ['Does it cost anything?', 'No. SignLens is free, and the extension is open source under the Apache 2.0 licence.'],
     ['Does it work on my phone?', 'No. It is an extension for desktop Chrome, Brave, Edge and Firefox.'],
     [
         'Is SignLens in my language?',
-        'The extension and its explanations are in English and in Simplified Chinese, reviewed in full by a native speaker. SignLens uses Chinese when your browser asks for it, and English otherwise; an explanation in Chinese has a "Show in English" button, to read it against the English.',
+        'The extension and its explanations are in English and in Simplified Chinese, reviewed in full by a native speaker. SignLens uses Chinese when your browser asks for it, and English otherwise, unless you choose one under "Language" on the setup page or at the top of the settings in the popup. An explanation in Chinese has a "Show in English" button, to read it against the English.',
     ],
     ['Which chains?', 'Solana mainnet today. SignLens is built so that other chains can be added, and Ethereum is next.'],
     [
@@ -258,7 +258,7 @@ ${FAQ.map(([q, a]) => html`<h2>${q}</h2><p>${a}</p>`)}`;
         title: 'SignLens FAQ: clear signing for Solana, explained',
         description:
             'Is SignLens a wallet? Which wallets does it work with? What is blind signing? What does it send to its server? Answers about SignLens.',
-        updated: '2026-11-01',
+        updated: '2026-11-06',
         body,
     };
 }
