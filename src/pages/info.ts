@@ -1,15 +1,16 @@
 // Install, privacy, security, and the page for a path that does not exist.
 import { html } from '../html.ts';
 import type { Page } from '../page.ts';
-import { FIREFOX, RELEASES, REPOSITORY, SECURITY_EMAIL, SITE_REPOSITORY, SUPPORT_EMAIL, VERSION } from '../site.ts';
+import { CHROME, FIREFOX, RELEASES, REPOSITORY, SECURITY_EMAIL, SITE_REPOSITORY, SUPPORT_EMAIL, VERSION } from '../site.ts';
 
 export function installPage(): Page {
     const body = html`<h1>Install SignLens</h1>
-<p class="lead">SignLens ${VERSION} is a beta for desktop Firefox (140 or later) and Chrome, Brave and Edge (version 111 or later). For Firefox it is on Firefox Add-ons. Until it is in the Chrome Web Store, you install it in Chrome, Brave and Edge from its GitHub release.</p>
+<p class="lead">SignLens ${VERSION} is a beta for desktop Chrome, Brave and Edge (version 111 or later) and Firefox (140 or later). It is on the Chrome Web Store and on Firefox Add-ons.</p>
+<h2>Chrome, Brave and Edge</h2>
+<p>Open <a href="${CHROME}">SignLens in the Chrome Web Store</a> and choose "Add to Chrome". The browser keeps it up to date. Brave installs it from the same page, and so does Edge once you choose "Allow extensions from other stores" in the banner at the top of the store.</p>
+<p>To load a package you have checked yourself instead, download <code>signlens-extension-${VERSION}.zip</code> from the <a href="${RELEASES}">latest release</a>. It comes with its SHA-256 checksum and a build attestation; the <a href="${REPOSITORY}#verifying-a-package">README says how to check them</a>. Unzip it, open <code>chrome://extensions</code>, turn on "Developer mode", choose "Load unpacked" and pick the unzipped folder. An extension loaded this way does not update itself.</p>
 <h2>Firefox</h2>
 <p>Open <a href="${FIREFOX}">SignLens on Firefox Add-ons</a> and choose "Add to Firefox". Firefox keeps it up to date. If the SignLens popup says the browser has not let it reach the API, press "Allow https access" there.</p>
-<h2>Chrome, Brave and Edge</h2>
-<p>Download <code>signlens-extension-${VERSION}.zip</code> from the <a href="${RELEASES}">latest release</a>. It comes with its SHA-256 checksum and a build attestation; the <a href="${REPOSITORY}#verifying-a-package">README says how to check them</a>. Unzip it, open <code>chrome://extensions</code>, turn on "Developer mode", choose "Load unpacked" and pick the unzipped folder.</p>
 <h2>Use it</h2>
 <p>A new install opens a setup page in a tab of its own: add your wallet addresses there, so that explanations can say "you", and pin SignLens to the toolbar.</p>
 <p>In a dapp, choose <b>SignLens</b> when it asks you to connect a wallet, not your wallet itself. SignLens connects, in turn, to your own wallet in the same page; when the page has several, it asks you once which one, and keeps your choice. From then on every request opens the SignLens window first. Continue, and your wallet asks you as usual. If you turn off "Show the explanation and ask first" in the settings, only the requests SignLens would refuse open the window; the rest go straight on to your wallet.</p>
@@ -18,8 +19,8 @@ export function installPage(): Page {
     return {
         path: '/install',
         title: 'Install SignLens for Chrome and Firefox',
-        description: `Install the SignLens ${VERSION} beta from Firefox Add-ons, or in Chrome, Brave and Edge from its GitHub release, and connect it in front of your Solana wallet.`,
-        updated: '2026-11-01',
+        description: `Install the SignLens ${VERSION} beta from the Chrome Web Store for Chrome, Brave and Edge, or from Firefox Add-ons, and connect it in front of your Solana wallet.`,
+        updated: '2026-11-06',
         body,
     };
 }

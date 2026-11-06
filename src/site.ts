@@ -5,11 +5,12 @@ export const NAME = 'SignLens';
 /** The extension's repository, its releases, and this site's. */
 export const REPOSITORY = 'https://github.com/signlens/signlens-extension';
 export const RELEASES = `${REPOSITORY}/releases`;
-/** The extension on Firefox Add-ons. */
+/** The extension on the Chrome Web Store, and on Firefox Add-ons. */
+export const CHROME = 'https://chromewebstore.google.com/detail/signlens-beta/anihjjfeahahigbnjonlacmboeeolnmk';
 export const FIREFOX = 'https://addons.mozilla.org/firefox/addon/signlens-beta/';
 export const SITE_REPOSITORY = 'https://github.com/signlens/signlens-site';
 /** The extension's current release. */
-export const VERSION = '0.3.0';
+export const VERSION = '0.3.2';
 /** Where vulnerabilities are reported (the security page, security.txt). */
 export const SECURITY_EMAIL = 'security@signlens.dev';
 /** Where everything else goes: questions, and having one's feedback deleted. */
