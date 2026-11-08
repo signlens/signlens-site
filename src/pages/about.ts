@@ -14,7 +14,7 @@ export function howItWorksPage(): Page {
 <li><b>You connect "SignLens" in the dapp.</b> SignLens connects, in turn, to your own wallet in the same page: Phantom, Backpack, Solflare or another Solana wallet.</li>
 <li><b>The dapp asks for a signature.</b> SignLens keeps its own copy of the transaction, fetches the extra addresses it refers to from a Solana node (the RPC in the settings), simulates it there, and asks SignLens's server to explain it. When the explanation names accounts that would explain more, such as the proposal a multisig approval or a DAO vote refers to, SignLens reads them from the same node and asks again.</li>
 <li><b>The window opens before your wallet does.</b> The verdict and a one-line summary at the top, or, when the transaction does several things, how many, with each on a line of its own; the findings; what the transaction does to you, as a list; each instruction with its fields; and the engine's full text.</li>
-<li><b>You decide.</b> Reject, and the dapp is told you refused. Continue, and the exact bytes SignLens explained go to your wallet, which asks you as usual. A page that changes its transaction afterwards changes nothing.</li>
+<li><b>You decide.</b> Reject, and the dapp is told you refused. Continue, and the exact bytes SignLens explained go to the wallet the window names, which asks you as usual. A page that changes its transaction afterwards changes nothing, and if you choose another wallet in the settings meanwhile, nothing is signed.</li>
 </ol>
 <p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/popup-dark.webp"><img src="/images/popup-light.webp" width="360" height="392" alt="The SignLens popup: the API ready, explaining in English and Simplified Chinese, and three requests, a warning passed on, an OK swap passed on, and a blocked swap rejected"></picture></p>
 <h2 id="verdict">The verdict</h2>
@@ -189,6 +189,10 @@ const FAQ: [string, string | Html][] = [
         'No. SignLens holds no keys and signs nothing. It sits in front of the wallet you already use, and passes each request on to it unchanged once you say so. Your funds stay where they are.',
     ],
     ['Which wallets does it work with?', 'Phantom, Backpack, Solflare and the other Solana wallets dapps can connect to in the browser.'],
+    [
+        'Does it read v1 transactions?',
+        'Yes, as well as legacy and v0 ones. SignLens tells a dapp it takes the transaction versions your wallet signs: v1 with a wallet that signs them, such as Backpack or Jupiter Wallet, and legacy and v0 otherwise, so a request you approve is never one your wallet refuses. Some dapps, such as jup.ag, build v1 transactions only for a wallet that says it takes them. In watch-only mode, where nothing is signed, it takes all three.',
+    ],
     [
         'Does SignLens work with a Ledger or another hardware wallet?',
         html`Yes, through the browser wallet your Ledger is connected to, such as Phantom, Backpack or Solflare. SignLens explains the transaction in its own window, then passes it to that wallet, which sends it to the Ledger to sign. For most Solana DeFi transactions the Ledger shows only a hash, with blind signing on (<a href="/clear-signing#today">what signing looks like today</a>), so SignLens's window is where you read what you approve. It does not replace the Ledger: a compromised computer could show anything in that window, while your keys stay on the device.`,
