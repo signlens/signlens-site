@@ -361,6 +361,60 @@ ol.steps p {
     margin: 0;
 }
 
+ol.steps p + p {
+    margin-top: 0.75rem;
+}
+
+/* A request's way, from the dapp through SignLens to the wallet: a row of three, a column on a phone. */
+ol.flow {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: grid;
+    gap: 2.5rem;
+    font-size: 0.95rem;
+}
+
+ol.flow li {
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    padding: 0.85rem 1rem;
+}
+
+ol.flow li b {
+    display: block;
+    font-size: 1.05rem;
+}
+
+ol.flow li.here {
+    border: 2px solid var(--accent);
+    background: var(--raised);
+}
+
+ol.flow li + li::before {
+    content: '↓';
+    position: absolute;
+    top: -2.15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.25rem;
+    color: var(--muted);
+}
+
+@media (min-width: 40rem) {
+    ol.flow {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    ol.flow li + li::before {
+        content: '→';
+        top: 50%;
+        left: -1.85rem;
+        transform: translateY(-50%);
+    }
+}
+
 .how figure {
     margin: 0;
     text-align: center;
@@ -665,6 +719,59 @@ figure.explanation figcaption {
     padding: 0.6rem 1rem;
     font-size: 0.85rem;
     color: var(--muted);
+}
+
+/* A long page's questions, by section, to jump to. */
+ul.contents {
+    list-style: none;
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--line);
+    border-radius: 0.75rem;
+    font-size: 0.95rem;
+}
+
+ul.contents > li {
+    break-inside: avoid;
+    margin-bottom: 1.25rem;
+}
+
+/* The section's name is a label over its questions; the questions read as a list, not as a block of links. */
+ul.contents > li > a {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--muted);
+}
+
+ul.contents ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul.contents ul li {
+    margin: 0.3rem 0;
+    line-height: 1.4;
+}
+
+ul.contents ul a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+ul.contents li a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+@media (min-width: 40rem) {
+    ul.contents {
+        columns: 2;
+        column-gap: 2rem;
+    }
 }
 
 .sources {

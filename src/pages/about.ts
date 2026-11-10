@@ -10,22 +10,36 @@ export function howItWorksPage(): Page {
     const body = html`<h1>How SignLens works</h1>
 <p class="lead">SignLens sits between a dapp and your wallet. Dapps see it as one more wallet to connect, through <a href="https://github.com/anza-xyz/wallet-standard">the standard</a> they use to find wallets in the browser, but it holds no keys: a dapp sends it what it wants signed, SignLens explains it in its own window, and once you say so the request goes unchanged to the wallet you actually sign with.</p>
 <p>That is <a href="/clear-signing">clear signing</a>, for whichever Solana wallet you use: you read what a transaction does, in words, before your wallet signs it, rather than a hash or a site's description of it.</p>
-<ol>
-<li><b>You connect "SignLens" in the dapp.</b> SignLens connects, in turn, to your own wallet in the same page: Phantom, Backpack, Solflare or another Solana wallet.</li>
-<li><b>The dapp asks for a signature.</b> SignLens keeps its own copy of the transaction, fetches the extra addresses it refers to from a Solana node (the RPC in the settings), simulates it there, and asks SignLens's server to explain it. When the explanation names accounts that would explain more, such as the proposal a multisig approval or a DAO vote refers to, SignLens reads them from the same node and asks again.</li>
-<li><b>The window opens before your wallet does.</b> The verdict and a one-line summary at the top, or, when the transaction does several things, how many, with each on a line of its own; the findings; what the transaction does to you, as a list; each instruction with its fields; and the engine's full text.</li>
-<li><b>You decide.</b> Reject, and the dapp is told you refused. Continue, and the exact bytes SignLens explained go to the wallet the window names, which asks you as usual. A page that changes its transaction afterwards changes nothing, and if you choose another wallet in the settings meanwhile, nothing is signed.</li>
+<ol class="flow">
+<li><b>The dapp</b> asks for a signature</li>
+<li class="here"><b>SignLens</b> explains it, and you continue or reject</li>
+<li><b>Your wallet</b> asks you, and signs</li>
 </ol>
-<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/popup-dark.webp"><img src="/images/popup-light.webp" width="360" height="392" alt="The SignLens popup: the API ready, explaining in English and Simplified Chinese, and three requests, a warning passed on, an OK swap passed on, and a blocked swap rejected"></picture></p>
+<h2>What happens when a dapp asks you to sign</h2>
+<ol class="steps">
+<li><h3>You connect "SignLens" in the dapp</h3><p>SignLens connects, in turn, to your own wallet in the same page: Phantom, Backpack, Solflare or another Solana wallet.</p></li>
+<li><h3>The dapp asks for a signature</h3><p>SignLens keeps its own copy of the transaction, fetches the extra addresses it refers to from a Solana node (the RPC in the settings), simulates it there, and asks SignLens's server to explain it.</p><p>When the explanation names accounts that would explain more, such as the proposal a multisig approval or a DAO vote refers to, SignLens reads them from the same node and asks again.</p></li>
+<li><h3>The window opens before your wallet does</h3><p>The verdict and a one-line summary at the top, or, when the transaction does several things, how many, with each on a line of its own; the findings; what the transaction does to you, as a list; each instruction with its fields; and the engine's full text.</p>
+<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/window-dark.webp"><img src="/images/window-light.webp" width="440" height="575" alt="The SignLens window on a USDC transfer on a durable nonce: a high finding that the signature has no time limit, what the transaction does, the simulated outcome, and Reject and Continue to Phantom"></picture></p></li>
+<li><h3>You decide</h3><p>Reject, and the dapp is told you refused. Continue, and the exact bytes SignLens explained go to the wallet the window names, which asks you as usual.</p><p>A page that changes its transaction afterwards changes nothing, and if you choose another wallet in the settings meanwhile, nothing is signed. The popup lists the requests and what became of each.</p>
+<p class="shot"><picture><source media="(prefers-color-scheme: dark)" srcset="/images/popup-dark.webp"><img src="/images/popup-light.webp" width="360" height="392" loading="lazy" alt="The SignLens popup: the API ready, explaining in English and Simplified Chinese, and three requests, a warning passed on, an OK swap passed on, and a blocked swap rejected"></picture></p></li>
+</ol>
 <h2 id="verdict">The verdict</h2>
 <ul>
-<li><b>OK</b>: nothing beyond notes.</li>
-<li><b>Warning</b>: findings to read before you approve, shown first.</li>
-<li><b>Blocked</b>: something critical, or an instruction SignLens cannot explain, such as one of an <a href="/warnings/unknown-program">unknown program</a>. SignLens refuses it unless you choose "Continue anyway" and confirm.</li>
-<li><b>Error</b>: no explanation, because the API was away or refused. Nothing is known about the transaction, so it is treated as blocked, never as a pass. "Try again" asks once more while the request waits.</li>
+<li><b class="badge verdict-ok">OK</b>: nothing beyond notes.</li>
+<li><b class="badge verdict-warn">Warning</b>: findings to read before you approve, shown first.</li>
+<li><b class="badge verdict-block">Blocked</b>: something critical, or an instruction SignLens cannot explain, such as one of an <a href="/warnings/unknown-program">unknown program</a>. SignLens refuses it unless you choose "Continue anyway" and confirm.</li>
+<li><b class="badge">Error</b>: no explanation, because the API was away or refused. Nothing is known about the transaction, so it is treated as blocked, never as a pass. "Try again" asks once more while the request waits.</li>
 </ul>
+<h2>Where the words come from</h2>
+<p>Each program SignLens explains has a reviewed description of its instructions, built from the program's published interface and checked against real mainnet transactions. The badge marks a token or an account SignLens knows by its address, from a verified token list or by deriving it, not by the name it gives itself. The engine words every sentence, in English, or in Simplified Chinese, reviewed by a native speaker, when your browser asks for it. A simulation is a claim by the Solana node that ran it: SignLens holds it against the decoded instructions, and more leaving than they state is a finding.</p>
+<h2>What runs where</h2>
+<p>Everything that runs in your browser is open source, TypeScript compiled file for file with no bundler, and each release is built reproducibly, with its checksums and a build attestation (<a href="${REPOSITORY}">the source</a>). In this beta the explanation itself is computed on SignLens's server, which keeps verdicts and finding codes, not the transaction; <a href="/privacy">the privacy page</a> has the details.</p>
+<h2>Watch-only mode</h2>
+<p>SignLens can also connect as any address you give it, with no wallet behind it: it explains what a dapp asks that address to sign, and refuses every request. Useful for checking a dapp before you connect a real wallet.</p>
 <h2 id="reading">Reading an explanation</h2>
-<p>Every explanation on this site is what the SignLens window shows for a transaction, recorded from the engine's answer.</p>
+<p>Every explanation on this site is what the SignLens window shows for a transaction, recorded from the engine's answer. One of them, a liquidity position opened on Raydium, with what its marks mean below it:</p>
+${shown('raydium-clmm-open-position')}
 <dl class="facts">
 <dt>The verdict and the summary</dt>
 <dd>OK, Warning or Blocked (<a href="#verdict">what each means</a>), then one line saying what the transaction does, or, when it does several things, how many, with each on a line below.</dd>
@@ -51,19 +65,13 @@ export function howItWorksPage(): Page {
 <dd>Everything the engine printed: each instruction with its fields, the signers, the fee, and how long the signature stays valid.</dd>
 <dt>The line under it</dt>
 <dd>Where the transaction comes from (a mainnet transaction, linked to an explorer, or one built to show a case), who it was explained for, and by which engine, on which day.</dd>
-</dl>
-<h2>Where the words come from</h2>
-<p>Each program SignLens explains has a reviewed description of its instructions, built from the program's published interface and checked against real mainnet transactions. The badge marks a token or an account SignLens knows by its address, from a verified token list or by deriving it, not by the name it gives itself. The engine words every sentence, in English, or in Simplified Chinese, reviewed by a native speaker, when your browser asks for it. A simulation is a claim by the Solana node that ran it: SignLens holds it against the decoded instructions, and more leaving than they state is a finding.</p>
-<h2>What runs where</h2>
-<p>Everything that runs in your browser is open source, TypeScript compiled file for file with no bundler, and each release is built reproducibly, with its checksums and a build attestation (<a href="${REPOSITORY}">the source</a>). In this beta the explanation itself is computed on SignLens's server, which keeps verdicts and finding codes, not the transaction; <a href="/privacy">the privacy page</a> has the details.</p>
-<h2>Watch-only mode</h2>
-<p>SignLens can also connect as any address you give it, with no wallet behind it: it explains what a dapp asks that address to sign, and refuses every request. Useful for checking a dapp before you connect a real wallet.</p>`;
+</dl>`;
     return {
         path: '/how-it-works',
         title: 'How SignLens works: clear signing for any Solana wallet',
         description:
             'Dapps connect SignLens like a wallet, but it holds no keys: it explains each request in its own window, then passes it unchanged to your real wallet.',
-        updated: '2026-11-06',
+        updated: '2026-11-10',
         body,
     };
 }
@@ -179,90 +187,166 @@ export function comparePage(): Page {
     };
 }
 
-const FAQ: [string, string | Html][] = [
-    [
-        'What is SignLens?',
-        'A free browser extension for Chrome, Brave, Edge and Firefox that explains, in plain words, each Solana transaction a dapp asks you to sign, before your wallet signs it, and warns about what a balance preview cannot show.',
-    ],
-    [
-        'Is SignLens a wallet? Do I have to move my funds?',
-        'No. SignLens holds no keys and signs nothing. It sits in front of the wallet you already use, and passes each request on to it unchanged once you say so. Your funds stay where they are.',
-    ],
-    ['Which wallets does it work with?', 'Phantom, Backpack, Solflare and the other Solana wallets dapps can connect to in the browser.'],
-    [
-        'Does it read v1 transactions?',
-        'Yes, as well as legacy and v0 ones. SignLens tells a dapp it takes the transaction versions your wallet signs: v1 with a wallet that signs them, such as Backpack or Jupiter Wallet, and legacy and v0 otherwise, so a request you approve is never one your wallet refuses. Some dapps, such as jup.ag, build v1 transactions only for a wallet that says it takes them. In watch-only mode, where nothing is signed, it takes all three.',
-    ],
-    [
-        'Does SignLens work with a Ledger or another hardware wallet?',
-        html`Yes, through the browser wallet your Ledger is connected to, such as Phantom, Backpack or Solflare. SignLens explains the transaction in its own window, then passes it to that wallet, which sends it to the Ledger to sign. For most Solana DeFi transactions the Ledger shows only a hash, with blind signing on (<a href="/clear-signing#today">what signing looks like today</a>), so SignLens's window is where you read what you approve. It does not replace the Ledger: a compromised computer could show anything in that window, while your keys stay on the device.`,
-    ],
-    [
-        'What is clear signing? What is blind signing?',
-        html`Clear signing is seeing the transaction itself, decoded into words, before you sign. Blind signing is approving a transaction you cannot read: a hash, or an interface's description of what the bytes do. SignLens brings clear signing to Solana transactions in the browser. Read <a href="/clear-signing">Clear signing on Solana</a> for what each looks like today and why it matters.`,
-    ],
-    [
-        "How is it different from my wallet's transaction preview?",
-        'A preview shows the balance changes a simulation estimates: how much leaves your wallet, not why. SignLens reads the instructions and says what they do: deposit as collateral, open a liquidity position, stake SOL, or hand an account over to someone else. It also catches what moves nothing when you sign, such as an owner change or an unlimited approval.',
-    ],
-    [
-        'What does the verified badge mean?',
-        'The check in a ring after a name or an amount means that SignLens knows the token or account by its on-chain address, either from a verified token list or by deriving its address (a program-derived address, or an associated token account), not by the name it gives itself. A token SignLens cannot verify is named by its mint address, as an unverified token.',
-    ],
-    [
-        'What is a wallet drainer?',
-        html`A site, or a transaction, made to empty your wallet. On Solana a drainer often gets you to sign something that moves nothing at once but hands over control: an <a href="/warnings/token-account-owner-change">owner change</a> of a token account or of the wallet itself, an <a href="/warnings/unlimited-token-approval">unlimited approval</a>, or transfers hidden inside a program of its own. A balance preview can show nothing for those.`,
-    ],
-    [
-        'Can SignLens stop a wallet drainer?',
-        html`It reads each transaction before your wallet signs it. Changing the owner of your account is flagged as critical and blocks the request; an unlimited approval is a High finding; and a custom drainer program is blocked as unknown because SignLens has no reviewed description of it (as in <a href="/incidents/owner-change-phishing-2025">the November 2025 case</a>). It cannot help when a seed phrase or a key is stolen, which needs no signature, or when the computer itself is compromised.`,
-    ],
-    [
-        'What happens with a program SignLens does not know?',
-        html`It is shown as unknown, and the request is <a href="/warnings/unknown-program">blocked by default</a>. You can still choose "Continue anyway". A block means SignLens cannot vouch for the program, not that the dapp is malicious.`,
-    ],
-    [
-        'Can SignLens be wrong?',
-        'Yes. OK means it read every instruction and found nothing to warn about, not that a trade is a good one. It can misread a program or miss something; the feedback strip under every explanation is there to say so.',
-    ],
-    [
-        'What does SignLens send to its server?',
-        html`In this beta, the unsigned transaction, the addresses its lookup tables load, the simulation result, the accounts the explanation asks for as your RPC returned them, your addresses from the settings, your languages (the one you chose in the settings, if any, then your browser's), and your address book's addresses, each with a random stand-in for its name: the names stay in your browser. The server logs the verdict, the finding codes and a hash of the transaction, not the transaction itself. <a href="/privacy">The privacy page</a> has the details.`,
-    ],
-    ['Does it cost anything?', 'No. SignLens is free, and the extension is open source under the Apache 2.0 licence.'],
-    ['Does it work on my phone?', 'No. It is an extension for desktop Chrome, Brave, Edge and Firefox.'],
-    [
-        'Is SignLens in my language?',
-        'The extension and its explanations are in English and in Simplified Chinese, reviewed in full by a native speaker. SignLens uses Chinese when your browser asks for it, and English otherwise, unless you choose one under "Language" on the setup page or at the top of the settings in the popup. An explanation in Chinese has a "Show in English" button, to read it against the English.',
-    ],
-    ['Which chains?', 'Solana mainnet today. SignLens is built so that other chains can be added, and Ethereum is next.'],
-    [
-        'Why does SignLens warn that a signature never expires?',
-        html`The transaction is built on a <a href="/warnings/durable-nonce">durable nonce</a>: it stays valid until the nonce is used, so whoever holds it can send it at any later time. That is how <a href="/incidents/drift-2026">the Drift takeover of April 2026</a> worked.`,
-    ],
-    [
-        'What if the SignLens server is down?',
-        'The window says it has no explanation, and the request is treated as blocked, never passed as safe. You can still choose to continue.',
-    ],
-    [
-        'Can it check a Squads multisig proposal?',
-        html`When the proposal is created in the transaction you sign, yes: SignLens decodes its transaction step by step. When you only <a href="/warnings/multisig-approval">approve a proposal created earlier</a>, the bytes you sign do not contain it: SignLens fetches the proposal and the transaction it stores from your RPC and decodes the steps, noting that those details come from your RPC, not the bytes you are signing. If the RPC cannot return the proposal, SignLens warns that it cannot see what you are approving.`,
-    ],
-    [
-        'How do I report a wrong explanation or a security problem?',
-        html`A wrong or unclear explanation: the feedback strip under it. A security problem: write to <a href="mailto:${SECURITY_EMAIL}">${SECURITY_EMAIL}</a>, as <a href="/security">the security page</a> says.`,
-    ],
+/** The questions, by what they are about; each has an id to be linked by, which stays when its words change. */
+const FAQ: { id: string; name: string; questions: [string, string, string | Html][] }[] = [
+    {
+        id: 'basics',
+        name: 'The basics',
+        questions: [
+            [
+                'what',
+                'What is SignLens?',
+                'A free browser extension for Chrome, Brave, Edge and Firefox that explains, in plain words, each Solana transaction a dapp asks you to sign, before your wallet signs it, and warns about what a balance preview cannot show.',
+            ],
+            ['cost', 'Does it cost anything?', 'No. SignLens is free, and the extension is open source under the Apache 2.0 licence.'],
+            ['phone', 'Does it work on my phone?', 'No. It is an extension for desktop Chrome, Brave, Edge and Firefox.'],
+            ['chains', 'Which chains?', 'Solana mainnet today. SignLens is built so that other chains can be added, and Ethereum is next.'],
+            [
+                'language',
+                'Is SignLens in my language?',
+                'The extension and its explanations are in English and in Simplified Chinese, reviewed in full by a native speaker. SignLens uses Chinese when your browser asks for it, and English otherwise, unless you choose one under "Language" on the setup page or at the top of the settings in the popup. An explanation in Chinese has a "Show in English" button, to read it against the English.',
+            ],
+        ],
+    },
+    {
+        id: 'wallets',
+        name: 'Wallets and compatibility',
+        questions: [
+            [
+                'wallet',
+                'Is SignLens a wallet? Do I have to move my funds?',
+                'No. SignLens holds no keys and signs nothing. It sits in front of the wallet you already use, and passes each request on to it unchanged once you say so. Your funds stay where they are.',
+            ],
+            [
+                'which-wallets',
+                'Which wallets does it work with?',
+                'Phantom, Backpack, Solflare and the other Solana wallets dapps can connect to in the browser.',
+            ],
+            [
+                'ledger',
+                'Does SignLens work with a Ledger or another hardware wallet?',
+                html`Yes, through the browser wallet your Ledger is connected to, such as Phantom, Backpack or Solflare. SignLens explains the transaction in its own window, then passes it to that wallet, which sends it to the Ledger to sign. For most Solana DeFi transactions the Ledger shows only a hash, with blind signing on (<a href="/clear-signing#today">what signing looks like today</a>), so SignLens's window is where you read what you approve. It does not replace the Ledger: a compromised computer could show anything in that window, while your keys stay on the device.`,
+            ],
+            [
+                'v1',
+                'Does it read v1 transactions?',
+                'Yes, as well as legacy and v0 ones. SignLens tells a dapp it takes the transaction versions your wallet signs: v1 with a wallet that signs them, such as Backpack or Jupiter Wallet, and legacy and v0 otherwise, so a request you approve is never one your wallet refuses. Some dapps, such as jup.ag, build v1 transactions only for a wallet that says it takes them. In watch-only mode, where nothing is signed, it takes all three.',
+            ],
+            [
+                'squads',
+                'Can it check a Squads multisig proposal?',
+                html`When the proposal is created in the transaction you sign, yes: SignLens decodes its transaction step by step. When you only <a href="/warnings/multisig-approval">approve a proposal created earlier</a>, the bytes you sign do not contain it: SignLens fetches the proposal and the transaction it stores from your RPC and decodes the steps, noting that those details come from your RPC, not the bytes you are signing. If the RPC cannot return the proposal, SignLens warns that it cannot see what you are approving.`,
+            ],
+        ],
+    },
+    {
+        id: 'shows',
+        name: 'What it shows and what it catches',
+        questions: [
+            [
+                'preview',
+                "How is it different from my wallet's transaction preview?",
+                'A preview shows the balance changes a simulation estimates: how much leaves your wallet, not why. SignLens reads the instructions and says what they do: deposit as collateral, open a liquidity position, stake SOL, or hand an account over to someone else. It also catches what moves nothing when you sign, such as an owner change or an unlimited approval.',
+            ],
+            [
+                'clear-signing',
+                'What is clear signing? What is blind signing?',
+                html`Clear signing is seeing the transaction itself, decoded into words, before you sign. Blind signing is approving a transaction you cannot read: a hash, or an interface's description of what the bytes do. SignLens brings clear signing to Solana transactions in the browser. Read <a href="/clear-signing">Clear signing on Solana</a> for what each looks like today and why it matters.`,
+            ],
+            [
+                'verified',
+                'What does the verified badge mean?',
+                'The check in a ring after a name or an amount means that SignLens knows the token or account by its on-chain address, either from a verified token list or by deriving its address (a program-derived address, or an associated token account), not by the name it gives itself. A token SignLens cannot verify is named by its mint address, as an unverified token.',
+            ],
+            [
+                'drainer',
+                'What is a wallet drainer?',
+                html`A site, or a transaction, made to empty your wallet. On Solana a drainer often gets you to sign something that moves nothing at once but hands over control: an <a href="/warnings/token-account-owner-change">owner change</a> of a token account or of the wallet itself, an <a href="/warnings/unlimited-token-approval">unlimited approval</a>, or transfers hidden inside a program of its own. A balance preview can show nothing for those.`,
+            ],
+            [
+                'stop-drainer',
+                'Can SignLens stop a wallet drainer?',
+                html`It reads each transaction before your wallet signs it. Changing the owner of your account is flagged as critical and blocks the request; an unlimited approval is a High finding; and a custom drainer program is blocked as unknown because SignLens has no reviewed description of it (as in <a href="/incidents/owner-change-phishing-2025">the November 2025 case</a>). It cannot help when a seed phrase or a key is stolen, which needs no signature, or when the computer itself is compromised.`,
+            ],
+            [
+                'unknown',
+                'What happens with a program SignLens does not know?',
+                html`It is shown as unknown, and the request is <a href="/warnings/unknown-program">blocked by default</a>. You can still choose "Continue anyway". A block means SignLens cannot vouch for the program, not that the dapp is malicious.`,
+            ],
+            [
+                'never-expires',
+                'Why does SignLens warn that a signature never expires?',
+                html`The transaction is built on a <a href="/warnings/durable-nonce">durable nonce</a>: it stays valid until the nonce is used, so whoever holds it can send it at any later time. That is how <a href="/incidents/drift-2026">the Drift takeover of April 2026</a> worked.`,
+            ],
+        ],
+    },
+    {
+        id: 'limits',
+        name: 'Privacy and limits',
+        questions: [
+            [
+                'server',
+                'What does SignLens send to its server?',
+                html`In this beta, the unsigned transaction, the addresses its lookup tables load, the simulation result, the accounts the explanation asks for as your RPC returned them, your addresses from the settings, your languages (the one you chose in the settings, if any, then your browser's), and your address book's addresses, each with a random stand-in for its name: the names stay in your browser. The server logs the verdict, the finding codes and a hash of the transaction, not the transaction itself. <a href="/privacy">The privacy page</a> has the details.`,
+            ],
+            [
+                'wrong',
+                'Can SignLens be wrong?',
+                'Yes. OK means it read every instruction and found nothing to warn about, not that a trade is a good one. It can misread a program or miss something; the feedback strip under every explanation is there to say so.',
+            ],
+            [
+                'down',
+                'What if the SignLens server is down?',
+                'The window says it has no explanation, and the request is treated as blocked, never passed as safe. You can still choose to continue.',
+            ],
+        ],
+    },
+    {
+        id: 'reporting',
+        name: 'Reporting a problem',
+        questions: [
+            [
+                'report',
+                'How do I report a wrong explanation or a security problem?',
+                html`A wrong or unclear explanation: the feedback strip under it. A security problem: write to <a href="mailto:${SECURITY_EMAIL}">${SECURITY_EMAIL}</a>, as <a href="/security">the security page</a> says.`,
+            ],
+        ],
+    },
 ];
+
+/** An answer as text, for structured data: its words without their links. */
+function plain(answer: string | Html): string {
+    if (typeof answer === 'string') return answer;
+    return answer.value
+        .replace(/<[^>]*>/g, '')
+        .replace(/&#39;/g, "'")
+        .replace(/&quot;/g, '"')
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+        .replace(/&amp;/g, '&');
+}
 
 export function faqPage(): Page {
     const body = html`<h1>Questions about SignLens</h1>
-${FAQ.map(([q, a]) => html`<h2>${q}</h2><p>${a}</p>`)}`;
+<ul class="contents">${FAQ.map((section) => html`<li><a href="#${section.id}">${section.name}</a><ul>${section.questions.map(([id, q]) => html`<li><a href="#${id}">${q}</a></li>`)}</ul></li>`)}</ul>
+${FAQ.map((section) => html`<h2 id="${section.id}">${section.name}</h2>${section.questions.map(([id, q, a]) => html`<h3 id="${id}">${q}</h3><p>${a}</p>`)}`)}`;
     return {
         path: '/faq',
         title: 'SignLens FAQ: clear signing for Solana, explained',
         description:
             'Is SignLens a wallet? Which wallets does it work with? What is blind signing? What does it send to its server? Answers about SignLens.',
-        updated: '2026-11-06',
+        updated: '2026-11-10',
         body,
+        jsonLd: {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: FAQ.flatMap((section) =>
+                section.questions.map(([, q, a]) => ({
+                    '@type': 'Question',
+                    name: q,
+                    acceptedAnswer: { '@type': 'Answer', text: plain(a) },
+                })),
+            ),
+        },
     };
 }
