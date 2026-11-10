@@ -1,8 +1,8 @@
 // The home page: what SignLens is, in the first sentence, then the proof.
 
-import { summaryHtml, VERIFIED_BADGE } from '../explanation.ts';
+import { findingLine, summaryHtml, VERIFIED_BADGE, verdictCard } from '../explanation.ts';
 import { html } from '../html.ts';
-import type { Page } from '../page.ts';
+import { installButtons, type Page } from '../page.ts';
 import { load } from '../shown.ts';
 import { CHROME, FIREFOX, NAME, ORIGIN, RELEASES, REPOSITORY, VERSION } from '../site.ts';
 import { INCIDENTS } from './incidents.ts';
@@ -49,17 +49,44 @@ const WORKS_WITH: [string, string][] = [
 ];
 
 export function homePage(): Page {
+    const handover = load('token-account-handed-over').recording;
     const body = html`<section class="hero">
 <div>
 <h1>Know what you're signing on Solana</h1>
-<p class="lead">${NAME} is a free Solana transaction explainer: a browser extension that decodes each transaction a dapp asks you to sign and says in plain words what it does, before your wallet signs it. When it cannot read one, it blocks the request. Your wallet's preview shows what leaves your wallet; SignLens says where it goes and what it is for.</p>
-<p>It sits in front of the wallet you already use, Phantom, Backpack, Solflare and other Solana wallets. It holds no keys: it explains each request in its own window, and once you say so passes it on, unchanged, to your wallet, where you approve or reject as usual.</p>
-<div class="actions"><a class="button primary" href="/install">Install for Chrome or Firefox</a><a class="button" href="/examples/">See real examples</a></div>
-<p class="muted">Beta, version ${VERSION}. The extension is open source. <a href="/privacy">The explanation is computed on SignLens's server</a> for now.</p>
+<p class="lead">${NAME} is a free Solana transaction explainer: a browser extension that says in plain words what each transaction does before your wallet signs it, and blocks the ones it cannot read.</p>
+${installButtons()}
+<ul class="trust"><li>Holds no keys</li><li><a href="${REPOSITORY}">Open source</a></li><li>Works with the wallet you already use: Phantom, Backpack, Solflare and others</li></ul>
+<p class="muted fine">Beta, version ${VERSION}, for Chrome, Brave, Edge and Firefox on a computer. <a href="/privacy">The explanation is computed on SignLens's server</a> for now.</p>
 </div>
-<figure><picture><source media="(prefers-color-scheme: dark)" srcset="/images/deposit-dark.webp"><img src="/images/deposit-light.webp" width="440" height="575" alt="The SignLens window on a deposit: OK, Deposit 4,635.28675 USDC, with the verified badge, into Kamino Lend as collateral; what it does, from your wallet to Kamino Lend, the fee and how long it is valid; and Reject and Continue to Phantom"></picture></figure>
+<div class="contrast">
+<div class="preview"><p class="label">A balance preview shows</p><p class="nothing">No tokens leave your wallet</p></div>
+<p class="label">SignLens shows, for the same transaction</p>
+${verdictCard(handover, html`A constructed transaction, built to show this case: <a href="/warnings/token-account-owner-change">a signature that gives an account away</a>.`)}
+</div>
 </section>
-<div class="prose">
+<section class="band how">
+<div>
+<h2>How it works</h2>
+<ol class="steps">
+<li><h3>Add it to your browser</h3><p>From the Chrome Web Store or Firefox Add-ons. A setup page opens: add your wallet addresses there, so that explanations can say "you".</p></li>
+<li><h3>Connect through SignLens</h3><p>When a dapp asks you to connect a wallet, choose <b>SignLens</b>, not your wallet itself. It connects, in turn, to your own wallet in the same page.</p></li>
+<li><h3>Read, then continue</h3><p>Every request opens the SignLens window first. Continue, and it is passed on, unchanged, to your wallet, where you approve or reject as usual.</p></li>
+</ol>
+<p><a href="/install">Installing it, step by step</a>, and <a href="/how-it-works">how it reads a transaction</a>.</p>
+</div>
+<figure><picture><source media="(prefers-color-scheme: dark)" srcset="/images/deposit-dark.webp"><img src="/images/deposit-light.webp" width="440" height="575" loading="lazy" alt="The SignLens window on a deposit: OK, Deposit 4,635.28675 USDC, with the verified badge, into Kamino Lend as collateral; what it does, from your wallet to Kamino Lend, the fee and how long it is valid; and Reject and Continue to Phantom"></picture></figure>
+</section>
+<section class="band">
+<h2>It warns about what a balance preview cannot show</h2>
+<p>Some of the worst transactions take nothing when you sign them: they hand over the right to take it later. SignLens flags them right under the verdict. Each line below is what it says of a real or a constructed transaction.</p>
+<ul class="cards grid">${WARNINGS.map((w) => html`<li><h3><a href="/warnings/${w.slug}">${w.name}</a></h3><p>${w.gist}</p>${findingLine(load(w.example).recording)}</li>`)}</ul>
+</section>
+<section class="band">
+<h2>Real attacks, read by SignLens</h2>
+<p>The transactions behind attacks that needed a signature, as SignLens reads them, and what that does and does not prove.</p>
+<ul class="cards grid">${INCIDENTS.map((i) => html`<li><h3><a href="/incidents/${i.slug}">${i.name}</a></h3><p>${i.gist}</p></li>`)}</ul>
+</section>
+<section class="band">
 <h2>More than a balance preview</h2>
 <p>Before you sign, your wallet can show what a transaction will take from you. It does not say where that goes or what it buys. A deposit into a lending market, a liquidity position, a stake, a leveraged order and a drain can all look the same there. SignLens reads the transaction itself, every instruction of it, and says in words what it does: <a href="/clear-signing">clear signing</a>, in front of the wallet you already use.</p>
 <p>Real mainnet transactions, by what leaves the wallet and by SignLens's summary of them:</p>
@@ -68,11 +95,14 @@ export function homePage(): Page {
 <tbody role="rowgroup">${TABLE.map((row) => html`<tr role="row"><td role="cell" data-label="On"><a href="${row.example}">${row.on}</a></td><td role="cell" data-label="Leaves your wallet">${row.leaves}</td><td role="cell" data-label="SignLens says">${summaryHtml(load(row.slug).recording)}</td></tr>`)}</tbody>
 </table></div>
 <p>The badge ${VERIFIED_BADGE} marks a token or an account SignLens knows by its address, not by the name it gives itself; "≤" an amount the program may take less of. <a href="/examples/">More examples</a>, from lending to multisig proposals.</p>
-<h2>It warns about what a balance preview cannot show</h2>
-<p>Some of the worst transactions take nothing when you sign them: they hand over the right to take it later. SignLens flags them right under the verdict: ${WARNINGS.map((w, i) => html`${i === 0 ? '' : i === WARNINGS.length - 1 ? ' and ' : ', '}<a href="/warnings/${w.slug}">${w.name.toLowerCase()}</a>`)}. <a href="/warnings/">See all warnings</a>.</p>
-<h2>Real attacks, read by SignLens</h2>
-<p>The transactions behind attacks that needed a signature, as SignLens reads them, and what that does and does not prove:</p>
-<ul>${INCIDENTS.map((i) => html`<li><a href="/incidents/${i.slug}">${i.name}</a></li>`)}</ul>
+</section>
+<section class="band">
+<h2 id="works-with">Works with</h2>
+<p>SignLens explains the programs below, whichever site calls them: a Jupiter swap reads the same on jup.ag as in another site's swap widget.</p>
+<dl class="works">${WORKS_WITH.map(([project, what]) => html`<div><dt>${project}</dt><dd>${what}</dd></div>`)}</dl>
+<p>A program not on the list is shown as unknown, and its transaction blocked. SignLens is not affiliated with any of these projects; their names are their owners' trademarks.</p>
+</section>
+<section class="band">
 <h2>What it isn't</h2>
 <ul>
 <li><b>Not a wallet.</b> It holds no keys and signs nothing. Your wallet still asks you for every signature, as it did before.</li>
@@ -81,19 +111,19 @@ export function homePage(): Page {
 <li><b>Not offline, in this beta.</b> The explanation is computed on SignLens's server, which sees the transaction; <a href="/privacy">the privacy page</a> says what it keeps.</li>
 <li><b>Not on every chain yet.</b> SignLens explains Solana mainnet today and is built to take on other chains; Ethereum is next. It runs in Chrome, Brave, Edge and Firefox on a computer.</li>
 </ul>
-<h2 id="works-with">Works with</h2>
-<p>SignLens explains the programs below, whichever site calls them: a Jupiter swap reads the same on jup.ag as in another site's swap widget.</p>
-<ul>${WORKS_WITH.map(([project, what]) => html`<li><b>${project}</b>: ${what}</li>`)}</ul>
-<p>A program not on the list is shown as unknown, and its transaction blocked. SignLens is not affiliated with any of these projects; their names are their owners' trademarks.</p>
+</section>
+<section class="band get">
 <h2>Get it</h2>
-<p>SignLens ${VERSION} is on the <a href="${CHROME}">Chrome Web Store</a> for Chrome, Brave and Edge, and on <a href="${FIREFOX}">Firefox Add-ons</a>. Each release is also on <a href="${RELEASES}">GitHub</a>, built reproducibly and published with its checksums. <a href="/install">How to install it</a>, <a href="/how-it-works">how it works</a>, and <a href="/faq">questions people ask</a>.</p>
-</div>`;
+<p>SignLens ${VERSION} is free, on the Chrome Web Store for Chrome, Brave and Edge, and on Firefox Add-ons.</p>
+${installButtons()}
+<p class="fine">Each release is also on <a href="${RELEASES}">GitHub</a>, built reproducibly and published with its checksums. <a href="/install">How to install it</a>, <a href="/how-it-works">how it works</a>, and <a href="/faq">questions people ask</a>.</p>
+</section>`;
     return {
         path: '/',
         title: 'SignLens: Solana transaction explainer for your wallet',
         description:
             'A free browser extension that explains, in plain words, each Solana transaction a dapp asks you to sign. Works with Phantom, Backpack and Solflare.',
-        updated: '2026-11-06',
+        updated: '2026-11-10',
         wide: true,
         body,
         jsonLd: {

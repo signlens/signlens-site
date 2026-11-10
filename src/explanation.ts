@@ -164,6 +164,40 @@ export function summaryHtml(recording: Recording): Html {
     return messageHtml(recording.explanation.summary);
 }
 
+/** The verdict's band and what SignLens found: the top of a card. */
+function top(e: Explanation): Html {
+    const several = e.actions.length > 1;
+    return html`<div class="head"><span class="badge">${VERDICT_WORD[e.verdict]}</span><p class="summary">${several ? `${e.actions.length} actions` : messageHtml(e.summary)}</p></div>
+${several ? html`<ol class="actions">${e.actions.map((action) => html`<li>${messageHtml(action.summary)}</li>`)}</ol>` : ''}
+${
+    e.findings.length > 0
+        ? html`<p class="label">What SignLens found</p>
+<ul class="findings">${e.findings.map((f) => html`<li class="finding ${f.severity}"><span class="severity">${SEVERITY_WORD[f.severity]}</span> ${messageHtml(f.message)}</li>`)}</ul>`
+        : ''
+}`;
+}
+
+/** The top of a card alone, the verdict and the findings, over a caption of the page's: for the home page, which links to the whole card. */
+export function verdictCard(recording: Recording, caption: Html): Html {
+    const e = recording.explanation;
+    return html`<figure class="explanation verdict-${e.verdict}">
+${top(e)}
+<figcaption>${caption}</figcaption>
+</figure>`;
+}
+
+const SEVERITY_RANK: Record<Severity, number> = { info: 0, warning: 1, high: 2, critical: 3 };
+
+/** A recording's verdict and its gravest finding, in the engine's words, on one line: what SignLens says of a pattern, for a list of them. */
+export function findingLine(recording: Recording): Html {
+    const e = recording.explanation;
+    const finding = e.findings.reduce<(typeof e.findings)[number] | null>(
+        (worst, f) => (worst === null || SEVERITY_RANK[f.severity] > SEVERITY_RANK[worst.severity] ? f : worst),
+        null,
+    );
+    return html`<p class="says verdict-${e.verdict}"><span class="badge">${VERDICT_WORD[e.verdict]}</span> ${messageHtml(finding ? finding.message : e.summary)}</p>`;
+}
+
 /** The line under a card: where the transaction comes from, and for whom it was explained. */
 function caption(tx: TransactionFile, recording: Recording): Html {
     const origin = tx.signature
@@ -179,16 +213,8 @@ function caption(tx: TransactionFile, recording: Recording): Html {
 /** The card for one transaction, as the window shows it: several actions are counted at the top and listed one a line. */
 export function card(tx: TransactionFile, recording: Recording): Html {
     const e = recording.explanation;
-    const several = e.actions.length > 1;
     return html`<figure class="explanation verdict-${e.verdict}">
-<div class="head"><span class="badge">${VERDICT_WORD[e.verdict]}</span><p class="summary">${several ? `${e.actions.length} actions` : messageHtml(e.summary)}</p></div>
-${several ? html`<ol class="actions">${e.actions.map((action) => html`<li>${messageHtml(action.summary)}</li>`)}</ol>` : ''}
-${
-    e.findings.length > 0
-        ? html`<p class="label">What SignLens found</p>
-<ul class="findings">${e.findings.map((f) => html`<li class="finding ${f.severity}"><span class="severity">${SEVERITY_WORD[f.severity]}</span> ${messageHtml(f.message)}</li>`)}</ul>`
-        : ''
-}
+${top(e)}
 <p class="label">What this does</p>
 <ul class="effects">${e.effects.map((effect) => html`<li>${messageHtml(effect.message)}</li>`)}</ul>
 <details class="full"><summary>Full text, as the engine prints it</summary><pre tabindex="0" aria-label="The full text">${e.text}</pre></details>

@@ -157,6 +157,16 @@ header.site nav a[aria-current='page'] {
     text-decoration: underline;
 }
 
+/* The way in, where every page has it. */
+header.site nav a.cta,
+header.site nav a.cta:hover {
+    padding: 0.25rem 0.8rem;
+    border-radius: 0.5rem;
+    background: var(--fill);
+    color: var(--on-fill);
+    font-weight: 600;
+}
+
 /* On a phone the menu sits under the name, in two short rows. */
 @media (max-width: 40rem) {
     header.site .bar {
@@ -172,6 +182,10 @@ header.site nav a[aria-current='page'] {
 
     header.site nav a {
         padding: 0.15rem 0;
+    }
+
+    header.site nav a.cta {
+        padding: 0.15rem 0.7rem;
     }
 }
 
@@ -233,30 +247,160 @@ main.wide {
     color: var(--on-fill);
 }
 
-.hero {
-    display: grid;
-    gap: 1rem 3rem;
-    align-items: center;
-    padding-top: 1rem;
+.fine {
+    font-size: 0.9rem;
 }
 
-.prose {
-    max-width: var(--measure);
-    margin: 0 auto;
+.hero,
+.how {
+    display: grid;
+    gap: 2rem 3rem;
+    align-items: center;
+}
+
+.hero {
+    padding-top: 1.5rem;
 }
 
 @media (min-width: 52rem) {
-    .hero {
+    .hero,
+    .how {
         grid-template-columns: 1.1fr 1fr;
     }
 }
 
-.hero figure {
+/* The home page: one section under another, each as wide as the page, its words as wide as a column. */
+.band {
+    margin-top: 4.5rem;
+}
+
+.band h2 {
+    font-size: 1.75rem;
+    margin-top: 0;
+}
+
+.band > p,
+.band > ul:not(.cards) {
+    max-width: var(--measure);
+}
+
+.label {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+/* What stands behind the buttons, in three short facts. */
+ul.trust {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+    font-weight: 600;
+}
+
+ul.trust li::before {
+    content: '✓';
+    margin-right: 0.4rem;
+    color: var(--ok);
+}
+
+/* One transaction twice: what a balance preview has to show of it, and what SignLens says. */
+.contrast .preview {
+    border: 1px dashed var(--line);
+    border-radius: 0.75rem;
+    padding: 0.85rem 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.contrast .nothing {
+    margin: 0.25rem 0 0;
+    font-size: 1.2rem;
+    color: var(--muted);
+}
+
+/* The steps, each under its number. */
+ol.steps {
+    list-style: none;
+    padding: 0;
+    counter-reset: step;
+}
+
+ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 3.25rem;
+    margin: 1.5rem 0;
+}
+
+ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: var(--fill);
+    color: var(--on-fill);
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+}
+
+ol.steps h3 {
+    margin: 0 0 0.25rem;
+}
+
+ol.steps p {
+    margin: 0;
+}
+
+.how figure {
     margin: 0;
     text-align: center;
 }
 
-.hero img,
+/* What SignLens explains, a project a cell. */
+dl.works {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    gap: 1rem 2rem;
+    font-size: 0.95rem;
+}
+
+dl.works dt {
+    font-weight: 700;
+}
+
+dl.works dd {
+    margin: 0;
+    color: var(--muted);
+}
+
+/* The last word: where to get it. */
+.band.get {
+    background: var(--raised);
+    border-radius: 0.75rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.band.get > p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.band.get .actions {
+    justify-content: center;
+}
+
+.how img,
 .shot img {
     border: 1px solid var(--line);
     border-radius: 0.75rem;
@@ -348,8 +492,31 @@ ul.cards li {
     padding: 1rem 1.25rem;
 }
 
+ul.cards li h2,
 ul.cards li h3 {
     margin-top: 0;
+    font-size: 1.2rem;
+}
+
+ul.cards li p:last-child {
+    margin-bottom: 0;
+}
+
+@media (min-width: 40rem) {
+    ul.cards.grid {
+        grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+    }
+}
+
+/* What SignLens says of it, in the verdict's colour, at the foot of its card. */
+.says {
+    margin-top: auto;
+    padding: 0.6rem 0.75rem;
+    border-left: 4px solid var(--verdict);
+    border-radius: 0 0.5rem 0.5rem 0;
+    background: var(--raised);
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
 }
 
 /* An explanation, as the window shows it. */
@@ -370,15 +537,15 @@ figure.explanation .head {
     background: var(--raised);
 }
 
-figure.explanation.verdict-ok {
+.verdict-ok {
     --verdict: var(--ok);
 }
 
-figure.explanation.verdict-warn {
+.verdict-warn {
     --verdict: var(--warning);
 }
 
-figure.explanation.verdict-block {
+.verdict-block {
     --verdict: var(--blocked);
 }
 
@@ -469,11 +636,6 @@ abbr.term.unverified {
 
 figure.explanation .label {
     margin: 0.5rem 1rem 0;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--muted);
 }
 
 .address.self b {
@@ -536,4 +698,16 @@ footer.site nav {
     flex-wrap: wrap;
     gap: 0.25rem 1.25rem;
     margin-bottom: 0.75rem;
+}
+
+/* The home page's cards, after the rules they add to. */
+.contrast figure.explanation {
+    margin: 0.5rem 0 0;
+    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 12%);
+}
+
+ul.cards.grid li {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
 }

@@ -1,6 +1,6 @@
 // A page of the site, and the shell every page is rendered in.
 import { type Html, html, raw } from './html.ts';
-import { NAME, ORIGIN, REPOSITORY } from './site.ts';
+import { CHROME, FIREFOX, NAME, ORIGIN, REPOSITORY } from './site.ts';
 
 export interface Page {
     /** The URL path: `/`, `/faq`, `/examples/`; a path ending in `/` is a section's index. */
@@ -34,13 +34,17 @@ export function markdownFor(path: string): string {
     return `${path.slice(1)}.md`;
 }
 
+/** The two stores' buttons, and whatever else the page puts beside them. */
+export function installButtons(more: Html | string = ''): Html {
+    return html`<div class="actions"><a class="button primary" href="${CHROME}">Add to Chrome</a><a class="button primary" href="${FIREFOX}">Add to Firefox</a>${more}</div>`;
+}
+
 const NAV: [string, string][] = [
     ['/examples/', 'Examples'],
     ['/warnings/', 'Warnings'],
     ['/incidents/', 'Incidents'],
     ['/how-it-works', 'How it works'],
     ['/faq', 'FAQ'],
-    ['/install', 'Install'],
 ];
 
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -99,7 +103,7 @@ ${page.jsonLd ? raw(`<script type="application/ld+json">${JSON.stringify(page.js
 <a class="skip" href="#main">Skip to the content</a>
 <header class="site"><div class="bar">
 <a class="brand" href="/"><img src="/icon.svg" alt="" width="28" height="28">${NAME}</a>
-<nav aria-label="Site">${NAV.map(([href, label]) => html`<a href="${href}"${current(page.path, href) ? raw(' aria-current="page"') : ''}>${label}</a>`)}</nav>
+<nav aria-label="Site">${NAV.map(([href, label]) => html`<a href="${href}"${current(page.path, href) ? raw(' aria-current="page"') : ''}>${label}</a>`)}<a class="cta" href="/install"${current(page.path, '/install') ? raw(' aria-current="page"') : ''}>Install</a></nav>
 </div></header>
 <main id="main"${page.wide ? raw(' class="wide"') : ''}>
 ${page.body}

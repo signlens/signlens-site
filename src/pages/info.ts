@@ -1,26 +1,32 @@
 // Install, privacy, security, and the page for a path that does not exist.
 import { html } from '../html.ts';
-import type { Page } from '../page.ts';
+import { installButtons, type Page } from '../page.ts';
 import { CHROME, FIREFOX, RELEASES, REPOSITORY, SECURITY_EMAIL, SITE_REPOSITORY, SUPPORT_EMAIL, VERSION } from '../site.ts';
 
 export function installPage(): Page {
     const body = html`<h1>Install SignLens</h1>
-<p class="lead">SignLens ${VERSION} is a beta for desktop Chrome, Brave and Edge (version 111 or later) and Firefox (140 or later). It is on the Chrome Web Store and on Firefox Add-ons.</p>
+<p class="lead">SignLens ${VERSION} is a free beta for desktop Chrome, Brave and Edge (version 111 or later) and Firefox (140 or later). It is on the Chrome Web Store and on Firefox Add-ons.</p>
+${installButtons()}
+<p class="muted fine">Brave installs it from the Chrome Web Store too, and so does Edge once you choose "Allow extensions from other stores" in the banner at the top of the store.</p>
+<h2>Then connect through SignLens</h2>
+<ol>
+<li>A new install opens a setup page in a tab of its own: add your wallet addresses there, so that explanations can say "you", and pin SignLens to the toolbar.</li>
+<li>In a dapp, choose <b>SignLens</b> when it asks you to connect a wallet, not your wallet itself. SignLens connects, in turn, to your own wallet in the same page; when the page has several, it asks you once which one, and keeps your choice.</li>
+<li>From then on every request opens the SignLens window first. Continue, and your wallet asks you as usual.</li>
+</ol>
+<p>If you turn off "Show the explanation and ask first" in the settings, only the requests SignLens would refuse open the window; the rest go straight on to your wallet.</p>
+<p>In the popup's settings you can choose the language SignLens and its explanations are in, change which of your wallets it passes requests to, list your own addresses so explanations can say "you", keep an address book so transfers name the people you pay and <a href="/warnings/address-poisoning">lookalikes</a> stand out, and choose the Solana node SignLens asks for what a transaction refers to (the RPC).</p>
 <h2>Chrome, Brave and Edge</h2>
-<p>Open <a href="${CHROME}">SignLens in the Chrome Web Store</a> and choose "Add to Chrome". The browser keeps it up to date. Brave installs it from the same page, and so does Edge once you choose "Allow extensions from other stores" in the banner at the top of the store.</p>
+<p>Open <a href="${CHROME}">SignLens in the Chrome Web Store</a> and choose "Add to Chrome". The browser keeps it up to date.</p>
 <p>To load a package you have checked yourself instead, download <code>signlens-extension-${VERSION}.zip</code> from the <a href="${RELEASES}">latest release</a>. It comes with its SHA-256 checksum and a build attestation; the <a href="${REPOSITORY}#verifying-a-package">README says how to check them</a>. Unzip it, open <code>chrome://extensions</code>, turn on "Developer mode", choose "Load unpacked" and pick the unzipped folder. An extension loaded this way does not update itself.</p>
 <h2>Firefox</h2>
 <p>Open <a href="${FIREFOX}">SignLens on Firefox Add-ons</a> and choose "Add to Firefox". Firefox keeps it up to date. If the SignLens popup says the browser has not let it reach the API, press "Allow https access" there.</p>
-<h2>Use it</h2>
-<p>A new install opens a setup page in a tab of its own: add your wallet addresses there, so that explanations can say "you", and pin SignLens to the toolbar.</p>
-<p>In a dapp, choose <b>SignLens</b> when it asks you to connect a wallet, not your wallet itself. SignLens connects, in turn, to your own wallet in the same page; when the page has several, it asks you once which one, and keeps your choice. From then on every request opens the SignLens window first. Continue, and your wallet asks you as usual. If you turn off "Show the explanation and ask first" in the settings, only the requests SignLens would refuse open the window; the rest go straight on to your wallet.</p>
-<p>In the popup's settings you can choose the language SignLens and its explanations are in, change which of your wallets it passes requests to, list your own addresses so explanations can say "you", keep an address book so transfers name the people you pay and <a href="/warnings/address-poisoning">lookalikes</a> stand out, and choose the Solana node SignLens asks for what a transaction refers to (the RPC).</p>
 <p class="note">SignLens never asks for a seed phrase or a private key, and never signs anything. Anything that asks you for one, in SignLens's name or not, is a scam.</p>`;
     return {
         path: '/install',
         title: 'Install SignLens for Chrome and Firefox',
         description: `Install the SignLens ${VERSION} beta from the Chrome Web Store for Chrome, Brave and Edge, or from Firefox Add-ons, and connect it in front of your Solana wallet.`,
-        updated: '2026-11-06',
+        updated: '2026-11-10',
         body,
     };
 }
