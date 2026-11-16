@@ -84,7 +84,7 @@ ${published('2026-10-28')}
 <h2 id="today">What signing looks like on Solana today</h2>
 <dl class="facts">
 <dt>On a hardware wallet</dt>
-<dd>Ledger's Solana app shows in words only "simple instructions like a single transfer" and a few pairs, such as creating an account and funding it. Anything else needs its blind-signing setting turned on: "Blind signing must be on for the Ledger to sign SPL token transfers and smart contract transactions on Solana", says Solflare's guide, and every firmware or app update turns it off again. With it on, a swap, a deposit or a vote is approved on a screen that cannot display it.</dd>
+<dd>Since 16 November 2026, Ledger's Solana app, from version 1.17.0, shows in words the transactions of the programs Ledger has reviewed, starting with Jupiter and Kamino; its announcement also names the OKX DEX router and DFlow. It adds instructions up into what they do together: opening a long on Jupiter's perpetuals is eight instructions and one intent. If any instruction has no reviewed description, the whole transaction "falls back to blind signing with a warning", and signing blind needs the app's blind-signing setting, which every firmware or app update turns off again (Solflare's guide). Ledger names no wallet it works in: it is live in the app "and the DMK", the kit a wallet uses to talk to the device, so what your Ledger shows also depends on the wallet you connect it through.</dd>
 <dt>In a software wallet</dt>
 <dd>Phantom, Backpack, Solflare and other wallets simulate the transaction and show the balance changes it would cause, with warnings for some known dangers. That shows how much leaves your wallet, not why: a lending deposit, a liquidity position and a wallet drain can all produce the same balance preview. When the simulation fails, the wallets' own help pages say the transaction may succeed anyway.</dd>
 <dt>In the dapp</dt>
@@ -102,33 +102,37 @@ ${published('2026-10-28')}
 <p>Take a real deposit into Kamino Lend. A balance preview shows only 4,635.28675 USDC leaving the wallet. SignLens decodes its instructions and shows that it deposits the USDC into Kamino Lend as collateral:</p>
 ${shown('kamino-lend-deposit')}
 <p>Three things make that possible: a description of each program's instructions, from a source you can trust, to decode the bytes into what they do; names checked by address, so that a token called USDC is Circle's USDC, not a token that copied its name (<a href="/how-it-works#reading">the verified badge</a>); and decoding the bytes that will be signed, not what the dapp says they are. It is not a defence against everything: a compromised computer can show anything, and a stolen key needs no signature.</p>
-<h2 id="srfc-39">sRFC 39: a standard for clear signing on Solana</h2>
+<h2 id="srfc-39">sRFC 39 and sRFC 41: standards for clear signing on Solana</h2>
 <p>On 27 October 2025 a draft, sRFC 39 "Solana Clear Sign", was opened in the Solana Foundation's repository of standards proposals. Its starting point: the interface descriptions programs publish, their IDLs, "provide no guidance on how to present transaction data to users", so users "must blindly sign transactions, a process prone to error and misunderstanding, which often leads to loss of funds."</p>
 <p>It proposes that each program's IDL carry display rules: an intent for each instruction, such as "Transfer 10 wSOL to toly.sol.", labels for its accounts and arguments, and how to format amounts, dates and durations. Wallets would fetch them with the IDL; hardware wallets would carry them in their firmware or be given them while signing, and must be able to show the intent from the IDL and the instruction data alone.</p>
-<p>The open question is trust. An IDL is written by the program's own authors, and a drainer can describe its program as harmless: replies in the discussion propose curated lists of trusted programs, and verified builds to establish where an IDL comes from. Ledger has proposed additions, and published an extension that follows value across instructions to state what a whole transaction does. As of October 2026 sRFC 39 is still a draft. On Ethereum the equivalent is ERC-7730, the clear-signing standard Ledger started and handed to the Ethereum Foundation on 12 May 2026.</p>
+<p>The open question is trust. An IDL is written by the program's own authors, and a drainer can describe its program as harmless: replies in the discussion propose curated lists of trusted programs, and verified builds to establish where an IDL comes from. Ledger, for now, is the curator: "Until dapp developers publish this metadata themselves, the Ledger curated registry carries it", and each description it sends the device is signed by Ledger. On 29 May 2026 Ledger proposed sRFC 41, which follows value from one instruction to the next to state what a whole transaction does; its clear signing reads both. As of November 2026 sRFC 39 is still a draft. On Ethereum the equivalent is ERC-7730, the clear-signing standard Ledger started and handed to the Ethereum Foundation on 12 May 2026.</p>
 <h2 id="now">Clear signing on Solana now</h2>
-<p>Until wallets and hardware wallets read display rules like sRFC 39's, clear signing on Solana means decoding a transaction before your wallet asks you to sign it. That is what SignLens does: dapps connect it like a wallet, and it explains each transaction in its own window, from a reviewed description of each program it knows, then passes it on unchanged to your wallet (<a href="/how-it-works">how it works</a>). A program it has no description of is not guessed at: the request is <a href="/warnings/unknown-program">blocked</a>. It is free, works in front of Phantom, Backpack, Solflare and other Solana wallets, and runs in Chrome, Brave, Edge and Firefox on a computer. <a href="/compare">How it compares</a> with wallet previews, scam lists, explorers and hardware wallets.</p>
+<p>Ledger is one of the first to read display rules like sRFC 39's, on the device's own screen, for the programs it has reviewed. Everywhere else, clear signing on Solana means decoding a transaction before your wallet asks you to sign it. That is what SignLens does: dapps connect it like a wallet, and it explains each transaction in its own window, from a reviewed description of each program it knows, then passes it on unchanged to your wallet (<a href="/how-it-works">how it works</a>). A program it has no description of is not guessed at: the request is <a href="/warnings/unknown-program">blocked</a>. It is free, works in front of Phantom, Backpack, Solflare and other Solana wallets, and runs in Chrome, Brave, Edge and Firefox on a computer. <a href="/compare">How it compares</a> with wallet previews, scam lists, explorers and hardware wallets.</p>
+<p>With a Ledger, the two work together. SignLens explains the transaction in its window before your wallet sees it, and blocks a program it has no description of rather than letting it be signed blind; the Ledger then shows, on a screen the computer cannot change, what it has a reviewed description of.</p>
 <h2 id="before-you-sign">What to do before you sign</h2>
 <p>With SignLens or without it, and whichever wallet you use:</p>
 <ul>
 <li>Reject a transaction that hands over an account or approves an unlimited amount, unless you know why it needs to.</li>
 <li>Sign a transaction that never expires only when you meant to sign something to be sent later, and you know who will hold it.</li>
-<li>On a Ledger, turn blind signing on only for the dapp that needs it, and off again afterwards, as Solflare's guide advises.</li>
+<li>On a Ledger, update the Solana app to version 1.17.0 or later, so that the programs Ledger has reviewed are shown in words, and turn blind signing on only for the dapp that needs it, and off again afterwards, as Solflare's guide advises.</li>
 <li>For a large transaction, check what it does somewhere other than the page asking you to sign it.</li>
 </ul>`;
     return {
         path: '/clear-signing',
         title: 'Clear signing on Solana: what it is and why it matters',
         description:
-            'Clear signing shows what a Solana transaction does, in words, before you sign it. What blind signing looks like on Solana today, why it matters, and sRFC 39.',
-        updated: '2026-11-01',
+            "Clear signing shows what a Solana transaction does, in words, before you sign it. Blind signing on Solana today, Ledger's clear signing, and sRFC 39.",
+        updated: '2026-11-16',
         body,
         sources: [
             ['sRFC 39: Solana Clear Sign (draft, Solana Foundation)', 'https://github.com/solana-foundation/SRFCs/discussions/4'],
-            ['Ledger: an extension of sRFC 39 to whole transactions', 'https://github.com/LedgerHQ/solana-srfc39-meta-intent-extension'],
             [
-                'Ledger: the Solana signer ("only supports simple instructions like a single transfer")',
-                'https://developers.ledger.com/docs/device-interaction/references/signers/solana',
+                'sRFC 41: Solana Clear Sign Meta-Intents Extension (proposed by Ledger)',
+                'https://github.com/solana-foundation/SRFCs/discussions/12',
+            ],
+            [
+                'Ledger: Solana clear signing, from multiple instructions to one intent (16 November 2026)',
+                'https://www.ledger.com/blog-solana-clear-signing',
             ],
             [
                 'Solflare: import your Ledger device (blind signing)',
@@ -148,7 +152,7 @@ ${shown('kamino-lend-deposit')}
                 'https://www.nccgroup.com/research/in-depth-technical-analysis-of-the-bybit-hack/',
             ],
         ],
-        jsonLd: article(h1, '2026-10-28', '2026-11-01'),
+        jsonLd: article(h1, '2026-10-28', '2026-11-16'),
     };
 }
 
@@ -161,7 +165,7 @@ export function comparePage(): Page {
 <tr role="row"><td role="cell" data-label="Tool">Wallet balance preview (Phantom, Backpack, Solflare, Jupiter Wallet)</td><td role="cell" data-label="When">When you sign</td><td role="cell" data-label="What it shows">The balance changes a simulation estimates, and warnings for some known dangers</td><td role="cell" data-label="What it misses">Often what a transaction is for; owner changes and approvals beyond the cases their warnings cover; little when the simulation fails</td></tr>
 <tr role="row"><td role="cell" data-label="Tool">Scam lists (in wallets, and extensions such as Scam Sniffer)</td><td role="cell" data-label="When">When you browse or sign</td><td role="cell" data-label="What it shows">Whether a site or address is already known to be malicious</td><td role="cell" data-label="What it misses">What nobody has reported yet; legitimate dapps are sometimes flagged too</td></tr>
 <tr role="row"><td role="cell" data-label="Tool">Explorers (Solana Explorer, Solscan)</td><td role="cell" data-label="When">Mostly after the transaction lands</td><td role="cell" data-label="What it shows">Every instruction, decoded</td><td role="cell" data-label="What it misses">Once it has landed it is too late, and inspecting one before means copying it out of the dapp</td></tr>
-<tr role="row"><td role="cell" data-label="Tool">Hardware clear signing (Ledger)</td><td role="cell" data-label="When">On the device</td><td role="cell" data-label="What it shows">Simple transfers and a few other cases, in words</td><td role="cell" data-label="What it misses">On Solana, most DeFi transactions are signed blind</td></tr>
+<tr role="row"><td role="cell" data-label="Tool">Hardware clear signing (Ledger)</td><td role="cell" data-label="When">On the device</td><td role="cell" data-label="What it shows">Since November 2026, the transactions of the programs Ledger has reviewed, such as Jupiter's and Kamino's, in words, on the device's own screen</td><td role="cell" data-label="What it misses">A transaction with any instruction it has no reviewed description of, which falls back to blind signing; it needs Solana app 1.17.0 or later and a wallet that supports it</td></tr>
 <tr role="row"><td role="cell" data-label="Tool"><b>SignLens</b></td><td role="cell" data-label="When">When you sign, before your wallet asks</td><td role="cell" data-label="What it shows">What each instruction does, in words, with findings and verified token and account names</td><td role="cell" data-label="What it misses">Programs it has no reviewed description of, which it blocks; it runs on a computer, not on phones</td></tr>
 </tbody></table></div>
 <h2>Why a balance preview is not enough</h2>
@@ -173,15 +177,15 @@ export function comparePage(): Page {
         title: 'SignLens vs wallet previews, scam lists and explorers',
         description:
             'How SignLens compares with Solana wallet balance previews, scam blocklists, explorers and hardware clear signing, and why it works alongside them.',
-        updated: '2026-10-25',
+        updated: '2026-11-16',
         body,
         sources: [
             ['Phantom: security at Phantom', 'https://phantom.com/learn/blog/security-at-phantom'],
             ['Jupiter Wallet: security ("Approval previews estimate balance changes")', 'https://jup.ag/wallet/security'],
             ['Solflare: why did my transaction fail', 'https://help.solflare.com/en/articles/9263757-why-did-my-transaction-fail'],
             [
-                'Ledger: the Solana signer ("only supports simple instructions like a single transfer or combos like createAccount + fundAccount")',
-                'https://developers.ledger.com/docs/device-interaction/references/signers/solana',
+                'Ledger: Solana clear signing, from multiple instructions to one intent (16 November 2026)',
+                'https://www.ledger.com/blog-solana-clear-signing',
             ],
         ],
     };
@@ -225,7 +229,7 @@ const FAQ: { id: string; name: string; questions: [string, string, string | Html
             [
                 'ledger',
                 'Does SignLens work with a Ledger or another hardware wallet?',
-                html`Yes, through the browser wallet your Ledger is connected to, such as Phantom, Backpack or Solflare. SignLens explains the transaction in its own window, then passes it to that wallet, which sends it to the Ledger to sign. For most Solana DeFi transactions the Ledger shows only a hash, with blind signing on (<a href="/clear-signing#today">what signing looks like today</a>), so SignLens's window is where you read what you approve. It does not replace the Ledger: a compromised computer could show anything in that window, while your keys stay on the device.`,
+                html`Yes, through the browser wallet your Ledger is connected to, such as Phantom, Backpack or Solflare. SignLens explains the transaction in its own window, then passes it to that wallet, which sends it to the Ledger to sign. Since November 2026 a Ledger with Solana app 1.17.0 or later can show in words the transactions of the programs Ledger has reviewed, such as Jupiter's and Kamino's, if the wallet it is connected through supports it; anything else it signs blind, with blind signing on (<a href="/clear-signing#today">what signing looks like today</a>). SignLens explains both, and blocks a program it has no description of. It does not replace the Ledger: a compromised computer could show anything in SignLens's window, but not on the Ledger's screen, and your keys stay on the device.`,
             ],
             [
                 'v1',
@@ -335,7 +339,7 @@ ${FAQ.map((section) => html`<h2 id="${section.id}">${section.name}</h2>${section
         title: 'SignLens FAQ: clear signing for Solana, explained',
         description:
             'Is SignLens a wallet? Which wallets does it work with? What is blind signing? What does it send to its server? Answers about SignLens.',
-        updated: '2026-11-10',
+        updated: '2026-11-16',
         body,
         jsonLd: {
             '@context': 'https://schema.org',
