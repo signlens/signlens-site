@@ -25,22 +25,25 @@ const TABLE: { on: string; slug: string; leaves: string; example: string }[] = [
 const WORKS_WITH: [string, string][] = [
     [
         'Jupiter',
-        'Aggregator v6, Order Engine, Limit Order v2, Perpetuals, Lend (Earn, Borrow, Flashloan), Lock, DAO staking and governance, Genie and merkle distributors, prediction market, Doves oracle',
+        'Aggregator v6, Order Engine, Limit Order v2, Perpetuals, YOLO, Lend (Earn, Borrow, Flashloan), Lock, DAO staking and governance, Genie and merkle distributors, prediction market, Doves oracle',
     ],
-    ['Kamino', 'Lend, Lending Vault, Farms, Limit Orders, Scope'],
+    ['Kamino', 'Lend, Lending Vault, Liquidity, Farms, Limit Orders, Scope'],
     ['Meteora', 'DLMM, DAMM v2, Dynamic Bonding Curve, Alpha Vault, Zap, liquidity distributor'],
     ['Raydium', 'AMM v4, CPMM, CLMM, LaunchLab, router'],
     ['Orca', 'Whirlpool'],
     ['marginfi', 'Project 0'],
     ['Pump', 'Pump.fun, PumpSwap, Pump Fees, Pump stables router'],
     ['Stake pools', "SPL Stake Pool, which Jito's JitoSOL and many others run on"],
+    ['Marinade', 'liquid staking for mSOL'],
+    ['Jito', 'restaking vaults'],
     ['MetaDAO', 'Futarchy, Conditional Vault'],
     ['Squads', 'v4 multisig (including decoding the transaction inside a proposal)'],
     ['Drift', "only the handover of the protocol's admin, as in the April 2026 attack"],
     [
         'Aggregators and routers',
-        'DFlow, Titan, OKX DEX Router, 0x Settler, LI.FI, Rango, Binance router and fee router, Kobayashi router, Liquid Mesh router',
+        'DFlow, Titan, OKX DEX Router, 0x Settler, 1inch Fusion, LI.FI, Rango, Binance router and fee router, Kobayashi router, Liquid Mesh router, FLASHX router, GMGN routers',
     ],
+    ['Relay', 'bridge deposits and its forwarder'],
     ['Lighthouse', 'the checks some wallets add to a transaction'],
     [
         "Solana's own programs",
