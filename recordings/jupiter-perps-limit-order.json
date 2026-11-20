@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -50,83 +50,86 @@
               "text": " to "
             },
             {
-              "short": {
-                "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
-                "is_self": true,
-                "label": {
-                  "id": "accounts-your-token",
-                  "parts": [
-                    {
-                      "text": "Your "
-                    },
-                    {
-                      "text": "SOL",
-                      "value": {
-                        "type": "text",
-                        "value": "SOL"
-                      }
-                    },
-                    {
-                      "text": " account"
-                    }
-                  ],
-                  "text": "Your SOL account"
-                },
-                "label_trust": "verified",
-                "stand_in": null,
-                "words": {
-                  "id": "address-labelled",
-                  "parts": [
-                    {
-                      "text": "Your SOL account",
-                      "value": {
-                        "type": "words",
-                        "value": {
-                          "id": "accounts-your-token",
-                          "parts": [
-                            {
-                              "text": "Your "
-                            },
-                            {
-                              "text": "SOL",
-                              "value": {
-                                "type": "text",
-                                "value": "SOL"
-                              }
-                            },
-                            {
-                              "text": " account"
-                            }
-                          ],
-                          "text": "Your SOL account"
-                        }
-                      }
-                    },
-                    {
-                      "text": " ("
-                    },
-                    {
-                      "short": {
-                        "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
-                        "is_self": true,
-                        "label": null,
-                        "label_trust": "verified",
-                        "stand_in": null,
-                        "words": null
+              "text": "Your SOL account (4apM…SU6K)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-token",
+                    "parts": [
+                      {
+                        "text": "Your "
                       },
-                      "text": "4apM…SU6K"
-                    },
-                    {
-                      "text": ")"
-                    }
-                  ],
-                  "text": "Your SOL account (4apM…SU6K)"
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      },
+                      {
+                        "text": " account"
+                      }
+                    ],
+                    "text": "Your SOL account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your SOL account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-token",
+                            "parts": [
+                              {
+                                "text": "Your "
+                              },
+                              {
+                                "text": "SOL",
+                                "value": {
+                                  "type": "text",
+                                  "value": "SOL"
+                                }
+                              },
+                              {
+                                "text": " account"
+                              }
+                            ],
+                            "text": "Your SOL account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "4apM…SU6K"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your SOL account (4apM…SU6K)"
+                  }
                 }
-              },
-              "text": "4apM…SU6K"
+              }
             }
           ],
-          "text": "Send 1.922511449 SOL to 4apM…SU6K"
+          "text": "Send 1.922511449 SOL to Your SOL account (4apM…SU6K)"
         }
       },
       {
@@ -815,6 +818,476 @@
       },
       {
         "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "8i8mYi5ECXQ53asWfabkkonDFD7QcMboD2r9tLB8bP1M",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "8i8mYi5ECXQ53asWfabkkonDFD7QcMboD2r9tLB8bP1M",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Jupiter Perpetuals (PERP…qQJu)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Jupiter Perpetuals",
+                        "value": {
+                          "type": "text",
+                          "value": "Jupiter Perpetuals"
+                        }
+                      }
+                    ],
+                    "text": "Jupiter Perpetuals"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Jupiter Perpetuals",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Jupiter Perpetuals",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Jupiter Perpetuals"
+                                }
+                              }
+                            ],
+                            "text": "Jupiter Perpetuals"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "PERP…qQJu"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Jupiter Perpetuals (PERP…qQJu)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.0022352 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "2235200",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.0022352 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.0022352 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create 8i8mYi5ECXQ53asWfabkkonDFD7QcMboD2r9tLB8bP1M, managed by Jupiter Perpetuals (PERP…qQJu), depositing 0.0022352 SOL"
+        },
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "8i8mYi5ECXQ53asWfabkkonDFD7QcMboD2r9tLB8bP1M",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "description": null,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "note_words": null,
+            "units": "2235200",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.0022352 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.0022352 SOL"
+            }
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+            "is_self": false,
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Jupiter Perpetuals",
+                  "value": {
+                    "type": "text",
+                    "value": "Jupiter Perpetuals"
+                  }
+                }
+              ],
+              "text": "Jupiter Perpetuals"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Jupiter Perpetuals",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Jupiter Perpetuals",
+                          "value": {
+                            "type": "text",
+                            "value": "Jupiter Perpetuals"
+                          }
+                        }
+                      ],
+                      "text": "Jupiter Perpetuals"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "PERP…qQJu"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Jupiter Perpetuals (PERP…qQJu)"
+            }
+          }
+        }
+      },
+      {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Token program (Toke…Q5DA)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "text",
+                          "value": "Token program"
+                        }
+                      }
+                    ],
+                    "text": "Token program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Token program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Token program"
+                                }
+                              }
+                            ],
+                            "text": "Token program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Toke…Q5DA"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Token program (Toke…Q5DA)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00148844 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1488440",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00148844 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00148844 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH, managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL"
+        },
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "description": null,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "note_words": null,
+            "units": "1488440",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00148844 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00148844 SOL"
+            }
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "text",
+                    "value": "Token program"
+                  }
+                }
+              ],
+              "text": "Token program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Token program",
+                          "value": {
+                            "type": "text",
+                            "value": "Token program"
+                          }
+                        }
+                      ],
+                      "text": "Token program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Toke…Q5DA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Token program (Toke…Q5DA)"
+            }
+          }
+        }
+      },
+      {
+        "message": {
           "id": "effect-create-deposit-if-missing",
           "parts": [
             {
@@ -1212,20 +1685,30 @@
               "text": "Close "
             },
             {
-              "text": "Your token account (4apM…SU6K)",
+              "text": "Your SOL account (4apM…SU6K)",
               "value": {
                 "type": "address",
                 "value": {
                   "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
                   "is_self": true,
                   "label": {
-                    "id": "token-your-account",
+                    "id": "accounts-your-token",
                     "parts": [
                       {
-                        "text": "Your token account"
+                        "text": "Your "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      },
+                      {
+                        "text": " account"
                       }
                     ],
-                    "text": "Your token account"
+                    "text": "Your SOL account"
                   },
                   "label_trust": "verified",
                   "stand_in": null,
@@ -1233,17 +1716,27 @@
                     "id": "address-labelled",
                     "parts": [
                       {
-                        "text": "Your token account",
+                        "text": "Your SOL account",
                         "value": {
                           "type": "words",
                           "value": {
-                            "id": "token-your-account",
+                            "id": "accounts-your-token",
                             "parts": [
                               {
-                                "text": "Your token account"
+                                "text": "Your "
+                              },
+                              {
+                                "text": "SOL",
+                                "value": {
+                                  "type": "text",
+                                  "value": "SOL"
+                                }
+                              },
+                              {
+                                "text": " account"
                               }
                             ],
-                            "text": "Your token account"
+                            "text": "Your SOL account"
                           }
                         }
                       },
@@ -1265,7 +1758,7 @@
                         "text": ")"
                       }
                     ],
-                    "text": "Your token account (4apM…SU6K)"
+                    "text": "Your SOL account (4apM…SU6K)"
                   }
                 }
               }
@@ -1333,7 +1826,7 @@
               }
             }
           ],
-          "text": "Close Your token account (4apM…SU6K) and send its SOL to Your wallet (AoLt…yfvM)"
+          "text": "Close Your SOL account (4apM…SU6K) and send its SOL to Your wallet (AoLt…yfvM)"
         },
         "type": "close",
         "value": {
@@ -1341,13 +1834,23 @@
             "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
             "is_self": true,
             "label": {
-              "id": "token-your-account",
+              "id": "accounts-your-token",
               "parts": [
                 {
-                  "text": "Your token account"
+                  "text": "Your "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                },
+                {
+                  "text": " account"
                 }
               ],
-              "text": "Your token account"
+              "text": "Your SOL account"
             },
             "label_trust": "verified",
             "stand_in": null,
@@ -1355,17 +1858,27 @@
               "id": "address-labelled",
               "parts": [
                 {
-                  "text": "Your token account",
+                  "text": "Your SOL account",
                   "value": {
                     "type": "words",
                     "value": {
-                      "id": "token-your-account",
+                      "id": "accounts-your-token",
                       "parts": [
                         {
-                          "text": "Your token account"
+                          "text": "Your "
+                        },
+                        {
+                          "text": "SOL",
+                          "value": {
+                            "type": "text",
+                            "value": "SOL"
+                          }
+                        },
+                        {
+                          "text": " account"
                         }
                       ],
-                      "text": "Your token account"
+                      "text": "Your SOL account"
                     }
                   }
                 },
@@ -1387,7 +1900,7 @@
                   "text": ")"
                 }
               ],
-              "text": "Your token account (4apM…SU6K)"
+              "text": "Your SOL account (4apM…SU6K)"
             }
           },
           "destination": {
@@ -3340,13 +3853,23 @@
                 "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
                 "is_self": true,
                 "label": {
-                  "id": "token-your-account",
+                  "id": "accounts-your-token",
                   "parts": [
                     {
-                      "text": "Your token account"
+                      "text": "Your "
+                    },
+                    {
+                      "text": "SOL",
+                      "value": {
+                        "type": "text",
+                        "value": "SOL"
+                      }
+                    },
+                    {
+                      "text": " account"
                     }
                   ],
-                  "text": "Your token account"
+                  "text": "Your SOL account"
                 },
                 "label_trust": "verified",
                 "stand_in": null,
@@ -3354,17 +3877,27 @@
                   "id": "address-labelled",
                   "parts": [
                     {
-                      "text": "Your token account",
+                      "text": "Your SOL account",
                       "value": {
                         "type": "words",
                         "value": {
-                          "id": "token-your-account",
+                          "id": "accounts-your-token",
                           "parts": [
                             {
-                              "text": "Your token account"
+                              "text": "Your "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            },
+                            {
+                              "text": " account"
                             }
                           ],
-                          "text": "Your token account"
+                          "text": "Your SOL account"
                         }
                       }
                     },
@@ -3386,7 +3919,7 @@
                       "text": ")"
                     }
                   ],
-                  "text": "Your token account (4apM…SU6K)"
+                  "text": "Your SOL account (4apM…SU6K)"
                 }
               }
             }
@@ -3924,10 +4457,7 @@
                 "id": "explain-rent",
                 "parts": [
                   {
-                    "text": "up to "
-                  },
-                  {
-                    "text": "0.00148844 SOL",
+                    "text": "0.00372364 SOL",
                     "value": {
                       "type": "amount",
                       "value": {
@@ -3941,12 +4471,12 @@
                         "bound": "exact",
                         "note": null,
                         "note_words": null,
-                        "units": "1488440",
+                        "units": "3723640",
                         "words": {
                           "id": "amount",
                           "parts": [
                             {
-                              "text": "0.00148844 "
+                              "text": "0.00372364 "
                             },
                             {
                               "text": "SOL",
@@ -3956,16 +4486,54 @@
                               }
                             }
                           ],
-                          "text": "0.00148844 SOL"
+                          "text": "0.00372364 SOL"
                         }
                       }
                     }
                   },
                   {
-                    "text": ", if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account"
+                    "text": ", or "
+                  },
+                  {
+                    "text": "0.00521208 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "5212080",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.00521208 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.00521208 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": " in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts"
                   }
                 ],
-                "text": "up to 0.00148844 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account"
+                "text": "0.00372364 SOL, or 0.00521208 SOL in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts"
               }
             }
           }
@@ -4088,80 +4656,83 @@
           "text": " to "
         },
         {
-          "short": {
-            "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
-            "is_self": true,
-            "label": {
-              "id": "accounts-your-token",
-              "parts": [
-                {
-                  "text": "Your "
-                },
-                {
-                  "text": "SOL",
-                  "value": {
-                    "type": "text",
-                    "value": "SOL"
-                  }
-                },
-                {
-                  "text": " account"
-                }
-              ],
-              "text": "Your SOL account"
-            },
-            "label_trust": "verified",
-            "stand_in": null,
-            "words": {
-              "id": "address-labelled",
-              "parts": [
-                {
-                  "text": "Your SOL account",
-                  "value": {
-                    "type": "words",
-                    "value": {
-                      "id": "accounts-your-token",
-                      "parts": [
-                        {
-                          "text": "Your "
-                        },
-                        {
-                          "text": "SOL",
-                          "value": {
-                            "type": "text",
-                            "value": "SOL"
-                          }
-                        },
-                        {
-                          "text": " account"
-                        }
-                      ],
-                      "text": "Your SOL account"
-                    }
-                  }
-                },
-                {
-                  "text": " ("
-                },
-                {
-                  "short": {
-                    "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
-                    "is_self": true,
-                    "label": null,
-                    "label_trust": "verified",
-                    "stand_in": null,
-                    "words": null
+          "text": "Your SOL account (4apM…SU6K)",
+          "value": {
+            "type": "address",
+            "value": {
+              "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+              "is_self": true,
+              "label": {
+                "id": "accounts-your-token",
+                "parts": [
+                  {
+                    "text": "Your "
                   },
-                  "text": "4apM…SU6K"
-                },
-                {
-                  "text": ")"
-                }
-              ],
-              "text": "Your SOL account (4apM…SU6K)"
+                  {
+                    "text": "SOL",
+                    "value": {
+                      "type": "text",
+                      "value": "SOL"
+                    }
+                  },
+                  {
+                    "text": " account"
+                  }
+                ],
+                "text": "Your SOL account"
+              },
+              "label_trust": "verified",
+              "stand_in": null,
+              "words": {
+                "id": "address-labelled",
+                "parts": [
+                  {
+                    "text": "Your SOL account",
+                    "value": {
+                      "type": "words",
+                      "value": {
+                        "id": "accounts-your-token",
+                        "parts": [
+                          {
+                            "text": "Your "
+                          },
+                          {
+                            "text": "SOL",
+                            "value": {
+                              "type": "text",
+                              "value": "SOL"
+                            }
+                          },
+                          {
+                            "text": " account"
+                          }
+                        ],
+                        "text": "Your SOL account"
+                      }
+                    }
+                  },
+                  {
+                    "text": " ("
+                  },
+                  {
+                    "short": {
+                      "address": "4apMCKaAaT758x4Dh4Xtgys66DDZQmhV1YJ1vf7RSU6K",
+                      "is_self": true,
+                      "label": null,
+                      "label_trust": "verified",
+                      "stand_in": null,
+                      "words": null
+                    },
+                    "text": "4apM…SU6K"
+                  },
+                  {
+                    "text": ")"
+                  }
+                ],
+                "text": "Your SOL account (4apM…SU6K)"
+              }
             }
-          },
-          "text": "4apM…SU6K"
+          }
         },
         {
           "text": "; Place a "
@@ -4270,9 +4841,9 @@
           }
         }
       ],
-      "text": "2 actions: Send 1.922511449 SOL to 4apM…SU6K; Place a long Jupiter Perps limit order of 10,457.567852 USD with 1.922511449 SOL collateral, triggered below 117.5 USD"
+      "text": "2 actions: Send 1.922511449 SOL to Your SOL account (4apM…SU6K); Place a long Jupiter Perps limit order of 10,457.567852 USD with 1.922511449 SOL collateral, triggered below 117.5 USD"
     },
-    "text": "2 actions: Send 1.922511449 SOL to 4apM…SU6K; Place a long Jupiter Perps limit order of 10,457.567852 USD with 1.922511449 SOL collateral, triggered below 117.5 USD\nOK\n\n== Transfer | System program\n  Amount: 1.922511449 SOL\n  From: Your wallet (AoLt…yfvM)\n  To: Your SOL account (4apM…SU6K)\n\n== Place limit order | Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)\n  Side: long\n  Size: 10,457.567852 USD\n  Collateral: 1.922511449 SOL\n  Trigger price: 117.5 USD\n  Triggers when price is above: no\n  Position: 6Q4C9SGTpXfvrx61avYbsDaHhoX19RUrJKb9szZDKQLo\n  Market custody: 7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz\n  From account: Your SOL account (4apM…SU6K)\n  Request time: 2026-10-07 07:56:27 UTC\n\n== Also [collapsed]\n  Compute unit limit: 181158\n  Compute unit price: 1,008 micro-lamports per compute unit\n  Create token account if missing: Token account: Your SOL account (4apM…SU6K)\n  Create token account if missing: Owner: Your wallet (AoLt…yfvM)\n  Create token account if missing: Mint: SOL mint (So11…1112)\n  Create token account if missing: Rent paid by: Your wallet (AoLt…yfvM)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Sync wrapped SOL: Account: Your SOL account (4apM…SU6K)\n  Ed25519 signature check: Signer 1: in instruction 7's data\n  Ed25519 signature check: Message 1: 50 bytes in instruction 7\n  Oracle price update: Signed message: 0xb9011a82ec22315597a85cb2c85ed563d75777a86e107caee54d0e2cf7e3542c9ef320bac88e1f02c2e1137b2eafe8e77bab48b3f77d42452fa5a9a57c9cfd7b9bd3b70280efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c320075d3c793c0e901743b5d060003010600000004002d1a93c20200000004f8ff05ea6e2800000000000c01c0e901743b5d0600\n  Oracle price update: Ed25519 instruction: 5\n  Oracle price update: Signature index: 0\n  Oracle price update: Fails the transaction on a stale price: no\n  Oracle price update: Posted by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Oracle price update: Pyth Lazer treasury: Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak\n  Oracle price update: Additional accounts: 1, not named by this descriptor\n  Oracle price update: Aggregated feed: FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh\n  Oracle price update: Pyth Lazer feed: A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe\n  Oracle price update: Chainlink feed: FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78\n  Oracle price update: RedStone feed: 9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3\n  Oracle price update: Refreshed by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Close token account: Token account: Your token account (4apM…SU6K)\n  Close token account: SOL goes to: Your wallet (AoLt…yfvM)\n  Close token account: Owner: Your wallet (AoLt…yfvM)\n\n== Signers\n  Fee payer: Your wallet (AoLt…yfvM)\n  Signer: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Signer: perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx\n\n== Fee\n  Total: 0.000015183 SOL\n  Base: 0.000015 SOL\n  Priority: 0.000000183 SOL\n  Priority basis: 1,008 micro-lamports per compute unit × 181,158 compute units requested\n  Rent deposits: up to 0.00148844 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Transfer 1.922511449 SOL from Your wallet (AoLt…yfvM) to Your SOL account (4apM…SU6K)\n  - You send 1.922511449 SOL from Your wallet (AoLt…yfvM) to GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH\n  - Create Your SOL account (4apM…SU6K), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts\n  - Close Your token account (4apM…SU6K) and send its SOL to Your wallet (AoLt…yfvM)\n  - You pay a fee of 0.000015183 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (880 bytes)\n  digest: 1d71890cbff9e383175ee39fa6f67accb1221ca8821fc2f7f4342fba76f33888\n",
+    "text": "2 actions: Send 1.922511449 SOL to Your SOL account (4apM…SU6K); Place a long Jupiter Perps limit order of 10,457.567852 USD with 1.922511449 SOL collateral, triggered below 117.5 USD\nOK\n\n== Transfer | System program\n  Amount: 1.922511449 SOL\n  From: Your wallet (AoLt…yfvM)\n  To: Your SOL account (4apM…SU6K)\n\n== Place limit order | Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)\n  Side: long\n  Size: 10,457.567852 USD\n  Collateral: 1.922511449 SOL\n  Trigger price: 117.5 USD\n  Triggers when price is above: no\n  Position: 6Q4C9SGTpXfvrx61avYbsDaHhoX19RUrJKb9szZDKQLo\n  Market custody: 7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz\n  From account: Your SOL account (4apM…SU6K)\n  Request time: 2026-10-07 07:56:27 UTC\n\n== Also [collapsed]\n  Compute unit limit: 181158\n  Compute unit price: 1,008 micro-lamports per compute unit\n  Create token account if missing: Token account: Your SOL account (4apM…SU6K)\n  Create token account if missing: Owner: Your wallet (AoLt…yfvM)\n  Create token account if missing: Mint: SOL mint (So11…1112)\n  Create token account if missing: Rent paid by: Your wallet (AoLt…yfvM)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Sync wrapped SOL: Account: Your SOL account (4apM…SU6K)\n  Ed25519 signature check: Signer 1: in instruction 7's data\n  Ed25519 signature check: Message 1: 50 bytes in instruction 7\n  Oracle price update: Signed message: 0xb9011a82ec22315597a85cb2c85ed563d75777a86e107caee54d0e2cf7e3542c9ef320bac88e1f02c2e1137b2eafe8e77bab48b3f77d42452fa5a9a57c9cfd7b9bd3b70280efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c320075d3c793c0e901743b5d060003010600000004002d1a93c20200000004f8ff05ea6e2800000000000c01c0e901743b5d0600\n  Oracle price update: Ed25519 instruction: 5\n  Oracle price update: Signature index: 0\n  Oracle price update: Fails the transaction on a stale price: no\n  Oracle price update: Posted by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Oracle price update: Pyth Lazer treasury: Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak\n  Oracle price update: Additional accounts: 1, not named by this descriptor\n  Oracle price update: Aggregated feed: FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh\n  Oracle price update: Pyth Lazer feed: A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe\n  Oracle price update: Chainlink feed: FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78\n  Oracle price update: RedStone feed: 9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3\n  Oracle price update: Refreshed by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Close token account: Token account: Your SOL account (4apM…SU6K)\n  Close token account: SOL goes to: Your wallet (AoLt…yfvM)\n  Close token account: Owner: Your wallet (AoLt…yfvM)\n\n== Signers\n  Fee payer: Your wallet (AoLt…yfvM)\n  Signer: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Signer: perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx\n\n== Fee\n  Total: 0.000015183 SOL\n  Base: 0.000015 SOL\n  Priority: 0.000000183 SOL\n  Priority basis: 1,008 micro-lamports per compute unit × 181,158 compute units requested\n  Rent deposits: 0.00372364 SOL, or 0.00521208 SOL in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Transfer 1.922511449 SOL from Your wallet (AoLt…yfvM) to Your SOL account (4apM…SU6K)\n  - You send 1.922511449 SOL from Your wallet (AoLt…yfvM) to GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH\n  - Create 8i8mYi5ECXQ53asWfabkkonDFD7QcMboD2r9tLB8bP1M, managed by Jupiter Perpetuals (PERP…qQJu), depositing 0.0022352 SOL\n  - Create GMPbGwsvqHwUSEnJH55LsR35pBBRHSXCdPz8fxY3fHRH, managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL\n  - Create Your SOL account (4apM…SU6K), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts\n  - Close Your SOL account (4apM…SU6K) and send its SOL to Your wallet (AoLt…yfvM)\n  - You pay a fee of 0.000015183 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (880 bytes)\n  digest: 1d71890cbff9e383175ee39fa6f67accb1221ca8821fc2f7f4342fba76f33888\n",
     "verdict": "ok"
   }
 }

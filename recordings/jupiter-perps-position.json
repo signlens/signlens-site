@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -383,6 +383,244 @@
             }
           },
           "to": {
+            "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+            "is_self": false,
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Jupiter Perpetuals",
+                  "value": {
+                    "type": "text",
+                    "value": "Jupiter Perpetuals"
+                  }
+                }
+              ],
+              "text": "Jupiter Perpetuals"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Jupiter Perpetuals",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Jupiter Perpetuals",
+                          "value": {
+                            "type": "text",
+                            "value": "Jupiter Perpetuals"
+                          }
+                        }
+                      ],
+                      "text": "Jupiter Perpetuals"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "PERP…qQJu"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Jupiter Perpetuals (PERP…qQJu)"
+            }
+          }
+        }
+      },
+      {
+        "message": {
+          "id": "effect-create-deposit-if-missing",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Jupiter Perpetuals (PERP…qQJu)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Jupiter Perpetuals",
+                        "value": {
+                          "type": "text",
+                          "value": "Jupiter Perpetuals"
+                        }
+                      }
+                    ],
+                    "text": "Jupiter Perpetuals"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Jupiter Perpetuals",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Jupiter Perpetuals",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Jupiter Perpetuals"
+                                }
+                              }
+                            ],
+                            "text": "Jupiter Perpetuals"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "PERP…qQJu"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Jupiter Perpetuals (PERP…qQJu)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00174752 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1747520",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00174752 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00174752 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " unless it already exists"
+            }
+          ],
+          "text": "Create Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7, managed by Jupiter Perpetuals (PERP…qQJu), depositing 0.00174752 SOL unless it already exists"
+        },
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "description": null,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "note_words": null,
+            "units": "1747520",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00174752 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00174752 SOL"
+            }
+          },
+          "if_missing": true,
+          "owner": {
             "address": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu",
             "is_self": false,
             "label": {
@@ -1968,6 +2206,77 @@
                 "text": "100,000 micro-lamports per compute unit × 169,439 compute units requested"
               }
             }
+          },
+          {
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
+            "trust": "fact",
+            "value": {
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "up to "
+                  },
+                  {
+                    "text": "0.00174752 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "1747520",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.00174752 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.00174752 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": ", if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account"
+                  }
+                ],
+                "text": "up to 0.00174752 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account"
+              }
+            }
           }
         ],
         "kind": {
@@ -2148,7 +2457,7 @@
       ],
       "text": "Increase a short Jupiter Perps position by 99.28661 USD with 10 USDC collateral, price limit 117.417238 USD"
     },
-    "text": "Increase a short Jupiter Perps position by 99.28661 USD with 10 USDC collateral, price limit 117.417238 USD\nOK\n\n== Increase position | Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)\n  Side: short\n  Size added: 99.28661 USD\n  Collateral added: 10 USDC\n  Price limit: 117.417238 USD\n  Position: Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7\n  Market custody: 7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz\n  Collateral custody: G18jKKXQwBbrHeiK3C9MRXhkHsLHf7XgCSisykV46EZa\n  From account: Your USDC account (6kMc…aeWh)\n  Request time: 2026-10-07 08:00:03 UTC\n\n== Also [collapsed]\n  Compute unit limit: 169439\n  Compute unit price: 100,000 micro-lamports per compute unit\n  Ed25519 signature check: Signer 1: in instruction 4's data\n  Ed25519 signature check: Message 1: 50 bytes in instruction 4\n  Oracle price update: Signed message: 0xb9011a823f0c63567a347568663a6abdd5b71f097eda246b4684ac24558938d5f2e9f3ade428595dee2671d810cc52e669190adae0e34b492ee476e97ca52349a50d610180efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c320075d3c793c09ad5803b5d06000301060000000400f63aeec20200000004f8ff0577482f00000000000c01c09ad5803b5d0600\n  Oracle price update: Ed25519 instruction: 2\n  Oracle price update: Signature index: 0\n  Oracle price update: Fails the transaction on a stale price: no\n  Oracle price update: Posted by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Oracle price update: Pyth Lazer treasury: Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak\n  Oracle price update: Additional accounts: 1, not named by this descriptor\n  Oracle price update: Aggregated feed: FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh\n  Oracle price update: Pyth Lazer feed: A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe\n  Oracle price update: Chainlink feed: FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78\n  Oracle price update: RedStone feed: 9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3\n  Oracle price update: Refreshed by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n\n== Signers\n  Fee payer: Your wallet (B47h…EXoo)\n  Signer: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Signer: perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx\n\n== Fee\n  Total: 0.000031944 SOL\n  Base: 0.000015 SOL\n  Priority: 0.000016944 SOL\n  Priority basis: 100,000 micro-lamports per compute unit × 169,439 compute units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 10 USDC from Your wallet (B47h…EXoo) to Jupiter Perpetuals (PERP…qQJu)\n  - The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts\n  - You pay a fee of 0.000031944 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (740 bytes)\n  digest: d0087cca71abd54a22c5db1d720741b8bbf189adf249020816c4c9f63f4f64a5\n",
+    "text": "Increase a short Jupiter Perps position by 99.28661 USD with 10 USDC collateral, price limit 117.417238 USD\nOK\n\n== Increase position | Jupiter Perpetuals (descriptor reviewed 2026-10-07, upgradeable by 5myN…uAKx)\n  Side: short\n  Size added: 99.28661 USD\n  Collateral added: 10 USDC\n  Price limit: 117.417238 USD\n  Position: Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7\n  Market custody: 7xS2gz2bTp3fwCC7knJvUWTEU9Tycczu6VhJYKgi1wdz\n  Collateral custody: G18jKKXQwBbrHeiK3C9MRXhkHsLHf7XgCSisykV46EZa\n  From account: Your USDC account (6kMc…aeWh)\n  Request time: 2026-10-07 08:00:03 UTC\n\n== Also [collapsed]\n  Compute unit limit: 169439\n  Compute unit price: 100,000 micro-lamports per compute unit\n  Ed25519 signature check: Signer 1: in instruction 4's data\n  Ed25519 signature check: Message 1: 50 bytes in instruction 4\n  Oracle price update: Signed message: 0xb9011a823f0c63567a347568663a6abdd5b71f097eda246b4684ac24558938d5f2e9f3ade428595dee2671d810cc52e669190adae0e34b492ee476e97ca52349a50d610180efc1f480c5615af3fb673d42287e993da9fbc3506b6e41dfa32950820c2e6c320075d3c793c09ad5803b5d06000301060000000400f63aeec20200000004f8ff0577482f00000000000c01c09ad5803b5d0600\n  Oracle price update: Ed25519 instruction: 2\n  Oracle price update: Signature index: 0\n  Oracle price update: Fails the transaction on a stale price: no\n  Oracle price update: Posted by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Oracle price update: Pyth Lazer treasury: Gx4MBPb1vqZLJajZmsKLg8fGw9ErhoKsR8LeKcCKFyak\n  Oracle price update: Additional accounts: 1, not named by this descriptor\n  Oracle price update: Aggregated feed: FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh\n  Oracle price update: Pyth Lazer feed: A5d4aY4K4BYEtXdAY7WNBHTKxRMeyAA6RYHWVYEW22Fe\n  Oracle price update: Chainlink feed: FWLXDDgW2Qm2VuX8MdV99VYpo6X1HLEykUjfAsjz2G78\n  Oracle price update: RedStone feed: 9FboGHATJTgJA7fzG3fKeV1VuLqDsV5HtCGUR2PqZor3\n  Oracle price update: Refreshed by: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n\n== Signers\n  Fee payer: Your wallet (B47h…EXoo)\n  Signer: Ag28fGtwtpnqassHURUBsQ1WfiyaWWzDDNs4Q28qHRjv\n  Signer: perpSnt3NivMdD5DRFc7VmW6x7PuvQJGNyDTL74mEYx\n\n== Fee\n  Total: 0.000031944 SOL\n  Base: 0.000015 SOL\n  Priority: 0.000016944 SOL\n  Priority basis: 100,000 micro-lamports per compute unit × 169,439 compute units requested\n  Rent deposits: up to 0.00174752 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 10 USDC from Your wallet (B47h…EXoo) to Jupiter Perpetuals (PERP…qQJu)\n  - Create Hs5XipZFVx47ENfGVwYmTqMv1TnZoC8AGGwpNGGUx5k7, managed by Jupiter Perpetuals (PERP…qQJu), depositing 0.00174752 SOL unless it already exists\n  - The Pyth Lazer program charges its update fee to the posting signer, not to the transaction's other signers; the feeds written are among the additional accounts\n  - You pay a fee of 0.000031944 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (740 bytes)\n  digest: d0087cca71abd54a22c5db1d720741b8bbf189adf249020816c4c9f63f4f64a5\n",
     "verdict": "ok"
   }
 }

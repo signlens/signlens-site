@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -1325,7 +1325,7 @@
               "text": "You send "
             },
             {
-              "text": "531.302808 sUSDai",
+              "text": "≤ 531.302809 sUSDai",
               "value": {
                 "type": "amount",
                 "value": {
@@ -1336,15 +1336,15 @@
                     "symbol": "sUSDai",
                     "trust": "verified"
                   },
-                  "bound": "exact",
+                  "bound": "at_most",
                   "note": null,
                   "note_words": null,
-                  "units": "531302808",
+                  "units": "531302809",
                   "words": {
                     "id": "amount",
                     "parts": [
                       {
-                        "text": "531.302808 "
+                        "text": "≤ 531.302809 "
                       },
                       {
                         "text": "sUSDai",
@@ -1354,7 +1354,7 @@
                         }
                       }
                     ],
-                    "text": "531.302808 sUSDai"
+                    "text": "≤ 531.302809 sUSDai"
                   }
                 }
               }
@@ -1439,7 +1439,7 @@
               }
             }
           ],
-          "text": "You send 531.302808 sUSDai from Your wallet (Fefc…KWtL) to GzjLtjeaaFBerWrpJx8VXwpXcdzkUFm9zsXgaedsbXsW"
+          "text": "You send ≤ 531.302809 sUSDai from Your wallet (Fefc…KWtL) to GzjLtjeaaFBerWrpJx8VXwpXcdzkUFm9zsXgaedsbXsW"
         },
         "type": "transfer",
         "value": {
@@ -1451,15 +1451,15 @@
               "symbol": "sUSDai",
               "trust": "verified"
             },
-            "bound": "exact",
+            "bound": "at_most",
             "note": null,
             "note_words": null,
-            "units": "531302808",
+            "units": "531302809",
             "words": {
               "id": "amount",
               "parts": [
                 {
-                  "text": "531.302808 "
+                  "text": "≤ 531.302809 "
                 },
                 {
                   "text": "sUSDai",
@@ -1469,7 +1469,7 @@
                   }
                 }
               ],
-              "text": "531.302808 sUSDai"
+              "text": "≤ 531.302809 sUSDai"
             }
           },
           "from": {
@@ -3280,10 +3280,10 @@
               "text": " (descriptor reviewed "
             },
             {
-              "text": "2026-10-31",
+              "text": "2026-11-16",
               "value": {
                 "type": "text",
-                "value": "2026-10-31"
+                "value": "2026-11-16"
               }
             },
             {
@@ -3304,7 +3304,7 @@
               "text": ")"
             }
           ],
-          "text": "Jupiter Aggregator v6 (descriptor reviewed 2026-10-31, upgradeable by CvQZ…tipQ)"
+          "text": "Jupiter Aggregator v6 (descriptor reviewed 2026-11-16, upgradeable by CvQZ…tipQ)"
         },
         "title": {
           "id": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4/route-intent",
@@ -4784,7 +4784,7 @@
       ],
       "text": "4 actions: Flash-borrow 594.305139 USDC from Jupiter Lend, to be repaid in this transaction; Swap 594.305139 USDC for ≥ 531.300593 sUSDai via Jupiter; Deposit 531.302808 sUSDai of collateral and borrow 594.305139 USDC in a Jupiter Lend Borrow position; and 1 more"
     },
-    "text": "4 actions: Flash-borrow 594.305139 USDC from Jupiter Lend, to be repaid in this transaction; Swap 594.305139 USDC for ≥ 531.300593 sUSDai via Jupiter; Deposit 531.302808 sUSDai of collateral and borrow 594.305139 USDC in a Jupiter Lend Borrow position; and 1 more\nOK\n\n== Flash loan | Jupiter Lend Flashloan (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Borrow: 594.305139 USDC\n  To account: Your USDC account (88J9…RTAZ)\n  Vault: BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n\n== Swap | Jupiter Aggregator v6 (descriptor reviewed 2026-10-31, upgradeable by CvQZ…tipQ)\n  Send: 594.305139 USDC\n  Receive: ≥ 531.300593 sUSDai\n  Quoted: 531.832426 sUSDai\n  Max slippage: 0.1%\n  Route:\n    - 100% via JupiterLendDexSwap (leg 0 to 1)\n  From account: Your USDC account (88J9…RTAZ)\n  To account: Your sUSDai account (DYYq…W6EX)\n  Additional accounts: 28, not named by this descriptor\n\n== Borrow | Jupiter Lend Borrow (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Collateral deposited: 531.302808 sUSDai\n  Borrowed: 594.305139 USDC\n  Position: H5Q8Rsd6t1c3xdVQT8HJBp2cikymNvbBNCRAUKDPfvZA\n  Vault: FtbFRbo78cfH1bRXQQtEuj2GFFQjnwyYhvgQyyRzSvD7\n  Collateral token: sUSDai mint (sUSD…AKYE)\n  Debt token: USDC mint (EPjF…Dt1v)\n  Additional accounts: 4, not named by this descriptor\n\n== Repay flash loan | Jupiter Lend Flashloan (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Repay: 594.305139 USDC\n  From account: Your USDC account (88J9…RTAZ)\n  Vault: BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n\n== Also [collapsed]\n  Compute unit limit: 427548\n  Compute unit price: 100,000 micro-lamports per compute unit\n  Open bin array: Tick record: 8V9d7MaoWHjwGMTMCgpJABdgjEdN5k4c4duGSiqtx8Wz\n  Open bin array: Tick: -198\n\n== Signers\n  Fee payer: Your wallet (Fefc…KWtL)\n\n== Fee\n  Total: 0.000047755 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000042755 SOL\n  Priority basis: 100,000 micro-lamports per compute unit × 427,548 compute units requested\n  Rent deposits: 0.0009398 SOL; refunded to whoever closes the account\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You receive 594.305139 USDC into Your USDC account (88J9…RTAZ) from Jupiter Lend Flashloan (jupg…N6XS)\n  - The program checks through the instructions sysvar that a payback follows in the same transaction; the transaction fails otherwise\n  - You send 594.305139 USDC from Your wallet (Fefc…KWtL) to Jupiter Aggregator v6 (JUP6…TaV4)\n  - You receive ≥ 531.300593 sUSDai into Your wallet (Fefc…KWtL) from Jupiter Aggregator v6 (JUP6…TaV4)\n  - You send 531.302808 sUSDai from Your wallet (Fefc…KWtL) to GzjLtjeaaFBerWrpJx8VXwpXcdzkUFm9zsXgaedsbXsW\n  - You receive 594.305139 USDC into Your USDC account (88J9…RTAZ) from BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n  - You send 594.305139 USDC from Your wallet (Fefc…KWtL) to Jupiter Lend Flashloan (jupg…N6XS)\n  - Create 8V9d7MaoWHjwGMTMCgpJABdgjEdN5k4c4duGSiqtx8Wz, managed by Jupiter Lend Borrow (jupr…Bdzi), depositing 0.0009398 SOL\n  - You pay a fee of 0.000047755 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (865 bytes)\n  digest: 8180645656414f4b2e1eac1c9ca0d8398879759c89485c5dd52bf15b1003331c\n",
+    "text": "4 actions: Flash-borrow 594.305139 USDC from Jupiter Lend, to be repaid in this transaction; Swap 594.305139 USDC for ≥ 531.300593 sUSDai via Jupiter; Deposit 531.302808 sUSDai of collateral and borrow 594.305139 USDC in a Jupiter Lend Borrow position; and 1 more\nOK\n\n== Flash loan | Jupiter Lend Flashloan (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Borrow: 594.305139 USDC\n  To account: Your USDC account (88J9…RTAZ)\n  Vault: BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n\n== Swap | Jupiter Aggregator v6 (descriptor reviewed 2026-11-16, upgradeable by CvQZ…tipQ)\n  Send: 594.305139 USDC\n  Receive: ≥ 531.300593 sUSDai\n  Quoted: 531.832426 sUSDai\n  Max slippage: 0.1%\n  Route:\n    - 100% via JupiterLendDexSwap (leg 0 to 1)\n  From account: Your USDC account (88J9…RTAZ)\n  To account: Your sUSDai account (DYYq…W6EX)\n  Additional accounts: 28, not named by this descriptor\n\n== Borrow | Jupiter Lend Borrow (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Collateral deposited: 531.302808 sUSDai\n  Borrowed: 594.305139 USDC\n  Position: H5Q8Rsd6t1c3xdVQT8HJBp2cikymNvbBNCRAUKDPfvZA\n  Vault: FtbFRbo78cfH1bRXQQtEuj2GFFQjnwyYhvgQyyRzSvD7\n  Collateral token: sUSDai mint (sUSD…AKYE)\n  Debt token: USDC mint (EPjF…Dt1v)\n  Additional accounts: 4, not named by this descriptor\n\n== Repay flash loan | Jupiter Lend Flashloan (descriptor reviewed 2026-10-07, upgradeable by 4Msg…ZMSJ)\n  Repay: 594.305139 USDC\n  From account: Your USDC account (88J9…RTAZ)\n  Vault: BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n\n== Also [collapsed]\n  Compute unit limit: 427548\n  Compute unit price: 100,000 micro-lamports per compute unit\n  Open bin array: Tick record: 8V9d7MaoWHjwGMTMCgpJABdgjEdN5k4c4duGSiqtx8Wz\n  Open bin array: Tick: -198\n\n== Signers\n  Fee payer: Your wallet (Fefc…KWtL)\n\n== Fee\n  Total: 0.000047755 SOL\n  Base: 0.000005 SOL\n  Priority: 0.000042755 SOL\n  Priority basis: 100,000 micro-lamports per compute unit × 427,548 compute units requested\n  Rent deposits: 0.0009398 SOL; refunded to whoever closes the account\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You receive 594.305139 USDC into Your USDC account (88J9…RTAZ) from Jupiter Lend Flashloan (jupg…N6XS)\n  - The program checks through the instructions sysvar that a payback follows in the same transaction; the transaction fails otherwise\n  - You send 594.305139 USDC from Your wallet (Fefc…KWtL) to Jupiter Aggregator v6 (JUP6…TaV4)\n  - You receive ≥ 531.300593 sUSDai into Your wallet (Fefc…KWtL) from Jupiter Aggregator v6 (JUP6…TaV4)\n  - You send ≤ 531.302809 sUSDai from Your wallet (Fefc…KWtL) to GzjLtjeaaFBerWrpJx8VXwpXcdzkUFm9zsXgaedsbXsW\n  - You receive 594.305139 USDC into Your USDC account (88J9…RTAZ) from BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB\n  - You send 594.305139 USDC from Your wallet (Fefc…KWtL) to Jupiter Lend Flashloan (jupg…N6XS)\n  - Create 8V9d7MaoWHjwGMTMCgpJABdgjEdN5k4c4duGSiqtx8Wz, managed by Jupiter Lend Borrow (jupr…Bdzi), depositing 0.0009398 SOL\n  - You pay a fee of 0.000047755 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (865 bytes)\n  digest: 8180645656414f4b2e1eac1c9ca0d8398879759c89485c5dd52bf15b1003331c\n",
     "verdict": "ok"
   }
 }

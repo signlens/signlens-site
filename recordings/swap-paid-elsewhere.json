@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -64,83 +64,86 @@
               "text": " to "
             },
             {
-              "short": {
-                "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
-                "is_self": true,
-                "label": {
-                  "id": "accounts-your-token",
-                  "parts": [
-                    {
-                      "text": "Your "
-                    },
-                    {
-                      "text": "USDT",
-                      "value": {
-                        "type": "text",
-                        "value": "USDT"
-                      }
-                    },
-                    {
-                      "text": " account"
-                    }
-                  ],
-                  "text": "Your USDT account"
-                },
-                "label_trust": "verified",
-                "stand_in": null,
-                "words": {
-                  "id": "address-labelled",
-                  "parts": [
-                    {
-                      "text": "Your USDT account",
-                      "value": {
-                        "type": "words",
-                        "value": {
-                          "id": "accounts-your-token",
-                          "parts": [
-                            {
-                              "text": "Your "
-                            },
-                            {
-                              "text": "USDT",
-                              "value": {
-                                "type": "text",
-                                "value": "USDT"
-                              }
-                            },
-                            {
-                              "text": " account"
-                            }
-                          ],
-                          "text": "Your USDT account"
-                        }
-                      }
-                    },
-                    {
-                      "text": " ("
-                    },
-                    {
-                      "short": {
-                        "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
-                        "is_self": true,
-                        "label": null,
-                        "label_trust": "verified",
-                        "stand_in": null,
-                        "words": null
+              "text": "Your USDT account (Ha2P…zHKY)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-token",
+                    "parts": [
+                      {
+                        "text": "Your "
                       },
-                      "text": "Ha2P…zHKY"
-                    },
-                    {
-                      "text": ")"
-                    }
-                  ],
-                  "text": "Your USDT account (Ha2P…zHKY)"
+                      {
+                        "text": "USDT",
+                        "value": {
+                          "type": "text",
+                          "value": "USDT"
+                        }
+                      },
+                      {
+                        "text": " account"
+                      }
+                    ],
+                    "text": "Your USDT account"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your USDT account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-token",
+                            "parts": [
+                              {
+                                "text": "Your "
+                              },
+                              {
+                                "text": "USDT",
+                                "value": {
+                                  "type": "text",
+                                  "value": "USDT"
+                                }
+                              },
+                              {
+                                "text": " account"
+                              }
+                            ],
+                            "text": "Your USDT account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Ha2P…zHKY"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your USDT account (Ha2P…zHKY)"
+                  }
                 }
-              },
-              "text": "Ha2P…zHKY"
+              }
             }
           ],
-          "text": "Transfer 83.838802 USDT from 5Xwc…YDxc to Ha2P…zHKY"
+          "text": "Transfer 83.838802 USDT from 5Xwc…YDxc to Your USDT account (Ha2P…zHKY)"
         }
       },
       {
@@ -3265,13 +3268,23 @@
                 "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
                 "is_self": true,
                 "label": {
-                  "id": "swap-your-token-account",
+                  "id": "accounts-your-token",
                   "parts": [
                     {
-                      "text": "Your token account"
+                      "text": "Your "
+                    },
+                    {
+                      "text": "USDT",
+                      "value": {
+                        "type": "text",
+                        "value": "USDT"
+                      }
+                    },
+                    {
+                      "text": " account"
                     }
                   ],
-                  "text": "Your token account"
+                  "text": "Your USDT account"
                 },
                 "label_trust": "verified",
                 "stand_in": null,
@@ -3279,17 +3292,27 @@
                   "id": "address-labelled",
                   "parts": [
                     {
-                      "text": "Your token account",
+                      "text": "Your USDT account",
                       "value": {
                         "type": "words",
                         "value": {
-                          "id": "swap-your-token-account",
+                          "id": "accounts-your-token",
                           "parts": [
                             {
-                              "text": "Your token account"
+                              "text": "Your "
+                            },
+                            {
+                              "text": "USDT",
+                              "value": {
+                                "type": "text",
+                                "value": "USDT"
+                              }
+                            },
+                            {
+                              "text": " account"
                             }
                           ],
-                          "text": "Your token account"
+                          "text": "Your USDT account"
                         }
                       }
                     },
@@ -3311,7 +3334,7 @@
                       "text": ")"
                     }
                   ],
-                  "text": "Your token account (Ha2P…zHKY)"
+                  "text": "Your USDT account (Ha2P…zHKY)"
                 }
               }
             }
@@ -5278,80 +5301,83 @@
           "text": " to "
         },
         {
-          "short": {
-            "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
-            "is_self": true,
-            "label": {
-              "id": "accounts-your-token",
-              "parts": [
-                {
-                  "text": "Your "
-                },
-                {
-                  "text": "USDT",
-                  "value": {
-                    "type": "text",
-                    "value": "USDT"
-                  }
-                },
-                {
-                  "text": " account"
-                }
-              ],
-              "text": "Your USDT account"
-            },
-            "label_trust": "verified",
-            "stand_in": null,
-            "words": {
-              "id": "address-labelled",
-              "parts": [
-                {
-                  "text": "Your USDT account",
-                  "value": {
-                    "type": "words",
-                    "value": {
-                      "id": "accounts-your-token",
-                      "parts": [
-                        {
-                          "text": "Your "
-                        },
-                        {
-                          "text": "USDT",
-                          "value": {
-                            "type": "text",
-                            "value": "USDT"
-                          }
-                        },
-                        {
-                          "text": " account"
-                        }
-                      ],
-                      "text": "Your USDT account"
-                    }
-                  }
-                },
-                {
-                  "text": " ("
-                },
-                {
-                  "short": {
-                    "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
-                    "is_self": true,
-                    "label": null,
-                    "label_trust": "verified",
-                    "stand_in": null,
-                    "words": null
+          "text": "Your USDT account (Ha2P…zHKY)",
+          "value": {
+            "type": "address",
+            "value": {
+              "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+              "is_self": true,
+              "label": {
+                "id": "accounts-your-token",
+                "parts": [
+                  {
+                    "text": "Your "
                   },
-                  "text": "Ha2P…zHKY"
-                },
-                {
-                  "text": ")"
-                }
-              ],
-              "text": "Your USDT account (Ha2P…zHKY)"
+                  {
+                    "text": "USDT",
+                    "value": {
+                      "type": "text",
+                      "value": "USDT"
+                    }
+                  },
+                  {
+                    "text": " account"
+                  }
+                ],
+                "text": "Your USDT account"
+              },
+              "label_trust": "verified",
+              "stand_in": null,
+              "words": {
+                "id": "address-labelled",
+                "parts": [
+                  {
+                    "text": "Your USDT account",
+                    "value": {
+                      "type": "words",
+                      "value": {
+                        "id": "accounts-your-token",
+                        "parts": [
+                          {
+                            "text": "Your "
+                          },
+                          {
+                            "text": "USDT",
+                            "value": {
+                              "type": "text",
+                              "value": "USDT"
+                            }
+                          },
+                          {
+                            "text": " account"
+                          }
+                        ],
+                        "text": "Your USDT account"
+                      }
+                    }
+                  },
+                  {
+                    "text": " ("
+                  },
+                  {
+                    "short": {
+                      "address": "Ha2PCEyQLACMaq7TfpY9Dv7tYbTNYLm68TkEJSvwzHKY",
+                      "is_self": true,
+                      "label": null,
+                      "label_trust": "verified",
+                      "stand_in": null,
+                      "words": null
+                    },
+                    "text": "Ha2P…zHKY"
+                  },
+                  {
+                    "text": ")"
+                  }
+                ],
+                "text": "Your USDT account (Ha2P…zHKY)"
+              }
             }
-          },
-          "text": "Ha2P…zHKY"
+          }
         },
         {
           "text": "; Swap "
@@ -5440,9 +5466,9 @@
           }
         }
       ],
-      "text": "2 actions: Transfer 83.838802 USDT from 5Xwc…YDxc to Ha2P…zHKY; Swap 83.838802 USDT for ≥ 83.290054 USDG via Titan"
+      "text": "2 actions: Transfer 83.838802 USDT from 5Xwc…YDxc to Your USDT account (Ha2P…zHKY); Swap 83.838802 USDT for ≥ 83.290054 USDG via Titan"
     },
-    "text": "2 actions: Transfer 83.838802 USDT from 5Xwc…YDxc to Ha2P…zHKY; Swap 83.838802 USDT for ≥ 83.290054 USDG via Titan\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] The swap's output goes to an account that is not yours (instruction 7)\n\n== Transfer tokens | Token program\n  Amount: 83.838802 USDT\n  From: 5XwccWFyzuFMZcqHSCeo4pM3JRQpZ4SrD3ZPsGmxYDxc\n  To: Your USDT account (Ha2P…zHKY)\n  Authorized by: CLtnbMrwAAKLKujmh8aQcsQz5SKHVyvHCG8PLL1PmJkN\n  Mint: USDT mint (Es9v…wNYB)\n\n== Swap | Titan swap aggregator (layout read from mainnet transactions, descriptor reviewed 2026-10-15, upgradeable by H92m…4SbB)\n  Send: 83.838802 USDT\n  Receive: ≥ 83.290054 USDG\n  Quoted: 83.708597 USDG\n  Max slippage: 0.5%\n  Fee: 0.03%\n  Fee account (sent token): 2U5Z…JTkW's USDT account (6DvM…2JgD)\n  Route:\n    - Deriverse: USDT → USDC (86.04% of what remains)\n    - program HpNf…jxFq: USDT → SOL\n    - Tessera V: SOL → USDC\n    - Riptide: USDC → USDG\n  From account: Your token account (Ha2P…zHKY)\n  To account: HeLhJeWqkBcngp2uK1xcAnim6bEHMEi5oKxbZDC6sg94\n  Instruction: swap_route\n\n== Also [collapsed]\n  Compute unit limit: 1400000\n  Compute unit price: 5,000 micro-lamports per compute unit\n  Create token account if missing: Token account: Your USDT account (Ha2P…zHKY)\n  Create token account if missing: Owner: Your wallet (pay6…g1d2)\n  Create token account if missing: Mint: USDT mint (Es9v…wNYB)\n  Create token account if missing: Rent paid by: Your wallet (pay6…g1d2)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Create token account if missing: Token account: 2U5Z…JTkW's USDT account (6DvM…2JgD)\n  Create token account if missing: Owner: 2U5ZmdtVLSkAiceviwBnvE2vD2MLvqAMekSjqYuKJTkW\n  Create token account if missing: Mint: USDT mint (Es9v…wNYB)\n  Create token account if missing: Rent paid by: Your wallet (pay6…g1d2)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Create token account: Token account: BS31…1SRE's USDT account (E6fR…YgJd)\n  Create token account: Owner: BS31gingTECkXEj3E16axqeQAbin4r4sZhgkJovz1SRE\n  Create token account: Mint: USDT mint (Es9v…wNYB)\n  Create token account: Rent paid by: Your wallet (pay6…g1d2)\n  Create token account: Token program: Token program (Toke…Q5DA)\n\n== Signers\n  Fee payer: Your wallet (pay6…g1d2)\n  Signer: CLtnbMrwAAKLKujmh8aQcsQz5SKHVyvHCG8PLL1PmJkN\n\n== Fee\n  Total: 0.000017 SOL\n  Base: 0.00001 SOL\n  Priority: 0.000007 SOL\n  Priority basis: 5,000 micro-lamports per compute unit × 1,400,000 compute units requested\n  Rent deposits: 0.00148844 SOL, or 0.00446532 SOL in all if the accounts this transaction creates when missing do not exist yet; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You receive 83.838802 USDT into Your USDT account (Ha2P…zHKY) from 5XwccWFyzuFMZcqHSCeo4pM3JRQpZ4SrD3ZPsGmxYDxc\n  - You send 83.838802 USDT from Your wallet (pay6…g1d2) to Titan swap aggregator (T1TA…XvGT)\n  - Transfer ≥ 83.290054 USDG from Titan swap aggregator (T1TA…XvGT) to HeLhJeWqkBcngp2uK1xcAnim6bEHMEi5oKxbZDC6sg94\n  - Create Your USDT account (Ha2P…zHKY), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - Create 2U5Z…JTkW's USDT account (6DvM…2JgD), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - Create BS31…1SRE's USDT account (E6fR…YgJd), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL\n  - You pay a fee of 0.000017 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (1016 bytes)\n  digest: 05babedb7513cf0b2b4e9ca6ff2bed7999f64873df5f23958c9f6fefbab2e576\n",
+    "text": "2 actions: Transfer 83.838802 USDT from 5Xwc…YDxc to Your USDT account (Ha2P…zHKY); Swap 83.838802 USDT for ≥ 83.290054 USDG via Titan\nWARNING: review the findings before approving\n\nFindings:\n  [HIGH] The swap's output goes to an account that is not yours (instruction 7)\n\n== Transfer tokens | Token program\n  Amount: 83.838802 USDT\n  From: 5XwccWFyzuFMZcqHSCeo4pM3JRQpZ4SrD3ZPsGmxYDxc\n  To: Your USDT account (Ha2P…zHKY)\n  Authorized by: CLtnbMrwAAKLKujmh8aQcsQz5SKHVyvHCG8PLL1PmJkN\n  Mint: USDT mint (Es9v…wNYB)\n\n== Swap | Titan swap aggregator (layout read from mainnet transactions, descriptor reviewed 2026-10-15, upgradeable by H92m…4SbB)\n  Send: 83.838802 USDT\n  Receive: ≥ 83.290054 USDG\n  Quoted: 83.708597 USDG\n  Max slippage: 0.5%\n  Fee: 0.03%\n  Fee account (sent token): 2U5Z…JTkW's USDT account (6DvM…2JgD)\n  Route:\n    - Deriverse: USDT → USDC (86.04% of what remains)\n    - program HpNf…jxFq: USDT → SOL\n    - Tessera V: SOL → USDC\n    - Riptide: USDC → USDG\n  From account: Your USDT account (Ha2P…zHKY)\n  To account: HeLhJeWqkBcngp2uK1xcAnim6bEHMEi5oKxbZDC6sg94\n  Instruction: swap_route\n\n== Also [collapsed]\n  Compute unit limit: 1400000\n  Compute unit price: 5,000 micro-lamports per compute unit\n  Create token account if missing: Token account: Your USDT account (Ha2P…zHKY)\n  Create token account if missing: Owner: Your wallet (pay6…g1d2)\n  Create token account if missing: Mint: USDT mint (Es9v…wNYB)\n  Create token account if missing: Rent paid by: Your wallet (pay6…g1d2)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Create token account if missing: Token account: 2U5Z…JTkW's USDT account (6DvM…2JgD)\n  Create token account if missing: Owner: 2U5ZmdtVLSkAiceviwBnvE2vD2MLvqAMekSjqYuKJTkW\n  Create token account if missing: Mint: USDT mint (Es9v…wNYB)\n  Create token account if missing: Rent paid by: Your wallet (pay6…g1d2)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Create token account: Token account: BS31…1SRE's USDT account (E6fR…YgJd)\n  Create token account: Owner: BS31gingTECkXEj3E16axqeQAbin4r4sZhgkJovz1SRE\n  Create token account: Mint: USDT mint (Es9v…wNYB)\n  Create token account: Rent paid by: Your wallet (pay6…g1d2)\n  Create token account: Token program: Token program (Toke…Q5DA)\n\n== Signers\n  Fee payer: Your wallet (pay6…g1d2)\n  Signer: CLtnbMrwAAKLKujmh8aQcsQz5SKHVyvHCG8PLL1PmJkN\n\n== Fee\n  Total: 0.000017 SOL\n  Base: 0.00001 SOL\n  Priority: 0.000007 SOL\n  Priority basis: 5,000 micro-lamports per compute unit × 1,400,000 compute units requested\n  Rent deposits: 0.00148844 SOL, or 0.00446532 SOL in all if the accounts this transaction creates when missing do not exist yet; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You receive 83.838802 USDT into Your USDT account (Ha2P…zHKY) from 5XwccWFyzuFMZcqHSCeo4pM3JRQpZ4SrD3ZPsGmxYDxc\n  - You send 83.838802 USDT from Your wallet (pay6…g1d2) to Titan swap aggregator (T1TA…XvGT)\n  - Transfer ≥ 83.290054 USDG from Titan swap aggregator (T1TA…XvGT) to HeLhJeWqkBcngp2uK1xcAnim6bEHMEi5oKxbZDC6sg94\n  - Create Your USDT account (Ha2P…zHKY), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - Create 2U5Z…JTkW's USDT account (6DvM…2JgD), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - Create BS31…1SRE's USDT account (E6fR…YgJd), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL\n  - You pay a fee of 0.000017 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (1016 bytes)\n  digest: 05babedb7513cf0b2b4e9ca6ff2bed7999f64873df5f23958c9f6fefbab2e576\n",
     "verdict": "warn"
   }
 }

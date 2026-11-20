@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -407,13 +407,721 @@
       },
       {
         "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Jupiter prediction market (3ZZu…jvUp)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Jupiter prediction market",
+                        "value": {
+                          "type": "text",
+                          "value": "Jupiter prediction market"
+                        }
+                      }
+                    ],
+                    "text": "Jupiter prediction market"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Jupiter prediction market",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Jupiter prediction market",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Jupiter prediction market"
+                                }
+                              }
+                            ],
+                            "text": "Jupiter prediction market"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "3ZZu…jvUp"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Jupiter prediction market (3ZZu…jvUp)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.002667 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "2667000",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.002667 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.002667 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb, managed by Jupiter prediction market (3ZZu…jvUp), depositing 0.002667 SOL"
+        },
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "description": null,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "note_words": null,
+            "units": "2667000",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.002667 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.002667 SOL"
+            }
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+            "is_self": false,
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Jupiter prediction market",
+                  "value": {
+                    "type": "text",
+                    "value": "Jupiter prediction market"
+                  }
+                }
+              ],
+              "text": "Jupiter prediction market"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Jupiter prediction market",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Jupiter prediction market",
+                          "value": {
+                            "type": "text",
+                            "value": "Jupiter prediction market"
+                          }
+                        }
+                      ],
+                      "text": "Jupiter prediction market"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "3ZZu…jvUp"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Jupiter prediction market (3ZZu…jvUp)"
+            }
+          }
+        }
+      },
+      {
+        "message": {
+          "id": "effect-create-deposit",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "EhaxS2fwJKom7zoXpF7hrYVSTwBNGd1yPDvuMs8ffZNv",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "EhaxS2fwJKom7zoXpF7hrYVSTwBNGd1yPDvuMs8ffZNv",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Token program (Toke…Q5DA)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "text",
+                          "value": "Token program"
+                        }
+                      }
+                    ],
+                    "text": "Token program"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Token program",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Token program",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Token program"
+                                }
+                              }
+                            ],
+                            "text": "Token program"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "Toke…Q5DA"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Token program (Toke…Q5DA)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00148844 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1488440",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00148844 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00148844 SOL"
+                  }
+                }
+              }
+            }
+          ],
+          "text": "Create EhaxS2fwJKom7zoXpF7hrYVSTwBNGd1yPDvuMs8ffZNv, managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL"
+        },
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "EhaxS2fwJKom7zoXpF7hrYVSTwBNGd1yPDvuMs8ffZNv",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "description": null,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "note_words": null,
+            "units": "1488440",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00148844 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00148844 SOL"
+            }
+          },
+          "if_missing": false,
+          "owner": {
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "is_self": false,
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "text",
+                    "value": "Token program"
+                  }
+                }
+              ],
+              "text": "Token program"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Token program",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Token program",
+                          "value": {
+                            "type": "text",
+                            "value": "Token program"
+                          }
+                        }
+                      ],
+                      "text": "Token program"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "Toke…Q5DA"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Token program (Toke…Q5DA)"
+            }
+          }
+        }
+      },
+      {
+        "message": {
+          "id": "effect-create-deposit-if-missing",
+          "parts": [
+            {
+              "text": "Create "
+            },
+            {
+              "text": "AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC",
+                  "is_self": false,
+                  "label": null,
+                  "label_trust": "fact",
+                  "stand_in": null,
+                  "words": null
+                }
+              }
+            },
+            {
+              "text": ", managed by "
+            },
+            {
+              "text": "Jupiter prediction market (3ZZu…jvUp)",
+              "value": {
+                "type": "address",
+                "value": {
+                  "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                  "is_self": false,
+                  "label": {
+                    "id": "accounts-name",
+                    "parts": [
+                      {
+                        "text": "Jupiter prediction market",
+                        "value": {
+                          "type": "text",
+                          "value": "Jupiter prediction market"
+                        }
+                      }
+                    ],
+                    "text": "Jupiter prediction market"
+                  },
+                  "label_trust": "verified",
+                  "stand_in": null,
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Jupiter prediction market",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-name",
+                            "parts": [
+                              {
+                                "text": "Jupiter prediction market",
+                                "value": {
+                                  "type": "text",
+                                  "value": "Jupiter prediction market"
+                                }
+                              }
+                            ],
+                            "text": "Jupiter prediction market"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                          "is_self": false,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "3ZZu…jvUp"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Jupiter prediction market (3ZZu…jvUp)"
+                  }
+                }
+              }
+            },
+            {
+              "text": ", depositing "
+            },
+            {
+              "text": "0.00168656 SOL",
+              "value": {
+                "type": "amount",
+                "value": {
+                  "asset": {
+                    "decimals": 9,
+                    "description": null,
+                    "id": "native",
+                    "symbol": "SOL",
+                    "trust": "fact"
+                  },
+                  "bound": "exact",
+                  "note": null,
+                  "note_words": null,
+                  "units": "1686560",
+                  "words": {
+                    "id": "amount",
+                    "parts": [
+                      {
+                        "text": "0.00168656 "
+                      },
+                      {
+                        "text": "SOL",
+                        "value": {
+                          "type": "text",
+                          "value": "SOL"
+                        }
+                      }
+                    ],
+                    "text": "0.00168656 SOL"
+                  }
+                }
+              }
+            },
+            {
+              "text": " unless it already exists"
+            }
+          ],
+          "text": "Create AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC, managed by Jupiter prediction market (3ZZu…jvUp), depositing 0.00168656 SOL unless it already exists"
+        },
+        "type": "create",
+        "value": {
+          "account": {
+            "address": "AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC",
+            "is_self": false,
+            "label": null,
+            "label_trust": "fact",
+            "stand_in": null,
+            "words": null
+          },
+          "deposit": {
+            "asset": {
+              "decimals": 9,
+              "description": null,
+              "id": "native",
+              "symbol": "SOL",
+              "trust": "fact"
+            },
+            "bound": "exact",
+            "note": null,
+            "note_words": null,
+            "units": "1686560",
+            "words": {
+              "id": "amount",
+              "parts": [
+                {
+                  "text": "0.00168656 "
+                },
+                {
+                  "text": "SOL",
+                  "value": {
+                    "type": "text",
+                    "value": "SOL"
+                  }
+                }
+              ],
+              "text": "0.00168656 SOL"
+            }
+          },
+          "if_missing": true,
+          "owner": {
+            "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+            "is_self": false,
+            "label": {
+              "id": "accounts-name",
+              "parts": [
+                {
+                  "text": "Jupiter prediction market",
+                  "value": {
+                    "type": "text",
+                    "value": "Jupiter prediction market"
+                  }
+                }
+              ],
+              "text": "Jupiter prediction market"
+            },
+            "label_trust": "verified",
+            "stand_in": null,
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Jupiter prediction market",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-name",
+                      "parts": [
+                        {
+                          "text": "Jupiter prediction market",
+                          "value": {
+                            "type": "text",
+                            "value": "Jupiter prediction market"
+                          }
+                        }
+                      ],
+                      "text": "Jupiter prediction market"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+                    "is_self": false,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "3ZZu…jvUp"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Jupiter prediction market (3ZZu…jvUp)"
+            }
+          }
+        }
+      },
+      {
+        "message": {
           "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-effects-true-other",
           "parts": [
             {
-              "text": "The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit"
+              "text": "A keeper fills the order and closes it, returning any unspent deposit and the rent of the order and its token account"
             }
           ],
-          "text": "The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit"
+          "text": "A keeper fills the order and closes it, returning any unspent deposit and the rent of the order and its token account"
         },
         "type": "other",
         "value": {
@@ -421,10 +1129,10 @@
             "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-effects-true-other",
             "parts": [
               {
-                "text": "The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit"
+                "text": "A keeper fills the order and closes it, returning any unspent deposit and the rent of the order and its token account"
               }
             ],
-            "text": "The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit"
+            "text": "A keeper fills the order and closes it, returning any unspent deposit and the rent of the order and its token account"
           }
         }
       },
@@ -958,10 +1666,10 @@
               "text": " (descriptor reviewed "
             },
             {
-              "text": "2026-10-18",
+              "text": "2026-11-06",
               "value": {
                 "type": "text",
-                "value": "2026-10-18"
+                "value": "2026-11-06"
               }
             },
             {
@@ -982,7 +1690,7 @@
               "text": ")"
             }
           ],
-          "text": "Jupiter prediction market (descriptor reviewed 2026-10-18, upgradeable by 5myN…uAKx)"
+          "text": "Jupiter prediction market (descriptor reviewed 2026-11-06, upgradeable by 5myN…uAKx)"
         },
         "title": {
           "id": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp/create_order-intent-true",
@@ -1391,6 +2099,112 @@
                 "text": "50,000 micro-lamports per compute unit × 350,000 compute units requested"
               }
             }
+          },
+          {
+            "help": {
+              "id": "label-rent-deposits.help",
+              "parts": [
+                {
+                  "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+                }
+              ],
+              "text": "SOL locked to keep the accounts this transaction creates on chain. It is a deposit, not a fee: closing an account returns it to whoever closes it."
+            },
+            "label": {
+              "id": "label-rent-deposits",
+              "parts": [
+                {
+                  "text": "Rent deposits"
+                }
+              ],
+              "text": "Rent deposits"
+            },
+            "trust": "fact",
+            "value": {
+              "type": "words",
+              "value": {
+                "id": "explain-rent",
+                "parts": [
+                  {
+                    "text": "0.00415544 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "4155440",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.00415544 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.00415544 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": ", or "
+                  },
+                  {
+                    "text": "0.005842 SOL",
+                    "value": {
+                      "type": "amount",
+                      "value": {
+                        "asset": {
+                          "decimals": 9,
+                          "description": null,
+                          "id": "native",
+                          "symbol": "SOL",
+                          "trust": "fact"
+                        },
+                        "bound": "exact",
+                        "note": null,
+                        "note_words": null,
+                        "units": "5842000",
+                        "words": {
+                          "id": "amount",
+                          "parts": [
+                            {
+                              "text": "0.005842 "
+                            },
+                            {
+                              "text": "SOL",
+                              "value": {
+                                "type": "text",
+                                "value": "SOL"
+                              }
+                            }
+                          ],
+                          "text": "0.005842 SOL"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "text": " in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts"
+                  }
+                ],
+                "text": "0.00415544 SOL, or 0.005842 SOL in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts"
+              }
+            }
           }
         ],
         "kind": {
@@ -1531,7 +2345,7 @@
       ],
       "text": "Buy 5.33 YES contracts in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at the market price, depositing 5 JupUSD"
     },
-    "text": "Buy 5.33 YES contracts in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at the market price, depositing 5 JupUSD\nOK\n\n== Buy prediction contracts | Jupiter prediction market (descriptor reviewed 2026-10-18, upgradeable by 5myN…uAKx)\n  Contracts: 5.33\n  Max price per contract: 0.89 USD\n  Deposit: 5 JupUSD\n  Order type: market order\n  Market: 3913199afd6342fa3b590f0adb079c3c\n  Order: GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb\n  Position: AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC\n  From account: Your JupUSD account (8R13…HhnW)\n\n== Also [collapsed]\n  Compute unit price: 50,000 micro-lamports per compute unit\n  Compute unit limit: 350000\n\n== Signers\n  Fee payer: Your wallet (Cowb…moNB)\n  Signer: AJooF3xRkSx1PUC5Y9dNZHy9LMHcx5xKhPxj4iW4jepf\n\n== Fee\n  Total: 0.0000275 SOL\n  Base: 0.00001 SOL\n  Priority: 0.0000175 SOL\n  Priority basis: 50,000 micro-lamports per compute unit × 350,000 compute units requested\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 5 JupUSD from Your wallet (Cowb…moNB) to Jupiter prediction market (3ZZu…jvUp)\n  - The order and, if new, the position account are created at the payer's cost; a keeper fills the order and closes it, returning any unspent deposit\n  - You pay a fee of 0.0000275 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (571 bytes)\n  digest: acd3baf90c625ead58e15bf729fd452c71349793a454713fb0fbcc75b727e09a\n",
+    "text": "Buy 5.33 YES contracts in Jupiter prediction market 3913199afd6342fa3b590f0adb079c3c at the market price, depositing 5 JupUSD\nOK\n\n== Buy prediction contracts | Jupiter prediction market (descriptor reviewed 2026-11-06, upgradeable by 5myN…uAKx)\n  Contracts: 5.33\n  Max price per contract: 0.89 USD\n  Deposit: 5 JupUSD\n  Order type: market order\n  Market: 3913199afd6342fa3b590f0adb079c3c\n  Order: GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb\n  Position: AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC\n  From account: Your JupUSD account (8R13…HhnW)\n\n== Also [collapsed]\n  Compute unit price: 50,000 micro-lamports per compute unit\n  Compute unit limit: 350000\n\n== Signers\n  Fee payer: Your wallet (Cowb…moNB)\n  Signer: AJooF3xRkSx1PUC5Y9dNZHy9LMHcx5xKhPxj4iW4jepf\n\n== Fee\n  Total: 0.0000275 SOL\n  Base: 0.00001 SOL\n  Priority: 0.0000175 SOL\n  Priority basis: 50,000 micro-lamports per compute unit × 350,000 compute units requested\n  Rent deposits: 0.00415544 SOL, or 0.005842 SOL in all if the account this transaction creates when missing does not exist yet; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 5 JupUSD from Your wallet (Cowb…moNB) to Jupiter prediction market (3ZZu…jvUp)\n  - Create GfWrjLy4g8ZXDTRoit3h4DGmPReZL8vtU5RZCxBZ8pEb, managed by Jupiter prediction market (3ZZu…jvUp), depositing 0.002667 SOL\n  - Create EhaxS2fwJKom7zoXpF7hrYVSTwBNGd1yPDvuMs8ffZNv, managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL\n  - Create AK5V992Xrg2cym6wwzFvS5sMdT7pJZKgZC75QiSxRpQC, managed by Jupiter prediction market (3ZZu…jvUp), depositing 0.00168656 SOL unless it already exists\n  - A keeper fills the order and closes it, returning any unspent deposit and the rent of the order and its token account\n  - You pay a fee of 0.0000275 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (571 bytes)\n  digest: acd3baf90c625ead58e15bf729fd452c71349793a454713fb0fbcc75b727e09a\n",
     "verdict": "ok"
   }
 }

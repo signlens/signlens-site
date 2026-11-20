@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -2367,10 +2367,10 @@
               "text": " (descriptor reviewed "
             },
             {
-              "text": "2026-10-25",
+              "text": "2026-11-20",
               "value": {
                 "type": "text",
-                "value": "2026-10-25"
+                "value": "2026-11-20"
               }
             },
             {
@@ -2391,7 +2391,7 @@
               "text": ")"
             }
           ],
-          "text": "SPL Stake Pool (descriptor reviewed 2026-10-25, upgradeable by dPpF…guDH)"
+          "text": "SPL Stake Pool (descriptor reviewed 2026-11-20, upgradeable by dPpF…guDH)"
         },
         "title": {
           "id": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy/deposit_sol-intent",
@@ -3647,7 +3647,7 @@
       ],
       "text": "2 actions: Send 0.01 SOL to Cv1U…Qxsj; Stake 0.01 SOL in a stake pool for its pool token, at the pool's ratio at execution"
     },
-    "text": "2 actions: Send 0.01 SOL to Cv1U…Qxsj; Stake 0.01 SOL in a stake pool for its pool token, at the pool's ratio at execution\nOK\n\nFindings:\n  [INFO] The SOL is deposited by another signer of this transaction, not by your wallet (instruction 3)\n\n== Transfer | System program\n  Amount: 0.01 SOL\n  From: Your wallet (BmJa…uuax)\n  To: Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n\n== Stake | SPL Stake Pool (descriptor reviewed 2026-10-25, upgradeable by dPpF…guDH)\n  Deposit: 0.01 SOL\n  Stake pool: JitoSOL stake pool (Jito…Awbb)\n  Pool token: JitoSOL mint (J1to…GCPn)\n  To account: Your JitoSOL account (5o7V…2GKm)\n  Fee account: 8yoigZfzZ1nNaadumY9uPVD118225UYHTDpmjpr2nrSa\n  Referrer fee account: Your JitoSOL account (5o7V…2GKm)\n\n== Also [collapsed]\n  Create token account if missing: Token account: Your JitoSOL account (5o7V…2GKm)\n  Create token account if missing: Owner: Your wallet (BmJa…uuax)\n  Create token account if missing: Mint: JitoSOL mint (J1to…GCPn)\n  Create token account if missing: Rent paid by: Your wallet (BmJa…uuax)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Compute unit limit: 400000\n  Compute unit price: 100,000 micro-lamports per compute unit\n  Jito tip: Amount: 0.000003981 SOL\n  Jito tip: From: Your wallet (BmJa…uuax)\n  Jito tip: To: Jito tip account (ADaU…aS49)\n\n== Signers\n  Fee payer: Your wallet (BmJa…uuax)\n  Signer: Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n\n== Fee\n  Total: 0.00005 SOL\n  Base: 0.00001 SOL\n  Priority: 0.00004 SOL\n  Priority basis: 100,000 micro-lamports per compute unit × 400,000 compute units requested\n  Rent deposits: up to 0.00148844 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 0.01 SOL from Your wallet (BmJa…uuax) to Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n  - Transfer 0.01 SOL from Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj to BgKUXdS29YcHCFrPm5M8oLHiTzZaMDjsebggjoaQ6KFL\n  - You receive an unknown amount of JitoSOL (the pool's SOL-to-token ratio at execution, less its deposit fee) into Your JitoSOL account (5o7V…2GKm) from SPL Stake Pool (SPoo…kuHy)\n  - Create Your JitoSOL account (5o7V…2GKm), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - You send 0.000003981 SOL from Your wallet (BmJa…uuax) to Jito tip account (ADaU…aS49)\n  - You pay a fee of 0.00005 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (571 bytes)\n  digest: 7550d052706b6b87c1645d8e680d9187db1258a43bf86f5b4b22d01119ee1b2e\n",
+    "text": "2 actions: Send 0.01 SOL to Cv1U…Qxsj; Stake 0.01 SOL in a stake pool for its pool token, at the pool's ratio at execution\nOK\n\nFindings:\n  [INFO] The SOL is deposited by another signer of this transaction, not by your wallet (instruction 3)\n\n== Transfer | System program\n  Amount: 0.01 SOL\n  From: Your wallet (BmJa…uuax)\n  To: Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n\n== Stake | SPL Stake Pool (descriptor reviewed 2026-11-20, upgradeable by dPpF…guDH)\n  Deposit: 0.01 SOL\n  Stake pool: JitoSOL stake pool (Jito…Awbb)\n  Pool token: JitoSOL mint (J1to…GCPn)\n  To account: Your JitoSOL account (5o7V…2GKm)\n  Fee account: 8yoigZfzZ1nNaadumY9uPVD118225UYHTDpmjpr2nrSa\n  Referrer fee account: Your JitoSOL account (5o7V…2GKm)\n\n== Also [collapsed]\n  Create token account if missing: Token account: Your JitoSOL account (5o7V…2GKm)\n  Create token account if missing: Owner: Your wallet (BmJa…uuax)\n  Create token account if missing: Mint: JitoSOL mint (J1to…GCPn)\n  Create token account if missing: Rent paid by: Your wallet (BmJa…uuax)\n  Create token account if missing: Token program: Token program (Toke…Q5DA)\n  Compute unit limit: 400000\n  Compute unit price: 100,000 micro-lamports per compute unit\n  Jito tip: Amount: 0.000003981 SOL\n  Jito tip: From: Your wallet (BmJa…uuax)\n  Jito tip: To: Jito tip account (ADaU…aS49)\n\n== Signers\n  Fee payer: Your wallet (BmJa…uuax)\n  Signer: Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n\n== Fee\n  Total: 0.00005 SOL\n  Base: 0.00001 SOL\n  Priority: 0.00004 SOL\n  Priority basis: 100,000 micro-lamports per compute unit × 400,000 compute units requested\n  Rent deposits: up to 0.00148844 SOL, if the account this transaction creates when missing does not exist yet; refunded to whoever closes the account\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 0.01 SOL from Your wallet (BmJa…uuax) to Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj\n  - Transfer 0.01 SOL from Cv1UC3U4FDvZGjoUvJmQcbQSU1M9u3AWVMPPgUMUQxsj to BgKUXdS29YcHCFrPm5M8oLHiTzZaMDjsebggjoaQ6KFL\n  - You receive an unknown amount of JitoSOL (the pool's SOL-to-token ratio at execution, less its deposit fee) into Your JitoSOL account (5o7V…2GKm) from SPL Stake Pool (SPoo…kuHy)\n  - Create Your JitoSOL account (5o7V…2GKm), managed by Token program (Toke…Q5DA), depositing 0.00148844 SOL unless it already exists\n  - You send 0.000003981 SOL from Your wallet (BmJa…uuax) to Jito tip account (ADaU…aS49)\n  - You pay a fee of 0.00005 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (571 bytes)\n  digest: 7550d052706b6b87c1645d8e680d9187db1258a43bf86f5b4b22d01119ee1b2e\n",
     "verdict": "ok"
   }
 }

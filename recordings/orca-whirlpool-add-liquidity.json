@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -300,16 +300,61 @@
               "text": "Create "
             },
             {
-              "text": "5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7",
+              "text": "Your token account (5T5z…SvD7)",
               "value": {
                 "type": "address",
                 "value": {
                   "address": "5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7",
-                  "is_self": false,
-                  "label": null,
-                  "label_trust": "fact",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-unnamed-token",
+                    "parts": [
+                      {
+                        "text": "Your token account"
+                      }
+                    ],
+                    "text": "Your token account"
+                  },
+                  "label_trust": "verified",
                   "stand_in": null,
-                  "words": null
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your token account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-unnamed-token",
+                            "parts": [
+                              {
+                                "text": "Your token account"
+                              }
+                            ],
+                            "text": "Your token account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "5T5z…SvD7"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your token account (5T5z…SvD7)"
+                  }
                 }
               }
             },
@@ -422,17 +467,62 @@
               }
             }
           ],
-          "text": "Create 5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7, managed by Token-2022 program (Toke…xuEb), depositing 0.00151384 SOL"
+          "text": "Create Your token account (5T5z…SvD7), managed by Token-2022 program (Toke…xuEb), depositing 0.00151384 SOL"
         },
         "type": "create",
         "value": {
           "account": {
             "address": "5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7",
-            "is_self": false,
-            "label": null,
-            "label_trust": "fact",
+            "is_self": true,
+            "label": {
+              "id": "accounts-your-unnamed-token",
+              "parts": [
+                {
+                  "text": "Your token account"
+                }
+              ],
+              "text": "Your token account"
+            },
+            "label_trust": "verified",
             "stand_in": null,
-            "words": null
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your token account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-unnamed-token",
+                      "parts": [
+                        {
+                          "text": "Your token account"
+                        }
+                      ],
+                      "text": "Your token account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "5T5z…SvD7"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your token account (5T5z…SvD7)"
+            }
           },
           "deposit": {
             "asset": {
@@ -622,7 +712,7 @@
               "text": ", depositing "
             },
             {
-              "text": "0.00174752 SOL",
+              "text": "0.00395328 SOL",
               "value": {
                 "type": "amount",
                 "value": {
@@ -636,12 +726,12 @@
                   "bound": "exact",
                   "note": null,
                   "note_words": null,
-                  "units": "1747520",
+                  "units": "3953280",
                   "words": {
                     "id": "amount",
                     "parts": [
                       {
-                        "text": "0.00174752 "
+                        "text": "0.00395328 "
                       },
                       {
                         "text": "SOL",
@@ -651,13 +741,13 @@
                         }
                       }
                     ],
-                    "text": "0.00174752 SOL"
+                    "text": "0.00395328 SOL"
                   }
                 }
               }
             }
           ],
-          "text": "Create CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu, managed by Orca Whirlpool (whir…tyCc), depositing 0.00174752 SOL"
+          "text": "Create CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu, managed by Orca Whirlpool (whir…tyCc), depositing 0.00395328 SOL"
         },
         "type": "create",
         "value": {
@@ -680,12 +770,12 @@
             "bound": "exact",
             "note": null,
             "note_words": null,
-            "units": "1747520",
+            "units": "3953280",
             "words": {
               "id": "amount",
               "parts": [
                 {
-                  "text": "0.00174752 "
+                  "text": "0.00395328 "
                 },
                 {
                   "text": "SOL",
@@ -695,7 +785,7 @@
                   }
                 }
               ],
-              "text": "0.00174752 SOL"
+              "text": "0.00395328 SOL"
             }
           },
           "if_missing": false,
@@ -1886,10 +1976,10 @@
               "text": " (descriptor reviewed "
             },
             {
-              "text": "2026-09-28",
+              "text": "2026-11-20",
               "value": {
                 "type": "text",
-                "value": "2026-09-28"
+                "value": "2026-11-20"
               }
             },
             {
@@ -1910,7 +2000,7 @@
               "text": ")"
             }
           ],
-          "text": "Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)"
+          "text": "Orca Whirlpool (descriptor reviewed 2026-11-20, upgradeable by GwH3…x4PV)"
         },
         "title": {
           "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/open_position_with_token_extensions-intent",
@@ -2310,10 +2400,10 @@
               "text": " (descriptor reviewed "
             },
             {
-              "text": "2026-09-28",
+              "text": "2026-11-20",
               "value": {
                 "type": "text",
-                "value": "2026-09-28"
+                "value": "2026-11-20"
               }
             },
             {
@@ -2334,7 +2424,7 @@
               "text": ")"
             }
           ],
-          "text": "Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)"
+          "text": "Orca Whirlpool (descriptor reviewed 2026-11-20, upgradeable by GwH3…x4PV)"
         },
         "title": {
           "id": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc/increase_liquidity-intent",
@@ -2608,7 +2698,7 @@
                 "id": "explain-rent",
                 "parts": [
                   {
-                    "text": "0.00326136 SOL",
+                    "text": "0.00546712 SOL",
                     "value": {
                       "type": "amount",
                       "value": {
@@ -2622,12 +2712,12 @@
                         "bound": "exact",
                         "note": null,
                         "note_words": null,
-                        "units": "3261360",
+                        "units": "5467120",
                         "words": {
                           "id": "amount",
                           "parts": [
                             {
-                              "text": "0.00326136 "
+                              "text": "0.00546712 "
                             },
                             {
                               "text": "SOL",
@@ -2637,7 +2727,7 @@
                               }
                             }
                           ],
-                          "text": "0.00326136 SOL"
+                          "text": "0.00546712 SOL"
                         }
                       }
                     }
@@ -2656,7 +2746,7 @@
                     "text": " account of unknown size; refunded to whoever closes the accounts"
                   }
                 ],
-                "text": "0.00326136 SOL, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts"
+                "text": "0.00546712 SOL, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts"
               }
             }
           }
@@ -2839,7 +2929,7 @@
       ],
       "text": "2 actions: Open an Orca Whirlpool position from tick -54248 to tick -54240; Add ≤ 2.0004 SOL and ≤ 0.0019912 ETH to an Orca Whirlpool position"
     },
-    "text": "2 actions: Open an Orca Whirlpool position from tick -54248 to tick -54240; Add ≤ 2.0004 SOL and ≤ 0.0019912 ETH to an Orca Whirlpool position\nOK\n\n== Open position | Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)\n  Lower tick: -54248\n  Upper tick: -54240\n  Pool: HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF\n  Position NFT goes to: Your wallet (EyLF…1dh9)\n  Position NFT: 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a\n  Rent paid by: Your wallet (EyLF…1dh9)\n\n== Add liquidity | Orca Whirlpool (descriptor reviewed 2026-09-28, upgradeable by GwH3…x4PV)\n  Deposit: ≤ 2.0004 SOL\n  Deposit: ≤ 0.0019912 ETH\n  Pool: HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF\n  Position: CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu\n  From account A: Your SOL account (5iyQ…okUb)\n  From account B: Your ETH account (C2D6…SXph)\n\n== Signers\n  Fee payer: Your wallet (EyLF…1dh9)\n  Signer: 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a\n\n== Fee\n  Total: 0.00001 SOL\n  Base: 0.00001 SOL\n  Rent deposits: 0.00326136 SOL, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Create 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a, managed by Token-2022 program (Toke…xuEb)\n  - Create 5T5zJ7YtHd9q1RkPm9T9Rc4YQ9dJD5vWY23TNdR2SvD7, managed by Token-2022 program (Toke…xuEb), depositing 0.00151384 SOL\n  - Create CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu, managed by Orca Whirlpool (whir…tyCc), depositing 0.00174752 SOL\n  - Create an empty position and mint its NFT, the only claim on the liquidity later added to it, to the position NFT owner\n  - You send ≤ 2.0004 SOL from Your wallet (EyLF…1dh9) to Orca Whirlpool (whir…tyCc)\n  - You send ≤ 0.0019912 ETH from Your wallet (EyLF…1dh9) to Orca Whirlpool (whir…tyCc)\n  - You pay a fee of 0.00001 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (633 bytes)\n  digest: 260480de9df69125dff4b64fc85e71d8f956728e15842be4a2a42c214d72e92e\n",
+    "text": "2 actions: Open an Orca Whirlpool position from tick -54248 to tick -54240; Add ≤ 2.0004 SOL and ≤ 0.0019912 ETH to an Orca Whirlpool position\nOK\n\n== Open position | Orca Whirlpool (descriptor reviewed 2026-11-20, upgradeable by GwH3…x4PV)\n  Lower tick: -54248\n  Upper tick: -54240\n  Pool: HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF\n  Position NFT goes to: Your wallet (EyLF…1dh9)\n  Position NFT: 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a\n  Rent paid by: Your wallet (EyLF…1dh9)\n\n== Add liquidity | Orca Whirlpool (descriptor reviewed 2026-11-20, upgradeable by GwH3…x4PV)\n  Deposit: ≤ 2.0004 SOL\n  Deposit: ≤ 0.0019912 ETH\n  Pool: HktfL7iwGKT5QHjywQkcDnZXScoh811k7akrMZJkCcEF\n  Position: CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu\n  From account A: Your SOL account (5iyQ…okUb)\n  From account B: Your ETH account (C2D6…SXph)\n\n== Signers\n  Fee payer: Your wallet (EyLF…1dh9)\n  Signer: 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a\n\n== Fee\n  Total: 0.00001 SOL\n  Base: 0.00001 SOL\n  Rent deposits: 0.00546712 SOL, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - Create 3kFw22y27E6xExMogkU2tbVvRhFGu3wBhzssoUgnu98a, managed by Token-2022 program (Toke…xuEb)\n  - Create Your token account (5T5z…SvD7), managed by Token-2022 program (Toke…xuEb), depositing 0.00151384 SOL\n  - Create CNAyBB6RQm4a1NniAuNsVQAaJCrxhXKzKyUt9hG38NWu, managed by Orca Whirlpool (whir…tyCc), depositing 0.00395328 SOL\n  - Create an empty position and mint its NFT, the only claim on the liquidity later added to it, to the position NFT owner\n  - You send ≤ 2.0004 SOL from Your wallet (EyLF…1dh9) to Orca Whirlpool (whir…tyCc)\n  - You send ≤ 0.0019912 ETH from Your wallet (EyLF…1dh9) to Orca Whirlpool (whir…tyCc)\n  - You pay a fee of 0.00001 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (633 bytes)\n  digest: 260480de9df69125dff4b64fc85e71d8f956728e15842be4a2a42c214d72e92e\n",
     "verdict": "ok"
   }
 }

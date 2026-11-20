@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -1428,10 +1428,10 @@
               "text": " (descriptor reviewed "
             },
             {
-              "text": "2026-10-31",
+              "text": "2026-11-16",
               "value": {
                 "type": "text",
-                "value": "2026-10-31"
+                "value": "2026-11-16"
               }
             },
             {
@@ -1452,7 +1452,7 @@
               "text": ")"
             }
           ],
-          "text": "Jupiter Aggregator v6 (descriptor reviewed 2026-10-31, upgradeable by CvQZ…tipQ)"
+          "text": "Jupiter Aggregator v6 (descriptor reviewed 2026-11-16, upgradeable by CvQZ…tipQ)"
         },
         "title": {
           "id": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4/route-intent",
@@ -1820,7 +1820,7 @@
       ],
       "text": "Swap 4.22143 SOL for ≥ 1,455.299686 JUP via Jupiter"
     },
-    "text": "Swap 4.22143 SOL for ≥ 1,455.299686 JUP via Jupiter\nOK\n\n== Swap | Jupiter Aggregator v6 (descriptor reviewed 2026-10-31, upgradeable by CvQZ…tipQ)\n  Send: 4.22143 SOL\n  Receive: ≥ 1,455.299686 JUP\n  Quoted: 1,462.61275 JUP\n  Max slippage: 0.5%\n  Route:\n    - 100% via Scorch (leg 0 to 1)\n  From account: Your SOL account (AP3K…B9n3)\n  To account: Your JUP account (31Bn…KNG6)\n  Additional accounts: 18, not named by this descriptor\n\n== Signers\n  Fee payer: Your wallet (4Dio…mUpL)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 4.22143 SOL from Your wallet (4Dio…mUpL) to Jupiter Aggregator v6 (JUP6…TaV4)\n  - You receive ≥ 1,455.299686 JUP into Your wallet (4Dio…mUpL) from Jupiter Aggregator v6 (JUP6…TaV4)\n  - You pay a fee of 0.000005 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (726 bytes)\n  digest: 07994c833082be704b110cd51819fa3cd790da34efe93f3c7bcabae7f83507ae\n",
+    "text": "Swap 4.22143 SOL for ≥ 1,455.299686 JUP via Jupiter\nOK\n\n== Swap | Jupiter Aggregator v6 (descriptor reviewed 2026-11-16, upgradeable by CvQZ…tipQ)\n  Send: 4.22143 SOL\n  Receive: ≥ 1,455.299686 JUP\n  Quoted: 1,462.61275 JUP\n  Max slippage: 0.5%\n  Route:\n    - 100% via Scorch (leg 0 to 1)\n  From account: Your SOL account (AP3K…B9n3)\n  To account: Your JUP account (31Bn…KNG6)\n  Additional accounts: 18, not named by this descriptor\n\n== Signers\n  Fee payer: Your wallet (4Dio…mUpL)\n\n== Fee\n  Total: 0.000005 SOL\n  Base: 0.000005 SOL\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send 4.22143 SOL from Your wallet (4Dio…mUpL) to Jupiter Aggregator v6 (JUP6…TaV4)\n  - You receive ≥ 1,455.299686 JUP into Your wallet (4Dio…mUpL) from Jupiter Aggregator v6 (JUP6…TaV4)\n  - You pay a fee of 0.000005 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana legacy (726 bytes)\n  digest: 07994c833082be704b110cd51819fa3cd790da34efe93f3c7bcabae7f83507ae\n",
     "verdict": "ok"
   }
 }

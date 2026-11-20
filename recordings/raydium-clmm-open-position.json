@@ -1,5 +1,5 @@
 {
-  "recorded": "2026-11-01",
+  "recorded": "2026-11-20",
   "engine": "the SignLens engine 0.3.0",
   "explanation": {
     "actions": [
@@ -874,16 +874,61 @@
               "text": "Create "
             },
             {
-              "text": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
+              "text": "Your token account (4uqA…75Au)",
               "value": {
                 "type": "address",
                 "value": {
                   "address": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
-                  "is_self": false,
-                  "label": null,
-                  "label_trust": "fact",
+                  "is_self": true,
+                  "label": {
+                    "id": "accounts-your-unnamed-token",
+                    "parts": [
+                      {
+                        "text": "Your token account"
+                      }
+                    ],
+                    "text": "Your token account"
+                  },
+                  "label_trust": "verified",
                   "stand_in": null,
-                  "words": null
+                  "words": {
+                    "id": "address-labelled",
+                    "parts": [
+                      {
+                        "text": "Your token account",
+                        "value": {
+                          "type": "words",
+                          "value": {
+                            "id": "accounts-your-unnamed-token",
+                            "parts": [
+                              {
+                                "text": "Your token account"
+                              }
+                            ],
+                            "text": "Your token account"
+                          }
+                        }
+                      },
+                      {
+                        "text": " ("
+                      },
+                      {
+                        "short": {
+                          "address": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
+                          "is_self": true,
+                          "label": null,
+                          "label_trust": "verified",
+                          "stand_in": null,
+                          "words": null
+                        },
+                        "text": "4uqA…75Au"
+                      },
+                      {
+                        "text": ")"
+                      }
+                    ],
+                    "text": "Your token account (4uqA…75Au)"
+                  }
                 }
               }
             },
@@ -975,17 +1020,62 @@
               }
             }
           ],
-          "text": "Create 4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au, managed by the account at lookup table AcL1…zJkU[2], depositing 0.00151384 SOL"
+          "text": "Create Your token account (4uqA…75Au), managed by the account at lookup table AcL1…zJkU[2], depositing 0.00151384 SOL"
         },
         "type": "create",
         "value": {
           "account": {
             "address": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
-            "is_self": false,
-            "label": null,
-            "label_trust": "fact",
+            "is_self": true,
+            "label": {
+              "id": "accounts-your-unnamed-token",
+              "parts": [
+                {
+                  "text": "Your token account"
+                }
+              ],
+              "text": "Your token account"
+            },
+            "label_trust": "verified",
             "stand_in": null,
-            "words": null
+            "words": {
+              "id": "address-labelled",
+              "parts": [
+                {
+                  "text": "Your token account",
+                  "value": {
+                    "type": "words",
+                    "value": {
+                      "id": "accounts-your-unnamed-token",
+                      "parts": [
+                        {
+                          "text": "Your token account"
+                        }
+                      ],
+                      "text": "Your token account"
+                    }
+                  }
+                },
+                {
+                  "text": " ("
+                },
+                {
+                  "short": {
+                    "address": "4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au",
+                    "is_self": true,
+                    "label": null,
+                    "label_trust": "verified",
+                    "stand_in": null,
+                    "words": null
+                  },
+                  "text": "4uqA…75Au"
+                },
+                {
+                  "text": ")"
+                }
+              ],
+              "text": "Your token account (4uqA…75Au)"
+            }
           },
           "deposit": {
             "asset": {
@@ -1231,244 +1321,6 @@
             }
           },
           "if_missing": false,
-          "owner": {
-            "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
-            "is_self": false,
-            "label": {
-              "id": "accounts-name",
-              "parts": [
-                {
-                  "text": "Raydium CLMM",
-                  "value": {
-                    "type": "text",
-                    "value": "Raydium CLMM"
-                  }
-                }
-              ],
-              "text": "Raydium CLMM"
-            },
-            "label_trust": "verified",
-            "stand_in": null,
-            "words": {
-              "id": "address-labelled",
-              "parts": [
-                {
-                  "text": "Raydium CLMM",
-                  "value": {
-                    "type": "words",
-                    "value": {
-                      "id": "accounts-name",
-                      "parts": [
-                        {
-                          "text": "Raydium CLMM",
-                          "value": {
-                            "type": "text",
-                            "value": "Raydium CLMM"
-                          }
-                        }
-                      ],
-                      "text": "Raydium CLMM"
-                    }
-                  }
-                },
-                {
-                  "text": " ("
-                },
-                {
-                  "short": {
-                    "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
-                    "is_self": false,
-                    "label": null,
-                    "label_trust": "verified",
-                    "stand_in": null,
-                    "words": null
-                  },
-                  "text": "CAMM…rWqK"
-                },
-                {
-                  "text": ")"
-                }
-              ],
-              "text": "Raydium CLMM (CAMM…rWqK)"
-            }
-          }
-        }
-      },
-      {
-        "message": {
-          "id": "effect-create-deposit-if-missing",
-          "parts": [
-            {
-              "text": "Create "
-            },
-            {
-              "text": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
-              "value": {
-                "type": "address",
-                "value": {
-                  "address": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
-                  "is_self": false,
-                  "label": null,
-                  "label_trust": "fact",
-                  "stand_in": null,
-                  "words": null
-                }
-              }
-            },
-            {
-              "text": ", managed by "
-            },
-            {
-              "text": "Raydium CLMM (CAMM…rWqK)",
-              "value": {
-                "type": "address",
-                "value": {
-                  "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
-                  "is_self": false,
-                  "label": {
-                    "id": "accounts-name",
-                    "parts": [
-                      {
-                        "text": "Raydium CLMM",
-                        "value": {
-                          "type": "text",
-                          "value": "Raydium CLMM"
-                        }
-                      }
-                    ],
-                    "text": "Raydium CLMM"
-                  },
-                  "label_trust": "verified",
-                  "stand_in": null,
-                  "words": {
-                    "id": "address-labelled",
-                    "parts": [
-                      {
-                        "text": "Raydium CLMM",
-                        "value": {
-                          "type": "words",
-                          "value": {
-                            "id": "accounts-name",
-                            "parts": [
-                              {
-                                "text": "Raydium CLMM",
-                                "value": {
-                                  "type": "text",
-                                  "value": "Raydium CLMM"
-                                }
-                              }
-                            ],
-                            "text": "Raydium CLMM"
-                          }
-                        }
-                      },
-                      {
-                        "text": " ("
-                      },
-                      {
-                        "short": {
-                          "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
-                          "is_self": false,
-                          "label": null,
-                          "label_trust": "verified",
-                          "stand_in": null,
-                          "words": null
-                        },
-                        "text": "CAMM…rWqK"
-                      },
-                      {
-                        "text": ")"
-                      }
-                    ],
-                    "text": "Raydium CLMM (CAMM…rWqK)"
-                  }
-                }
-              }
-            },
-            {
-              "text": ", depositing "
-            },
-            {
-              "text": "0.05266944 SOL",
-              "value": {
-                "type": "amount",
-                "value": {
-                  "asset": {
-                    "decimals": 9,
-                    "description": null,
-                    "id": "native",
-                    "symbol": "SOL",
-                    "trust": "fact"
-                  },
-                  "bound": "exact",
-                  "note": null,
-                  "note_words": null,
-                  "units": "52669440",
-                  "words": {
-                    "id": "amount",
-                    "parts": [
-                      {
-                        "text": "0.05266944 "
-                      },
-                      {
-                        "text": "SOL",
-                        "value": {
-                          "type": "text",
-                          "value": "SOL"
-                        }
-                      }
-                    ],
-                    "text": "0.05266944 SOL"
-                  }
-                }
-              }
-            },
-            {
-              "text": " unless it already exists"
-            }
-          ],
-          "text": "Create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg, managed by Raydium CLMM (CAMM…rWqK), depositing 0.05266944 SOL unless it already exists"
-        },
-        "type": "create",
-        "value": {
-          "account": {
-            "address": "AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg",
-            "is_self": false,
-            "label": null,
-            "label_trust": "fact",
-            "stand_in": null,
-            "words": null
-          },
-          "deposit": {
-            "asset": {
-              "decimals": 9,
-              "description": null,
-              "id": "native",
-              "symbol": "SOL",
-              "trust": "fact"
-            },
-            "bound": "exact",
-            "note": null,
-            "note_words": null,
-            "units": "52669440",
-            "words": {
-              "id": "amount",
-              "parts": [
-                {
-                  "text": "0.05266944 "
-                },
-                {
-                  "text": "SOL",
-                  "value": {
-                    "type": "text",
-                    "value": "SOL"
-                  }
-                }
-              ],
-              "text": "0.05266944 SOL"
-            }
-          },
-          "if_missing": true,
           "owner": {
             "address": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
             "is_self": false,
@@ -3127,7 +2979,7 @@
                     "text": ", or "
                   },
                   {
-                    "text": "0.10893044 SOL",
+                    "text": "0.056261 SOL",
                     "value": {
                       "type": "amount",
                       "value": {
@@ -3141,12 +2993,12 @@
                         "bound": "exact",
                         "note": null,
                         "note_words": null,
-                        "units": "108930440",
+                        "units": "56261000",
                         "words": {
                           "id": "amount",
                           "parts": [
                             {
-                              "text": "0.10893044 "
+                              "text": "0.056261 "
                             },
                             {
                               "text": "SOL",
@@ -3156,13 +3008,13 @@
                               }
                             }
                           ],
-                          "text": "0.10893044 SOL"
+                          "text": "0.056261 SOL"
                         }
                       }
                     }
                   },
                   {
-                    "text": " in all if the accounts this transaction creates when missing do not exist yet, plus the rent of "
+                    "text": " in all if the account this transaction creates when missing does not exist yet, plus the rent of "
                   },
                   {
                     "text": "1",
@@ -3175,7 +3027,7 @@
                     "text": " account of unknown size; refunded to whoever closes the accounts"
                   }
                 ],
-                "text": "0.00359156 SOL, or 0.10893044 SOL in all if the accounts this transaction creates when missing do not exist yet, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts"
+                "text": "0.00359156 SOL, or 0.056261 SOL in all if the account this transaction creates when missing does not exist yet, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts"
               }
             }
           }
@@ -3328,7 +3180,7 @@
       ],
       "text": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx and ≤ 33.874114 USDC"
     },
-    "text": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx and ≤ 33.874114 USDC\nOK\n\n== Add liquidity | Raydium CLMM (descriptor reviewed 2026-09-29, upgradeable by FytD…eZQK)\n  Deposit: ≤ 0.00985543 GOOGLx\n  Deposit: ≤ 33.874114 USDC\n  Pool: the account at lookup table E3xN…KDe5[197]\n  Lower tick: 12300\n  Upper tick: 12360\n  Position NFT goes to: Your wallet (B1Q4…mxGP)\n  Position NFT: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n  From account 0: Your GOOGLx account (3q66…Cmdb)\n  From account 1: Your USDC account (6Gqw…fNtf)\n  Pool vault 0: the account at lookup table E3xN…KDe5[200]\n  Pool vault 1: the account at lookup table E3xN…KDe5[201]\n\n== Also [collapsed]\n  Compute unit price: 1,000 micro-lamports per compute unit\n  Compute unit limit: 180000\n\n== Signers\n  Fee payer: Your wallet (B1Q4…mxGP)\n  Signer: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n\n== Fee\n  Total: 0.00001018 SOL\n  Base: 0.00001 SOL\n  Priority: 0.00000018 SOL\n  Priority basis: 1,000 micro-lamports per compute unit × 180,000 compute units requested\n  Rent deposits: 0.00359156 SOL, or 0.10893044 SOL in all if the accounts this transaction creates when missing do not exist yet, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send ≤ 0.00985543 GOOGLx from Your wallet (B1Q4…mxGP) to Raydium CLMM (CAMM…rWqK)\n  - You send ≤ 33.874114 USDC from Your wallet (B1Q4…mxGP) to Raydium CLMM (CAMM…rWqK)\n  - Create DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk, managed by the account at lookup table AcL1…zJkU[2]\n  - Create 4uqAJqTYq1zNL3CRqziX9AJbx9D2hWxv1KcHK8BP75Au, managed by the account at lookup table AcL1…zJkU[2], depositing 0.00151384 SOL\n  - Create 9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ, managed by Raydium CLMM (CAMM…rWqK), depositing 0.00207772 SOL\n  - Create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg, managed by Raydium CLMM (CAMM…rWqK), depositing 0.05266944 SOL unless it already exists\n  - Create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg, managed by Raydium CLMM (CAMM…rWqK), depositing 0.05266944 SOL unless it already exists\n  - Mint a position NFT, the claim on the deposited liquidity, to the position NFT owner\n  - You pay a fee of 0.00001018 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (539 bytes)\n  digest: f26bd6948c7dd5065e270fe8e06a918d374ac18c430e02450689b810924b90af\n",
+    "text": "Open a Raydium CLMM position with ≤ 0.00985543 GOOGLx and ≤ 33.874114 USDC\nOK\n\n== Add liquidity | Raydium CLMM (descriptor reviewed 2026-09-29, upgradeable by FytD…eZQK)\n  Deposit: ≤ 0.00985543 GOOGLx\n  Deposit: ≤ 33.874114 USDC\n  Pool: the account at lookup table E3xN…KDe5[197]\n  Lower tick: 12300\n  Upper tick: 12360\n  Position NFT goes to: Your wallet (B1Q4…mxGP)\n  Position NFT: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n  From account 0: Your GOOGLx account (3q66…Cmdb)\n  From account 1: Your USDC account (6Gqw…fNtf)\n  Pool vault 0: the account at lookup table E3xN…KDe5[200]\n  Pool vault 1: the account at lookup table E3xN…KDe5[201]\n\n== Also [collapsed]\n  Compute unit price: 1,000 micro-lamports per compute unit\n  Compute unit limit: 180000\n\n== Signers\n  Fee payer: Your wallet (B1Q4…mxGP)\n  Signer: DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk\n\n== Fee\n  Total: 0.00001018 SOL\n  Base: 0.00001 SOL\n  Priority: 0.00000018 SOL\n  Priority basis: 1,000 micro-lamports per compute unit × 180,000 compute units requested\n  Rent deposits: 0.00359156 SOL, or 0.056261 SOL in all if the account this transaction creates when missing does not exist yet, plus the rent of 1 account of unknown size; refunded to whoever closes the accounts\n\n== Validity\n  Expires: in about a minute (recent blockhash)\n\nEffects:\n  - You send ≤ 0.00985543 GOOGLx from Your wallet (B1Q4…mxGP) to Raydium CLMM (CAMM…rWqK)\n  - You send ≤ 33.874114 USDC from Your wallet (B1Q4…mxGP) to Raydium CLMM (CAMM…rWqK)\n  - Create DzNiCDq9yuY4HioRviAgex6D4HhD2THXxouZg47PMWRk, managed by the account at lookup table AcL1…zJkU[2]\n  - Create Your token account (4uqA…75Au), managed by the account at lookup table AcL1…zJkU[2], depositing 0.00151384 SOL\n  - Create 9cbfZY7DgY6Ud5xei6GtF4Rb7mJiMEp8go428o7RmEsZ, managed by Raydium CLMM (CAMM…rWqK), depositing 0.00207772 SOL\n  - Create AY3JsEwUj5mxZb6ojKer2F8NaMMnbX1yr57HLcSBpqCg, managed by Raydium CLMM (CAMM…rWqK), depositing 0.05266944 SOL unless it already exists\n  - Mint a position NFT, the claim on the deposited liquidity, to the position NFT owner\n  - You pay a fee of 0.00001018 SOL\n  - Valid for about a minute (recent blockhash)\n\nRaw: solana v0 (539 bytes)\n  digest: f26bd6948c7dd5065e270fe8e06a918d374ac18c430e02450689b810924b90af\n",
     "verdict": "ok"
   }
 }
